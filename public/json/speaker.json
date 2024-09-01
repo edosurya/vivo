@@ -1,0 +1,66 @@
+{
+    "main": [
+        {
+            "name": "Vikram Sinha",
+            "position": "President Director & CEO <br/> Indosat Ooredoo Hutchison",
+            "image": "frontend/images/used/speakers/vip-vikram-sinha-new.jpg",
+            "background" : "frontend/images/used/speakers/speaker_bg.jpg",
+            "to_be_revealed_soon" : "frontend.to_be_revealed_soon.vikran"
+        },
+        {
+            "name": "Jensen Huang",
+            "position": "President & CEO NVIDIA",
+            "image": "frontend/images/used/speakers/vip-jensen-huang.jpg",
+            "background" : "frontend/images/used/speakers/speaker_bg.jpg",
+            "to_be_revealed_soon" : "frontend.to_be_revealed_soon.jensen"
+        },
+        {
+            "name": "Gibran Rakabuming Raka",
+            "position": "Elected Vice President of Indonesian Republic",
+            "image": "frontend/images/used/speakers/vip-gibran.jpg",
+            "background" : "frontend/images/used/speakers/speaker_bg.jpg",
+            "to_be_revealed_soon" : "frontend.to_be_revealed_soon.gibran"
+        },
+        {
+            "name": "Budi Arie Setiadi",
+            "position": "Ministry of Communication & Informatics of Indonesian Republic",
+            "image": "frontend/images/used/speakers/vip-budi-arie-setiadi.jpg",
+            "background" : "frontend/images/used/speakers/speaker_bg.jpg",
+            "to_be_revealed_soon" : "frontend.to_be_revealed_soon.budi"
+        }
+    ],
+    "other": [
+        {
+            "name": "Irzan Raditya",
+            "position": "CEO & Co-Founder Kata.ai",
+            "image": "frontend/images/used/speakers/irzan-raditya.jpg"
+        },
+        {
+            "name": "Raymond Chin",
+            "position": "Entrepreneur",
+            "image": "frontend/images/used/speakers/raymond.jpg"
+        },
+        {
+            "name": "Vina Muliana",
+            "position": "Content Creator",
+            "image": "frontend/images/used/speakers/vina-muliana.jpg"
+        },
+        {
+            "name": "Anjas Maradita",
+            "position": "Content Creator",
+            "image": "frontend/images/used/speakers/anjas-maradita.jpg"
+        },
+        {
+            "name": "Desi Anwar",
+            "position": "Sr. Anchor and Journalist",
+            "image": "frontend/images/used/speakers/desi-anwar.jpg"
+        },
+        {
+            "name": "Ananta Vinnie",
+            "position": "DJ & Musician",
+            "image": "frontend/images/used/speakers/⁠ananta-vinnie.jpg"
+        }
+        
+
+    ]
+}
