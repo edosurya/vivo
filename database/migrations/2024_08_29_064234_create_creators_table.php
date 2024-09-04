@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('age')->nullable();
             $table->string('referral_code')->nullable();
             $table->string('vivo_id')->nullable();
+            $table->tinyInteger('category')->nullable();
             $table->text('desc')->nullable();
             $table->timestamps();
             $table->softDeletes();

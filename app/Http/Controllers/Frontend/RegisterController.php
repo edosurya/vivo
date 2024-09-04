@@ -33,25 +33,7 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
-        try {
-            DB::beginTransaction();
-            $register = Creator::create([
-                'code' => Uuid::uuid4()->toString(),
-                'fullname' => $request->fullname,
-                'phone' => $request->phone,
-                'address' => $request->address,
-                'device' => $request->device,
-                'age' => $request->age,
-                'email' => strtolower($request->email),
-            ]);
 
-            DB::commit();
-
-            return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
-        } catch (\Throwable $th) {
-            DB::rollBack();
-            return response()->json(['success' => false, 'message' => $th->getMessage()]);
-        }
     }
 
     /**
@@ -121,6 +103,7 @@ class RegisterController extends Controller
                 'age' => $request->age,
                 'desc' => $request->desc,
                 'email' => strtolower($request->email),
+                'category' => $request->category,
                 'referral_code' => $request->referral_code,
                 'vivo_id' => $request->vivo_id,
             ]);
@@ -136,7 +119,7 @@ class RegisterController extends Controller
                 Images::create([
                     'path' => $path,
                     'creator_id' => $register->id,
-                    'category_id' => $request->category,
+                    'category' => $request->category,
                 ]);
             }
 

@@ -140,12 +140,12 @@
                                 </label>
 
                                 <select class="form-control indosat_body" name="category" id="category">
-                                        <option value="1" selected>Category 1</option>
-                                        <option value="2">Category 2</option>
-                                        <option value="3">Category 3</option>
-                                        <option value="4">Category 4</option>
-                                        <option value="5">Category 5</option>
-                                        <option value="6">Category 6</option>
+                                        <option value="1" selected>Portrait Photography</option>
+                                        <option value="2">Street Photography</option>
+                                        <option value="3">Nature Photography</option>
+                                        <option value="4">Night Photography</option>
+                                        <option value="5">Still Life Photography</option>
+                                        <option value="6">Series Photography</option>
                                 </select>
 
                             </div>

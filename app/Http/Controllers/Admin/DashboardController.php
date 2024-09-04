@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use App\Models\Reservation;
-use App\Models\ContactUs;
+use App\Models\Creator;
+use App\Models\Images;
 
 class DashboardController extends Controller
 {
@@ -19,18 +19,16 @@ class DashboardController extends Controller
      */
     public function index(): View
     {
-        $reservation_total = Reservation::all()->count();
-        $reservation_pending = Reservation::where('status',Reservation::PENDING_STATUS)->count();
-        $reservation_approved = Reservation::where('status',Reservation::APPROVED_STATUS)->count();
-        $reservation_confirmed = Reservation::where('is_confirmed', true)->count();
-        $reservation_rejected = Reservation::where('status',Reservation::REJECTED_STATUS)->count();
-        $reservation_waiting = Reservation::where('status',Reservation::WAITING_STATUS)->count();
-        $reservation_reallocated = Reservation::where('status',Reservation::REALLOCATED_STATUS)->count();
-        $contact_us_total = ContactUs::all()->count();
+        $creator_total = Creator::all()->count();
+        $images_category1_total = Images::where('category',Images::CATEGORY1)->count();
+        $images_category2_total = Images::where('category',Images::CATEGORY2)->count();
+        $images_category3_total = Images::where('category',Images::CATEGORY3)->count();
+        $images_category4_total = Images::where('category',Images::CATEGORY4)->count();
+        $images_category5_total = Images::where('category',Images::CATEGORY5)->count();
+        $images_category6_total = Images::where('category',Images::CATEGORY6)->count();
+        
 
-        return view('admin.dashboard.index',compact('reservation_total','reservation_pending',
-        'reservation_confirmed',
-        'reservation_approved', 'reservation_rejected', 'reservation_waiting','reservation_reallocated','contact_us_total'));
+        return view('admin.dashboard.index',compact('creator_total','images_category1_total', 'images_category2_total', 'images_category3_total', 'images_category4_total', 'images_category5_total', 'images_category6_total'));
        
     }
 

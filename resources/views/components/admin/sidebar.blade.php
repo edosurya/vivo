@@ -23,15 +23,15 @@
                     </li>
                 @endif
                 <li>
-                    <a href="{{ route('admin.reservation.index') }}" class="waves-effect">
+                    <a href="{{ route('admin.creator.index') }}" class="waves-effect">
                         <i class="mdi mdi-account"></i>
-                        <span>Reservation</span>
+                        <span>Creator</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('admin.contact_us.index') }}" class="waves-effect">
-                        <i class="mdi mdi-chat-alert"></i>
-                        <span>Contact Us</span>
+                    <a href="{{ route('admin.image.index') }}" class="waves-effect">
+                        <i class="mdi mdi-account"></i>
+                        <span>Gallery</span>
                     </a>
                 </li>
             </ul>

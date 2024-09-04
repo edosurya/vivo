@@ -10,7 +10,7 @@ use App\Models\Creator;
 class Images extends Model
 {
     use HasFactory;
-    protected $fillable = ['category_id', 'path', 'image', 'creator_id'];
+    protected $fillable = ['category', 'path', 'image', 'creator_id'];
 
     const CATEGORY1   = 1;
     const CATEGORY2   = 2;
@@ -20,12 +20,12 @@ class Images extends Model
     const CATEGORY6   = 6;
 
     const TYPE = [
-        self::CATEGORY1   => 'category1',
-        self::CATEGORY2   => 'category2',
-        self::CATEGORY3   => 'category3',
-        self::CATEGORY4   => 'category4',
-        self::CATEGORY5   => 'category5',
-        self::CATEGORY6   => 'category6',
+        self::CATEGORY1   => 'portrait-photography',
+        self::CATEGORY2   => 'street-photography',
+        self::CATEGORY3   => 'nature-photography',
+        self::CATEGORY4   => 'night-photography',
+        self::CATEGORY5   => 'still-life-Photography',
+        self::CATEGORY6   => 'series-photography',
     ];
 
     public function relatedCreator(): BelongsTo

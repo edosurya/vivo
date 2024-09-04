@@ -6,19 +6,19 @@
 
                 <a href="#" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('frontend/images/used/logo.webp') }}" alt="" height="22">
+                        <img src="{{ asset('frontend/images/used/logo.webpa') }}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('frontend/images/used/logo.webp') }}" alt="" height="17">
+                        <img src="{{ asset('frontend/images/used/logo.webpa') }}" alt="" height="17">
                     </span>
                 </a>
 
                 <a href="#" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('frontend/images/used/logo.webp') }}" alt="" height="22">
+                        <img src="{{ asset('frontend/images/used/logo.webpa') }}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('frontend/images/used/logo.webp') }}" alt="" height="18">
+                        <img src="{{ asset('frontend/images/used/logo.webpa') }}" alt="" height="18">
                     </span>
                 </a>
             </div>

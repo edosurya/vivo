@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id()->index()->primary();
-            $table->tinyInteger('category_id')->nullable();
+            $table->tinyInteger('category')->nullable();
             $table->string('path')->nullable();
             $table->unsignedBigInteger('creator_id')->unsigned()->index();
             $table->foreign('creator_id')->references('id')->on('creators')->onDelete('cascade');
