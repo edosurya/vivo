@@ -166,6 +166,7 @@
                         </div>
                     </div>
                     <div class="invalid-feedback fw-bold mb-3" id="dzErrorMessage"></div>
+                    <div class="invalid-feedback fw-bold mb-3" id="imgSeriesErrorMessage"></div>
                 </div>
 
 

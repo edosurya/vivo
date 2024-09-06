@@ -75,22 +75,26 @@ class RegisterController extends Controller
     public function upload(Request $request)
     {
 
-        $validator = Validator::make(
-            $request->all(),
-            [
-                "fullname"              => 'required',
-                "email"                 => 'required',
-            ],
-            [
-                'email.required' => 'Enter Email',
-            ]
-        );
+        try {
 
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
-        }
+            $validatedData = $request->validate([
+                'fullname' => ['required'],
+                'email'    => ['required'],
+                'phone'    => ['required'],
+                'file'     => ['required'],
+                'category'     => ['required'],
+                'device'     => ['required'],
+                'desc'       => ['required'],
+            ]);
 
-        return \DB::transaction(function () use ($request) {
+            $phone_exist = Creator::where('phone', $request->phone)->get();
+            $count_phone_exist = $phone_exist->count();
+
+            if($count_phone_exist > 1) {
+                return response()->json(['error' => true, 'message' =>'melebihin'], 404); 
+            }
+
+
             DB::beginTransaction();
             $code = Uuid::uuid4()->toString();
 
@@ -108,8 +112,7 @@ class RegisterController extends Controller
                 'vivo_id' => $request->vivo_id,
             ]);
 
-            DB::commit();
-
+            
             $name = preg_replace('/\s+/', '_', $request->fullname);
             $images = $request->file('file');
             $category = Images::TYPE[$request->category];
@@ -126,8 +129,12 @@ class RegisterController extends Controller
                 ]);
             }
 
+            DB::commit();
             return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
-        });        
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            return response()->json(['error' => true, 'message' => $th->getMessage()], 404); 
+        }     
 
     }
 

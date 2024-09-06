@@ -25,10 +25,6 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
     Route::get('/image', [ImageController::class, 'index'])->name('image.index');
     Route::post('/image/download', [ImageController::class, 'downloadMultiple'])->name('image.download');
 
-
-    Route::get('/contact-us', ContactUsController::class)->name('contact_us.index');
-    Route::post('/contact-us/export', ContactUsExportController::class)->name('contact_us.export');
-
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 

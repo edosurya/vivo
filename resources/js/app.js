@@ -26,6 +26,7 @@ const phoneErrorMessage = $('#phoneErrorMessage');
 const addrErrorMessage = $('#addrErrorMessage');
 const ageErrorMessage = $('#ageErrorMessage');
 const imgDescErrorMessage = $('#imgDescErrorMessage');
+const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const placeHolder = $('#dzPlaceholder');
 
 /**
@@ -181,65 +182,6 @@ $(document).on('click', '.dz-remove-button', function(event) {
 
 /**
  * ------------------------------------------------------------------------------------
- * SORTABLE SETUP
- * ------------------------------------------------------------------------------------
- */
-
-/**
- * Sortable initial setup
- */
-$('#dzPreviews').sortable({
-    items: '.dz-image-preview',
-    cancel: '.dz-image-preview:first-child',
-    placeholder: 'sortable-placeholder',
-    tolerance: 'pointer',
-    start: function(event, ui) {
-
-        // nitial placeholder setup to match the dragged item's size
-        ui.placeholder.width(ui.item.width()).height(ui.item.height());
-    },
-    change: function(event, ui) {
-        var isPlaceholderFirst = ui.placeholder.index() === 0;
-
-        // show the first cover image's placeholder if dragged into it
-        if (isPlaceholderFirst) {
-            ui.placeholder.addClass('cover-placeholder');
-        } else {
-            ui.placeholder.removeClass('cover-placeholder');
-        }
-    },
-    stop: function() {
-
-        // update the files array based on new order
-        const files = myDropzone.files;
-        const sortedFiles = [];
-
-        $('.dz-image-preview').each(function() {
-
-            // find the file unique data-id
-            const fileId = $(this).data('id');
-            const file = myDropzone.files.find(file => file.tempId === fileId);
-
-            // if file found, push to order array
-            if (file) {
-                sortedFiles.push(file);
-            }
-        });
-
-        myDropzone.files = sortedFiles;
-    }
-});
-
-/**
- * Prevent the first cover image from being dragged
- */
-$(document).on('mousedown', '.dz-image-preview:first-child', function(event) {
-    event.preventDefault();
-    return false;
-});
-
-/**
- * ------------------------------------------------------------------------------------
  * SUBMIT IMAGES
  * ------------------------------------------------------------------------------------
  */
@@ -259,12 +201,6 @@ myDropzone.on('successmultiple', function(response) {
         $('.dz-loading-div').fadeOut();
         $(successMessage).insertBefore('#dzImageUploadForm').slideDown();
     }, 500);
-
-    // show display uploaded images section
-    // setTimeout(function() {
-    //     getUploadedImages();
-    //     $('#uploadedImagesSection').slideDown();
-    // }, 600);
 });
 
 /**
@@ -334,37 +270,26 @@ $('#dzSubmitButton').on('click', function(event) {
         console.log('desc required');
         imgDescErrorMessage.show().text('Required');
     }
+
+    let cat = document.forms["dzImageUploadForm"]["category"].value;
+    if(cat == 6) {
+        console.log(myDropzone.files.length );
+        // show error messages if not have enough images
+        if (myDropzone.files.length < 3) {
+            error = error+1;
+            errorMessage.show().text('You have to upload at least 3 image.');
+        }
+    }
+
     // show error messages if not have enough images
     if (myDropzone.files.length === 0) {
         error = error+1;
         errorMessage.show().text('You have to upload at least 1 image.');
     }
 
-
     if(error < 1) {
         // process the queue
         myDropzone.processQueue();
     }
 });
-
-/**
- * ------------------------------------------------------------------------------------
- * DISPLAY PREVIEWS
- * ------------------------------------------------------------------------------------
- */
-
-function getUploadedImages() {
-    $.ajax({
-        url: '/previews',
-        type: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            $.each(data, function(index, image) {
-                $('#previewsContainer').append('<img class="preview-img" src="/storage/'+image.path+'">');
-            });
-        },
-        error: function(xhr, status, error) {
-            console.error("Error: " + status + " " + error);
-        }
-    });
-}  
+ 
