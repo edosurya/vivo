@@ -168,6 +168,7 @@
                     <div class="invalid-feedback fw-bold mb-3" id="imgSeriesErrorMessage"></div>
                 </div>
 
+                <a href="#" id="addMore">Add More</a>
 
                 <div class="mb-3 col-md-12 mb-0 pb-0">
                     <label class="indosat_bold_body" for="img_desc">
@@ -206,7 +207,7 @@
                 <div class="filename" data-dz-name></div>
                 <div class="filesize" data-dz-size></div>
             </div>
-            <svg data-v-71847a66="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle data-v-71847a66="" cx="12" cy="12" r="10"></circle><line data-v-71847a66="" x1="15" y1="9" x2="9" y2="15"></line><line data-v-71847a66="" x1="9" y1="9" x2="15" y2="15"></line></svg>  
+            <svg data-v-71847a66="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle dz-remove-button"><circle data-v-71847a66="" cx="12" cy="12" r="10"></circle><line data-v-71847a66="" x1="15" y1="9" x2="9" y2="15"></line><line data-v-71847a66="" x1="9" y1="9" x2="15" y2="15"></line></svg>  
         </li>
     </script>    
     <script id="dzAdditionalTemplate" type="text/template">

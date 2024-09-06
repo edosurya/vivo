@@ -133,6 +133,10 @@ function updateAdditionalAreas() {
     }
 }
 
+$(document).on('click', '#addMore', function(event) {
+    updateAdditionalAreas();
+})
+
 /**
  * If an additional area is clicked
  */
