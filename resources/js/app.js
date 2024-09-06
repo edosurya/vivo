@@ -27,6 +27,8 @@ const addrErrorMessage = $('#addrErrorMessage');
 const ageErrorMessage = $('#ageErrorMessage');
 const imgDescErrorMessage = $('#imgDescErrorMessage');
 const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
+const imgErrorMessage = $('#imgErrorMessage');
+
 const placeHolder = $('#dzPlaceholder');
 
 /**
@@ -61,7 +63,7 @@ const myDropzone = new Dropzone('#dzDropzone', {
 myDropzone.on('addedfile', function(file) {
 
     // hide placeholder and error messages
-    errorMessage.hide();
+    imgErrorMessage.hide();
     placeHolder.hide();
     
     // Generate a temporary identifier for each file (data-id)
@@ -90,7 +92,7 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     const loadingDiv = $('#dzLoadingOverlay').html();
 
     // show loading div
-    $('#dzImageUploadForm').append(loadingDiv);
+    // $('#dzImageUploadForm').append(loadingDiv);
 
     // attach csrf token
     formData.append('_token', $('meta[name="csrf-token"]').attr('content'));
@@ -104,8 +106,7 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("desc", $('#img_desc').val());
     formData.append("referral_code", $('#referral_code').val());
     formData.append("vivo_id", $('#vivo_id').val());
-
-    console.log(formData);
+    // console.log(formData);
 
 });
 
@@ -177,7 +178,7 @@ $(document).on('click', '.dz-remove-button', function(event) {
     }
 
     // hide error messages
-    errorMessage.hide();
+    imgErrorMessage.hide();
 });
 
 /**
@@ -209,6 +210,7 @@ myDropzone.on('successmultiple', function(response) {
 $('#dzSubmitButton').on('click', function(event) {
     event.preventDefault();
     errorMessage.hide();
+    imgErrorMessage.hide();
     fnErrorMessage.hide();
     mailErrorMessage.hide();
     phoneErrorMessage.hide();

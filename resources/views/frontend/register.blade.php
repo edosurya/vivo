@@ -19,9 +19,8 @@
                 <p class="lead text-muted mb-0">Upload at least one, but maximum five images, by drag and drop them into the area below, then you can change their display order by dragging.</p>
             </header>
 
-                <p class="zoomable">
-  
-    </p>
+            <div class="invalid-feedback fw-bold mb-3" id="dzErrorMessage"></div>
+
 
             <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data">
               
@@ -165,7 +164,7 @@
                             <ul class="dz-previews-container" id="dzPreviews"></ul>
                         </div>
                     </div>
-                    <div class="invalid-feedback fw-bold mb-3" id="dzErrorMessage"></div>
+                    <div class="invalid-feedback fw-bold mb-3" id="imgErrorMessage"></div>
                     <div class="invalid-feedback fw-bold mb-3" id="imgSeriesErrorMessage"></div>
                 </div>
 
