@@ -15,14 +15,14 @@
     <section class="py-5">
         <div class="container py-5">
             <header class="mb-5">
-                <h1 class="display-5 fw-bold mb-4">Laraaavel Dropzone image upload with Sortable</h1>
+                <h1 class="display-5 fw-bold mb-4" data-aos="fade-down">Laraaavel Dropzone image upload with Sortable</h1>
                 <p class="lead text-muted mb-0">Upload at least one, but maximum five images, by drag and drop them into the area below, then you can change their display order by dragging.</p>
             </header>
 
             <div class="invalid-feedback fw-bold mb-3" id="dzErrorMessage"></div>
 
 
-            <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data" data-aos="fade-up">
               
                         <div class="row" style="background-size: cover;">
 
@@ -235,7 +235,4 @@
     </script>
 
 </body>
-
-
-
 </html>
