@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: vivoSansGlobal-Regular;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Medium;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Heavy;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Heavy.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Extrabold;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Extrabold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Bold;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Extralight;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Extralight.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vivoSansGlobal-Light;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.vivo_regular {
+    font-family: 'vivoSansGlobal-Regular' !important;
+}
+
+.vivo_medium {
+    font-family: 'vivoSansGlobal-Medium' !important;
+}
+
+.vivo_heavy {
+    font-family: "vivoSansGlobal-Heavy" !important;
+}
+
+.vivo_extraBold {
+    font-family: "vivoSansGlobal-Extrabold" !important;
+}
+
+.vivo_bold {
+    font-family: "vivoSansGlobal-Bold" !important;
+}
+
+.vivo_extraLight {
+    font-family: "vivoSansGlobal-Extralight" !important;
+}
+
+.vivo_light {
+    font-family: "vivoSansGlobal-Light" !important;
+}
+
+body {
+	font-family: 'vivoSansGlobal-Regular' !important;
+}
+
+nav {
+	background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000000;
+    font-family: "vivoSansGlobal-Bold" !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #000000;
+    font-family: "vivoSansGlobal-Bold" !important;
+}
+
+li >.nav-item {
+    font-size: 20px !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #373737;
+}
+
+.nav-link {
+    padding: .5rem 1.5rem;
+}
+
+.vivo-ipa-logo{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.vivo-ipa-logo img{
+    width:40%;
+}
+
+@media (max-width: 992px) {
+    .vivo-ipa-logo{
+        margin-left: 5px;
+    }
+
+    .vivo-ipa-logo img{
+        width:70%;
+    }
+}
+
+.inner {
+    width: 20%;
+    height: 0;
+    margin: -5px auto;
+    border-bottom: 9px solid white;
+}
+
+.bg-blue-gradient {
+  background: rgb(2,0,36);    
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(59,59,128,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+.section-has-bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-has-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 79%);
+}
+
+.fs-how-to-desc {
+    font-size: 26px;
+}
+
+.fs-desc-schedule {
+    font-size: 30px;
+}
+
+@media (max-width: 992px) {
+    .fs-how-to-desc {
+        font-size: 20px;
+    }
+
+    .fs-desc-schedule{
+        font-size: 23px;
+    }
+}
+
+.btn-register {
+    letter-spacing: 5px;
+    border-color: none;
+    background: rgb(42,144,190);
+    background: linear-gradient(90deg, rgba(42,144,190,1) 0%, rgba(114,216,221,1) 49%, rgba(42,144,190,1) 100%);
+}
+
+h2 {
+    font-size: 70px;
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 45px;
+    }
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.img-tag {
+    background: rgba(0,0,0,0.5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.text-cat {
+    font-size:16px;
+}
+
+@media (max-width: 992px) {
+    .text-cat {
+        font-size:12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .p-col-mobile {
+        padding: 0 5px !important;
+    }
+}
+
+.p-col-mobile-desktop {
+    padding:0 5px;
+}
+
+.fs-judge-title {
+    font-size: 30px;
+}
+
+.fs-judge-desc {
+    font-size: 17px;
+} 
+
+@media (max-width: 992px) {
+    .fs-judge-title {
+        font-size: 18px;
+    }
+
+    .fs-judge-desc {
+        font-size: 12px;
+    } 
+}
+
+.fs-prize-title {
+    font-size: 50px;
+}
+
+@media (max-width: 992px) {
+    .fs-prize-title {
+        font-size: 20px;
+    }
+}
+
+.bg-period {
+    border-color: none;
+    background: rgb(2,39,70);
+    background: linear-gradient(0deg, rgba(2,39,70,1) 58%, rgba(14,85,109,1) 100%);
+}
+
+.fs-period-date {
+    font-size: 30px;
+}
+
+.fs-period-desc {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@media (max-width: 992px) {
+    .fs-period-date {
+        font-size: 25px;
+    }
+
+    .fs-period-desc {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+}
+
+.img-mechanism {
+    width: 60%;
+}
+
+.fs-desc-mechanism {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+@media (max-width: 992px) {
+
+    .fs-desc-mechanism {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}
+
+.arrow-icon {
+    top:50px; right:-25px; color: #167588;
+}
+
+.arrow-icon > svg {
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 992px) {
+    .arrow-icon {
+        top:30px; right:-25px; color: #167588;
+    }
+
+    .arrow-icon > svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
