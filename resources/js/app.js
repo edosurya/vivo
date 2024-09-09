@@ -31,6 +31,8 @@ const ageErrorMessage = $('#ageErrorMessage');
 const imgDescErrorMessage = $('#imgDescErrorMessage');
 const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
+const checkErrorMessage = $('#checkErrorMessage');
+
 
 const placeHolder = $('#dzPlaceholder');
 
@@ -237,24 +239,24 @@ $('#dzSubmitButton').on('click', function(event) {
     let fullname = document.forms["dzImageUploadForm"]["fullname"].value;
     if(fullname == null || fullname == "") {
         error = error+1;
-        fnErrorMessage.show().text('Fullname Required');
+        fnErrorMessage.show().text('Required');
     }
 
     // show error messages if email is empty or wrong format
     let email = document.forms["dzImageUploadForm"]["email"].value;
     if(email == null || email == "") {
         error = error+1;
-        mailErrorMessage.show().text('Email Required');
+        mailErrorMessage.show().text('Required');
     } else if (!validateEmail(email)) {
         error = error+1;
-        mailErrorMessage.show().text('format email salah');
+        mailErrorMessage.show().text('Wrong format');
     }
 
     // show error messages if phone is empty
     let phone = document.forms["dzImageUploadForm"]["phone"].value;
     if(phone == null || phone == "") {
         error = error+1;
-        phoneErrorMessage.show().text('Phone Required');
+        phoneErrorMessage.show().text('Required');
 
     }
 
@@ -262,22 +264,29 @@ $('#dzSubmitButton').on('click', function(event) {
     let address = document.forms["dzImageUploadForm"]["address"].value;
     if(address == null || address == "") {
         error = error+1;
-        addrErrorMessage.show().text('Address Required');
+        addrErrorMessage.show().text('Required');
     }
 
     // show error messages if age is empty
     let age = document.forms["dzImageUploadForm"]["age"].value;
     if(age == null || age == "") {
         error = error+1;
-        ageErrorMessage.show().text('Age Required');
+        ageErrorMessage.show().text('Required');
     }
 
     // show error messages if Image Description is empty
     let desc = document.forms["dzImageUploadForm"]["img_desc"].value;
     if(desc == null || desc == " ") {
         error = error+1;
-        console.log('desc required');
         imgDescErrorMessage.show().text('Required');
+    }
+
+    // show error messages if CheckBox is empty
+    let check = document.querySelector('#checkTermAndCondition').checked;
+    console.log(check);
+    if(!check) {
+        error = error+1;
+        checkErrorMessage.show().text('Required');
     }
 
     let cat = document.forms["dzImageUploadForm"]["category"].value;
@@ -293,7 +302,7 @@ $('#dzSubmitButton').on('click', function(event) {
     // show error messages if not have enough images
     if (myDropzone.files.length === 0) {
         error = error+1;
-        errorMessage.show().text('You have to upload at least 1 image.');
+        imgErrorMessage.show().text('You have to upload at least 1 image.');
     }
 
     if(error < 1) {

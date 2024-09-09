@@ -42,7 +42,6 @@ Route::get('/', function() {
 
 Route::controller(RegisterController::class)->group(function () {
     Route::get('/register', 'index');
-    Route::get('/previews', 'preview');
     Route::post('/upload', 'upload');
 });
 

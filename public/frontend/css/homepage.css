@@ -55,6 +55,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: vivoSansGlobal-Thin;
+    src: url('/frontend/fonts/vivo/vivoSansGlobal-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .vivo_regular {
     font-family: 'vivoSansGlobal-Regular' !important;
 }
@@ -81,6 +89,10 @@
 
 .vivo_light {
     font-family: "vivoSansGlobal-Light" !important;
+}
+
+.vivo_thin {
+    font-family: "vivoSansGlobal-Thin" !important;
 }
 
 body {
@@ -152,6 +164,11 @@ li >.nav-item {
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(59,59,128,1) 52%, rgba(0,212,255,1) 100%);
 }
 
+.bg-blue-gradient-90 {
+    background: rgb(42, 144, 190);
+    background: linear-gradient(90deg, rgba(42, 144, 190, 1) 0%, rgba(114, 216, 221, 1) 49%, rgba(42, 144, 190, 1) 100%);
+}
+
 .section-has-bg {
     height: 100%;
     background-position: center;
@@ -202,6 +219,36 @@ h2 {
 @media (max-width: 992px) {
     h2 {
         font-size: 45px;
+    }
+}
+
+h3 {
+    font-size: 60px;
+}
+
+@media (max-width: 992px) {
+    h3 {
+        font-size: 35px;
+    }
+}
+
+h4 {
+    font-size: 40px;
+}
+
+@media (max-width: 992px) {
+    h4 {
+        font-size: 15px;
+    }
+}
+
+h5 {
+    font-size: 40px;
+}
+
+@media (max-width: 992px) {
+    h5 {
+        font-size: 15px;
     }
 }
 
@@ -325,6 +372,75 @@ h2 {
     .arrow-icon > svg {
         width: 36px;
         height: 36px;
+    }
+}
+
+
+input::placeholder {
+    font-family: "vivoSansGlobal-Thin" !important;
+}
+
+.form-control {
+    background-color: transparent;
+    border: solid 1.1px white;
+    color: white;
+}
+
+.form-control:read-only {
+    background-color: transparent; 
+}
+
+.input-group-text {
+    padding: .3125rem 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+svg.dz-photo-icon {
+    color: #000000;
+}
+
+.data-details {
+    width: 100%;
+    border-top: 1px solid #e8ebf1;
+    border-left: 1px solid #e8ebf1;
+    border-right: 1px solid #e8ebf1;
+    display: grid;
+    grid-template-columns: 17fr 2fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 62px;
+    background: white;
+
+}
+
+.dz-metadata {
+    margin: 15px 0 15px 20px;
+    width: 100%;
+
+    .filename {
+        font-size: 15px;
+        color: black;   
+    }
+
+    .filesize {
+        font-size: 12px;
+        color: grey;
+    }
+}
+
+
+.dz-remove-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    top: 0;
+    right: 0;
+    &:hover {
+        background: rgba(0,0,0,0.75)
     }
 }
 
