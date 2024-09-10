@@ -70,60 +70,74 @@
           <div class="row flex-center">
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category1.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
       
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category2.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
-
+        
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category3.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
 
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category4.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
 
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category5.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
 
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category6.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-4 pb-1text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
                 </div>
               </div>
+            </a>
             </div>
+
           </div>
+
         </div>
 
         <div class="container-lg mt-5 py-7">

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Cookie;
 
 use App\Http\Controllers\Frontend\RegisterController;
+use App\Http\Controllers\Frontend\GalleryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\ContactUsExportController;
@@ -45,11 +46,11 @@ Route::controller(RegisterController::class)->group(function () {
     Route::post('/upload', 'upload')->name('register.upload');
 });
 
-Route::get('/gallery/{cat?}', function() {
-    return view('frontend.homepage');
-})->name('gallery');
 
-Route::get('/award', function() {
+Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('gallery');
+
+Route::get('/award/{ddd}', function($ddd) {
+    dd($ddd);
     return view('frontend.homepage');
 })->name('award');
 
