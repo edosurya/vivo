@@ -33,6 +33,8 @@
 
     @vite(['resources/sass/theme.scss'])
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
 
     @stack('style') {{-- Css Code --}}
@@ -65,11 +67,15 @@
     <script src="{{ asset('frontend/js/lasles/vendors/@popperjs/popper.min.js') }}"></script>
     <script src="{{ asset('frontend/js/lasles/vendors/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('frontend/js/lasles/vendors/is/is.min.js') }}"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
 
     @stack('js-plugin') {{-- Asset URL Plugin Javascript --}}
 
     @stack('script') {{-- Javascript Code --}}
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>   
+        AOS.init(); 
+    </script>
 
   </body>
 

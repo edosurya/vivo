@@ -38,12 +38,20 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
 
 Route::get('/', function() {
     return view('frontend.homepage');
-});
+})->name('home');
 
 Route::controller(RegisterController::class)->group(function () {
-    Route::get('/register', 'index');
-    Route::post('/upload', 'upload');
+    Route::get('/register', 'index')->name('register.index');
+    Route::post('/upload', 'upload')->name('register.upload');
 });
+
+Route::get('/gallery/{cat?}', function() {
+    return view('frontend.homepage');
+})->name('gallery');
+
+Route::get('/award', function() {
+    return view('frontend.homepage');
+})->name('award');
 
 
 require __DIR__ . '/auth.php';

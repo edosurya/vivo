@@ -103,9 +103,12 @@ nav {
 	background-color: white;
 }
 
+.navbar-collapse > .navbar-nav {
+    text-align: right;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: #000000;
-    font-family: "vivoSansGlobal-Bold" !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -136,6 +139,22 @@ li >.nav-item {
 .vivo-ipa-logo{
     margin-top: 80px;
     margin-left: 20px;
+}
+
+.bg-img-main-banner {
+    background-image: url('/frontend/images/banner.png');
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+@media (max-width: 992px) {
+    .bg-img-main-banner {
+        background-image: url('/frontend/images/banner_mobile.png');
+        min-height: 100vh; 
+        background-size: cover; 
+        background-position: center; 
+    }
 }
 
 .vivo-ipa-logo img{
@@ -232,26 +251,6 @@ h3 {
     }
 }
 
-h4 {
-    font-size: 40px;
-}
-
-@media (max-width: 992px) {
-    h4 {
-        font-size: 15px;
-    }
-}
-
-h5 {
-    font-size: 40px;
-}
-
-@media (max-width: 992px) {
-    h5 {
-        font-size: 15px;
-    }
-}
-
 .rounded-4 {
     border-radius: 1rem !important;
 }
@@ -260,6 +259,21 @@ h5 {
     background: rgba(0,0,0,0.5);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+.img-wrapper {  
+  width: auto;
+  height: auto;
+  overflow: hidden; 
+  border-radius: 20px;
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
 }
 
 .text-cat {
@@ -430,7 +444,6 @@ svg.dz-photo-icon {
     }
 }
 
-
 .dz-remove-button {
     width: 36px;
     height: 36px;
@@ -439,8 +452,28 @@ svg.dz-photo-icon {
     transition: all 0.3s ease;
     top: 0;
     right: 0;
-    &:hover {
-        background: rgba(0,0,0,0.75)
+    background: rgba(0,0,0,0.75);
+}
+
+.fs-term-condition {
+    font-size: 40px;
+}
+
+.fs-title-registrasi_form {
+    font-size: 40px;
+}
+
+
+@media (max-width: 992px) {
+    .fs-term-condition {
+        font-size: 35px;
+    }
+    .fs-title-registrasi_form {
+        font-size: 35px;
+
     }
 }
 
+footer p {
+    font-size: 12px;
+}

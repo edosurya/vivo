@@ -79,7 +79,7 @@ class RegisterController extends Controller
 
             $validatedData = $request->validate([
                 'fullname' => ['required'],
-                'email'    => ['required'],
+                'email'    => ['required', 'email'],
                 'phone'    => ['required'],
                 'file'     => ['required'],
                 'category'     => ['required'],
@@ -87,11 +87,11 @@ class RegisterController extends Controller
                 'desc'       => ['required'],
             ]);
 
-            $phone_exist = Creator::where('phone', $request->phone)->get();
-            $count_phone_exist = $phone_exist->count();
+            $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
+            $count_email_exist = $email_exist->count();
 
-            if($count_phone_exist > 1) {
-                return response()->json(['error' => true, 'message' =>'melebihin'], 404); 
+            if($count_email_exist > 0) {
+                return response()->json(['error' => true, 'message' =>'Akun anda telah terdaftar untuk kategory ini, silahkan menggunakan akun lainnya.'], 404); 
             }
 
 
