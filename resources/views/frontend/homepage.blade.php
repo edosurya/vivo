@@ -25,9 +25,9 @@
 
 
       <!-- ============================================-->
-      <!-- <section> How To ============================-->
+      <!-- <section> About Us ============================-->
 
-      <section class="bg-100 py-7 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/bg-section-2.png') }});" id="how-to">
+      <section class="bg-100 py-7 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/bg-section-about-us.png') }});" id="how-to">
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3"  >
@@ -58,7 +58,7 @@
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/bg-section-3.png') }});">
+      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/bg-section-category.png') }});">
         <div class="container-lg mb-5">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
@@ -72,7 +72,7 @@
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category1.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-portrait.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
                 </div>
@@ -83,7 +83,7 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category2.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-street.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
                 </div>
@@ -94,7 +94,7 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category3.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-series.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
                 </div>
@@ -106,7 +106,7 @@
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category4.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-still-life.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
                 </div>
@@ -117,7 +117,7 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category5.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-night.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
                 </div>
@@ -128,7 +128,7 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category6.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-nature.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
                 </div>
@@ -149,8 +149,8 @@
 
           <div class="row text-center text-white">
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-              <img class="mb-3" src="{{ asset('frontend/images/ng-logo.png') }}" alt="" width="120" />
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge1.png') }}" alt="" />
+              <img class="mb-3" src="{{ asset('frontend/images/national-geographic-logo.png') }}" alt="" width="120" />
+              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge-didi.png') }}" alt="" />
               <div>
                   <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
                   <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social eco journalist. </p>
@@ -159,7 +159,7 @@
             </div>
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
               <img class="mb-3" src="{{ asset('frontend/images/vivozeiss-logo.png') }}" alt="" width="120" />
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge2.png') }}" alt="" />
+              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge-lorem.png') }}" alt="" />
               <div>
                   <p class="fs-judge-title vivo_bold mb-1">Lorem ipsum</p>
                   <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Representative from Carl Seiz</p>
@@ -167,7 +167,7 @@
             </div>
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
               <img class="mb-3" src="{{ asset('frontend/images/vg-logo.png') }}" alt="" width="120" />
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge3.png') }}" alt="" />
+              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/judge-benny.png') }}" alt="" />
               <div>
                   <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
                   <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer winner 2020</p>
@@ -190,8 +190,8 @@
                 <p class="text-white vivo_light lh-1">Special Jury Awards</p>
               </div>
               <div class="p-2 bd-highlight">
-                <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/50jt.png') }}" alt="" class="img-fluid" width="100%" >
-                <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/50jt-mobile.png') }}" alt="" class="img-fluid" width="100%" />
+                <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/hadiah-50jt-desktop.png') }}" alt="" class="img-fluid" width="100%" />
+                <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/hadiah-50jt-mobile.png') }}" alt="" class="img-fluid" width="100%" />
               </div>
               <div class="p-2 bd-highlight">
                 <img class="img-fluid" src="{{ asset('frontend/images/prize-desc-1.png') }}" alt=""  />
@@ -203,8 +203,8 @@
                 <p class="text-white vivo_light lh-1 ">dari 6 kategori</p>
               </div>
               <div class="p-2 bd-highlight">
-                <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/vivo-device.png') }}" alt="" class="img-fluid" width="50%">
-                <img class="mb-3 mb-3 d-block d-sm-none" src="{{ asset('frontend/images/vivo-device.png') }}" alt="" class="img-fluid" width="100%"/>
+                <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/hadiah-vivo-device.png') }}" alt="" class="img-fluid" width="50%">
+                <img class="mb-3 mb-3 d-block d-sm-none" src="{{ asset('frontend/images/hadiah-vivo-device.png') }}" alt="" class="img-fluid" width="100%"/>
               </div>
               <div class="p-2 bd-highlight">
                 <img class="img-fluid" src="{{ asset('frontend/images/prize-desc-2.png') }}" alt="" />
@@ -300,7 +300,7 @@
               <div class="col-4 p-col-mobile">
                 <div class="text-center position-relative">
                   <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/mechanism1.png') }}" alt="" class="img-fluid img-mechanism" />
+                   <img src="{{ asset('frontend/images/mechanism-1.png') }}" alt="" class="img-fluid img-mechanism" />
                   </div>
                   <p class="lead text-white mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Ambil foto menggunakan tipe smartphone vivo apapun</p>
                   <div class="arrow-icon position-absolute d-lg-block">
@@ -313,7 +313,7 @@
               <div class="col-4 p-col-mobile">
                 <div class="text-center position-relative">
                   <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/mechanism2.png') }}" alt="" class="img-fluid img-mechanism"  />
+                   <img src="{{ asset('frontend/images/mechanism-2.png') }}" alt="" class="img-fluid img-mechanism"  />
                   </div>
                   <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan upload karyamu di vivoimagine.id / photographyawards hingga 23 November 2024</p>
                   <div class="arrow-icon position-absolute d-lg-block">
@@ -326,7 +326,7 @@
               <div class="col-4 p-col-mobile">
                 <div class="text-center position-relative">
                   <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/mechanism3.png') }}" alt=""class="img-fluid img-mechanism" />
+                   <img src="{{ asset('frontend/images/mechanism-3.png') }}" alt=""class="img-fluid img-mechanism" />
                   </div>
                   <p class="lead text-white mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Grand prize Special Jury Award dan 6 pemenang dari 6 kategori akan di umumkan pada 30 November 2024</p>
                 </div>

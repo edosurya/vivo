@@ -10,8 +10,7 @@
     @endpush
 
 @section('hero')
-      <section class="pt-5 pb-5 bg-dark"
-        style="min-height: 100vh; background-size: cover; background-position: center; background-image: url({{ asset('frontend/images/banner.png') }});" id="main-banner">
+      <section class="pt-5 pb-5 bg-dark bg-img-main-banner" id="main-banner">
         <div class="container-fluid">
           <div class="row vivo-ipa-logo">
             <div class="col-12 col-md-8">

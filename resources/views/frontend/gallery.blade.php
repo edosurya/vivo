@@ -9,154 +9,8 @@
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    	<link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
 
-<style type="text/css">
-
-
- a {
-     -webkit-transition: .3s all ease;
-     -o-transition: .3s all ease;
-     transition: .3s all ease;
-     color: #1089ff;
-}
- a:hover, a:focus {
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-box-shadow: none;
-     box-shadow: none;
-}
- button {
-     -webkit-transition: .3s all ease;
-     -o-transition: .3s all ease;
-     transition: .3s all ease;
-}
- button:hover, button:focus {
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-box-shadow: none !important;
-     box-shadow: none !important;
-}
- .img {
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center center;
-}
- .owl-carousel {
-     position: relative;
-}
- .owl-carousel .owl-item {
-     opacity: 1;
-}
- .owl-carousel .owl-item.active {
-     opacity: 1;
-}
- .owl-carousel .owl-nav {
-	position: absolute;
-    top: 50%;
-    width: 90%;
-    left: 5%;
-}
- .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
-     position: absolute;
-     -webkit-transform: translateY(-50%);
-     -ms-transform: translateY(-50%);
-     transform: translateY(-50%);
-     margin-top: -60px;
-     color: white !important;
-     -webkit-transition: 0.7s;
-     -o-transition: 0.7s;
-     transition: 0.7s;
-     opacity: 0;
-}
- @media (prefers-reduced-motion: reduce) {
-     .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
-         -webkit-transition: none;
-         -o-transition: none;
-         transition: none;
-    }
-}
- .owl-carousel .owl-nav .owl-prev span:before, .owl-carousel .owl-nav .owl-next span:before {
-     font-size: 60px;
-}
- .owl-carousel .owl-nav .owl-prev {
-     left: 0;
-}
- .owl-carousel .owl-nav .owl-next {
-     right: 0;
-}
- .owl-carousel .owl-dots {
-     text-align: center;
-     margin-top: 20px;
-}
- .owl-carousel .owl-dots .owl-dot {
-     width: 10px;
-     height: 10px;
-     margin: 5px;
-     border-radius: 50%;
-     background: #fff;
-     position: relative;
-}
- .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
-     outline: none !important;
-}
- .owl-carousel .owl-dots .owl-dot.active {
-     background: rgba(42,144,190,1);
-}
- .owl-carousel:hover .owl-nav .owl-prev, .owl-carousel:hover .owl-nav .owl-next {
-     opacity: 1;
-}
- .owl-carousel:hover .owl-nav .owl-prev {
-     left: -25px;
-}
- .owl-carousel:hover .owl-nav .owl-next {
-     right: -25px;
-}
- .owl-carousel.owl-drag .owl-item {
-     -ms-touch-action: pan-y;
-     touch-action: pan-y;
-}
- .work {
-     width: 100%;
-}
- .work .img {
-     width: 100%;
-     height: 300px;
-     position: relative;
-     -webkit-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
-     -moz-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
-     box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
-}
- .work .img .icon {
-     width: 70px;
-     height: 70px;
-     border-radius: 50%;
-     background: #fff;
-     display: block;
-     opacity: 0;
-     -webkit-transition: 0.3s;
-     -o-transition: 0.3s;
-     transition: 0.3s;
-}
- @media (prefers-reduced-motion: reduce) {
-     .work .img .icon {
-         -webkit-transition: none;
-         -o-transition: none;
-         transition: none;
-    }
-}
- .work .text h3 {
-     font-size: 18px;
-     font-weight: 500;
-}
- .work .text h3 a {
-     color: #000;
-}
- .work:hover .img .icon {
-     opacity: 1;
-}
-
-
-</style>
     
     @endpush
 
@@ -174,12 +28,12 @@
             </div>
           </div>
 
-          <div class="row flex-center">
+         <div class="row flex-center">
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category1.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-portrait.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
                 </div>
@@ -188,9 +42,9 @@
             </div>
       
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-           	<a href="{{ route('gallery', ['category' => 'street-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category2.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-street.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
                 </div>
@@ -199,9 +53,9 @@
             </div>
         
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-			<a href="{{ route('gallery', ['category' => 'series-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category3.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-series.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
                 </div>
@@ -211,9 +65,9 @@
 
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-           	<a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category4.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-still-life.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
                 </div>
@@ -222,9 +76,9 @@
             </div>
 
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-           	<a href="{{ route('gallery', ['category' => 'night-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category5.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-night.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
                 </div>
@@ -235,7 +89,7 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/category6.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-nature.png') }}" alt="" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
                 </div>
@@ -244,6 +98,7 @@
             </div>
 
           </div>
+
 
         </div>
 
@@ -259,12 +114,12 @@
 	        </div>
 
 			<div class="col-md-12">
-				<div class="featured-carousel owl-carousel">
-					@foreach($images as $img)
+				<div class="featured-carousel owl-carousel gallery-grid">
+					@foreach($images as $key => $img)
 					<div class="item">
 						<div class="work">
 							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
+								<a class="icon d-flex align-items-center justify-content-center" onclick="showModal('{{asset($img['path'])}}')">
 									<span class="ion-ios-search"></span>
 								</a>
 							</div>
@@ -275,75 +130,17 @@
 						</div>
 					</div>
 					@endforeach
-<!-- 					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{asset('frontend/images/work-2.jpg')}});">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">Work 01</p>
-								<span class="text-white vivo_regular fs-img-dec">Web Design</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{asset('frontend/images/work-3.jpg')}});">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">Work 01</p>
-								<span class="text-white vivo_regular fs-img-dec">Web Design</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{asset('frontend/images/work-4.jpg')}});">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">Work 01</p>
-								<span class="text-white vivo_regular fs-img-dec">Web Design</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{asset('frontend/images/work-5.jpg')}});">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">Work 01</p>
-								<span class="text-white vivo_regular fs-img-dec">Web Design</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{asset('frontend/images/work-1.jpg')}});">
-								<a href="#" 6lass="icon d-flex align-items-center justify-content-center">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">Work 01</p>
-								<span class="text-white vivo_regular fs-img-dec">Web Design</span>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+
 
 
 @push('js-plugin')
@@ -399,6 +196,33 @@
 	carousel();
 
 })(jQuery);
+</script>
+
+<script>
+// Get the modal
+
+function showModal(img) {
+	var modal = document.getElementById("myModal");
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+	var img = img;
+	var modalImg = document.getElementById("img01");
+	// var captionText = document.getElementById("caption");
+	
+	modal.style.display = "block";
+	modalImg.src = img;
+	// captionText.innerHTML = this.alt;
+	
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+}
+
 </script>
 
 

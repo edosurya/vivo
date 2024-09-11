@@ -142,7 +142,7 @@ li >.nav-item {
 }
 
 .bg-img-main-banner {
-    background-image: url('/frontend/images/banner.png');
+    background-image: url('/frontend/images/main-banner-desktop.png');
     min-height: 100vh; 
     background-size: cover; 
     background-position: center; 
@@ -150,7 +150,7 @@ li >.nav-item {
 
 @media (max-width: 992px) {
     .bg-img-main-banner {
-        background-image: url('/frontend/images/banner_mobile.png');
+        background-image: url('/frontend/images/main-banner-mobile.png');
         min-height: 100vh; 
         background-size: cover; 
         background-position: center; 

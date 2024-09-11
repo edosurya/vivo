@@ -10,7 +10,7 @@ class GalleryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($category = null)
+    public function index($category = 'potrait-photography')
     {
 
         $title = '';
@@ -21,32 +21,32 @@ class GalleryController extends Controller
                 $title = 'Potrait Photography';
                 $images = [
                     [
-                        'path' => 'frontend/images/work-1.jpg',
+                        'path' => 'frontend/images/gallery/work-1.jpg',
                         'title' => 'STROLLING AROUND',
                         'desc' =>  'Shot on vivo V30e',
                     ],
                     [
-                        'path' => 'frontend/images/work-2.jpg',
+                        'path' => 'frontend/images/gallery/work-2.jpg',
                         'title' => 'STROLLING AROUND2',
                         'desc' =>  'Shot on vivo V30e',
                     ],
                     [
-                        'path' => 'frontend/images/work-3.jpg',
+                        'path' => 'frontend/images/gallery/work-3.jpg',
                         'title' => 'STROLLING AROUND3',
                         'desc' =>  'Shot on vivo V30e',
                     ],
                     [
-                        'path' => 'frontend/images/work-4.jpg',
+                        'path' => 'frontend/images/gallery/work-4.jpg',
                         'title' => 'STROLLING AROUND4',
                         'desc' =>  'Shot on vivo V30e',
                     ],
                     [
-                        'path' => 'frontend/images/work-5.jpg',
+                        'path' => 'frontend/images/gallery/work-5.jpg',
                         'title' => 'STROLLING AROUND5',
                         'desc' =>  'Shot on vivo V30e',
                     ],
                     [
-                        'path' => 'frontend/images/work-6.jpg',
+                        'path' => 'frontend/images/gallery/work-6.jpg',
                         'title' => 'STROLLING AROUND6',
                         'desc' =>  'Shot on vivo V30e',
                     ],
