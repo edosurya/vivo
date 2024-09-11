@@ -239,24 +239,24 @@ $('#dzSubmitButton').on('click', function(event) {
     let fullname = document.forms["dzImageUploadForm"]["fullname"].value;
     if(fullname == null || fullname == "") {
         error = error+1;
-        fnErrorMessage.show().text('Required');
+        fnErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if email is empty or wrong format
     let email = document.forms["dzImageUploadForm"]["email"].value;
     if(email == null || email == "") {
         error = error+1;
-        mailErrorMessage.show().text('Required');
+        mailErrorMessage.show().text('Wajib diisi');
     } else if (!validateEmail(email)) {
         error = error+1;
-        mailErrorMessage.show().text('Wrong format');
+        mailErrorMessage.show().text('Format email salah');
     }
 
     // show error messages if phone is empty
     let phone = document.forms["dzImageUploadForm"]["phone"].value;
     if(phone == null || phone == "") {
         error = error+1;
-        phoneErrorMessage.show().text('Required');
+        phoneErrorMessage.show().text('Wajib diisi');
 
     }
 
@@ -264,21 +264,21 @@ $('#dzSubmitButton').on('click', function(event) {
     let address = document.forms["dzImageUploadForm"]["address"].value;
     if(address == null || address == "") {
         error = error+1;
-        addrErrorMessage.show().text('Required');
+        addrErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if age is empty
     let age = document.forms["dzImageUploadForm"]["age"].value;
     if(age == null || age == "") {
         error = error+1;
-        ageErrorMessage.show().text('Required');
+        ageErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if Image Description is empty
     let desc = document.forms["dzImageUploadForm"]["img_desc"].value;
     if(desc == null || desc == " ") {
         error = error+1;
-        imgDescErrorMessage.show().text('Required');
+        imgDescErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if CheckBox is empty
@@ -286,7 +286,7 @@ $('#dzSubmitButton').on('click', function(event) {
     console.log(check);
     if(!check) {
         error = error+1;
-        checkErrorMessage.show().text('Required');
+        checkErrorMessage.show().text('Wajib diisi');
     }
 
     let cat = document.forms["dzImageUploadForm"]["category"].value;
@@ -295,14 +295,14 @@ $('#dzSubmitButton').on('click', function(event) {
         // show error messages if not have enough images
         if (myDropzone.files.length < 3) {
             error = error+1;
-            errorMessage.show().text('You have to upload at least 3 image.');
+            errorMessage.show().text('Minimal upload 3 gambar.');
         }
     }
 
     // show error messages if not have enough images
     if (myDropzone.files.length === 0) {
         error = error+1;
-        imgErrorMessage.show().text('You have to upload at least 1 image.');
+        imgErrorMessage.show().text('Minimal upload 1 gambar.');
     }
 
     if(error < 1) {
