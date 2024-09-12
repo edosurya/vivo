@@ -112,6 +112,14 @@ a {
      -moz-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
      box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
 }
+
+@media (max-width: 992px) {
+     .work .img {
+         height: 200px;
+    }
+
+}
+
  .work .img .icon {
      width: 70px;
      height: 70px;
@@ -218,4 +226,25 @@ a {
   .modal-content {
     width: 100%;
   }
+}
+
+
+.fs-img-title {
+    font-size: 23px;
+}
+
+.fs-img-desc {
+    font-size: 18px;
+}
+
+@media (max-width: 992px) {
+    .fs-img-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .fs-img-desc {
+        font-size: 12px;
+    }
+
 }

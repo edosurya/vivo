@@ -15,7 +15,7 @@
           <div class="row vivo-ipa-logo">
             <div class="col-12 col-md-8">
               <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/vivo-ipa-logo.png') }}">
+                src="{{ asset('frontend/images/webp/vivo-ipa-logo.webp') }}">
             </div>
           </div>
         </div>
@@ -27,12 +27,12 @@
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/bg-section-3.png') }});">
+      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});">
         <div class="container-lg mb-5">
           <div class="row justify-content-center">
             <div class="col-12 col-md-5 mb-5">
-              <p class="text-white vivo_heavy text-uppercase fs-term-condition" data-aos="fade-right" data-aos-duration="1500">SYARAT & KETENTUAN</p>
-                <ul class="text-white" data-aos="fade-up" data-aos-duration="1500">
+              <p class="text-white vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
+                <ul class="text-white">
                     <li style="color: #126479" class="mb-3"><span class="text-white">Peserta dapat mengikuti kompetisi ini lebih dari 1 kategori.</span></li>
                     <li style="color: #126479" class="mb-3"><span class="text-white"><i>Submit</i> minimal 1 foto atau maksimal 5 foto untuk tiap kategori; <i>Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography.</i></span></li>
                     <li style="color: #126479" class="mb-3"><span class="text-white"><i>Submit</i> minimal 3 foto atau maksimal 5 foto khusus untuk kategori Photo series.</span></li>
@@ -43,10 +43,12 @@
                 </ul>
             </div>
             <div class="col-12 col-md-7 mb-3">
-              <p class="text-white vivo_heavy text-uppercase mb-3 fs-title-registrasi_form" data-aos="fade-down" data-aos-duration="1500">REGISTRASI SEKARANG</p>
-              <div class="invalid-feedback fw-bold mb-3" id="dzErrorMessage"></div>
+              <p class="text-white vivo_heavy text-uppercase mb-3 fs-title-registrasi_form" >REGISTRASI SEKARANG</p>
+              
+                <div class="alert alert-danger invalid-feedback fw-bold mb-4" id="dzErrorMessage" role="alert">
+                </div>
 
-                <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data">
+                <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data" class="position-relative">
 
                     <div class="row text-white">
                         <div class="mb-3 col-md-6">
@@ -184,7 +186,10 @@
                           </div>
                         </div>
 
-                         <button class="btn p-3 rounded-3 text-black vivo_heavy btn-register" id="dzSubmitButton">SUBMIT</button>
+                        <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
+                            <button class="btn p-3 rounded-3 text-black vivo_heavy btn-register" id="dzSubmitButton">SUBMIT</button>
+                        </div>
+                        
 
                     </div>
                 </form>

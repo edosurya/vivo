@@ -86,6 +86,12 @@ myDropzone.on('error', function(file, response) {
     errorMessage.show().text(response.message);
     this.removeFile(file);
 
+
+    // hide loading div
+    setTimeout(function() {
+        $('.dz-loading-div').fadeOut();
+    }, 500);
+
     // add additional upload areas
     updateAdditionalAreas();
 });
@@ -94,10 +100,11 @@ myDropzone.on('error', function(file, response) {
  * On sending images to request
  */
 myDropzone.on('sendingmultiple', function(file, xhr, formData) {
+    console.log('masuk sini');
     const loadingDiv = $('#dzLoadingOverlay').html();
 
     // show loading div
-    // $('#dzImageUploadForm').append(loadingDiv);
+    $('#dzImageUploadForm').append(loadingDiv);
 
     // attach csrf token
     formData.append('_token', $('meta[name="csrf-token"]').attr('content'));
@@ -135,9 +142,6 @@ function updateAdditionalAreas() {
     }
 }
 
-$(document).on('click', '#addMore', function(event) {
-    updateAdditionalAreas();
-})
 
 /**
  * If an additional area is clicked
@@ -295,7 +299,7 @@ $('#dzSubmitButton').on('click', function(event) {
         // show error messages if not have enough images
         if (myDropzone.files.length < 3) {
             error = error+1;
-            errorMessage.show().text('Minimal upload 3 gambar.');
+            imgErrorMessage.show().text('Minimal upload 3 gambar.');
         }
     }
 

@@ -24,31 +24,37 @@ class GalleryController extends Controller
                         'path' => 'frontend/images/gallery/work-1.jpg',
                         'title' => 'STROLLING AROUND',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
                     [
                         'path' => 'frontend/images/gallery/work-2.jpg',
                         'title' => 'STROLLING AROUND2',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
                     [
                         'path' => 'frontend/images/gallery/work-3.jpg',
                         'title' => 'STROLLING AROUND3',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
                     [
                         'path' => 'frontend/images/gallery/work-4.jpg',
                         'title' => 'STROLLING AROUND4',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
                     [
                         'path' => 'frontend/images/gallery/work-5.jpg',
                         'title' => 'STROLLING AROUND5',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
                     [
                         'path' => 'frontend/images/gallery/work-6.jpg',
                         'title' => 'STROLLING AROUND6',
                         'desc' =>  'Shot on vivo V30e',
+                        'location' =>  'Jakarta, Indonesia',
                     ],
 
                 ];

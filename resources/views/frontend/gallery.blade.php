@@ -21,7 +21,7 @@
       <!-- <section> Category  ============================-->
 
       <section class="pb-6 bg-black mt-4">
-        <div class="container-fluid mb-5">
+        <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12">
               <h3 class="text-white vivo_heavy text-uppercase">Galeri</h3>
@@ -29,11 +29,10 @@
           </div>
 
          <div class="row flex-center">
-
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-portrait.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-portrait.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
                 </div>
@@ -44,7 +43,7 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-street.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-street.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
                 </div>
@@ -55,7 +54,7 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-series.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-series.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
                 </div>
@@ -67,7 +66,7 @@
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-still-life.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-still-life.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
                 </div>
@@ -78,7 +77,7 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-night.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-night.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
                 </div>
@@ -89,56 +88,59 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-nature.png') }}" alt="" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-nature.png') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
             </div>
-
           </div>
 
 
         </div>
-
     </section>
 
- 	<section class="pb-6 bg-black">
-        <div class="container-fluid mb-5">
-	        <div class="row" data-aos="fade-down" data-aos-duration="1500">
-	            <div class="col-10 col-lg-12 mb-3">
-	              <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
-	              <hr/>
-	            </div>
-	        </div>
+	 	<section class="pb-6 bg-black">
+	        <div class="container-lg mb-5">
+		        <div class="row" data-aos="fade-down" data-aos-duration="1500">
+		            <div class="col-10 col-lg-12 mb-3">
+		              <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
+		              <hr/>
+		            </div>
+		        </div>
 
-			<div class="col-md-12">
-				<div class="featured-carousel owl-carousel gallery-grid">
-					@foreach($images as $key => $img)
-					<div class="item">
-						<div class="work">
-							<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
-								<a class="icon d-flex align-items-center justify-content-center" onclick="showModal('{{asset($img['path'])}}')">
-									<span class="ion-ios-search"></span>
-								</a>
-							</div>
-							<div class="text pt-3 w-100 text-center">
-								<p class="text-white vivo_bold text-uppercase mb-n1 fs-img-title">{{ $img['title'] }}</p>
-								<span class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</span>
+				<div class="col-md-12">
+					<div class="featured-carousel owl-carousel gallery-grid">
+						@foreach($images as $key => $img)
+						<div class="item">
+							<div class="work">
+								<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
+									<a class="icon d-flex align-items-center justify-content-center" onclick="showModal('{{asset($img['path'])}}', '{{ $img['title'] }}', '{{ $img['desc'] }}', '{{ $img['location'] }}')">
+										<span class="ion-ios-search"></span>
+									</a>
+								</div>
+								<div class="text pt-3 w-100 text-center">
+									<p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
+									<p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
+									<p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
+								</div>
 							</div>
 						</div>
+						@endforeach
 					</div>
-					@endforeach
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 	<div id="myModal" class="modal">
 	  <span class="close">&times;</span>
-	  <img class="modal-content" id="img01">
-	  <div id="caption"></div>
+	  <img class="modal-content" id="img01" loading="lazy" />
+	  <div class="text pt-3 w-100 text-center">
+				<p class="text-white vivo_bold text-uppercase mb-1 fs-img-title" id="title"></p>
+				<p class="text-white vivo_regular fs-img-dec mb-n1" id="desc"></p>
+				<p class="text-white vivo_regular fs-img-dec" id="location"></p>
+		</div>
 	</div>
 
 
@@ -201,17 +203,24 @@
 <script>
 // Get the modal
 
-function showModal(img) {
+function showModal(img, title, desc, location) {
 	var modal = document.getElementById("myModal");
 	// Get the image and insert it inside the modal - use its "alt" text as a caption
 
 	var img = img;
+	var title = title;
+	var desc = desc;
+	var location = location;
 	var modalImg = document.getElementById("img01");
-	// var captionText = document.getElementById("caption");
+	var tl = document.getElementById("title");
+	var dc = document.getElementById("desc");
+	var loc = document.getElementById("location");
 	
 	modal.style.display = "block";
 	modalImg.src = img;
-	// captionText.innerHTML = this.alt;
+	tl.innerHTML = title;
+	dc.innerHTML = desc;
+	loc.innerHTML = location;
 	
 
 	// Get the <span> element that closes the modal
