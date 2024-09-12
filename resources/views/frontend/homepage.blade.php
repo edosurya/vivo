@@ -41,7 +41,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000">
             <div class="col-10 col-md-4 text-center mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}">REGISTER SEKARANG</a>
+                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}#form">REGISTER SEKARANG</a>
               </div>
             </div>
           </div>
@@ -336,7 +336,7 @@
             <div class="row justify-content-center text-center mb-4 mt-5">
               <div class="col-lg-10 col-xxl-7">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}">REGISTER SEKARANG</a>
+                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}#form">REGISTER SEKARANG</a>
               </div>
 
               </div>

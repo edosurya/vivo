@@ -27,7 +27,7 @@
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});">
+      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});" id="form">
         <div class="container-lg mb-5">
           <div class="row justify-content-center">
             <div class="col-12 col-md-5 mb-5">
