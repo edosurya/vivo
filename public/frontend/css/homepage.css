@@ -482,6 +482,7 @@ svg.dz-photo-icon {
 
 .fs-term-condition {
     font-size: 40px;
+    line-height: 40px;
 }
 
 .fs-title-registrasi_form {
@@ -492,9 +493,11 @@ svg.dz-photo-icon {
 @media (max-width: 992px) {
     .fs-term-condition {
         font-size: 35px;
+        line-height: 35px;
     }
     .fs-title-registrasi_form {
         font-size: 35px;
+        line-height: 35px;
 
     }
 }
