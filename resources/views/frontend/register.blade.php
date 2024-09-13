@@ -50,7 +50,7 @@
 
                 <form id="dzImageUploadForm" action="/upload" method="post" enctype="multipart/form-data" class="position-relative">
 
-                    <div class="row text-white">
+                    <div class="row text-white" id="theForm">
                         <div class="mb-3 col-md-6">
                             <label class="vivo_bold" for="fullname">
                                 Nama Lengkap
@@ -189,9 +189,8 @@
                         <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
                             <button class="btn p-3 rounded-3 text-black vivo_heavy btn-register" id="dzSubmitButton">SUBMIT</button>
                         </div>
-                        
-
                     </div>
+
                 </form>
 
             </div>
@@ -221,8 +220,8 @@
     </script>
     <script id="dzLoadingOverlay" type="text/template">
         <div class="dz-loading-div">
-            <div class="position-absolute w-100 h-100 start-0 top-0 d-flex align-items-center justify-content-center bg-white rounded-3 z-3">
-                <div class="spinner-border text-primary" role="status">
+            <div class="position-absolute w-100 h-100 start-0 top-0 d-flex align-items-center justify-content-center rounded-3 z-3">
+                <div class="spinner-border text-white" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>

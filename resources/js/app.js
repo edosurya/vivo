@@ -33,8 +33,8 @@ const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
 const checkErrorMessage = $('#checkErrorMessage');
 
-
 const placeHolder = $('#dzPlaceholder');
+
 
 /**
  * ------------------------------------------------------------------------------------
@@ -90,6 +90,7 @@ myDropzone.on('error', function(file, response) {
     // hide loading div
     setTimeout(function() {
         $('.dz-loading-div').fadeOut();
+        document.getElementById("theForm").style.webkitFilter = "";
     }, 500);
 
     // add additional upload areas
@@ -100,11 +101,11 @@ myDropzone.on('error', function(file, response) {
  * On sending images to request
  */
 myDropzone.on('sendingmultiple', function(file, xhr, formData) {
-    console.log('masuk sini');
     const loadingDiv = $('#dzLoadingOverlay').html();
 
     // show loading div
     $('#dzImageUploadForm').append(loadingDiv);
+    document.getElementById("theForm").style.webkitFilter = "blur(3px)";
 
     // attach csrf token
     formData.append('_token', $('meta[name="csrf-token"]').attr('content'));
@@ -213,6 +214,7 @@ myDropzone.on('successmultiple', function(response) {
     // hide loading div & show success message
     setTimeout(function() {
         $('.dz-loading-div').fadeOut();
+        document.getElementById("theForm").style.webkitFilter = "";
         $(successMessage).insertBefore('#dzImageUploadForm').slideDown();
     }, 500);
 });

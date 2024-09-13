@@ -8,9 +8,8 @@
     	<link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
     	<link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
-
     
     @endpush
 
