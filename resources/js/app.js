@@ -7,7 +7,7 @@
 // imports
 import './bootstrap.js';
 import 'jquery-ui/dist/jquery-ui';
-import { Dropzone } from 'dropzone';
+import { Dropzone } from 'dropzone';    
 
 // ajax csrf setup
 $.ajaxSetup({

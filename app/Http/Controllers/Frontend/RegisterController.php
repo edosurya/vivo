@@ -103,16 +103,17 @@ class RegisterController extends Controller
             $count_email_exist = $email_exist->count();
 
             if($count_email_exist > 0) {
-                return response()->json('Akun anda telah terdaftar untuk kategory ini, silahkan menggunakan akun lainnya.', 404); 
+                return response()->json('Akun anda telah terdaftar untuk kategori ini, silahkan menggunakan akun lainnya.', 404); 
             }
 
 
             DB::beginTransaction();
             $code = Uuid::uuid4()->toString();
+            $name = $this->cleanString($request->fullname);
 
             $register = Creator::create([
                 'code' => $code,
-                'fullname' => $request->fullname,
+                'fullname' => $name,
                 'phone' => $request->phone,
                 'address' => $request->address,
                 'device' => $request->device,
@@ -125,7 +126,7 @@ class RegisterController extends Controller
             ]);
 
             
-            $name = preg_replace('/\s+/', '_', $request->fullname);
+            $name = preg_replace('/\s+/', '_', $name);
             $images = $request->file('file');
             $category = Images::TYPE[$request->category];
 
@@ -158,5 +159,11 @@ class RegisterController extends Controller
         $images = Image::all();
 
         return response()->json($images); 
+    }
+
+
+    public function cleanString($input) {
+        $cleaned = preg_replace('/[^A-Za-z0-9 ]/', '', $input);
+        return $cleaned;
     }
 }
