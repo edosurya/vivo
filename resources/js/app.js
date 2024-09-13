@@ -83,7 +83,10 @@ myDropzone.on('addedfile', function(file) {
  * If dropzone has validation errors
  */
 myDropzone.on('error', function(file, response) {
-    console.log(response);
+    document.getElementById("dzImageUploadForm").scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+
     errorMessage.show().text(response);
     this.removeFile(file);
 

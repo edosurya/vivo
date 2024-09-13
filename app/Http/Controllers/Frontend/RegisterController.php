@@ -78,20 +78,32 @@ class RegisterController extends Controller
         try {
 
             $validatedData = $request->validate([
-                'fullnamew' => ['required'],
-                'email'    => ['required', 'email'],
-                'phone'    => ['required'],
-                'file'     => ['required'],
-                'category'     => ['required'],
-                'device'     => ['required'],
-                'desc'       => ['required'],
+                'fullname'      => 'required',
+                'email'         => 'required|email',
+                'phone'         => 'required',
+                'address'       => 'required',
+                'file'          => 'required',
+                'category'      => 'required',
+                'device'        => 'required',
+                'desc'          => 'required|max:250',
+            ],
+            [
+                'fullname.required'          => 'Nama wajib diisi',
+                'email.required'             => 'Email wajib diisi',
+                'email.email'                => 'Format email salah',
+                'address.required'           => 'Alamat wajib diisi',
+                'phone.required'             => 'No. WhatsApp wajib diisi',
+                'category.required'          => 'Kategori wajib dipilih',
+                'device.required'            => 'Device wajib dipilih',
+                'desc.required'              => 'Deskripsi wajib diisi',
+                'desc.max'                   => 'Deskripsi maksimal 250 karakter',
             ]);
 
             $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
             $count_email_exist = $email_exist->count();
 
             if($count_email_exist > 0) {
-                return response()->json(['error' => true, 'message' =>'Akun anda telah terdaftar untuk kategory ini, silahkan menggunakan akun lainnya.'], 404); 
+                return response()->json('Akun anda telah terdaftar untuk kategory ini, silahkan menggunakan akun lainnya.', 404); 
             }
 
 
@@ -133,7 +145,7 @@ class RegisterController extends Controller
             return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
         } catch (\Throwable $th) {
             DB::rollBack();
-            return response()->json(['error' => true, 'message' => $th->getMessage()], 404); 
+            return response()->json($th->getMessage(), 404); 
         }     
 
     }
