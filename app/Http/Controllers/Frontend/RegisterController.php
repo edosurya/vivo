@@ -78,7 +78,7 @@ class RegisterController extends Controller
         try {
 
             $validatedData = $request->validate([
-                'fullname' => ['required'],
+                'fullnamew' => ['required'],
                 'email'    => ['required', 'email'],
                 'phone'    => ['required'],
                 'file'     => ['required'],

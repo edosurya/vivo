@@ -446,7 +446,7 @@ svg.dz-photo-icon {
     border-left: 1px solid #e8ebf1;
     border-right: 1px solid #e8ebf1;
     display: grid;
-    grid-template-columns: 17fr 2fr;
+    grid-template-columns: 17fr 3fr;
     justify-content: center;
     align-items: center;
     min-height: 62px;
