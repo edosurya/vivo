@@ -1,23 +1,18 @@
 @extends('layouts.frontend')
 
-@section('title', 'Beranda')
+@section('title', 'Galeri')
 @section('meta_title', 'vivo IMAGINE')
 @section('meta_description','vivo IMAGINE')
 
-    @push('style')
+    @push('css-plugin')
     	<link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
     	<link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
     	<link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
-    
     @endpush
 
-
 @section('content')
-
-   <!-- ============================================-->
-      <!-- <section> Category  ============================-->
 
       <section class="pb-6 bg-black mt-4">
         <div class="container-lg mb-2">
@@ -27,13 +22,14 @@
             </div>
           </div>
 
-         <div class="row flex-center">
+          <div class="row flex-center">
+
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-portrait.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">POTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -42,9 +38,9 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-street.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STREET PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -53,9 +49,9 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-series.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">SERIES PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -65,9 +61,9 @@
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-still-life.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STILL LIFE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -76,9 +72,9 @@
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-night.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NIGHT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -87,16 +83,15 @@
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/bg-category-nature.png') }}" alt="" loading="lazy" />
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NATURE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
             </div>
+
           </div>
-
-
         </div>
     </section>
 
@@ -142,7 +137,7 @@
 		</div>
 	</div>
 
-
+@endsection
 
 @push('js-plugin')
 <script
@@ -197,10 +192,7 @@
 	carousel();
 
 })(jQuery);
-</script>
 
-<script>
-// Get the modal
 
 function showModal(img, title, desc, location) {
 	var modal = document.getElementById("myModal");

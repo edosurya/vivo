@@ -31,17 +31,17 @@
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3"  >
-              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. Melalui Joy In Us, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera </p>
-              <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" >
+              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera </p>
+              <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya anda</p>
                 <p class="mt-n3">23 Sep - 23 Nov 2024</p>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+          <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-4 text-center mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
               <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
-              <p class="desc mb-5 text-white">ikuti salah satu atau beberapa kategori Photography Awards, serta temukan inspirasi dari tiap kategori di galeri vivo Imagine.</p>
+              <p class="desc mb-5 text-white fs-desc-category">ikuti salah satu atau beberapa kategori Photography Awards, serta temukan inspirasi dari tiap kategori di galeri vivo Imagine.</p>
             </div>
           </div>
 
@@ -74,7 +74,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">POTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">POTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -85,7 +85,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STREET PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STREET PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -96,7 +96,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">SERIES PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">SERIES PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -108,7 +108,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">STILL LIFE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STILL LIFE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -119,7 +119,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NIGHT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NIGHT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -130,7 +130,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center text-cat">NATURE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NATURE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -147,7 +147,7 @@
             </div>
           </div>
 
-          <div class="row text-center text-white" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row text-center text-white" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
@@ -183,7 +183,7 @@
               <h2 class="text-white vivo_heavy text-uppercase">hadiah</h2>
             </div>
           </div>
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column bd-highlight mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
@@ -229,7 +229,7 @@
             </div>
           </div>
 
-          <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
             <div class="col-md-2 col-4 p-col-mobile-desktop mt-4">
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
@@ -296,7 +296,7 @@
                  <h2 class="text-white vivo_heavy text-uppercase">Mekanisme</h2>
               </div>
             </div>
-            <div class="row mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
               <div class="col-4 p-col-mobile">
                 <div class="text-center position-relative">
                   <div class="d-flex align-items-center justify-content-center">
@@ -336,7 +336,7 @@
             <div class="row justify-content-center text-center mb-4 mt-5">
               <div class="col-lg-10 col-xxl-7">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/register') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
               </div>
 
               </div>

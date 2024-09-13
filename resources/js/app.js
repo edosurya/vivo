@@ -9,10 +9,6 @@ import './bootstrap.js';
 import 'jquery-ui/dist/jquery-ui';
 import { Dropzone } from 'dropzone';
 
-import AOS from 'aos';
-AOS.init();
-
-
 // ajax csrf setup
 $.ajaxSetup({
     headers: {

@@ -42,17 +42,12 @@ Route::get('/', function() {
 })->name('home');
 
 Route::controller(RegisterController::class)->group(function () {
-    Route::get('/register', 'index')->name('register.index');
+    Route::get('/photographyawards', 'index')->name('register.index');
     Route::post('/upload', 'upload')->name('register.upload');
 });
 
-
 Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('gallery');
 
-Route::get('/award/{ddd}', function($ddd) {
-    dd($ddd);
-    return view('frontend.homepage');
-})->name('award');
 
 
 require __DIR__ . '/auth.php';

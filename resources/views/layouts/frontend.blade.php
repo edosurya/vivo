@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- App favicon -->
     <title>@yield('meta_title')</title>
+    <meta name="robots"content="all">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ===============================================-->
@@ -17,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('frontend/images/flaticon.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-5/assets/css/hero-5.css">
+    
     <meta name="theme-color" content="#ffffff">
 
     <meta name="title" content="@yield('meta_title')">
@@ -32,7 +34,6 @@
     <!-- ===============================================-->
 
     @vite(['resources/sass/theme.scss'])
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
