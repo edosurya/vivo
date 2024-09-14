@@ -215,7 +215,7 @@
     </section>
 
 
-    <section class="pb-6 bg-black">
+    <section class="photo-gallery">
       <div class="container">
           <div class="featured-carousel owl-carousel">
             @foreach($images as $key => $img)
@@ -254,20 +254,11 @@
                             @if($key == 0)
                             <div class="carousel-item active">
                                 <img src="{{ asset($img['path'])}}" alt="">
-                                <div class="text pt-3 w-100 text-center">
-                                    <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
-                                </div>
+
                             </div>
                             @else
                             <div class="carousel-item">
                                 <img src="{{ asset($img['path'])}}" class="d-block w-100" alt="...">
-                                <div class="text pt-3 w-100 text-center">
-                                    <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
-                                </div>
                             </div>
                             @endif
                             @endforeach
