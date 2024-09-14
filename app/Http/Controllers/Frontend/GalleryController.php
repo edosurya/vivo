@@ -61,12 +61,187 @@ class GalleryController extends Controller
                 break;
             case 'street-photography':
                 $title = 'Street Photography';
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/street-life/Alice-1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240219_135321.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240410_124222.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240410_163300.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240410_164157.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240412_204331.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240412_204539.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/X100_Pro_SUN_01.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/X100_Pro_SUN_03.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/X100_Pro_SUN_06.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/X100Pro_Sun_08.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+
+                ];
                 break;
             case 'nature-photography':
                 $title = 'Nature Photography';
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk_2.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk_3.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk_4.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/IMG_20240525_132012.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/IMG_20240525_163120.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+                ];
                 break;
             case 'night-photography':
                 $title = 'Night Photography';
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/night/Folk_1_night.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Folk_2_night.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240218_202841.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240218_203859.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240219_185433.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240221_191044.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240227_014201.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240527_104436.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/IMG_20240606_173211.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/X100_Pro_5X.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/X100.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+                ];
                 break;
             case 'still-live-photography':
                 $title = 'Still Live Photography';

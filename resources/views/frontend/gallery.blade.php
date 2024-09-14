@@ -12,109 +12,6 @@
       <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
     @endpush
 
-    @push('style')
-<style type="text/css">
-
-
-.lightbox-modal .modal-content {
-  background-color: var(--lightbox);
-}
-
-.lightbox-modal .btn-close {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  font-size: 1.25rem;
-  z-index: 10;
-  filter: invert(1) grayscale(100);
-}
-
-.lightbox-modal .modal-body {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-.lightbox-modal .lightbox-content {
-  width: 100%;
-}
-
-.lightbox-modal .carousel-indicators {
-  margin-bottom: 0;
-}
-
-.lightbox-modal .carousel-indicators [data-bs-target] {
-  background-color: var(--carousel-text) !important;
-}
-
-.lightbox-modal .carousel-inner {
-  width: 75%;
-}
-
-.lightbox-modal .carousel-inner img {
-  animation: zoomin 10s linear infinite;
-}
-
-.lightbox-modal .carousel-item .carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 2rem;
-  background-color: var(--lightbox);
-  color: var(--carousel-text) !important;
-}
-
-.lightbox-modal .carousel-control-prev,
-.lightbox-modal .carousel-control-next {
-  width: auto;
-}
-
-.lightbox-modal .carousel-control-prev {
-  left: 1.25rem;
-}
-
-.lightbox-modal .carousel-control-next {
-  right: 1.25rem;
-}
-
-@media (min-width: 1400px) {
-  .lightbox-modal .carousel-inner {
-    max-width: 60%;
-  }
-}
-
-[data-bs-theme="dark"] .lightbox-modal .carousel-control-next-icon,
-[data-bs-theme="dark"] .lightbox-modal .carousel-control-prev-icon {
-  filter: none;
-}
-
-.btn-fullscreen-enlarge,
-.btn-fullscreen-exit {
-  position: absolute;
-  top: 1.25rem;
-  right: 3.5rem;
-  z-index: 10;
-  border: 0;
-  background: transparent;
-  opacity: 0.6;
-  font-size: 1.25rem;
-}
-
-.bi {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.035em;
-  fill: currentcolor;
-}
-
-.modal-content img {
-  
-}
-
-</style>
-    @endpush
-
 @section('content')
 
       <section class="pb-6 bg-black mt-4">
@@ -199,29 +96,20 @@
     </section>
 
     <section class="pb-6 bg-black">
-          <div class="container-lg mb-5">
-            <div class="row" data-aos="fade-down" data-aos-duration="1500">
-                <div class="col-10 col-lg-12 mb-3">
-                  <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
-                  <hr/>
-                </div>
+      <div class="container-fluid mb-5">
+        <div class="row" data-aos="fade-down" data-aos-duration="1500">
+            <div class="col-10 col-lg-12 mb-3">
+              <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
+              <hr/>
             </div>
-
-        <div class="col-md-12">
-
         </div>
 
-      </div>
-    </section>
-
-
-    <section class="pb-6 bg-black">
-      <div class="container">
+        <div class="col-md-12">
           <div class="featured-carousel owl-carousel">
             @foreach($images as $key => $img)
             <div class="item">
               <div class="work">
-                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
+                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});" >
                   <a class="icon d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
                     <span class="ion-ios-search"></span>
                   </a>
@@ -235,9 +123,10 @@
             </div>
             @endforeach
           </div>
+        </div>
+
       </div>
     </section>
-
 
 
 
@@ -253,7 +142,7 @@
                             @foreach($images as $key => $img)
                             @if($key == 0)
                             <div class="carousel-item active">
-                                <img src="{{ asset($img['path'])}}" alt="">
+                                <img src="{{ asset($img['path'])}}" loading="lazy">
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
@@ -262,7 +151,7 @@
                             </div>
                             @else
                             <div class="carousel-item">
-                                <img src="{{ asset($img['path'])}}" class="d-block w-100" alt="...">
+                                <img src="{{ asset($img['path'])}}" class="d-block w-100"  loading="lazy">
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
@@ -355,7 +244,13 @@ myModalEl.addEventListener('show.bs.modal', function (event) {
     bsCarousel.to(trigger.dataset.bsSlideTo)
 })
 
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
 
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
 
 </script>
 
