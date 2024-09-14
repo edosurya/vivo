@@ -63,7 +63,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
               <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
-              <p class="desc mb-5 text-white fs-desc-category">ikuti salah satu atau beberapa kategori Photography Awards, serta temukan inspirasi dari tiap kategori di galeri vivo Imagine.</p>
+              <p class="desc mb-5 text-white fs-desc-category">Ikuti salah satu atau beberapa kategori Photography Awards, serta temukan inspirasi dari tiap kategori di galeri vivo Imagine.</p>
             </div>
           </div>
 

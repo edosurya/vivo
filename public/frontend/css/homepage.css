@@ -493,16 +493,6 @@ svg.dz-photo-icon {
     }
 }
 
-.dz-remove-button {
-    width: 36px;
-    height: 36px;
-    border-radius: 100px;
-    padding: 5px;
-    transition: all 0.3s ease;
-    top: 0;
-    right: 0;
-    background: rgba(0,0,0,0.75);
-}
 
 .fs-term-condition {
     font-size: 40px;
