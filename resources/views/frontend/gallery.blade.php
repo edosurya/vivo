@@ -5,11 +5,18 @@
 @section('meta_description','vivo IMAGINE')
 
     @push('css-plugin')
-    	<link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
-    	<link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
-    	<link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-    	<link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
+      <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+      <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
+      <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+      <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
+    @endpush
+
+    @push('style')
+<style type="text/css">
+
+
+</style>
     @endpush
 
 @section('content')
@@ -95,47 +102,86 @@
         </div>
     </section>
 
-	 	<section class="pb-6 bg-black">
-	        <div class="container-lg mb-5">
-		        <div class="row" data-aos="fade-down" data-aos-duration="1500">
-		            <div class="col-10 col-lg-12 mb-3">
-		              <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
-		              <hr/>
-		            </div>
-		        </div>
+    <section class="pb-6 bg-black">
+          <div class="container-lg mb-5">
+            <div class="row" data-aos="fade-down" data-aos-duration="1500">
+                <div class="col-10 col-lg-12 mb-3">
+                  <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
+                  <hr/>
+                </div>
+            </div>
 
-				<div class="col-md-12">
-					<div class="featured-carousel owl-carousel gallery-grid">
-						@foreach($images as $key => $img)
-						<div class="item">
-							<div class="work">
-								<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
-									<a class="icon d-flex align-items-center justify-content-center" onclick="showModal('{{asset($img['path'])}}', '{{ $img['title'] }}', '{{ $img['desc'] }}', '{{ $img['location'] }}')">
-										<span class="ion-ios-search"></span>
-									</a>
-								</div>
-								<div class="text pt-3 w-100 text-center">
-									<p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
-									<p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-									<p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
-								</div>
-							</div>
-						</div>
-						@endforeach
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="col-md-12">
 
-	<div id="myModal" class="modal">
-	  <span class="close">&times;</span>
-	  <img class="modal-content" id="img01" loading="lazy" />
-	  <div class="text pt-3 w-100 text-center">
-				<p class="text-white vivo_bold text-uppercase mb-1 fs-img-title" id="title"></p>
-				<p class="text-white vivo_regular fs-img-dec mb-n1" id="desc"></p>
-				<p class="text-white vivo_regular fs-img-dec" id="location"></p>
-		</div>
-	</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="photo-gallery">
+      <div class="container">
+          <div class="featured-carousel owl-carousel">
+            @foreach($images as $key => $img)
+            <div class="item">
+              <div class="work">
+                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url({{ asset($img['path'])}});">
+                  <a class="icon d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
+                    <span class="ion-ios-search"></span>
+                  </a>
+                </div>
+                <div class="text pt-3 w-100 text-center">
+                  <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
+                  <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
+                  <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
+                </div>
+              </div>
+            </div>
+            @endforeach
+          </div>
+      </div>
+    </section>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div id="carouselCategoryControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-inner overflow-hidden">
+
+                            @foreach($images as $key => $img)
+                            @if($key == 0)
+                            <div class="carousel-item active">
+                                <img src="{{ asset($img['path'])}}" alt="">
+                            </div>
+                            @else
+                            <div class="carousel-item">
+                                <img src="{{ asset($img['path'])}}" class="d-block w-100" alt="...">
+                            </div>
+                            @endif
+                            @endforeach
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategoryControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCategoryControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
 @endsection
 
@@ -149,81 +195,63 @@
 
 @push('script')
 <script type="text/javascript">
-	(function($) {
+  (function($) {
 
-	"use strict";
+  "use strict";
 
-	var fullHeight = function() {
+  var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
+    $('.js-fullheight').css('height', $(window).height());
+    $(window).resize(function(){
+      $('.js-fullheight').css('height', $(window).height());
+    });
 
-	};
-	fullHeight();
+  };
+  fullHeight();
 
-	var carousel = function() {
-		$('.featured-carousel').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:5,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:true,
-	    dots: true,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
-	    responsive:{
-	      0:{
-	        items:2
-	      },
-	      600:{
-	        items:3
-	      },
-	      1000:{
-	        items:4
-	      }
-	    }
-		});
+  var carousel = function() {
+    $('.featured-carousel').owlCarousel({
+      loop:true,
+      autoplay: true,
+      margin:5,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      nav:true,
+      dots: true,
+      autoplayHoverPause: false,
+      items: 1,
+      navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+      responsive:{
+        0:{
+          items:2
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:4
+        }
+      }
+    });
 
-	};
-	carousel();
+  };
+  carousel();
 
 })(jQuery);
 
+</script>
+<script type="text/javascript">
+  var myCarousel = document.querySelector('#carouselCategoryControls')
+var myModalEl = document.getElementById('categoryModal')
 
-function showModal(img, title, desc, location) {
-	var modal = document.getElementById("myModal");
-	// Get the image and insert it inside the modal - use its "alt" text as a caption
+myModalEl.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget
+    var bsCarousel = bootstrap.Carousel.getInstance(myCarousel)
+    bsCarousel.to(trigger.dataset.bsSlideTo)
+})
 
-	var img = img;
-	var title = title;
-	var desc = desc;
-	var location = location;
-	var modalImg = document.getElementById("img01");
-	var tl = document.getElementById("title");
-	var dc = document.getElementById("desc");
-	var loc = document.getElementById("location");
-	
-	modal.style.display = "block";
-	modalImg.src = img;
-	tl.innerHTML = title;
-	dc.innerHTML = desc;
-	loc.innerHTML = location;
-	
 
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
-
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() { 
-	  modal.style.display = "none";
-	}
-}
 
 </script>
-
 
 @endpush
