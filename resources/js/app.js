@@ -46,7 +46,7 @@ Dropzone.autoDiscover = false;
 const myDropzone = new Dropzone('#dzDropzone', {
     url: '/upload',
     autoProcessQueue: false,
-    uploadMultiple: true,
+    uploadMultiple: false,
     parallelUploads: 5,
     maxFiles: 5,
     thumbnailWidth: 800,
@@ -142,6 +142,13 @@ function updateAdditionalAreas() {
     }
 }
 
+/**
+ * If an add more button is clicked
+ */
+$(document).on('click', '.addmore', function() {
+    let additionalTemplate = $('#dzAdditionalTemplate').html();
+    $(myDropzone.previewsContainer).append(additionalTemplate);
+});
 
 /**
  * If an additional area is clicked
