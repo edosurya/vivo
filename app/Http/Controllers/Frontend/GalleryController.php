@@ -248,6 +248,104 @@ class GalleryController extends Controller
                 break;
             case 'series-photography':
                 $title = 'Series Photography';
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240219_114752.webp',
+    'title' => 'The Dragon Festival',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240219_120452.webp',
+    'title' => 'The Dragon Festival',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240219_120547.webp',
+    'title' => 'The Dragon Festival',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_035708.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_042629.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_043500.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_043535.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_044458.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240909_044610.webp',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  '',
+    'location' =>  'Gedebage',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Photo_Series_1_firdausakbar19.webp',
+    'title' => '',
+    'desc' =>  'Firdaus Akbar',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Photo_Series_2_firdausakbar19.webp',
+    'title' => '',
+    'desc' =>  'Firdaus Akbar',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Photo_Series_3_firdausakbar19.webp',
+    'title' => '',
+    'desc' =>  'Firdaus Akbar',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240901_134754.webp',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Ddimzm5',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240901_140112.webp',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Ddimzm5',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240901_145150.webp',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Ddimzm5',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/IMG_20240901_164154.webp',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Ddimzm5',
+    'location' =>  '',
+],
+                ];
                 break;
             default:
                 // code...
