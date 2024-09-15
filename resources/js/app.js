@@ -47,7 +47,7 @@ const myDropzone = new Dropzone('#dzDropzone', {
     url: '/upload',
     autoProcessQueue: false,
     uploadMultiple: true,
-    parallelUploads: 1,
+    parallelUploads: 5,
     maxFiles: 5,
     thumbnailWidth: 800,
     thumbnailHeight: 500,
