@@ -143,7 +143,7 @@
                             @if($key == 0)
                             <div class="carousel-item active">
                                 <img src="{{ asset($img['path'])}}" loading="lazy">
-                                <div class="text pt-3 text-center">
+                                <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
@@ -152,7 +152,7 @@
                             @else
                             <div class="carousel-item">
                                 <img src="{{ asset($img['path'])}}" class="d-block w-100"  loading="lazy">
-                                <div class="text pt-3 text-center">
+                                <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold text-uppercase mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
