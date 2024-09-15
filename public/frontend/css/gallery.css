@@ -236,8 +236,8 @@ a {
   right: 1.25rem;
 }
 
-@media (min-width: 1400px) {
+/*@media (min-width: 1400px) {
   .lightbox-modal .carousel-inner {
     max-width: 60%;
   }
-}
+}*/
