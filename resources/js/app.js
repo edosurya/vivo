@@ -30,7 +30,7 @@ const imgErrorMessage = $('#imgErrorMessage');
 const checkErrorMessage = $('#checkErrorMessage');
 
 const placeHolder = $('#dzPlaceholder');
-
+let form = 3;
 
 /**
  * ------------------------------------------------------------------------------------
@@ -46,8 +46,8 @@ Dropzone.autoDiscover = false;
 const myDropzone = new Dropzone('#dzDropzone', {
     url: '/upload',
     autoProcessQueue: false,
-    uploadMultiple: false,
-    parallelUploads: 5,
+    uploadMultiple: true,
+    parallelUploads: 1,
     maxFiles: 5,
     thumbnailWidth: 800,
     thumbnailHeight: 500,
@@ -84,7 +84,9 @@ myDropzone.on('error', function(file, response) {
     });
 
     errorMessage.show().text(response);
-    this.removeFile(file);
+    myDropzone.removeAllFiles(true);
+    form = 3;
+    // this.removeFile(file);
 
     // hide loading div
     setTimeout(function() {
@@ -134,20 +136,28 @@ function updateAdditionalAreas() {
     $('.dz-additional-area').remove();
 
     // count how many additional areas needed
-    additionalAreas = 5 - filesCount;
-
-    // render the needed additional areas
-    for (let i = 0; i < additionalAreas; i++) {
-        $(myDropzone.previewsContainer).append(additionalTemplate);
-    }
+    additionalAreas = form - filesCount;
+    if(additionalAreas > 0) {
+        // render the needed additional areas
+        for (let i = 0; i < additionalAreas; i++) {
+            $(myDropzone.previewsContainer).append(additionalTemplate);
+        }
+    } else {
+        form = filesCount;
+    } 
 }
 
 /**
  * If an add more button is clicked
  */
 $(document).on('click', '.addmore', function() {
+    if( form < 5 ) {
+    form = form + 1;
     let additionalTemplate = $('#dzAdditionalTemplate').html();
     $(myDropzone.previewsContainer).append(additionalTemplate);
+    } else {
+        imgErrorMessage.show().text('Maksimal 5 gambar.');
+    }
 });
 
 /**
@@ -183,17 +193,8 @@ $(document).on('click', '.dz-remove-button', function(event) {
         // delay the execution of the layout adjustment
         setTimeout(() => {
 
-            // if there are no more files, show the upload prompt again
-            if (myDropzone.files.length === 0) {
-
-                placeHolder.show();
-                $('.dz-additional-area').remove();
-
-            } else { 
-
-                // update the additional areas in case the count needs adjusting
                 updateAdditionalAreas(); 
-            }
+
         }, 10);
     }
 
