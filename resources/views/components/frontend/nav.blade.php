@@ -9,9 +9,9 @@
               <li class="nav-item"><a class="nav-link {{ Route::is('gallery') ? 'active' : '' }}" href="{{ url('/gallery') }}">Galeri </a></li>
             </ul>
             <div class="py-3 py-lg-0">
-              <img alt="facebook" class="rounded-1" src="{{ asset('frontend/images/fb-icon.png') }}" width="25" height="25">
-              <img alt="instagram" class="ms-2 rounded-1" src="{{ asset('frontend/images/ig-icon.png') }}" width="25" height="25">
-              <img alt="youtube" class="ms-2 rounded-1" src="{{ asset('frontend/images/yt-icon.png') }}" width="25" height="25">
+              <a href="https://www.facebook.com/vivoIndonesia/" target="_blank"><img alt="facebook" class="rounded-1" src="{{ asset('frontend/images/fb-icon.png') }}" width="25" height="25"></a>
+              <a href="https://www.instagram.com/vivo_indonesia/" target="_blank"><img alt="instagram" class="ms-2 rounded-1" src="{{ asset('frontend/images/ig-icon.png') }}" width="25" height="25"></a>
+              <a href="https://www.youtube.com/channel/UCKONryt63ztbYmCZzxen7tA" target="_blank"><img alt="youtube" class="ms-2 rounded-1" src="{{ asset('frontend/images/yt-icon.png') }}" width="25" height="25"></a>
             </div>
           </div>
         </div>

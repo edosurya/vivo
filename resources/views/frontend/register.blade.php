@@ -67,8 +67,8 @@
                                 <span class="text-danger">*</span>
                             </label>
                             <select class="form-select form-control" name="device" id="device">
-                                <option value="1" selected>Vivo</option>
-                                <option value="2">Non Vivo</option>
+                                <option value="1" selected>vivo</option>
+                                <option value="2">Non-vivo</option>
                             </select>
                         </div>
 
@@ -128,7 +128,7 @@
 
                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label class="vivo_bold" for="vivo_id">
-                               vivo ID Number
+                               vivo ID Number <small>*hanya untuk promotor</small>
                             </label>
                             <input type="text" class="form-control indosat_body" name="vivo_id" id="vivo_id"
                                         placeholder="Masukkan vivo ID">
@@ -138,7 +138,7 @@
 
                         <div class="mb-3 col-md-6">
                             <label class="vivo_bold" for="category">
-                               Kategory
+                               Kategori
                                 <span class="text-danger">*</span>
                             </label>
                             <select class="form-select form-control" name="category" id="category">
@@ -163,7 +163,7 @@
 
                          <div class="mb-3 col-md-12 mb-0 pb-0">
                             <div class="form-group mb-3">
-                                <div class="mb-3"><h6 class="text-white vivo_light"><i>Upload photo max 20Mb* </i></h6></div>
+                                <div class="mb-3"><h6 class="text-white vivo_light"><i>*Upload foto max. 20 MB </i></h6></div>
                                 <div class="main-drag-area form-control p-0 border-0" id="dzDropzone">
                                     <div class="dz-message rounded-3 text-muted bg-blue-gradient-90 p-3 mb-2 w-50" id="dzPlaceholder" style="cursor: pointer;">
                                         <span class="text-black vivo_bold">Upload Photo</span>
