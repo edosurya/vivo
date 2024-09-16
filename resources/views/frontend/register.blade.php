@@ -131,7 +131,7 @@
                                vivo ID Number
                             </label>
                             <input type="text" class="form-control indosat_body" name="vivo_id" id="vivo_id"
-                                        placeholder="Masukkan Vivo ID">
+                                        placeholder="Masukkan vivo ID">
                         </div>
 
                         <p class="text-white vivo_heavy text-uppercase mb-3 mt-5 fs-title-registrasi_form">UPLOAD</p>
