@@ -236,7 +236,7 @@
 </script>
 <script type="text/javascript">
   var myCarousel = document.querySelector('#carouselCategoryControls')
-var myModalEl = document.getElementById('categoryModal')
+  var myModalEl = document.getElementById('categoryModal')
 
 myModalEl.addEventListener('show.bs.modal', function (event) {
     const trigger = event.relatedTarget
@@ -249,7 +249,7 @@ myModalEl.addEventListener('show.bs.modal', function (event) {
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() { 
-    modal.style.display = "none";
+    myModalEl.style.display = "none";
   }
 
 </script>
