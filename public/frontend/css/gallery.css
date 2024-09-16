@@ -23,9 +23,9 @@ a {
      box-shadow: none !important;
 }
  .img {
-     background-size: cover;
+     background-size: 550px;
      background-repeat: no-repeat;
-     background-position: center center;
+     background-position: top;
 }
  .owl-carousel {
      position: relative;
@@ -36,13 +36,21 @@ a {
  .owl-carousel .owl-item.active {
      opacity: 1;
 }
- .owl-carousel .owl-nav {
+
+.owl-carousel .owl-nav {
 	position: absolute;
     top: 50%;
     width: 90%;
     left: 5%;
 }
- .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+
+@media (max-width: 992px) {
+    .owl-carousel .owl-nav {
+        top: 65%;
+    }
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
      position: absolute;
      -webkit-transform: translateY(-50%);
      -ms-transform: translateY(-50%);
@@ -114,6 +122,13 @@ a {
 }
 
 @media (max-width: 992px) {
+     .work .img {
+         height: 200px;
+    }
+
+}
+
+@media (max-width: 481px) {
      .work .img {
          height: 100px;
     }
