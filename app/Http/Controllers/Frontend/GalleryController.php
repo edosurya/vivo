@@ -19,45 +19,27 @@ class GalleryController extends Controller
         switch ($category) {
             case 'potrait-photography':
                 $title = 'Potrait Photography';
-                // $images = [
-                //     [
-                //         'path' => 'frontend/images/gallery/work-1.jpg',
-                //         'title' => 'STROLLING AROUND',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
-                //     [
-                //         'path' => 'frontend/images/gallery/work-2.jpg',
-                //         'title' => 'STROLLING AROUND2',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
-                //     [
-                //         'path' => 'frontend/images/gallery/work-3.jpg',
-                //         'title' => 'STROLLING AROUND3',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
-                //     [
-                //         'path' => 'frontend/images/gallery/work-4.jpg',
-                //         'title' => 'STROLLING AROUND4',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
-                //     [
-                //         'path' => 'frontend/images/gallery/work-5.jpg',
-                //         'title' => 'STROLLING AROUND5',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
-                //     [
-                //         'path' => 'frontend/images/gallery/work-6.jpg',
-                //         'title' => 'STROLLING AROUND6',
-                //         'desc' =>  'Shot on vivo V30e',
-                //         'location' =>  'Jakarta, Indonesia',
-                //     ],
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240219_103409.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240219_175937.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240411_124436.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
 
-                // ];
+                ];
                 break;
             case 'street-photography':
                 $title = 'Street Photography';
@@ -245,6 +227,38 @@ class GalleryController extends Controller
                 break;
             case 'still-live-photography':
                 $title = 'Still Live Photography';
+                $images = [
+[ 
+    'path' => 'frontend/images/gallery/still-life/Creative_Food_Photography_Miniature_People_at_Work_with_Chocolate_Cookies.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Exploring_Vibrant_Candy_Colors_A_Feast_for_the_Eyes_and_Taste_Buds.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_20240218_200352.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_20240219_114835.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Moody_Candle_Lantern_Photography_Capturin_Light_in_Darkness.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+                ];
                 break;
             case 'series-photography':
                 $title = 'Series Photography';
