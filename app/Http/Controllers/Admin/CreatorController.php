@@ -29,7 +29,8 @@ class CreatorController extends Controller
                     ->when($request->filter_category, function ($query) use ($request) {
                         $query->where('category', $request->filter_category);
                     })
-                    ->select('creators.*');
+                    ->select('creators.*')
+                    ->orderBy('creators.id', 'DESC');
                 return datatables()
                     ->eloquent($query)
                     ->addColumn('created_at', function ($row) {

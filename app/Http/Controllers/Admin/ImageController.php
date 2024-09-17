@@ -16,11 +16,9 @@ class ImageController extends Controller
         if ($request->ajax()) {
             try {
                 $query = Images::query()
-                    ->when($request->filter_category, function ($query) use ($request) {
-                        $query->where('images.category', $request->filter_category);
-                    })
                     ->join('creators', 'creators.id', '=', 'images.creator_id')
-                    ->select('images.*', 'creators.fullname');
+                    ->select('images.*', 'creators.fullname')
+                    ->orderBy('images.id', 'DESC');
                 return datatables()
                     ->eloquent($query)
                     ->addColumn('category', function ($row) {
@@ -28,7 +26,11 @@ class ImageController extends Controller
                     })
                     ->addColumn('image', function ($row) { 
                            $url= asset("storage/$row->path"); 
-                           return '<img src='.$url.' border="0" width="60" class="img-rounded" align="center" />'; 
+                           return '<img src='.$url.' border="0" width="40" class="img-rounded" align="center" />'; 
+                    })
+                    ->addColumn('created_at', function ($row) {
+                        $explode = explode(' ', $row->created_at->translatedFormat('d/m/Y H:i:s'));
+                        return $explode[0] . '<br>' . $explode[1];
                     })
                     ->escapeColumns([])
                     ->toJson();

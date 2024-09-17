@@ -64,6 +64,7 @@
                                         <th>Path</th>
                                         <th>Creator</th>
                                         <th>Thumb</th>
+                                        <th>Date</th>
                                     </tr>
                                 </thead>
                                 <tbody></tbody>
@@ -138,16 +139,14 @@
                         data: 'image',
                         defaultContent: '-',
                     },
+                    {
+                        name: "created_at",
+                        data: 'created_at',
+                        defaultContent: '-',
+                    },
 
                 ],
                 aaSorting: [[1,'desc']],
-                drawCallback: function() {
-                    if (table.data().any()) {
-                        $('#footer').show();
-                    } else {
-                        $('#footer').hide();
-                    }
-                },
             });
 
             $('#filterCategory').on('change', function(event) {

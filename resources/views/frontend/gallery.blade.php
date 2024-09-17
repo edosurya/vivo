@@ -205,6 +205,7 @@
 
   var carousel = function() {
     $('.featured-carousel').owlCarousel({
+      lazyLoad:true,
       loop:true,
       autoplay: true,
       margin:5,

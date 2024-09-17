@@ -170,14 +170,7 @@
                         defaultContent: '-',
                     },
                 ],
-                aaSorting: [[1,'desc']],
-                drawCallback: function() {
-                    if (table.data().any()) {
-                        $('#footer').show();
-                    } else {
-                        $('#footer').hide();
-                    }
-                },
+                order: [[1, 'desc']],
             });
 
             $('#filterEndDate, #filterStartDate', '#filterCategory').on('change', function(event) {

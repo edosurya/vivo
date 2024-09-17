@@ -38,6 +38,84 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_2412.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_2413.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_2414.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_2415.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240912_163304_1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240913_140700_1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240913_172217_1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_110055-V.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-2.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-V.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_163045.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_223552.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240912_150526-2.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
 
                 ];
                 break;
@@ -152,6 +230,24 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
+[ 
+    'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-2.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-3.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-4.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
                 ];
                 break;
             case 'night-photography':
@@ -223,6 +319,18 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
+[ 
+    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-5.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
                 ];
                 break;
             case 'still-live-photography':
@@ -258,6 +366,24 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_2416.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_2417.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_2418.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
                 ];
                 break;
             case 'series-photography':
@@ -265,98 +391,98 @@ class GalleryController extends Controller
                 $images = [
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240219_114752.webp',
-    'title' => 'The Dragon Festival',
+     'title' => '',
     'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240219_120452.webp',
-    'title' => 'The Dragon Festival',
+    'title' => '',
     'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240219_120547.webp',
-    'title' => 'The Dragon Festival',
+    'title' => '',
     'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_035708.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_042629.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043500.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043535.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044458.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044610.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'title' => '',
     'desc' =>  '',
-    'location' =>  'Gedebage',
+    'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_1_firdausakbar19.webp',
     'title' => '',
-    'desc' =>  'Firdaus Akbar',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_2_firdausakbar19.webp',
     'title' => '',
-    'desc' =>  'Firdaus Akbar',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_3_firdausakbar19.webp',
     'title' => '',
-    'desc' =>  'Firdaus Akbar',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_134754.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Ddimzm5',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_140112.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Ddimzm5',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_145150.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Ddimzm5',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_164154.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Ddimzm5',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
                 ];
