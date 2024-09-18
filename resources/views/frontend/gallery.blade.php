@@ -6,10 +6,26 @@
 
     @push('css-plugin')
       <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
-      <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
-      <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
+      <!-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} "> -->
+      <!-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
       <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
+      <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.carousel.css">
+      <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.theme.css">
+    @endpush
+
+    @push('style')
+<style type="text/css">
+  #owl-HomePageBanner .item{
+  margin: 3px;
+}
+#owl-HomePageBanner .item img{
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+</style>
     @endpush
 
 @section('content')
@@ -105,6 +121,17 @@
         </div>
 
         <div class="col-md-12">
+          <h1> fsdf </h1>
+          <div id="owl-HomePageBanner" class="owl-carousel">
+             @foreach($images as $key => $img)
+            <div class="item"><img class="lazyOwl" data-src="{{ asset($img['path'])}}" alt="Lazy Owl Image"></div>
+            @endforeach
+          </div>
+        </div>
+
+
+
+        <div class="col-md-12">
           <div class="featured-carousel owl-carousel">
             @foreach($images as $key => $img)
             <div class="item">
@@ -184,10 +211,27 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-<script src="{{ asset('frontend/js/owl.carousel.min.js') }} "></script>
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.carousel.js"></script>
+
 @endpush
 
 @push('script')
+<script type="text/javascript">
+$(document).ready(function () {
+  $("#owl-HomePageBanner").owlCarousel({
+    items: 4,
+    lazyLoad: true,
+    navigation: true,
+    itemsScaleUp: false,
+    slideSpeed: 50,
+    autoPlay: 5000,
+    responsive: true
+  });
+});
+</script>
+
+
 <script type="text/javascript">
   (function($) {
 
@@ -205,15 +249,14 @@
 
   var carousel = function() {
     $('.featured-carousel').owlCarousel({
-      loop:true,
-      autoplay: true,
+      autoplay: 5000,
       margin:5,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       nav:true,
       dots: true,
       autoplayHoverPause: false,
-      items: 1,
+      items: 4,
       navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
       responsive:{
         0:{
