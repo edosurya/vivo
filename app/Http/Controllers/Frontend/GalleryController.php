@@ -10,7 +10,7 @@ class GalleryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($category = 'potrait-photography')
+    public function index($category = null)
     {
 
         $title = '';
@@ -488,7 +488,8 @@ class GalleryController extends Controller
                 ];
                 break;
             default:
-                // code...
+                $title = '';
+                $images = [];
                 break;
         }
 

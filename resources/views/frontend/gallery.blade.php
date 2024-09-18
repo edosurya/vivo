@@ -12,6 +12,15 @@
       <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
     @endpush
 
+    @push('style')
+    <style type="text/css">
+        html {
+  scroll-behavior: smooth;
+}
+    </style>
+
+    @endpush
+
 @section('content')
 
       <section class="pb-6 bg-black mt-4">
@@ -25,7 +34,7 @@
           <div class="row flex-center">
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -36,7 +45,7 @@
             </div>
       
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'street-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -47,7 +56,7 @@
             </div>
         
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'series-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -59,7 +68,7 @@
 
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -70,7 +79,7 @@
             </div>
 
             <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'night-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -81,7 +90,7 @@
             </div>
 
             <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}">
+            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -95,9 +104,10 @@
         </div>
     </section>
 
-    <section class="pb-6 bg-black">
+  
+    <section class="pb-6 bg-black" id="gallery">
       <div class="container-fluid mb-5">
-        <div class="row" data-aos="fade-down" data-aos-duration="1500">
+        <div class="row" data-aos="fade-down">
             <div class="col-10 col-lg-12 mb-3">
               <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
               <hr/>
@@ -174,6 +184,8 @@
                 </div>
             </div>
         </div>
+
+   
 
 
 
