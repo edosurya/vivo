@@ -13,11 +13,7 @@
     @endpush
 
     @push('style')
-    <style type="text/css">
-        html {
-  scroll-behavior: smooth;
-}
-    </style>
+
 
     @endpush
 
@@ -104,7 +100,8 @@
         </div>
     </section>
     <div id="gallery"></div>
-  
+    
+    @if($images)
     <section class="pb-6 bg-black">
       <div class="container-fluid mb-5">
         <div class="row" data-aos="fade-down">
@@ -185,6 +182,8 @@
             </div>
         </div>
 
+      @endif
+
    
 
 
@@ -226,7 +225,7 @@
       dots: true,
       autoplay: true,
       slideTransition: 'linear',
-      autoplayTimeout: 2000,
+      autoplayTimeout: 6000,
       autoplaySpeed: 6000,
       autoplayHoverPause: true,
       items: 1,

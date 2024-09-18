@@ -81,12 +81,6 @@ class GalleryController extends Controller
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_110055-V.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-2.webp',
     'title' => '',
     'desc' =>  '',
