@@ -338,6 +338,16 @@ h3 {
     }
 }
 
+h6 {
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    h6 {
+        font-size: 15px;
+    }
+}
+
 .fs-desc-category {
     font-size: 22px;
 }
@@ -502,6 +512,15 @@ h3 {
     }
 }
 
+label.fs-label {
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    label.fs-label {
+        font-size: 18px;
+    }
+}
 
 input::placeholder {
     font-family: "vivoSansGlobal-Thin" !important;
@@ -537,22 +556,24 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 -4.5 20 20' version=
   color: red;
 }
 
+.addmore {
+    background-color: black;
+    border: solid 1px white;
+    text-align: center;
+    cursor: pointer;
+}
+
 svg.dz-photo-icon {
     color: #000000;
 }
 
 .data-details {
     width: 100%;
-    border-top: 1px solid #e8ebf1;
-    border-left: 1px solid #e8ebf1;
-    border-right: 1px solid #e8ebf1;
     display: grid;
     grid-template-columns: 17fr 3fr;
     justify-content: center;
     align-items: center;
     min-height: 62px;
-    background: white;
-
 }
 
 .dz-metadata {
@@ -571,7 +592,13 @@ svg.dz-photo-icon {
 }
 
 .term-condition li {
-    font-size: 1.2rem;
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    .term-condition li {
+        font-size: 18px;
+    }
 }
 
 .fs-term-condition {
@@ -595,6 +622,17 @@ svg.dz-photo-icon {
 
     }
 }
+
+.w-upload-file {
+    width: 30%;
+}
+
+@media (max-width: 992px) {
+    .w-upload-file  {
+        width: 50%;
+    }
+}
+
 
 footer p {
     font-size: 12px;

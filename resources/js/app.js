@@ -28,6 +28,7 @@ const imgDescErrorMessage = $('#imgDescErrorMessage');
 const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
 const checkErrorMessage = $('#checkErrorMessage');
+const privacyErrorMessage = $('#privacyErrorMessage');
 
 const placeHolder = $('#dzPlaceholder');
 let form = 3;
@@ -114,7 +115,7 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("email", $('#email').val());
     formData.append("phone", $('#phone').val());
     formData.append("address", $('#address').val());
-    formData.append("device", $('#device').val());
+    // formData.append("device", $('#device').val());
     formData.append("age", $('#age').val());
     formData.append("category", $('#category').val());
     formData.append("desc", $('#img_desc').val());
@@ -271,6 +272,9 @@ $('#dzSubmitButton').on('click', function(event) {
         error = error+1;
         phoneErrorMessage.show().text('Wajib diisi');
 
+    } else if(phone.length > 14){
+        error = error+1;
+        phoneErrorMessage.show().text('Masukkan nomor yang benar');
     }
 
     // show error messages if address is empty
@@ -296,10 +300,16 @@ $('#dzSubmitButton').on('click', function(event) {
 
     // show error messages if CheckBox is empty
     let check = document.querySelector('#checkTermAndCondition').checked;
-    console.log(check);
     if(!check) {
         error = error+1;
         checkErrorMessage.show().text('Wajib diisi');
+    }
+
+    // show error messages if CheckBox is empty
+    let privacy = document.querySelector('#privacy').checked;
+    if(!privacy) {
+        error = error+1;
+        privacyErrorMessage.show().text('Wajib diisi');
     }
 
     let cat = document.forms["dzImageUploadForm"]["category"].value;
