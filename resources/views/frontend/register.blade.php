@@ -203,6 +203,11 @@
                             <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
                             <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
                           </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkTermAndCondition" name="checkTermAndCondition" checked>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
+                            <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
+                          </div>
                         </div>
 
                         <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">

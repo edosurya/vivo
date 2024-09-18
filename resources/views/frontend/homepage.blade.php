@@ -43,7 +43,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-4 text-center mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
               </div>
             </div>
           </div>
@@ -171,8 +171,8 @@
               <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
               <div>
-                  <p class="fs-judge-title vivo_bold mb-1">Carl Zeiss <small style="font-size:11px">Representatif</small> </p>
-                  <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Representative from Carl Zeiss</p>
+                  <p class="fs-judge-title vivo_bold mb-1">vivo Representative </p>
+                  <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Product Manager</p>
               </div>
             </div>
 
@@ -190,7 +190,7 @@
             <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column bd-highlight mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
-                <p class="text-white vivo_light lh-1">Special Jury Awards</p>
+                <p class="text-white vivo_light lh-1 fs-prize-desc">Special Jury Awards</p>
               </div>
               <div class="p-2 bd-highlight">
                 <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
@@ -203,7 +203,7 @@
             <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column bd-highlight mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">6 Pemenang</p>
-                <p class="text-white vivo_light lh-1 ">dari 6 kategori</p>
+                <p class="text-white vivo_light lh-1 fs-prize-desc">dari 6 kategori</p>
               </div>
               <div class="p-2 bd-highlight">
                 <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="50%" loading="lazy" />
@@ -309,7 +309,7 @@
                   <div class="d-flex align-items-center justify-content-center">
                    <img src="{{ asset('frontend/images/webp/mechanism-2.webp') }}" alt="" class="img-fluid img-mechanism"  loading="lazy" />
                   </div>
-                  <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan unggah karyamu di vivoimagine.id/photographyawards</p>
+                  <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan unggah <br/>karyamu di <br/><a href="{{ route('register.index') }}">vivoimagine.id/ photographyawards</a></p>
                   <div class="arrow-icon position-absolute d-lg-block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
@@ -330,7 +330,7 @@
             <div class="row justify-content-center text-center mb-4 mt-5">
               <div class="col-lg-10 col-xxl-7">
               <div class="d-grid gap-2">
-                <a class="btn p-3 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
               </div>
 
               </div>

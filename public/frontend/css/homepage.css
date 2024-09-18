@@ -176,7 +176,7 @@ li >.nav-item {
   display: block;
   width: 48px;
   height: 48px;
-  border: 2px solid #FFF;
+  border: 3px solid #FFF;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
@@ -195,7 +195,7 @@ li >.nav-item {
     width: 12px;
     height: 12px;
     content: "";
-    border: 2px solid white;
+    border: 3px solid white;
     border-width: 0px 0 2px 2px;
 }
 
@@ -272,11 +272,11 @@ li >.nav-item {
 }
 
 .fs-how-to-desc {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .fs-desc-schedule {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 @media (max-width: 992px) {
@@ -285,12 +285,12 @@ li >.nav-item {
     }
 
     .fs-desc-schedule{
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 
 .btn-register {
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 20px;
     border-color: none;
     background: rgb(42,144,190);
@@ -309,12 +309,12 @@ li >.nav-item {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 45px;
 }
 
 @media (max-width: 992px) {
     h2 {
-        font-size: 45px;
+        font-size: 30px;
     }
 }
 
@@ -339,12 +339,12 @@ h3 {
 }
 
 .fs-desc-category {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 @media (max-width: 992px) {
     .fs-desc-category {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -394,11 +394,12 @@ h3 {
 }
 
 .fs-judge-title {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .fs-judge-desc {
-    font-size: 17px;
+    font-size: 21px;
+    line-height: 23px;
 } 
 
 @media (max-width: 992px) {
@@ -412,12 +413,22 @@ h3 {
 }
 
 .fs-prize-title {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 @media (max-width: 992px) {
     .fs-prize-title {
         font-size: 20px;
+    }
+}
+
+.fs-prize-desc {
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+    .fs-prize-desc {
+        font-size: 18px;
     }
 }
 
@@ -428,17 +439,17 @@ h3 {
 }
 
 .fs-period-date {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .fs-period-desc {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 @media (max-width: 992px) {
     .fs-period-date {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .fs-period-desc {
@@ -447,14 +458,19 @@ h3 {
     }
 
 }
-
 .img-mechanism {
-    width: 60%;
+    width: 35%;
 }
 
+@media (max-width: 992px) {
+    .img-mechanism {
+        width: 50%;
+    }
+
+}
 .fs-desc-mechanism {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 @media (max-width: 992px) {
