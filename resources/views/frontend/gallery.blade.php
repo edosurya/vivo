@@ -103,9 +103,9 @@
           </div>
         </div>
     </section>
-
+    <div id="gallery"></div>
   
-    <section class="pb-6 bg-black" id="gallery">
+    <section class="pb-6 bg-black">
       <div class="container-fluid mb-5">
         <div class="row" data-aos="fade-down">
             <div class="col-10 col-lg-12 mb-3">
@@ -219,13 +219,16 @@
     $('.featured-carousel').owlCarousel({
       lazyLoad:true,
       loop:true,
-      autoplay: true,
       margin:5,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       nav:true,
       dots: true,
-      autoplayHoverPause: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 2000,
+      autoplaySpeed: 6000,
+      autoplayHoverPause: true,
       items: 1,
       navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
       responsive:{
