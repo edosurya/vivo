@@ -23,9 +23,9 @@ a {
      box-shadow: none !important;
 }
  .img {
-     background-size: 550px;
+     background-size: cover;
      background-repeat: no-repeat;
-     background-position: top;
+     background-position: center center;
 }
  .owl-carousel {
      position: relative;
@@ -46,7 +46,7 @@ a {
 
 @media (max-width: 992px) {
     .owl-carousel .owl-nav {
-        top: 65%;
+        top: 55%;
     }
 }
 
@@ -128,14 +128,14 @@ a {
 
 }
 
-@media (max-width: 481px) {
+/*@media (max-width: 481px) {
      .work .img {
          height: 100px;
     }
 
-}
+}*/
 
- .work .img .icon {
+.work .img .icon {
      width: 70px;
      height: 70px;
      border-radius: 50%;
