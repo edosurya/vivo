@@ -71,7 +71,7 @@
 
           <div class="row flex-center">
 
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
@@ -82,7 +82,7 @@
             </a>
             </div>
       
-            <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
@@ -93,7 +93,7 @@
             </a>
             </div>
         
-            <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
@@ -116,7 +116,7 @@
             </a>
             </div>
 
-            <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
@@ -127,7 +127,7 @@
             </a>
             </div>
 
-            <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
@@ -356,7 +356,7 @@
     $('.scroll-down').click (function() {
 
       var windowHeight = window.innerHeight;
-      var percent = 60;
+      var percent = 80;
       var percentPixel = windowHeight * (percent / 100);
 
       $('html, body').animate({scrollTop: percentPixel }, 'slow');
