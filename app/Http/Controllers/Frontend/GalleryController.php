@@ -389,6 +389,11 @@ class GalleryController extends Controller
             case 'series-photography':
                 $title = 'Series Photography';
                 $images = [
+
+                    
+
+
+
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240219_114752.webp',
      'title' => '',
