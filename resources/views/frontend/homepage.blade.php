@@ -160,14 +160,6 @@
               </div>
             </div>
             <div class="col-4 p-col-mobile">
-              <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy" />
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
-              <div>
-                  <p class="fs-judge-title vivo_bold mb-1">Carl Zeiss <small style="font-size:11px">Representatif</small> </p>
-                  <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Representative from Carl Zeiss</p>
-              </div>
-            </div>
-            <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/vg-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-benny.webp') }}" alt="" loading="lazy" />
               <div>
@@ -175,6 +167,15 @@
                   <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer winner 2020</p>
               </div>
             </div>
+            <div class="col-4 p-col-mobile">
+              <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy" />
+              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
+              <div>
+                  <p class="fs-judge-title vivo_bold mb-1">Carl Zeiss <small style="font-size:11px">Representatif</small> </p>
+                  <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Representative from Carl Zeiss</p>
+              </div>
+            </div>
+
           </div>
         </div>
         <!-- end of .container-->
