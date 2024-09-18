@@ -309,7 +309,7 @@
                   <div class="d-flex align-items-center justify-content-center">
                    <img src="{{ asset('frontend/images/webp/mechanism-2.webp') }}" alt="" class="img-fluid img-mechanism"  loading="lazy" />
                   </div>
-                  <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan unggah <br/>karyamu di <br/><a href="{{ route('register.index') }}">vivoimagine.id/ photographyawards</a></p>
+                  <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan unggah <br/>karyamu di <br/><a href="{{ route('register.index') }}" class="text-white">vivoimagine.id/ photographyawards</a></p>
                   <div class="arrow-icon position-absolute d-lg-block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
