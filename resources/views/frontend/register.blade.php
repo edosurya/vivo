@@ -32,7 +32,7 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-5 mb-5">
               <p class="text-white vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
-                <ul class="text-white">
+                <ul class="text-white term-condition">
                     <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti kompetisi ini lebih dari 1 kategori.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 1 foto atau maksimal 5 foto untuk tiap kategori; <i>Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography.</i></span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 3 foto atau maksimal 5 foto khusus untuk kategori <i>Photo series.</i></span></li>
