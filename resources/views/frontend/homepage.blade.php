@@ -17,6 +17,7 @@
                 src="{{ asset('frontend/images/webp/vivo-ipa-logo.webp') }}">
             </div>
           </div>
+          <a href="#" class="scroll-down" address="true"></a>
         </div>
       </section>
 @endsection
@@ -341,3 +342,26 @@
       <!-- ============================================-->
 
 @endsection
+
+@push('js-plugin')
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+@endpush
+
+@push('script')
+<script type="text/javascript">
+   $(function() {
+    $('.scroll-down').click (function() {
+
+      var windowHeight = window.innerHeight;
+      var percent = 60;
+      var percentPixel = windowHeight * (percent / 100);
+
+      $('html, body').animate({scrollTop: percentPixel }, 'slow');
+      return false;
+    });
+  });
+</script>
+@endpush
