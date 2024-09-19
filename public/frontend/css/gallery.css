@@ -23,9 +23,9 @@ a {
      box-shadow: none !important;
 }
  .img {
-     background-size: 550px;
+     background-size: cover;
      background-repeat: no-repeat;
-     background-position: top;
+     background-position: center center;
 }
  .owl-carousel {
      position: relative;
