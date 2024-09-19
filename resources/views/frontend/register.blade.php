@@ -206,7 +206,7 @@
                           </div>
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="privacy" name="privacy" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan daya pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada Kebijakan Privasi vivo.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada Kebijakan Privasi vivo.</label>
                             <label class="invalid-feedback fw-bold mb-3" id="privacyErrorMessage"></label>
                           </div>
                         </div>
