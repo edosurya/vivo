@@ -13,41 +13,6 @@
     @endpush
 
     @push('style')
-
-
-<style type="text/css">
-  .owl-carousel .item{
-  margin: 3px;
-}
-.owl-carousel .item img{
-  display: block;
-    width: 100%;
-    height: 300px;
-    position: relative;
-    object-fit: cover;
-}
-
-.owl-carousel .owl-buttons {
-    display: flex;
-    position: absolute;
-    top: 30%;
-    width: 90%;
-    left: 5%;
-    justify-content: space-between;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-    color: #FFF;
-    display: inline-block;
-    zoom: 1;
-    margin: 5px;
-    font-size: 70px;
-    border-radius: none;
-    background: none;
-    opacity: 1;
-}
-</style>
-
     @endpush
 
 @section('content')
