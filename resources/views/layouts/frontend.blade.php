@@ -16,7 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('frontend/images/flaticon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('frontend/images/flaticon.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('frontend/images/flaticon.png') }}">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-5/assets/css/hero-5.css">
     
     <meta name="theme-color" content="#ffffff">
@@ -36,27 +35,36 @@
     @vite(['resources/sass/theme.scss'])
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <style type="text/css">
+        html, body {
+          height: 100%;
+          margin: 0;
+        }
+        .main{
+          min-height: 100%;
+        }
+    </style>
+    
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
 
     @stack('style') {{-- Css Code --}}
-
 </head>
 
 <body>
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
-    <main class="main" id="top">
+    <main class="main bg-black" id="top">
 
         @include('components.frontend.nav')
 
         @yield('hero')
         
         @yield('content')
+    </main>
 
         @include('components.frontend.footer')
 
-    </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->

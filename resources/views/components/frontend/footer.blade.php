@@ -1,6 +1,6 @@
       <!-- ============================================-->
       <!-- <section> footer ============================-->
-      <footer class="bg-white pt-3 pb-1">
+      <footer class="bg-white footer pt-3">
         <div class="container-lg">
           <div class="row">
             <div class="d-flex justify-content-between">
