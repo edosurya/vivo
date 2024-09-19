@@ -99,12 +99,11 @@
           </div>
         </div>
     </section>
-    <div id="gallery"></div>
     
-    <section class="pb-6 bg-black" style="min-height:600px;">
+    
 
     @if($images)
-    
+    <section class="pb-6 bg-black">
       <div class="container-fluid mb-5">
         <div class="row" data-aos="fade-down">
             <div class="col-10 col-lg-12 mb-3">
@@ -135,9 +134,10 @@
         </div>
 
       </div>
-
-    @endif
     </section>
+    @endif
+    
+    <div id="gallery"></div>
 
     @if($images)
 
