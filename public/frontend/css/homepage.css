@@ -161,6 +161,67 @@ li >.nav-item {
     }
 }
 
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  top: 65vh;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 3px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+
 .vivo-ipa-logo img{
     width:40%;
 }
@@ -211,16 +272,16 @@ li >.nav-item {
 }
 
 .fs-how-to-desc {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .fs-desc-schedule {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 @media (max-width: 992px) {
     .fs-how-to-desc {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .fs-desc-schedule{
@@ -229,7 +290,7 @@ li >.nav-item {
 }
 
 .btn-register {
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 20px;
     border-color: none;
     background: rgb(42,144,190);
@@ -248,12 +309,12 @@ li >.nav-item {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 45px;
 }
 
 @media (max-width: 992px) {
     h2 {
-        font-size: 45px;
+        font-size: 30px;
     }
 }
 
@@ -277,13 +338,23 @@ h3 {
     }
 }
 
+h6 {
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    h6 {
+        font-size: 15px;
+    }
+}
+
 .fs-desc-category {
     font-size: 24px;
 }
 
 @media (max-width: 992px) {
     .fs-desc-category {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -333,11 +404,12 @@ h3 {
 }
 
 .fs-judge-title {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .fs-judge-desc {
-    font-size: 17px;
+    font-size: 22px;
+    line-height: 23px;
 } 
 
 @media (max-width: 992px) {
@@ -346,17 +418,27 @@ h3 {
     }
 
     .fs-judge-desc {
-        font-size: 12px;
+        font-size: 15px;
     } 
 }
 
 .fs-prize-title {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 @media (max-width: 992px) {
     .fs-prize-title {
         font-size: 20px;
+    }
+}
+
+.fs-prize-desc {
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+    .fs-prize-desc {
+        font-size: 18px;
     }
 }
 
@@ -367,39 +449,44 @@ h3 {
 }
 
 .fs-period-date {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .fs-period-desc {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 22px;
+    line-height: 23px;
 }
 
 @media (max-width: 992px) {
     .fs-period-date {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .fs-period-desc {
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 15px;
+        line-height: 15px;
     }
 
 }
-
 .img-mechanism {
-    width: 60%;
+    width: 35%;
 }
 
+@media (max-width: 992px) {
+    .img-mechanism {
+        width: 60%;
+    }
+
+}
 .fs-desc-mechanism {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 23px;
 }
 
 @media (max-width: 992px) {
 
     .fs-desc-mechanism {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 15px;
     }
 
@@ -425,6 +512,15 @@ h3 {
     }
 }
 
+label.fs-label {
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    label.fs-label {
+        font-size: 18px;
+    }
+}
 
 input::placeholder {
     font-family: "vivoSansGlobal-Thin" !important;
@@ -460,22 +556,24 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 -4.5 20 20' version=
   color: red;
 }
 
+.addmore {
+    background-color: black;
+    border: solid 1px white;
+    text-align: center;
+    cursor: pointer;
+}
+
 svg.dz-photo-icon {
     color: #000000;
 }
 
 .data-details {
     width: 100%;
-    border-top: 1px solid #e8ebf1;
-    border-left: 1px solid #e8ebf1;
-    border-right: 1px solid #e8ebf1;
     display: grid;
     grid-template-columns: 17fr 3fr;
     justify-content: center;
     align-items: center;
     min-height: 62px;
-    background: white;
-
 }
 
 .dz-metadata {
@@ -493,6 +591,15 @@ svg.dz-photo-icon {
     }
 }
 
+.term-condition li {
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    .term-condition li {
+        font-size: 18px;
+    }
+}
 
 .fs-term-condition {
     font-size: 40px;
@@ -515,6 +622,17 @@ svg.dz-photo-icon {
 
     }
 }
+
+.w-upload-file {
+    width: 30%;
+}
+
+@media (max-width: 992px) {
+    .w-upload-file  {
+        width: 50%;
+    }
+}
+
 
 footer p {
     font-size: 12px;

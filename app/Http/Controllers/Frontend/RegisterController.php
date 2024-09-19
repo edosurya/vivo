@@ -84,7 +84,6 @@ class RegisterController extends Controller
                 'address'       => 'required',
                 'file'          => 'required',
                 'category'      => 'required',
-                'device'        => 'required',
                 'desc'          => 'required|max:250',
             ],
             [
@@ -94,7 +93,6 @@ class RegisterController extends Controller
                 'address.required'           => 'Alamat wajib diisi',
                 'phone.required'             => 'No. WhatsApp wajib diisi',
                 'category.required'          => 'Kategori wajib dipilih',
-                'device.required'            => 'Device wajib dipilih',
                 'desc.required'              => 'Deskripsi wajib diisi',
                 'desc.max'                   => 'Deskripsi maksimal 250 karakter',
             ]);
@@ -116,7 +114,6 @@ class RegisterController extends Controller
                 'fullname' => $name,
                 'phone' => $request->phone,
                 'address' => $request->address,
-                'device' => $request->device,
                 'age' => $request->age,
                 'desc' => $request->desc,
                 'email' => strtolower($request->email),

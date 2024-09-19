@@ -14,6 +14,7 @@
 
     @push('style')
 
+
 <style type="text/css">
   .owl-carousel .item{
   margin: 3px;
@@ -46,6 +47,7 @@
     opacity: 1;
 }
 </style>
+
     @endpush
 
 @section('content')
