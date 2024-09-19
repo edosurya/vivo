@@ -6,20 +6,19 @@
 
     @push('css-plugin')
       <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
-  <!-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} "> -->
-      <!-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}"> -->
+      <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
+      <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
       <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
-      <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.carousel.css">
-      <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.theme.css">
     @endpush
 
     @push('style')
+
 <style type="text/css">
-#owl-Gallery .item{
+  .owl-carousel .item{
   margin: 3px;
 }
-#owl-Gallery .item img{
+.owl-carousel .item img{
   display: block;
     width: 100%;
     height: 300px;
@@ -27,7 +26,7 @@
     object-fit: cover;
 }
 
-#owl-Gallery .owl-buttons {
+.owl-carousel .owl-buttons {
     display: flex;
     position: absolute;
     top: 30%;
@@ -46,7 +45,6 @@
     background: none;
     opacity: 1;
 }
-
 </style>
     @endpush
 
@@ -62,8 +60,8 @@
 
           <div class="row flex-center">
 
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -73,7 +71,7 @@
             </a>
             </div>
       
-            <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
@@ -84,7 +82,7 @@
             </a>
             </div>
         
-            <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
@@ -107,7 +105,7 @@
             </a>
             </div>
 
-            <div class="col-4 mt-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
@@ -118,7 +116,7 @@
             </a>
             </div>
 
-            <div class="col-4 mt-6 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
@@ -132,10 +130,13 @@
           </div>
         </div>
     </section>
+    
+    
 
-    <section class="pb-6 bg-black" id="gallery">
+    @if($images)
+    <section class="pb-6 bg-black">
       <div class="container-fluid mb-5">
-        <div class="row" data-aos="fade-down" data-aos-duration="1500">
+        <div class="row" data-aos="fade-down">
             <div class="col-10 col-lg-12 mb-3">
               <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
               <hr/>
@@ -143,23 +144,29 @@
         </div>
 
         <div class="col-md-12">
-          <div id="owl-Gallery" class="owl-carousel">
-             @foreach($images as $key => $img)
-            <div class="item">
-              <img class="lazyOwl rounded-2" data-src="{{ asset($img['path'])}}" alt="Lazy Owl Image">
-              <a class="icon d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
-                <span class="ion-ios-search"></span>
-              </a>
+          <div class="featured-carousel owl-carousel">
+
+            @foreach($images as $key => $img)
+            <div class="item work">
+              <div class="img d-flex align-items-center justify-content-center">
+                <img class="rounded lazyOwl" src="{{ asset($img['path'])}}" alt="" loading="lazy">
+                <a class="icon d-flex align-items-center justify-content-center position-absolute" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
+                  <span class="ion-ios-search"></span>
+                </a>
+            </div>
             </div>
             @endforeach
+
           </div>
         </div>
 
-
       </div>
     </section>
+    @endif
+    
+    <div id="gallery"></div>
 
-
+    @if($images)
 
         <!-- Modal -->
         <div class="modal fade lightbox-modal" id="categoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -206,6 +213,10 @@
             </div>
         </div>
 
+      @endif
+
+   
+
 
 
 @endsection
@@ -215,38 +226,10 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/167648/owl.carousel.js"></script>
-
+<script src="{{ asset('frontend/js/owl.carousel.min.js') }} "></script>
 @endpush
 
 @push('script')
-<script type="text/javascript">
-$(document).ready(function () {
-  $("#owl-Gallery").owlCarousel({
-    items: 4,
-    lazyLoad: true,
-    navigation: true,
-    itemsScaleUp: false,
-    slideSpeed: 50,
-    autoPlay: 5000,
-    navigationText: ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
-    responsive:{
-      0:{
-        items:3
-      },
-      600:{
-        items:3
-      },
-      1000:{
-        items:4
-      }
-    }
-  });
-});
-</script>
-
-
 <script type="text/javascript">
   (function($) {
 
@@ -264,18 +247,23 @@ $(document).ready(function () {
 
   var carousel = function() {
     $('.featured-carousel').owlCarousel({
-      autoplay: 5000,
+      lazyLoad:true,
+      loop:true,
       margin:5,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       nav:true,
       dots: true,
-      autoplayHoverPause: false,
-      items: 4,
-      navigationText: ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 6000,
+      autoplaySpeed: 6000,
+      autoplayHoverPause: true,
+      items: 1,
+      navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
       responsive:{
         0:{
-          items:3
+          items:2
         },
         600:{
           items:3
