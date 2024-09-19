@@ -63,24 +63,6 @@ class GalleryController extends Controller
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240912_163304_1.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240913_140700_1.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240913_172217_1.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-2.webp',
     'title' => '',
     'desc' =>  '',
@@ -178,6 +160,24 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/street-life/X100Pro_Sun_08.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240912_163304_1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240913_140700_1.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240913_172217_1.webp',
     'title' => '',
     'desc' =>  '',
     'location' =>  '',
