@@ -36,7 +36,7 @@
               <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards</p>
               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya Anda!</p>
-                <p class="mt-n3">23 Sep - 23 Nov 2024</p>
+                <p class="mt-n3">23 Sep<span class="line"></span>23 Nov 2024</p>
               </div>
             </div>
           </div>
@@ -187,29 +187,29 @@
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column bd-highlight mb-3 text-center">
+            <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
                 <p class="text-white vivo_light lh-1 fs-prize-desc">Special Jury Awards</p>
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2 ">
                 <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
                 <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-50jt-mobile.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2 ">
                 <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-1.webp') }}" alt=""  loading="lazy" />
               </div>
             </div>
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column bd-highlight mb-3 text-center">
+            <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">6 Pemenang</p>
                 <p class="text-white vivo_light lh-1 fs-prize-desc">dari 6 kategori</p>
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2">
                 <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="50%" loading="lazy" />
                 <img class="mb-3 mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2">
                 <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-2.webp') }}" alt="" loading="lazy" />
               </div>
             </div>
@@ -231,13 +231,12 @@
               <h2 class="text-white vivo_heavy text-uppercase">Periode Kompetisi</h2>
             </div>
           </div>
-
           <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
             <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep--23 Nov 2024</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span>23 Nov 2024</p>
                     <p class="vivo_extraLight fs-period-desc">Periode registrasi dan unggah hasil foto</p>
                 </div>
               </div>
@@ -264,7 +263,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">08-31 Des 2024 </p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">08<span class="line"></span>31 Des 2024 </p>
                     <p class="vivo_extraLight fs-period-desc">Pameran hasil foto kompetisi vivo imagine</p>
                 </div>
               </div>

@@ -422,6 +422,10 @@ h6 {
     } 
 }
 
+.bd-highlight {
+    min-height: 100px;
+}
+
 .fs-prize-title {
     font-size: 35px;
 }
@@ -429,6 +433,7 @@ h6 {
 @media (max-width: 992px) {
     .fs-prize-title {
         font-size: 20px;
+        line-height: 23px;
     }
 }
 
@@ -633,6 +638,13 @@ svg.dz-photo-icon {
     }
 }
 
+.line {
+    width: 13px;
+    height: 0;
+    border: 1.6px solid #ffffff;
+    margin: 4px;
+    display: inline-block;
+}
 
 footer p {
     font-size: 12px;
