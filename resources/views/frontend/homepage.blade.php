@@ -237,7 +237,7 @@
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span>23 Nov 2024</p>
-                    <p class="vivo_extraLight fs-period-desc">Periode registrasi dan unggah hasil foto</p>
+                    <p class="vivo_extraLight fs-period-desc">Periode registrasi dan pengunggahan hasil foto</p>
                 </div>
               </div>
             </div>
@@ -264,7 +264,7 @@
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <p class="my-4 text-white vivo_bold fs-period-date lh-1">08<span class="line"></span>31 Des 2024 </p>
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto kompetisi vivo imagine</p>
+                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo imagine Photography Awards</p>
                 </div>
               </div>
             </div>
