@@ -9,6 +9,10 @@
         <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     @endpush
 
+    @push('styles')
+
+    @endpush
+
 @section('hero')
       <section class="pt-5 pb-5 bg-dark bg-img-main-banner" id="main-banner">
         <div class="container-fluid">
@@ -268,10 +272,67 @@
         </div>
     </script>
 
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-black">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+                  <div class="row m-2 justify-content-end">
+            <div class="col-12 col-md-8">
+              <img alt="image" class="img-fluid"
+                src="{{ asset('frontend/images/webp/vivo-ipa-logo.webp') }}" width="150">
+            </div>
+          </div>
+      </div>
+
+      <div class="text-white p-6">
+        <p> Lorem ipsum dolor sit amet, cu imperdiet conceptam has, tantas suscipit pertinacia eos ei, ut ullum inani integre eum. Porro corrumpit ei pro. Id nostro platonem dissentiet vel, te pri graece fuisset apeirian. Nam unum nominati postulant no. Sed ocurreret dissentias ea. Mel noster aperiri cu. Iuvaret adipiscing pro eu, in eum prima sadipscing.
+
+Graeco corrumpit ei nec. Solum laboramus mnesarchum te sit, mea commodo deserunt constituto ne, sed iriure appellantur no. Omnes aliquam te qui, nusquam forensibus omittantur ad eam. Cum persecuti expetendis ea. Justo illum scribentur usu ad, discere voluptaria vim eu. In liber clita legendos eum.
+</p>
+<p>
+Vel tollit noster causae at, nominati platonem referrentur sit te. Rebum perfecto mediocritatem ea vel, ut viris dictas postulant nam. Libris apeirian definiebas vel in, cu cum malis vocent commune. Ne mei purto legimus omittantur, an appareat honestatis quo, explicari reformidans eum ad. Eam no utroque minimum voluptatum, an virtute oporteat quo. Ea delicata maluisset sed, sed dicunt vocibus albucius ea, ex assum minimum ius.
+
+Sed harum nominati liberavisse in. Usu no alienum placerat. Ex nam quod summo referrentur. No nec animal mediocrem, ius ne iusto euripidis. Per fuisset volumus honestatis id, et eos meis veniam vivendum, dolor graeco ad eum.
+
+Pro choro appareat ea, te est labores scribentur. Dolor feugiat ne est, mel ex minimum explicari percipitur. Elit errem pri in, forensibus abhorreant est ei, qui ne reque decore aliquando. Clita petentium instructior ad sea, duo primis utamur prodesset eu. Quo et dicam gubergren disputando, dico prodesset ullamcorper ex sed.</p>
+
+        <p> Lorem ipsum dolor sit amet, cu imperdiet conceptam has, tantas suscipit pertinacia eos ei, ut ullum inani integre eum. Porro corrumpit ei pro. Id nostro platonem dissentiet vel, te pri graece fuisset apeirian. Nam unum nominati postulant no. Sed ocurreret dissentias ea. Mel noster aperiri cu. Iuvaret adipiscing pro eu, in eum prima sadipscing.
+
+Graeco corrumpit ei nec. Solum laboramus mnesarchum te sit, mea commodo deserunt constituto ne, sed iriure appellantur no. Omnes aliquam te qui, nusquam forensibus omittantur ad eam. Cum persecuti expetendis ea. Justo illum scribentur usu ad, discere voluptaria vim eu. In liber clita legendos eum.
+</p>
+<p>
+Vel tollit noster causae at, nominati platonem referrentur sit te. Rebum perfecto mediocritatem ea vel, ut viris dictas postulant nam. Libris apeirian definiebas vel in, cu cum malis vocent commune. Ne mei purto legimus omittantur, an appareat honestatis quo, explicari reformidans eum ad. Eam no utroque minimum voluptatum, an virtute oporteat quo. Ea delicata maluisset sed, sed dicunt vocibus albucius ea, ex assum minimum ius.
+
+Sed harum nominati liberavisse in. Usu no alienum placerat. Ex nam quod summo referrentur. No nec animal mediocrem, ius ne iusto euripidis. Per fuisset volumus honestatis id, et eos meis veniam vivendum, dolor graeco ad eum.
+
+Pro choro appareat ea, te est labores scribentur. Dolor feugiat ne est, mel ex minimum explicari percipitur. Elit errem pri in, forensibus abhorreant est ei, qui ne reque decore aliquando. Clita petentium instructior ad sea, duo primis utamur prodesset eu. Quo et dicam gubergren disputando, dico prodesset ullamcorper ex sed.</p>
+</div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer justify-content-center text-center">
+        <button type="button" class="btn rounded-3 text-black vivo_heavy btn-register fs-button-register" data-bs-dismiss="modal">TUTUP</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 @endsection
 
 
 @push('js-plugin')
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+<script src="{{ asset('frontend/js/owl.carousel.min.js') }} "></script>
 @endpush
 
 @push('script')
