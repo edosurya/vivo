@@ -13,18 +13,6 @@
     @endpush
 
     @push('style')
-    <style type="text/css">
-      .loader {
-        width: 48px;
-        height: 48px;
-        border: 5px solid #FFF;
-        border-bottom-color: transparent;
-        border-radius: 50%;
-        display: inline-block;
-        box-sizing: border-box;
-        animation: rotation 1s linear infinite;
-      }
-    </style>
     @endpush
 
 @section('content')
@@ -223,7 +211,7 @@
   setTimeout(() => {
       galleryList.show()
       loading.hide();
-  }, 3000);
+  }, 4000);
   
 
   (function($) {
