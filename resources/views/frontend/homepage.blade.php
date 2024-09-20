@@ -33,7 +33,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3"  >
               <!-- <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. <br/>Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera. </p> -->
-              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards.</p>
+              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards</p>
               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya Anda!</p>
                 <p class="mt-n3">23 Sep - 23 Nov 2024</p>
@@ -65,7 +65,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
               <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
-              <p class="desc mb-5 text-white fs-desc-category">Temukan inspirasi dari tiap kategori vivo Imagine Photography Awards.</p>
+              <p class="desc mb-5 text-white fs-desc-category">Temukan inspirasi dari tiap kategori vivo Imagine Photography Awards</p>
             </div>
           </div>
 
@@ -155,7 +155,7 @@
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
               <div>
                   <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
-                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social eco journalist. </p>
+                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social eco journalist</p>
                   <p class="fs-judge-desc  vivo_extraLight lh-1">Editor in Chief of @natgeoindonesia</p>
               </div>
             </div>
@@ -167,8 +167,8 @@
                   <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer winner 2020</p>
               </div>
             </div>
-            <div class="col-4 p-col-mobile">
-              <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy" />
+            <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
+              <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
               <div>
                   <p class="fs-judge-title vivo_bold mb-1">vivo Representative </p>
@@ -237,7 +237,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sept-23 Nov 2024</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep--23 Nov 2024</p>
                     <p class="vivo_extraLight fs-period-desc">Periode registrasi dan unggah hasil foto</p>
                 </div>
               </div>

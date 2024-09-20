@@ -32,14 +32,21 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-5 mb-5">
               <p class="text-white vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
-                <ul class="text-white term-condition">
+                <ul class="text-white term-condition"><!-- 
                     <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti kompetisi ini lebih dari 1 kategori.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 1 foto atau maksimal 5 foto untuk tiap kategori; <i>Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography.</i></span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 3 foto atau maksimal 5 foto khusus untuk kategori <i>Photo series.</i></span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan <i>Digital Imaging</i> berlebih, untuk <i>Retouching</i> gambar dasar diperbolehkan.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit High Resolution files</i> (HD minimal 1280x720 pixels).</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk keseluruhan foto.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li> -->
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk menjelaskan setiap foto.</span></li>
                 </ul>
             </div>
             <div class="col-12 col-md-7 mb-3">
@@ -103,7 +110,7 @@
                                 <span class="input-group-text w-20">+62</span>
                                 <input type="text" class="form-control" name="phone"
                                     oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="phone"
-                                    placeholder="No. WhatsApp">
+                                    placeholder="No. WhatsApp" maxlength="14">
                             </div>
                             <label class="invalid-feedback fw-bold mb-3" id="phoneErrorMessage"></label>
                         </div>
@@ -190,8 +197,8 @@
                                     <ul class="dz-previews-container p-0" id="dzPreviews"></ul>
                                 </div>
                             </div>
-                            <div class="mb-3 col-3 col-md-2 mb-0 pb-0">
-                                <div class="mb-3"><h6 class="text-white vivo_regular addmore p-2">Add More</h6></div>
+                            <div class="mb-3 col-4 col-md-3 mb-0 pb-0">
+                                <div class="mb-3"><h6 class="text-white vivo_regular addmore py-2 rounded">Tambah Lagi</h6></div>
                             </div>
 
                             <div class="invalid-feedback fw-bold mb-3" id="imgErrorMessage"></div>
@@ -206,7 +213,7 @@
                           </div>
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="privacy" name="privacy" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada Kebijakan Privasi vivo.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada <a href="https://privacy.vivo.com/id/privacy?_gl=1%2apd2loe%2a_ga%2aMTE5MzU3MjAxMC4xNzIzNzkwODEy%2a_ga_68BLCXM546%2aMTcyNjEzMDM0NS4zLjAuMTcyNjEzMDM0NS42MC4wLjA" target="_blank" class="text-blue">Kebijakan Privasi vivo </a></label>
                             <label class="invalid-feedback fw-bold mb-3" id="privacyErrorMessage"></label>
                           </div>
                         </div>

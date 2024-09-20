@@ -69,12 +69,6 @@ class GalleryController extends Controller
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-V.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_163045.webp',
     'title' => '',
     'desc' =>  '',
@@ -332,13 +326,13 @@ class GalleryController extends Controller
                 $images = [
 [ 
     'path' => 'frontend/images/gallery/still-life/Creative_Food_Photography_Miniature_People_at_Work_with_Chocolate_Cookies.webp',
-    'title' => 'Creative Food Photography: Miniature People at Work with Chocolate Cookies',
+    'title' => 'Miniature People at Work with Chocolate Cookies',
     'desc' =>  'Syaefa Umar',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/still-life/Exploring_Vibrant_Candy_Colors_A_Feast_for_the_Eyes_and_Taste_Buds.webp',
-    'title' => 'Exploring Vibrant Candy Colors: A Feast for the Eyes and Taste Buds',
+    'title' => 'A Feast for the Eyes and Taste Buds',
     'desc' =>  'Bayu Danur Wenda',
     'location' =>  '',
 ],
@@ -356,7 +350,7 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/still-life/Moody_Candle_Lantern_Photography_Capturin_Light_in_Darkness.webp',
-    'title' => 'Moody Candle Lantern Photography Capturing Light in Darkness',
+    'title' => 'Capturing Light in Darkness',
     'desc' =>  'Ince Sitti Annis N',
     'location' =>  '',
 ],
@@ -410,32 +404,32 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_042629.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
-    'desc' =>  'Gede H Septiawan',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043500.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
-    'desc' =>  'Gede H Septiawan',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043535.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
-    'desc' =>  'Gede H Septiawan',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044458.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
-    'desc' =>  'Gede H Septiawan',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044610.webp',
-    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
-    'desc' =>  'Gede H Septiawan',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
@@ -446,14 +440,14 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_2_firdausakbar19.webp',
-    'title' => 'Biarkan Cahaya Berbicara tentang Kota',
-    'desc' =>  'Firdaus',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_3_firdausakbar19.webp',
-    'title' => 'Biarkan Cahaya Berbicara tentang Kota',
-    'desc' =>  'Firdaus',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
@@ -464,20 +458,20 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_140112.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Dimas',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_145150.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Dimas',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_164154.webp',
-    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
-    'desc' =>  'Dimas',
+    'title' => '',
+    'desc' =>  '',
     'location' =>  '',
 ],
                 ];
