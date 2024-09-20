@@ -293,27 +293,25 @@
       </div>
 
       <div class="text-white p-6">
-        <p> Lorem ipsum dolor sit amet, cu imperdiet conceptam has, tantas suscipit pertinacia eos ei, ut ullum inani integre eum. Porro corrumpit ei pro. Id nostro platonem dissentiet vel, te pri graece fuisset apeirian. Nam unum nominati postulant no. Sed ocurreret dissentias ea. Mel noster aperiri cu. Iuvaret adipiscing pro eu, in eum prima sadipscing.
+<p>Syarat & Ketentuan Umum</p>
+<ol>
+<li>Kompetisi terbuka untuk umum.</li>
+<li>Peserta adalah Warga Negara Indonesia (WNI), usia minimal 17 tahun dan telah memiliki KTP.</li>
+<li>Pendaftaran tidak dipungut biaya/gratis.</li>
+<li>Karya yang dikirimkan tidak mengandung unsur pornografi, SARA, sadisme, ujaran kebencian, pencemaran nama baik, hal-hal yang bersifat merendahkan atau melecehkan pihak lain ataupun hal-hal yang melanggar hukum dan peraturan yang berlaku.</li>
+<li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan. </li>
+<li>Peserta menjamin bahwa karya dan/atau materi yang dikirimkan telah mendapatkan seluruh persetujuan dan izin dari seluruh pihak yang terdapat dalam karya dan/atau materi tersebut (termasuk tetapi tidak terbatas pada talent, gambar, logo dan lain sebagainya) dan Peserta menjamin bahwa karya dan/atau materi yang dikirimkan tidak melanggar hak cipta dan/atau hak kekayaan intelektual pihak manapun.</li>
+<li>Karya yang dikirimkan tidak memuat produk ponsel dan/ atau aksesoris dan kelengkapan telepon selular selain merek vivo.</li>
+<li>Apabila dikemudian hari ditemukan pelanggaran dalam syarat dan ketentuan ini, peserta akan menanggung seluruh kerugian yang timbul. </li>Pihak penyelenggara berhak untuk melakukan diskualifikasi terhadap peserta atau membatalkan gelar juara peserta pemenang. Apabila peserta telah menerima hadiah dari pihak penyelenggara, maka peserta wajib untuk mengembalikan hadiah tersebut secara penuh kepada vivo.</li>
+<li>Karya yang dikirimkan menjadi hak milik dari  vivo, dan vivo beserta afiliasinya berhak sepenuhnya untuk menggunakan karya tersebut dengan cara apapun tanpa memerlukan persetujuan dari peserta.</li>
+<li>Keputusan juri bersifat mutlak dan tidak dapat diganggu gugat.</li>
+<li>Syarat dan ketentuan kompetisi dapat berubah sewaktu-waktu sesuai dengan kebijakan vivo.</li>
+<li>Peserta akan bertanggung jawab, membebaskan, melepaskan dan mengganti seluruh kerugian terhadap vivo dan/atau penyelenggara pihak ketiga yang ditunjuk oleh vivo yang timbul sebagai akibat dari pelanggaran atas Syarat dan Ketentuan ini.</li>
+<li>Peserta juga dianggap telah memberikan persetujuan dan kewenangan kepada vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo untuk mengumpulkan, mengolah, dan/atau mengungkapkan informasi/data pribadi Peserta yang disampaikan dalam kompetisi ini untuk kepentingan vivo.</li>
+<li>Selain itu, vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo juga berhak untuk menggunakan, mempublikasikan atau menampilkan informasi/data pribadi Peserta dan untuk kepentingan vivo, jika dianggap perlu sehubungan dengan kompetisi ini.</li>
+<li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau sms baik pada saat periode kompetisi maupun setelahnya.</li>
+</ol>
 
-Graeco corrumpit ei nec. Solum laboramus mnesarchum te sit, mea commodo deserunt constituto ne, sed iriure appellantur no. Omnes aliquam te qui, nusquam forensibus omittantur ad eam. Cum persecuti expetendis ea. Justo illum scribentur usu ad, discere voluptaria vim eu. In liber clita legendos eum.
-</p>
-<p>
-Vel tollit noster causae at, nominati platonem referrentur sit te. Rebum perfecto mediocritatem ea vel, ut viris dictas postulant nam. Libris apeirian definiebas vel in, cu cum malis vocent commune. Ne mei purto legimus omittantur, an appareat honestatis quo, explicari reformidans eum ad. Eam no utroque minimum voluptatum, an virtute oporteat quo. Ea delicata maluisset sed, sed dicunt vocibus albucius ea, ex assum minimum ius.
-
-Sed harum nominati liberavisse in. Usu no alienum placerat. Ex nam quod summo referrentur. No nec animal mediocrem, ius ne iusto euripidis. Per fuisset volumus honestatis id, et eos meis veniam vivendum, dolor graeco ad eum.
-
-Pro choro appareat ea, te est labores scribentur. Dolor feugiat ne est, mel ex minimum explicari percipitur. Elit errem pri in, forensibus abhorreant est ei, qui ne reque decore aliquando. Clita petentium instructior ad sea, duo primis utamur prodesset eu. Quo et dicam gubergren disputando, dico prodesset ullamcorper ex sed.</p>
-
-        <p> Lorem ipsum dolor sit amet, cu imperdiet conceptam has, tantas suscipit pertinacia eos ei, ut ullum inani integre eum. Porro corrumpit ei pro. Id nostro platonem dissentiet vel, te pri graece fuisset apeirian. Nam unum nominati postulant no. Sed ocurreret dissentias ea. Mel noster aperiri cu. Iuvaret adipiscing pro eu, in eum prima sadipscing.
-
-Graeco corrumpit ei nec. Solum laboramus mnesarchum te sit, mea commodo deserunt constituto ne, sed iriure appellantur no. Omnes aliquam te qui, nusquam forensibus omittantur ad eam. Cum persecuti expetendis ea. Justo illum scribentur usu ad, discere voluptaria vim eu. In liber clita legendos eum.
-</p>
-<p>
-Vel tollit noster causae at, nominati platonem referrentur sit te. Rebum perfecto mediocritatem ea vel, ut viris dictas postulant nam. Libris apeirian definiebas vel in, cu cum malis vocent commune. Ne mei purto legimus omittantur, an appareat honestatis quo, explicari reformidans eum ad. Eam no utroque minimum voluptatum, an virtute oporteat quo. Ea delicata maluisset sed, sed dicunt vocibus albucius ea, ex assum minimum ius.
-
-Sed harum nominati liberavisse in. Usu no alienum placerat. Ex nam quod summo referrentur. No nec animal mediocrem, ius ne iusto euripidis. Per fuisset volumus honestatis id, et eos meis veniam vivendum, dolor graeco ad eum.
-
-Pro choro appareat ea, te est labores scribentur. Dolor feugiat ne est, mel ex minimum explicari percipitur. Elit errem pri in, forensibus abhorreant est ei, qui ne reque decore aliquando. Clita petentium instructior ad sea, duo primis utamur prodesset eu. Quo et dicam gubergren disputando, dico prodesset ullamcorper ex sed.</p>
 </div>
 
       <!-- Modal footer -->
