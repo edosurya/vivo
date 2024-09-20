@@ -138,7 +138,6 @@
     </section>
     @endif
     
-    <div id="gallery"></div>
 
     @if($images)
 
@@ -189,9 +188,6 @@
 
       @endif
 
-   
-
-
 
 @endsection
 
@@ -211,7 +207,7 @@
   setTimeout(() => {
       galleryList.show()
       loading.hide();
-  }, 4000);
+  }, 2000);
   
 
   (function($) {
