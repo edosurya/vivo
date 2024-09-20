@@ -13,6 +13,18 @@
     @endpush
 
     @push('style')
+    <style type="text/css">
+      .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+    </style>
     @endpush
 
 @section('content')
@@ -109,8 +121,10 @@
               <hr/>
             </div>
         </div>
-
-        <div class="col-md-12">
+        <div class="justify-content-center text-center" id="loader">
+          <span class="loader"></span>
+        </div>
+        <div class="col-md-12" style="display:none" id="galleryList">
           <div class="featured-carousel owl-carousel">
 
             @foreach($images as $key => $img)
@@ -203,20 +217,16 @@
 
 @push('script')
 <script type="text/javascript">
+
+  const galleryList = $('#galleryList');
+  const loading = $('#loader');
+  setTimeout(() => {
+      galleryList.show()
+      loading.hide();
+  }, 3000);
+  
+
   (function($) {
-
-  "use strict";
-
-  var fullHeight = function() {
-
-    $('.js-fullheight').css('height', $(window).height());
-    $(window).resize(function(){
-      $('.js-fullheight').css('height', $(window).height());
-    });
-
-  };
-  fullHeight();
-
   var carousel = function() {
     $('.featured-carousel').owlCarousel({
       lazyLoad:true,
