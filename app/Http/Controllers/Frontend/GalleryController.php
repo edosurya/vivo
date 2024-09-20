@@ -70,18 +70,21 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_163045.webp',
+    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_163045.webp',
     'title' => '',
     'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_223552.webp',
+    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_223552.webp',
     'title' => '',
     'desc' =>  '',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240912_150526-2.webp',
+    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240912_150526-2.webp',
     'title' => '',
     'desc' =>  '',
     'location' =>  '',

@@ -61,11 +61,13 @@
                 </ul>
                 <div class="fs-term-condition-other">
                 <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini</p>
-                <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient m-w-350" data-bs-toggle="modal" data-bs-target="#myModal">
-                  S&K vivo Imagine Awards Publik
+                <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient m-w-350 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <img alt="image" class="img-fluid"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30"> S&K vivo Imagine Awards Publik
                 </button>
-                <button type="button" class="btn bg-black text-white border-blue-gradient m-w-350" data-bs-toggle="modal" data-bs-target="#myModal1">
-                  S&K vivo Imagine Awards Internal vivo
+                <button type="button" class="btn bg-black text-white border-blue-gradient m-w-350 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal1">
+                  <img alt="image" class="img-fluid"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine Awards Internal vivo
                 </button>
                 </div>
             </div>
@@ -218,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="mb-3 col-4 col-md-3 mb-0 pb-0">
-                                <div class="mb-3"><h6 class="text-white vivo_regular addmore py-2 rounded">Tambah Lagi</h6></div>
+                                <div class="mb-3"><h6 class="text-white vivo_regular addmore rounded text-btn-padding">Tambah Lagi</h6></div>
                             </div>
 
                             <div class="invalid-feedback fw-bold mb-3" id="imgErrorMessage"></div>
@@ -239,7 +241,7 @@
                         </div>
 
                         <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
-                            <button class="btn p-3 rounded-3 text-black vivo_heavy btn-register" id="dzSubmitButton">SUBMIT</button>
+                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding" id="dzSubmitButton">SUBMIT</button>
                         </div>
                     </div>
 

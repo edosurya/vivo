@@ -701,7 +701,7 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
 }
 
 .m-w-350 {
-    min-width: 340px;
+    min-width: 380px;
 }
 
 .m-w-50jt {
@@ -728,4 +728,8 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
     .m-w-50jt {
         min-height:40px;
     }
+}
+
+.text-btn-padding {
+    padding: 8px 10px 4px 10px;
 }

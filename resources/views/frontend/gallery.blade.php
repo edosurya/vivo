@@ -118,7 +118,11 @@
             @foreach($images as $key => $img)
               <div class="item work">
                 <div class="img d-flex align-items-center justify-content-center">
+                  @if(@$img['thumb'])
+                  <img class="rounded lazyOwl" src="{{ asset($img['thumb'])}}" alt="" loading="lazy">
+                  @else
                   <img class="rounded lazyOwl" src="{{ asset($img['path'])}}" alt="" loading="lazy">
+                  @endif
                   <a class="icon d-flex align-items-center justify-content-center position-absolute" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
                     <span class="ion-ios-search"></span>
                   </a>
