@@ -109,7 +109,7 @@
               <hr/>
             </div>
         </div>
-        <div class="justify-content-center text-center" id="loader">
+        <div class="justify-content-center text-center h-50" id="loader">
           <span class="loader"></span>
         </div>
         <div class="col-md-12" style="display:none" id="galleryList">
