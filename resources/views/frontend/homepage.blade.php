@@ -153,8 +153,10 @@
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
+              </div>
+              <div>
                   <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social eco journalist</p>
                   <p class="fs-judge-desc  vivo_extraLight lh-1">Editor in Chief of @natgeoindonesia</p>
               </div>
@@ -162,16 +164,20 @@
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/vg-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-benny.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
+              </div>
+              <div>
                   <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer winner 2020</p>
               </div>
             </div>
             <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
               <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1">vivo Representative </p>
+              </div>
+              <div>
                   <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Product Manager</p>
               </div>
             </div>
@@ -192,7 +198,7 @@
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
                 <p class="text-white vivo_light lh-1 fs-prize-desc">Special Jury Awards</p>
               </div>
-              <div class="p-2 ">
+              <div class="p-2 m-w-50jt">
                 <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
                 <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-50jt-mobile.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
               </div>

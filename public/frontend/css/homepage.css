@@ -412,9 +412,18 @@ h6 {
     line-height: 23px;
 } 
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
     .fs-judge-title {
         font-size: 18px;
+        line-height: 18px;
     }
 
     .fs-judge-desc {
@@ -693,4 +702,30 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
 
 .m-w-350 {
     min-width: 340px;
+}
+
+.m-w-50jt {
+    min-height:310px;
+}
+
+@media (max-width: 1479px) {
+    .m-w-50jt {
+        min-height:250px;
+    }
+}
+@media (max-width: 1070px) {
+    .m-w-50jt {
+        min-height:200px;
+    }
+}
+
+@media (max-width: 845px) {
+    .m-w-50jt {
+        min-height:170px;
+    }
+}
+@media (max-width: 452px) {
+    .m-w-50jt {
+        min-height:40px;
+    }
 }
