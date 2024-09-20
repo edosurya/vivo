@@ -207,7 +207,7 @@
   setTimeout(() => {
       galleryList.show()
       loading.hide();
-  }, 2000);
+  }, 500);
   
 
   (function($) {
