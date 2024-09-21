@@ -7,17 +7,10 @@
     @push('css-plugin')
         @vite(['resources/js/app.js'])
         <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     @endpush
 
     @push('style')
-<style type="text/css">
-
-.modal-body p {
-    margin-bottom: 5px;
-    line-height: 20px;
-}   
-
-</style>
     @endpush
 
 @section('hero')
@@ -52,22 +45,24 @@
                     <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk keseluruhan foto.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li> -->
                     <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Series Photography, Still Life Photography, Night Photography, dan Nature Photography).</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk menjelaskan setiap foto.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter</span></li>
+
                 </ul>
                 <div class="fs-term-condition-other">
                 <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini</p>
                 <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal">
-                  <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/webp/document.webp') }}" width="30"> S&K vivo Imagine Awards Publik
+                  <img alt="image" class="img-fluid me-2"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Publik
                 </button>
                 <button type="button" class="btn bg-black text-white border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal1">
-                  <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine Awards Internal vivo
+                  <img alt="image" class="img-fluid me-2"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Internal
                 </button>
                 </div>
             </div>
@@ -111,7 +106,7 @@
                             <label class="invalid-feedback fw-bold mb-3" id="mailErrorMessage"></label>
                         </div>
 
-                        <div class="mb-3 col-md-6 mb-0 pb-0">
+<!--                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label  class="vivo_bold fs-label" for="age">
                                 Usia
                                 <span class="text-danger">*</span>
@@ -120,7 +115,15 @@
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="age"
                                 placeholder="Usia">
                             <label class="invalid-feedback fw-bold mb-3" id="ageErrorMessage"></label>
+                        </div> -->
 
+                        <div class="mb-3 col-md-6 mb-0 pb-0">
+                            <label  class="vivo_bold fs-label" for="birthday">
+                                Tanggal Lahir
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input id="birthday" class="form-control" name="birthday" placeholder="DD/MM/YYYY" />
+                            <label class="invalid-feedback fw-bold mb-3" id="birthdayErrorMessage"></label>
                         </div>
 
                         <div class="mb-3 col-md-6">
@@ -172,14 +175,15 @@
                             <select class="form-select form-control" name="category" id="category">
                                     <option value="1" selected>Portrait Photography</option>
                                     <option value="2">Street Photography</option>
-                                    <option value="3">Nature Photography</option>
-                                    <option value="4">Night Photography</option>
-                                    <option value="5">Still Life Photography</option>
-                                    <option value="6">Series Photography</option>
+                                    <option value="3">Series Photography</option>
+                                    <option value="4">Still Life Photography</option>
+                                    <option value="5">Night Photography</option>
+                                    <option value="6">Nature Photography</option>
+                                    
                             </select>
                         </div>
 
-                        <div class="mb-3 col-md-12 mb-0 pb-0">
+                         <div class="mb-3 col-md-12 mb-0 pb-0">
                             <label class="indosat_bold_body fs-label" for="img_desc">
                                 Judul dan Deskripsi
                                 <span class="text-danger">*</span>
@@ -191,8 +195,20 @@ Judul: Negeri di Atas Awan
 Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenangan dan kebahagiaan. Langit biru cerah, sinar mentari hangat menyinari, menciptakan harmoni alam yang mengundang rasa syukur dan sukacita dalam diri.</textarea>
                             <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/1800
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
-                        </div>                      
-                                 
+                        </div>
+
+                         <div class="mb-3 col-md-12 mb-0 pb-0">
+                            <div class="form-group mb-3">
+                                <div class="mb-3"><h6 class="text-white vivo_light"><i>*Upload foto max. 20 MB </i></h6></div>
+                                <div class="main-drag-area form-control p-0 border-0" id="dzDropzone">
+
+                                    <div class="dz-message rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" id="dzPlaceholder" style="cursor: pointer;">
+                                        <span class="text-black vivo_bold">Upload Photo</span>
+                                        <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
+                                        </svg>
+                                        
+                                    </div>
 
                                     <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
                                         <span class="text-black vivo_bold">Upload Photo</span>
@@ -222,7 +238,7 @@ Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenanga
                         <div class="mb-3 col-md-12 mb-0 pb-0">
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="checkTermAndCondition" name="checkTermAndCondition" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan Syarat & Ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
                             <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
                           </div>
                           <div class="mb-3 form-check">
@@ -292,11 +308,19 @@ Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenanga
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-<script src="{{ asset('frontend/js/owl.carousel.min.js') }} "></script>
+<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+
 @endpush
 
 @push('script')
 <script type="text/javascript">
+
+
+    $('#birthday').datepicker({
+        uiLibrary: 'bootstrap5',
+        maxDate: new Date(),
+    });
+
     (() => {
   const counter = (() => {
     const input = document.getElementById('img_desc'),
