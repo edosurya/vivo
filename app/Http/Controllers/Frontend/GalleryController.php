@@ -18,7 +18,7 @@ class GalleryController extends Controller
 
         switch ($category) {
             case 'potrait-photography':
-                $title = 'Potrait Photography';
+                $title = 'Portrait Photography';
                 $images = [
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240219_103409.webp',
