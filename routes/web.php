@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Cookie;
 
 use App\Http\Controllers\Frontend\RegisterController;
 use App\Http\Controllers\Frontend\GalleryController;
+use App\Http\Controllers\Frontend\CreatorController as FrontendCreatorController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\ContactUsExportController;
@@ -48,6 +49,8 @@ Route::controller(RegisterController::class)->group(function () {
 
 Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('gallery');
 
+Route::get('/creator/{code}', [FrontendCreatorController::class, 'index'])->name('creator.index');
+Route::get('/creator/{code}/download', [FrontendCreatorController::class, 'download'])->name('creator.download');
 
 
 require __DIR__ . '/auth.php';
