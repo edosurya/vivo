@@ -333,7 +333,7 @@ $('#dzSubmitButton').on('click', function(event) {
     }
 
     let cat = document.forms["dzImageUploadForm"]["category"].value;
-    if(cat == 6) {
+    if(cat == 3) {
         console.log(myDropzone.files.length );
         // show error messages if not have enough images
         if (myDropzone.files.length < 3) {
