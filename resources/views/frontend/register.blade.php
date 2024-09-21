@@ -165,7 +165,7 @@
                                         placeholder="Masukkan vivo ID">
                         </div>
 
-                        <p class="text-white vivo_heavy text-uppercase mb-3 mt-5 fs-title-registrasi_form">UPLOAD</p>
+                        <p class="text-white vivo_heavy text-uppercase mb-3 mt-5 fs-title-registrasi_form">UNGGAH</p>
 
                         <div class="mb-3 col-md-6">
                             <label class="vivo_bold fs-label" for="category">
