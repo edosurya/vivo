@@ -84,7 +84,7 @@ class RegisterController extends Controller
                 'address'       => 'required',
                 'file'          => 'required',
                 'category'      => 'required',
-                'desc'          => 'required|max:1600',
+                'desc'          => 'required',
                 'birthday'      => 'required',
             ],
             [
@@ -112,12 +112,15 @@ class RegisterController extends Controller
             $code = Uuid::uuid4()->toString();
             $name = $this->cleanString($request->fullname);
 
+            $date = $request->birthday;
+            $newDate = date("Y-m-d", strtotime($date));
+
             $register = Creator::create([
                 'code' => $code,
                 'fullname' => $name,
                 'phone' => $request->phone,
                 'address' => $request->address,
-                'birthday' => $request->birthday,
+                'birthday' => $newDate,
                 'desc' => $request->desc,
                 'email' => strtolower($request->email),
                 'category' => $request->category,
