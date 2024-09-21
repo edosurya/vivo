@@ -229,7 +229,7 @@
 
       <!-- ============================================-->
       <!-- <section> Periode ============================-->
-      <section class="pb-6 bg-black">
+      <section class="pb-6 bg-black period" >
 
         <div class="container-lg">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
