@@ -184,7 +184,7 @@
                                 Deskripsi
                                 <span class="text-danger">*</span>
                             </label>
-                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="4" cols="50" maxlength="250" placeholder="Maksimal 250 karakter"></textarea>
+                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="4" cols="50" maxlength="250" placeholder="Deskripsikan setiap foto yang diunggah di kolom ini. Maksimal 250 karakter"></textarea>
                             <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/250
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
                         </div>
