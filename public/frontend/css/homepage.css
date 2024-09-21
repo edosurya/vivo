@@ -647,7 +647,7 @@ svg.dz-photo-icon {
 }
 
 .line {
-    width: 22px;
+    width: 19px;
     height: 0;
     border: 1.6px solid #ffffff;
     margin: 5px;
@@ -748,7 +748,7 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
 
 @media (max-width: 414px) {
     .period .card-body {
-        padding: 0px;
+        padding: 1px;
     }
 }
 
