@@ -569,6 +569,24 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 -4.5 20 20' version=
 ::-ms-input-placeholder { /* Edge 12 -18 */
   color: red;
 }
+  
+.btn-outline-secondary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.gj-datepicker-bootstrap button[role=right-icon] .gj-icon, .gj-datepicker-bootstrap button[role=right-icon] .material-icons {
+    position: absolute;
+    font-size: 21px;
+    top: .55rem;
+    left: 1.2rem !important;
+}
 
 .addmore {
     background-color: black;
@@ -604,6 +622,11 @@ svg.dz-photo-icon {
         color: grey;
     }
 }
+
+.modal-body p {
+    margin-bottom: 5px;
+    line-height: 20px;
+} 
 
 .term-condition li {
     font-size: 21px;
@@ -759,5 +782,6 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
        display: block;
     }
 }
+
 
 

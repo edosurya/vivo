@@ -20,10 +20,11 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('device')->nullable();
             $table->string('age')->nullable();
+            $table->date('birthday')->nullable();
             $table->string('referral_code')->nullable();
             $table->string('vivo_id')->nullable();
             $table->tinyInteger('category')->nullable();
-            $table->text('desc')->nullable();
+            $table->longText('desc')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

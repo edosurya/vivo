@@ -7,17 +7,10 @@
     @push('css-plugin')
         @vite(['resources/js/app.js'])
         <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     @endpush
 
     @push('style')
-<style type="text/css">
-
-.modal-body p {
-    margin-bottom: 5px;
-    line-height: 20px;
-}   
-
-</style>
     @endpush
 
 @section('hero')
@@ -52,7 +45,7 @@
                     <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk keseluruhan foto.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li> -->
                     <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Series Photography, Still Life Photography, Night Photography, dan Nature Photography).</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</span></li>
@@ -62,11 +55,11 @@
                 <div class="fs-term-condition-other">
                 <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini</p>
                 <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal">
-                  <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/webp/document.webp') }}" width="30"> S&K vivo Imagine Awards Publik
+                  <img alt="image" class="img-fluid me-2"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine Awards Publik
                 </button>
                 <button type="button" class="btn bg-black text-white border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal1">
-                  <img alt="image" class="img-fluid"
+                  <img alt="image" class="img-fluid me-2"
                 src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine Awards Internal vivo
                 </button>
                 </div>
@@ -111,7 +104,7 @@
                             <label class="invalid-feedback fw-bold mb-3" id="mailErrorMessage"></label>
                         </div>
 
-                        <div class="mb-3 col-md-6 mb-0 pb-0">
+<!--                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label  class="vivo_bold fs-label" for="age">
                                 Usia
                                 <span class="text-danger">*</span>
@@ -120,7 +113,15 @@
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="age"
                                 placeholder="Usia">
                             <label class="invalid-feedback fw-bold mb-3" id="ageErrorMessage"></label>
+                        </div> -->
 
+                        <div class="mb-3 col-md-6 mb-0 pb-0">
+                            <label  class="vivo_bold fs-label" for="birthday">
+                                Tanggal Lahir
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input id="birthday" class="form-control" name="birthday"/>
+                            <label class="invalid-feedback fw-bold mb-3" id="birthdayErrorMessage"></label>
                         </div>
 
                         <div class="mb-3 col-md-6">
@@ -172,10 +173,11 @@
                             <select class="form-select form-control" name="category" id="category">
                                     <option value="1" selected>Portrait Photography</option>
                                     <option value="2">Street Photography</option>
-                                    <option value="3">Nature Photography</option>
-                                    <option value="4">Night Photography</option>
-                                    <option value="5">Still Life Photography</option>
-                                    <option value="6">Series Photography</option>
+                                    <option value="3">Series Photography</option>
+                                    <option value="4">Still Life Photography</option>
+                                    <option value="5">Night Photography</option>
+                                    <option value="6">Nature Photography</option>
+                                    
                             </select>
                         </div>
 
@@ -184,8 +186,8 @@
                                 Deskripsi
                                 <span class="text-danger">*</span>
                             </label>
-                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="4" cols="50" maxlength="250" placeholder="hello you&#10;Second line&#10;Third line"></textarea>
-                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/250
+                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="6" cols="50" maxlength="1600" placeholder="hello you&#10;Second line&#10;Third line"></textarea>
+                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/1600
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
                         </div>
 
@@ -230,7 +232,7 @@
                         <div class="mb-3 col-md-12 mb-0 pb-0">
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="checkTermAndCondition" name="checkTermAndCondition" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan Syarat & Ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
                             <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
                           </div>
                           <div class="mb-3 form-check">
@@ -300,11 +302,19 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-<script src="{{ asset('frontend/js/owl.carousel.min.js') }} "></script>
+<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+
 @endpush
 
 @push('script')
 <script type="text/javascript">
+
+
+    $('#birthday').datepicker({
+        uiLibrary: 'bootstrap5',
+        maxDate: new Date(),
+    });
+
     (() => {
   const counter = (() => {
     const input = document.getElementById('img_desc'),

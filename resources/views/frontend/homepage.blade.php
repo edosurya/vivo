@@ -69,8 +69,7 @@
             </div>
           </div>
 
-          <div class="row flex-center">
-
+          <div class="row flex-center p-4">
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
@@ -149,7 +148,7 @@
             </div>
           </div>
 
-          <div class="row text-center text-white" data-aos="fade-up" data-aos-duration="2500">
+          <div class="row text-center text-white p-4" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />

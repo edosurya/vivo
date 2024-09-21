@@ -84,7 +84,8 @@ class RegisterController extends Controller
                 'address'       => 'required',
                 'file'          => 'required',
                 'category'      => 'required',
-                'desc'          => 'required|max:250',
+                'desc'          => 'required|max:1600',
+                'birthday'      => 'required',
             ],
             [
                 'fullname.required'          => 'Nama wajib diisi',
@@ -94,7 +95,9 @@ class RegisterController extends Controller
                 'phone.required'             => 'No. WhatsApp wajib diisi',
                 'category.required'          => 'Kategori wajib dipilih',
                 'desc.required'              => 'Deskripsi wajib diisi',
-                'desc.max'                   => 'Deskripsi maksimal 250 karakter',
+                'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
+                'birthday.required'          => 'Tanggal lahir wajib diisi',
+
             ]);
 
             $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
@@ -114,7 +117,7 @@ class RegisterController extends Controller
                 'fullname' => $name,
                 'phone' => $request->phone,
                 'address' => $request->address,
-                'age' => $request->age,
+                'birthday' => $request->birthday,
                 'desc' => $request->desc,
                 'email' => strtolower($request->email),
                 'category' => $request->category,
@@ -131,7 +134,7 @@ class RegisterController extends Controller
                 // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
                 $getFileExt   = $image->getClientOriginalExtension();
                 $file_name = $category.'-'.$name.'-'.$code.'-'.$index.'.'.$getFileExt;
-                $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code.'/', $file_name, 'public');
+                $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
                 Images::create([
                     'path' => $path,
                     'creator_id' => $register->id,

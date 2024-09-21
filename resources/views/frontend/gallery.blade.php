@@ -25,7 +25,7 @@
             </div>
           </div>
 
-          <div class="row flex-center">
+          <div class="row flex-center p-4">
 
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">

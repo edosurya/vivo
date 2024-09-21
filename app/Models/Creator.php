@@ -36,10 +36,10 @@ class Creator extends Model
     const IMAGE_CATEGORY = [
         self::CATEGORY1   => 'portrait-photography',
         self::CATEGORY2   => 'street-photography',
-        self::CATEGORY3   => 'nature-photography',
-        self::CATEGORY4   => 'night-photography',
-        self::CATEGORY5   => 'still-life-Photography',
-        self::CATEGORY6   => 'series-photography',
+        self::CATEGORY3   => 'series-photography',
+        self::CATEGORY4   => 'still-life-photography',
+        self::CATEGORY5   => 'night-photography',
+        self::CATEGORY6   => 'nature-photography',
     ];
 
     public function relatedImages(): HasMany

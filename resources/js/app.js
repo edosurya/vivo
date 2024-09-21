@@ -23,7 +23,8 @@ const fnErrorMessage = $('#fnErrorMessage');
 const mailErrorMessage = $('#mailErrorMessage');
 const phoneErrorMessage = $('#phoneErrorMessage');
 const addrErrorMessage = $('#addrErrorMessage');
-const ageErrorMessage = $('#ageErrorMessage');
+// const ageErrorMessage = $('#ageErrorMessage');
+const birthdayErrorMessage = $('#birthdayErrorMessage');
 const imgDescErrorMessage = $('#imgDescErrorMessage');
 const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
@@ -117,7 +118,8 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("phone", $('#phone').val());
     formData.append("address", $('#address').val());
     // formData.append("device", $('#device').val());
-    formData.append("age", $('#age').val());
+    // formData.append("age", $('#age').val());
+    formData.append("birthday", $('#birthday').val());
     formData.append("category", $('#category').val());
     formData.append("desc", $('#img_desc').val());
     formData.append("referral_code", $('#referral_code').val());
@@ -248,8 +250,9 @@ $('#dzSubmitButton').on('click', function(event) {
     mailErrorMessage.hide();
     phoneErrorMessage.hide();
     addrErrorMessage.hide();
-    ageErrorMessage.hide();
+    // ageErrorMessage.hide();
     imgDescErrorMessage.hide();
+    birthdayErrorMessage.hide();
 
     const validateEmail = (email) => {
       return email.match(
@@ -295,10 +298,17 @@ $('#dzSubmitButton').on('click', function(event) {
     }
 
     // show error messages if age is empty
-    let age = document.forms["dzImageUploadForm"]["age"].value;
-    if(age == null || age == "") {
+    // let age = document.forms["dzImageUploadForm"]["age"].value;
+    // if(age == null || age == "") {
+    //     error = error+1;
+    //     ageErrorMessage.show().text('Wajib diisi');
+    // }
+
+    // show error messages if birthday is empty
+    let birthday = document.forms["dzImageUploadForm"]["birthday"].value;
+    if(birthday == null || birthday == "") {
         error = error+1;
-        ageErrorMessage.show().text('Wajib diisi');
+        birthdayErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if Image Description is empty
