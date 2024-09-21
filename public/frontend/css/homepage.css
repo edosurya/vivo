@@ -751,7 +751,9 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
         padding: 1px;
     }
 }
- 
+ .new-line {
+   margin: -3px;
+}
 @media (max-width: 822px) {
     .new-line {
        display: block;
