@@ -650,7 +650,7 @@ svg.dz-photo-icon {
     width: 19px;
     height: 0;
     border: 1.6px solid #ffffff;
-    margin: 5px;
+    margin: 5px 0.5px;
     display: inline-block;
 }
 
