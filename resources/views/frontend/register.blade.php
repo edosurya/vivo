@@ -192,7 +192,7 @@ Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenanga
                             <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/1800
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
                         </div>                      
-                                    </div>
+                                 
 
                                     <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
                                         <span class="text-black vivo_bold">Upload Photo</span>
