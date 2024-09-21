@@ -29,6 +29,7 @@ const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
 const checkErrorMessage = $('#checkErrorMessage');
 const privacyErrorMessage = $('#privacyErrorMessage');
+const addMoreButton = $('.addmore');
 
 const placeHolder = $('#dzPlaceholder');
 let form = 3;
@@ -146,6 +147,12 @@ function updateAdditionalAreas() {
     } else {
         form = filesCount;
     } 
+
+    if(form < 5) {
+        addMoreButton.show();  
+    } else {
+        addMoreButton.hide();
+    }
 }
 
 /**
@@ -153,9 +160,12 @@ function updateAdditionalAreas() {
  */
 $(document).on('click', '.addmore', function() {
     if( form < 5 ) {
-    form = form + 1;
-    let additionalTemplate = $('#dzAdditionalTemplate').html();
-    $(myDropzone.previewsContainer).append(additionalTemplate);
+        form = form + 1;
+        let additionalTemplate = $('#dzAdditionalTemplate').html();
+        $(myDropzone.previewsContainer).append(additionalTemplate);
+        if(form == 5) {
+            $(this).hide();
+        }
     } else {
         imgErrorMessage.show().text('Maksimal 5 gambar.');
     }
