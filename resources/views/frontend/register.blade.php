@@ -181,16 +181,6 @@
 
                         <div class="mb-3 col-md-12 mb-0 pb-0">
                             <label class="indosat_bold_body fs-label" for="img_desc">
-                                Deskripsi
-                                <span class="text-danger">*</span>
-                            </label>
-                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="4" cols="50" maxlength="250" placeholder="hello you&#10;Second line&#10;Third line"></textarea>
-                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/250
-                            <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
-                        </div>
-
-                        <div class="mb-3 col-md-12 mb-0 pb-0">
-                            <label class="indosat_bold_body fs-label" for="img_desc">
                                 Judul dan Deskripsi
                                 <span class="text-danger">*</span>
                             </label>
