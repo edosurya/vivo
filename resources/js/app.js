@@ -332,6 +332,12 @@ $('#dzSubmitButton').on('click', function(event) {
         privacyErrorMessage.show().text('Wajib diisi');
     }
 
+    // show error messages if not have enough images
+    if (myDropzone.files.length === 0) {
+        error = error+1;
+        imgErrorMessage.show().text('Minimal upload 1 gambar.');
+    }
+
     let cat = document.forms["dzImageUploadForm"]["category"].value;
     if(cat == 3) {
         console.log(myDropzone.files.length );
@@ -340,12 +346,6 @@ $('#dzSubmitButton').on('click', function(event) {
             error = error+1;
             imgErrorMessage.show().text('Minimal upload 3 gambar.');
         }
-    }
-
-    // show error messages if not have enough images
-    if (myDropzone.files.length === 0) {
-        error = error+1;
-        imgErrorMessage.show().text('Minimal upload 1 gambar.');
     }
 
     if(error < 1) {
