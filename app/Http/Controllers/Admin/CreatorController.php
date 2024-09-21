@@ -31,14 +31,12 @@ class CreatorController extends Controller
                     })
                     ->select('creators.*')
                     ->orderBy('id', 'DESC');
+
                 return datatables()
                     ->eloquent($query)
                     ->addColumn('created_at', function ($row) {
                         $explode = explode(' ', $row->created_at->translatedFormat('d-m-Y H:i:s'));
                         return $explode[0] . '<br>' . $explode[1];
-                    })
-                    ->addColumn('device', function ($row) {
-                        return Creator::TYPE[$row->device];
                     })
                     ->addColumn('category', function ($row) {
                         return Images::TYPE[$row->category];

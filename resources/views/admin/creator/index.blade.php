@@ -77,7 +77,6 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
-                                        <th>Device</th>
                                         <th>Category</th>
                                     </tr>
                                 </thead>
@@ -158,11 +157,6 @@
                         name: "phone",
                         data: 'phone',
                         defaultContent: '-'
-                    },
-                    {
-                        name: "device",
-                        data: 'device',
-                        defaultContent: '-',
                     },
                     {
                         name: "category",
