@@ -242,7 +242,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span>23 Nov 2024</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span> <span class="new-line"></span>23 Nov 2024</p>
                     <p class="vivo_extraLight fs-period-desc">Periode registrasi dan pengunggahan hasil foto</p>
                 </div>
               </div>
