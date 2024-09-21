@@ -188,9 +188,8 @@
                                 Judul dan Deskripsi
                                 <span class="text-danger">*</span>
                             </label>
-                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="10" cols="50" maxlength="1800" >Tulis judul dan deskripsi untuk setiap foto yang diunggah di kolom ini.
-Judul maksimal 50 karakter dan deskripsi maksimal 250 karakter untuk setiap foto.
-Contoh:
+                            <div style="font-size:12px; line-height: 14px;" class="mb-2">Tulis <b>judul dan deskripsi</b> untuk setiap foto yang diunggah di kolom dibawah ini. Judul maksimal 50 karakter dan deskripsi maksimal 250 karakter untuk setiap foto.</div>
+                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="10" cols="50" maxlength="1800">Contoh:
 Foto 1
 Judul: Negeri di Atas Awan
 Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenangan dan kebahagiaan. Langit biru cerah, sinar mentari hangat menyinari, menciptakan harmoni alam yang mengundang rasa syukur dan sukacita dalam diri.</textarea>

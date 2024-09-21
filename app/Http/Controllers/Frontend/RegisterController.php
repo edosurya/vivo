@@ -134,6 +134,7 @@ class RegisterController extends Controller
             $category = Images::TYPE[$request->category];
 
             foreach ($images as $index => $image) { 
+                $index = $index+1;
                 // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
                 $getFileExt   = $image->getClientOriginalExtension();
                 $file_name = $category.'-'.$name.'-'.$code.'-'.$index.'.'.$getFileExt;
