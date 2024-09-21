@@ -189,17 +189,19 @@
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
                         </div>
 
-                         <div class="mb-3 col-md-12 mb-0 pb-0">
-                            <div class="form-group mb-3">
-                                <div class="mb-3"><h6 class="text-white vivo_light"><i>*Upload foto max. 20 MB </i></h6></div>
-                                <div class="main-drag-area form-control p-0 border-0" id="dzDropzone">
-
-                                    <div class="dz-message rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" id="dzPlaceholder" style="cursor: pointer;">
-                                        <span class="text-black vivo_bold">Upload Photo</span>
-                                        <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
-                                        </svg>
-                                        
+                        <div class="mb-3 col-md-12 mb-0 pb-0">
+                            <label class="indosat_bold_body fs-label" for="img_desc">
+                                Judul dan Deskripsi
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div style="font-size:12px; line-height: 14px;" class="mb-2">Tulis <b>judul dan deskripsi</b> untuk setiap foto yang diunggah di kolom dibawah ini. Judul maksimal 50 karakter dan deskripsi maksimal 250 karakter untuk setiap foto.</div>
+                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="10" cols="50" maxlength="1800">Contoh:
+Foto 1
+Judul: Negeri di Atas Awan
+Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenangan dan kebahagiaan. Langit biru cerah, sinar mentari hangat menyinari, menciptakan harmoni alam yang mengundang rasa syukur dan sukacita dalam diri.</textarea>
+                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/1800
+                            <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
+                        </div>                      
                                     </div>
 
                                     <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
