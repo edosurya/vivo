@@ -325,7 +325,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'still-live-photography':
-                $title = 'Still Live Photography';
+                $title = 'Still Life Photography';
                 $images = [
 [ 
     'path' => 'frontend/images/gallery/still-life/Creative_Food_Photography_Miniature_People_at_Work_with_Chocolate_Cookies.webp',
