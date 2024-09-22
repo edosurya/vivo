@@ -55,7 +55,7 @@
 
                 </ul>
                 <div class="fs-term-condition-other">
-                <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini</p>
+                <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini:</p>
                 <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal">
                   <img alt="image" class="img-fluid me-2"
                 src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Publik

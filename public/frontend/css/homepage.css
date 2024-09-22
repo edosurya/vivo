@@ -477,7 +477,7 @@ h6 {
     }
 
     .fs-period-desc {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 15px;
     }
 
@@ -500,7 +500,7 @@ h6 {
 @media (max-width: 992px) {
 
     .fs-desc-mechanism {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 15px;
     }
 
