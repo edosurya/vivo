@@ -78,6 +78,7 @@
                                         <th>Email</th>
                                         <th>Phone</th>
                                         <th>Category</th>
+                                        <th>Preview</th>
                                     </tr>
                                 </thead>
                                 <tbody></tbody>
@@ -162,6 +163,17 @@
                         name: "category",
                         data: 'category',
                         defaultContent: '-',
+                    },
+                    {
+                        name: "preview",
+                        data: 'preview',
+                        defaultContent: '-',
+                        render: function(data, type, row, meta) {
+                            let detailUrl = `{{ route('creator.index', ':customerCode') }}`.replace(':customerCode', data);
+                            let action = `<a href="${detailUrl}" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-eye"></i></a`;
+
+                            return action;
+                        },
                     },
                 ],
                 order: [[1, 'desc']],

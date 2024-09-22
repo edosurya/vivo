@@ -17,7 +17,7 @@ class CreatorController extends Controller
      */
     public function index(Request $request, $code)
     {
-        // $code = Crypt::decrypt($code);
+        $code = Crypt::decrypt($code);
         $creator = Creator::where('code', $code)->first();
 
         return view('frontend.creator', compact('creator'));

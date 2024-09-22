@@ -9,6 +9,7 @@ use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Illuminate\Support\Facades\Crypt;
 
 class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, WithStyles
 {
@@ -56,6 +57,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
                     'vivo_id' => $creator?->vivo_id ?? '-',
                     'category' => Images::TYPE[$creator?->category],
                     'desc' => $creator?->desc ?? '-',
+                    'preview' => route('creator.index', Crypt::encrypt($creator->code)),
                 ];
             });
     }
