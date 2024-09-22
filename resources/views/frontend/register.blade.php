@@ -7,6 +7,10 @@
     @push('css-plugin')
         @vite(['resources/js/app.js'])
         <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    @endpush
+
+    @push('style')
     @endpush
 
 @section('hero')
@@ -29,18 +33,38 @@
 
       <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});" id="form">
         <div class="container-lg mb-5">
-          <div class="row justify-content-center">
+          <div class="row">
             <div class="col-12 col-md-5 mb-5">
               <p class="text-white vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
-                <ul class="text-white term-condition">
+                <ul class="text-white term-condition"><!-- 
                     <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti kompetisi ini lebih dari 1 kategori.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 1 foto atau maksimal 5 foto untuk tiap kategori; <i>Portrait Photography, Nature Photography, Street Photography, Night Photography, dan Still Life Photography.</i></span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit</i> minimal 3 foto atau maksimal 5 foto khusus untuk kategori <i>Photo series.</i></span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan <i>Digital Imaging</i> berlebih, untuk <i>Retouching</i> gambar dasar diperbolehkan.</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white"><i>Submit High Resolution files</i> (HD minimal 1280x720 pixels).</span></li>
                     <li style="color: #126479" class="mb-2"><span class="text-white">Berikan deskripsi maksimal 250 karakter untuk keseluruhan foto.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan watermark vivo.</li> -->
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Still Life Photography, Night Photography, dan Nature Photography).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah</span></li>
+                    <li style="color: #126479" class="mb-2"><span class="text-white">Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter</span></li>
+
                 </ul>
+                <div class="fs-term-condition-other">
+                <p class="text-white"> Untuk informasi lebih lanjut, silahkan klik tautan berikut ini:</p>
+                <button type="button" class="btn bg-black text-white mb-3 border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <img alt="image" class="img-fluid me-2"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Publik
+                </button>
+                <button type="button" class="btn bg-black text-white border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal1">
+                  <img alt="image" class="img-fluid me-2"
+                src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Internal
+                </button>
+                </div>
             </div>
             <div class="col-12 col-md-7 mb-3">
               <p class="text-white vivo_heavy text-uppercase mb-3 fs-title-registrasi_form" >REGISTRASI SEKARANG</p>
@@ -82,7 +106,7 @@
                             <label class="invalid-feedback fw-bold mb-3" id="mailErrorMessage"></label>
                         </div>
 
-                        <div class="mb-3 col-md-6 mb-0 pb-0">
+<!--                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label  class="vivo_bold fs-label" for="age">
                                 Usia
                                 <span class="text-danger">*</span>
@@ -91,7 +115,15 @@
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="age"
                                 placeholder="Usia">
                             <label class="invalid-feedback fw-bold mb-3" id="ageErrorMessage"></label>
+                        </div> -->
 
+                        <div class="mb-3 col-md-6 mb-0 pb-0">
+                            <label  class="vivo_bold fs-label" for="birthday">
+                                Tanggal Lahir
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input id="birthday" class="form-control" name="birthday" placeholder="DD/MM/YYYY" />
+                            <label class="invalid-feedback fw-bold mb-3" id="birthdayErrorMessage"></label>
                         </div>
 
                         <div class="mb-3 col-md-6">
@@ -103,7 +135,7 @@
                                 <span class="input-group-text w-20">+62</span>
                                 <input type="text" class="form-control" name="phone"
                                     oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="phone"
-                                    placeholder="No. WhatsApp">
+                                    placeholder="No. WhatsApp" maxlength="14">
                             </div>
                             <label class="invalid-feedback fw-bold mb-3" id="phoneErrorMessage"></label>
                         </div>
@@ -133,7 +165,7 @@
                                         placeholder="Masukkan vivo ID">
                         </div>
 
-                        <p class="text-white vivo_heavy text-uppercase mb-3 mt-5 fs-title-registrasi_form">UPLOAD</p>
+                        <p class="text-white vivo_heavy text-uppercase mb-3 mt-5 fs-title-registrasi_form">UNGGAH</p>
 
                         <div class="mb-3 col-md-6">
                             <label class="vivo_bold fs-label" for="category">
@@ -143,30 +175,33 @@
                             <select class="form-select form-control" name="category" id="category">
                                     <option value="1" selected>Portrait Photography</option>
                                     <option value="2">Street Photography</option>
-                                    <option value="3">Nature Photography</option>
-                                    <option value="4">Night Photography</option>
-                                    <option value="5">Still Life Photography</option>
-                                    <option value="6">Series Photography</option>
+                                    <option value="3">Series Photography</option>
+                                    <option value="4">Still Life Photography</option>
+                                    <option value="5">Night Photography</option>
+                                    <option value="6">Nature Photography</option>
+                                    
                             </select>
                         </div>
 
-                        <div class="mb-3 col-md-12 mb-0 pb-0">
+                         <div class="mb-3 col-md-12 mb-0 pb-0">
                             <label class="indosat_bold_body fs-label" for="img_desc">
-                                Deskripsi
+                                Judul dan Deskripsi
                                 <span class="text-danger">*</span>
                             </label>
-                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="4" cols="50" maxlength="250" placeholder="Maksimal 250 karakter"></textarea>
-                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/250
+
+                            <textarea class="form-control indosat_body" name="img_desc" id="img_desc" rows="10" cols="50" maxlength="1800" placeholder="Tulis judul dan deskripsi untuk setiap foto yang diunggah di kolom ini.&#10;Judul maksimal 50 karakter dan deskripsi maksimal 250 karakter untuk setiap foto.&#10;Contoh:&#10;Foto 1&#10;Judul: Negeri di Atas Awan&#10;Deskripsi: Pegunungan menjulang di atas lautan awan putih, memancarkan ketenangan dan kebahagiaan. Langit biru cerah, sinar mentari hangat menyinari, menciptakan harmoni alam yang mengundang rasa syukur dan sukacita dalam diri."></textarea>
+                            <label for="counter-input" class="label">Karakter <span id="counter-display" class="tag is-success">0</span>/1800
+
                             <label class="invalid-feedback fw-bold mb-3" id="imgDescErrorMessage"></label>
                         </div>
 
                          <div class="mb-3 col-md-12 mb-0 pb-0">
                             <div class="form-group mb-3">
-                                <div class="mb-3"><h6 class="text-white vivo_light"><i>*Upload foto max. 20 MB </i></h6></div>
+                                <div class="mb-3"><h6 class="text-white vivo_light"><i>*Unggah foto max. 20 MB </i></h6></div>
                                 <div class="main-drag-area form-control p-0 border-0" id="dzDropzone">
 
                                     <div class="dz-message rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" id="dzPlaceholder" style="cursor: pointer;">
-                                        <span class="text-black vivo_bold">Upload Photo</span>
+                                        <span class="text-black vivo_bold">Unggah Foto</span>
                                         <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                             <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
                                         </svg>
@@ -174,14 +209,14 @@
                                     </div>
 
                                     <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
-                                        <span class="text-black vivo_bold">Upload Photo</span>
+                                        <span class="text-black vivo_bold">Unggah Foto</span>
                                         <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                             <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
                                         </svg>
                                     </div>
 
                                     <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
-                                        <span class="text-black vivo_bold">Upload Photo</span>
+                                        <span class="text-black vivo_bold">Unggah Foto</span>
                                         <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                             <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
                                         </svg>
@@ -190,8 +225,8 @@
                                     <ul class="dz-previews-container p-0" id="dzPreviews"></ul>
                                 </div>
                             </div>
-                            <div class="mb-3 col-3 col-md-2 mb-0 pb-0">
-                                <div class="mb-3"><h6 class="text-white vivo_regular addmore p-2">Add More</h6></div>
+                            <div class="mb-3 col-4 col-md-3 mb-0 pb-0">
+                                <div class="mb-3"><h6 class="text-white vivo_regular addmore rounded text-btn-padding">Tambah Lagi</h6></div>
                             </div>
 
                             <div class="invalid-feedback fw-bold mb-3" id="imgErrorMessage"></div>
@@ -201,18 +236,18 @@
                         <div class="mb-3 col-md-12 mb-0 pb-0">
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="checkTermAndCondition" name="checkTermAndCondition" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan Syarat & Ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
                             <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
                           </div>
                           <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="privacy" name="privacy" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada Kebijakan Privasi vivo.</label>
+                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada <a href="https://privacy.vivo.com/id/privacy?_gl=1%2apd2loe%2a_ga%2aMTE5MzU3MjAxMC4xNzIzNzkwODEy%2a_ga_68BLCXM546%2aMTcyNjEzMDM0NS4zLjAuMTcyNjEzMDM0NS42MC4wLjA" target="_blank" class="text-blue">Kebijakan Privasi vivo </a></label>
                             <label class="invalid-feedback fw-bold mb-3" id="privacyErrorMessage"></label>
                           </div>
                         </div>
 
                         <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
-                            <button class="btn p-3 rounded-3 text-black vivo_heavy btn-register" id="dzSubmitButton">SUBMIT</button>
+                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding" id="dzSubmitButton">SUBMIT</button>
                         </div>
                     </div>
 
@@ -237,7 +272,7 @@
     </script>    
     <script id="dzAdditionalTemplate" type="text/template">
         <div class="dz-additional-area rounded-2 text-muted bg-blue-gradient-90 p-2 mb-2 text-center w-upload-file" style="cursor: pointer;">
-            <span class="text-black vivo_bold">Upload Photo</span>
+            <span class="text-black vivo_bold">Unggah Foto</span>
             <svg class="dz-photo-icon opacity-75" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
             </svg>
@@ -261,14 +296,29 @@
         </div>
     </script>
 
+    @include('components.frontend.term-condition')
+
 @endsection
 
 
 @push('js-plugin')
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+
 @endpush
 
 @push('script')
 <script type="text/javascript">
+
+
+    $('#birthday').datepicker({
+        uiLibrary: 'bootstrap5',
+        maxDate: new Date(),
+    });
+
     (() => {
   const counter = (() => {
     const input = document.getElementById('img_desc'),

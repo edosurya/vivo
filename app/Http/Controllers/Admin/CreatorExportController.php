@@ -16,8 +16,8 @@ class CreatorExportController extends Controller
      */
     public function __invoke(Request $request)
     {
-
-        $filename = 'Creator_list';
+        $ldate = date('Y-m-d H:i:s');
+        $filename = 'Creator_list-'.$ldate;
         if ($request->start_date) $filename .= '_' . $request->start_date;
         if ($request->end_date) $filename .= '_' . $request->end_date;
         if ($request->category) $filename .= '_' . Images::TYPE[$request->category];

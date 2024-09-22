@@ -30,15 +30,13 @@ class CreatorController extends Controller
                         $query->where('category', $request->filter_category);
                     })
                     ->select('creators.*')
-                    ->orderBy('creators.id', 'DESC');
+                    ->orderBy('id', 'DESC');
+
                 return datatables()
                     ->eloquent($query)
                     ->addColumn('created_at', function ($row) {
                         $explode = explode(' ', $row->created_at->translatedFormat('d-m-Y H:i:s'));
                         return $explode[0] . '<br>' . $explode[1];
-                    })
-                    ->addColumn('device', function ($row) {
-                        return Creator::TYPE[$row->device];
                     })
                     ->addColumn('category', function ($row) {
                         return Images::TYPE[$row->category];

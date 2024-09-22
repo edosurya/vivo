@@ -17,6 +17,9 @@ class ImageController extends Controller
             try {
                 $query = Images::query()
                     ->join('creators', 'creators.id', '=', 'images.creator_id')
+                    ->when($request->filter_category, function ($query) use ($request) {
+                        $query->where('images.category', $request->filter_category);
+                    })
                     ->select('images.*', 'creators.fullname')
                     ->orderBy('images.id', 'DESC');
                 return datatables()

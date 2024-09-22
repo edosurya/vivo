@@ -23,12 +23,14 @@ const fnErrorMessage = $('#fnErrorMessage');
 const mailErrorMessage = $('#mailErrorMessage');
 const phoneErrorMessage = $('#phoneErrorMessage');
 const addrErrorMessage = $('#addrErrorMessage');
-const ageErrorMessage = $('#ageErrorMessage');
+// const ageErrorMessage = $('#ageErrorMessage');
+const birthdayErrorMessage = $('#birthdayErrorMessage');
 const imgDescErrorMessage = $('#imgDescErrorMessage');
 const imgSeriesErrorMessage = $('#imgSeriesErrorMessage');
 const imgErrorMessage = $('#imgErrorMessage');
 const checkErrorMessage = $('#checkErrorMessage');
 const privacyErrorMessage = $('#privacyErrorMessage');
+const addMoreButton = $('.addmore');
 
 const placeHolder = $('#dzPlaceholder');
 let form = 3;
@@ -116,7 +118,8 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("phone", $('#phone').val());
     formData.append("address", $('#address').val());
     // formData.append("device", $('#device').val());
-    formData.append("age", $('#age').val());
+    // formData.append("age", $('#age').val());
+    formData.append("birthday", $('#birthday').val());
     formData.append("category", $('#category').val());
     formData.append("desc", $('#img_desc').val());
     formData.append("referral_code", $('#referral_code').val());
@@ -146,6 +149,12 @@ function updateAdditionalAreas() {
     } else {
         form = filesCount;
     } 
+
+    if(form < 5) {
+        addMoreButton.show();  
+    } else {
+        addMoreButton.hide();
+    }
 }
 
 /**
@@ -153,9 +162,12 @@ function updateAdditionalAreas() {
  */
 $(document).on('click', '.addmore', function() {
     if( form < 5 ) {
-    form = form + 1;
-    let additionalTemplate = $('#dzAdditionalTemplate').html();
-    $(myDropzone.previewsContainer).append(additionalTemplate);
+        form = form + 1;
+        let additionalTemplate = $('#dzAdditionalTemplate').html();
+        $(myDropzone.previewsContainer).append(additionalTemplate);
+        if(form == 5) {
+            $(this).hide();
+        }
     } else {
         imgErrorMessage.show().text('Maksimal 5 gambar.');
     }
@@ -238,8 +250,9 @@ $('#dzSubmitButton').on('click', function(event) {
     mailErrorMessage.hide();
     phoneErrorMessage.hide();
     addrErrorMessage.hide();
-    ageErrorMessage.hide();
+    // ageErrorMessage.hide();
     imgDescErrorMessage.hide();
+    birthdayErrorMessage.hide();
 
     const validateEmail = (email) => {
       return email.match(
@@ -285,10 +298,17 @@ $('#dzSubmitButton').on('click', function(event) {
     }
 
     // show error messages if age is empty
-    let age = document.forms["dzImageUploadForm"]["age"].value;
-    if(age == null || age == "") {
+    // let age = document.forms["dzImageUploadForm"]["age"].value;
+    // if(age == null || age == "") {
+    //     error = error+1;
+    //     ageErrorMessage.show().text('Wajib diisi');
+    // }
+
+    // show error messages if birthday is empty
+    let birthday = document.forms["dzImageUploadForm"]["birthday"].value;
+    if(birthday == null || birthday == "") {
         error = error+1;
-        ageErrorMessage.show().text('Wajib diisi');
+        birthdayErrorMessage.show().text('Wajib diisi');
     }
 
     // show error messages if Image Description is empty
@@ -312,20 +332,20 @@ $('#dzSubmitButton').on('click', function(event) {
         privacyErrorMessage.show().text('Wajib diisi');
     }
 
+    // show error messages if not have enough images
+    if (myDropzone.files.length === 0) {
+        error = error+1;
+        imgErrorMessage.show().text('Minimal upload 1 gambar.');
+    }
+
     let cat = document.forms["dzImageUploadForm"]["category"].value;
-    if(cat == 6) {
+    if(cat == 3) {
         console.log(myDropzone.files.length );
         // show error messages if not have enough images
         if (myDropzone.files.length < 3) {
             error = error+1;
             imgErrorMessage.show().text('Minimal upload 3 gambar.');
         }
-    }
-
-    // show error messages if not have enough images
-    if (myDropzone.files.length === 0) {
-        error = error+1;
-        imgErrorMessage.show().text('Minimal upload 1 gambar.');
     }
 
     if(error < 1) {

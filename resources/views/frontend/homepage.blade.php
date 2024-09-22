@@ -33,10 +33,10 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3"  >
               <!-- <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. <br/>Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera. </p> -->
-              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards.</p>
+              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards</p>
               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya Anda!</p>
-                <p class="mt-n3">23 Sep - 23 Nov 2024</p>
+                <p class="mt-n3">23 Sep<span class="line"></span>23 Nov 2024</p>
               </div>
             </div>
           </div>
@@ -65,18 +65,17 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
               <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
-              <p class="desc mb-5 text-white fs-desc-category">Temukan inspirasi dari tiap kategori vivo Imagine Photography Awards.</p>
+              <p class="desc mb-5 text-white fs-desc-category">Temukan inspirasi dari tiap kategori vivo Imagine Photography Awards</p>
             </div>
           </div>
 
-          <div class="row flex-center">
-
+          <div class="row flex-center p-2">
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">POTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">PORTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -149,29 +148,35 @@
             </div>
           </div>
 
-          <div class="row text-center text-white" data-aos="fade-up" data-aos-duration="2500">
+          <div class="row text-center text-white p-2" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
-                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social eco journalist. </p>
+              </div>
+              <div>
+                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social Eco Journalist &</p>
                   <p class="fs-judge-desc  vivo_extraLight lh-1">Editor in Chief of @natgeoindonesia</p>
               </div>
             </div>
             <div class="col-4 p-col-mobile">
               <img class="mb-3" src="{{ asset('frontend/images/webp/vg-logo.webp') }}" alt="" width="120" loading="lazy" />
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-benny.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
-                  <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer winner 2020</p>
+              </div>
+              <div>
+                  <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer Winner 2020</p>
               </div>
             </div>
-            <div class="col-4 p-col-mobile">
-              <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy" />
+            <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
+              <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" />
-              <div>
+              <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1">vivo Representative </p>
+              </div>
+              <div>
                   <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Product Manager</p>
               </div>
             </div>
@@ -187,29 +192,29 @@
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column bd-highlight mb-3 text-center">
+            <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
                 <p class="text-white vivo_light lh-1 fs-prize-desc">Special Jury Awards</p>
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2 m-w-50jt">
                 <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
                 <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-50jt-mobile.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2 ">
                 <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-1.webp') }}" alt=""  loading="lazy" />
               </div>
             </div>
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column bd-highlight mb-3 text-center">
+            <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column mb-3 text-center">
               <div class="bd-highlight">
                 <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">6 Pemenang</p>
                 <p class="text-white vivo_light lh-1 fs-prize-desc">dari 6 kategori</p>
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2">
                 <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="50%" loading="lazy" />
                 <img class="mb-3 mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
               </div>
-              <div class="p-2 bd-highlight">
+              <div class="p-2">
                 <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-2.webp') }}" alt="" loading="lazy" />
               </div>
             </div>
@@ -223,7 +228,7 @@
 
       <!-- ============================================-->
       <!-- <section> Periode ============================-->
-      <section class="pb-6 bg-black">
+      <section class="pb-6 bg-black period" >
 
         <div class="container-lg">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
@@ -231,14 +236,13 @@
               <h2 class="text-white vivo_heavy text-uppercase">Periode Kompetisi</h2>
             </div>
           </div>
-
           <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
             <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sept-23 Nov 2024</p>
-                    <p class="vivo_extraLight fs-period-desc">Periode registrasi dan unggah hasil foto</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span> <span class="new-line"></span>23 Nov 2024</p>
+                    <p class="vivo_extraLight fs-period-desc">Periode registrasi dan pengunggahan hasil foto</p>
                 </div>
               </div>
             </div>
@@ -264,8 +268,8 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">08-31 Des 2024 </p>
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto kompetisi vivo imagine</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">08<span class="line"></span>31 Des 2024 </p>
+                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo imagine Photography Awards</p>
                 </div>
               </div>
             </div>

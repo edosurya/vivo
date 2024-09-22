@@ -25,14 +25,14 @@
             </div>
           </div>
 
-          <div class="row flex-center">
+          <div class="row flex-center p-2">
 
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
             <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">POTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">PORTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -109,14 +109,20 @@
               <hr/>
             </div>
         </div>
-
-        <div class="col-md-12">
+        <div class="justify-content-center text-center h-50" id="loader">
+          <span class="loader"></span>
+        </div>
+        <div class="col-md-12" style="display:none" id="galleryList">
           <div class="featured-carousel owl-carousel">
 
             @foreach($images as $key => $img)
               <div class="item work">
                 <div class="img d-flex align-items-center justify-content-center">
+                  @if(@$img['thumb'])
+                  <img class="rounded lazyOwl" src="{{ asset($img['thumb'])}}" alt="" loading="lazy">
+                  @else
                   <img class="rounded lazyOwl" src="{{ asset($img['path'])}}" alt="" loading="lazy">
+                  @endif
                   <a class="icon d-flex align-items-center justify-content-center position-absolute" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
                     <span class="ion-ios-search"></span>
                   </a>
@@ -136,7 +142,6 @@
     </section>
     @endif
     
-    <div id="gallery"></div>
 
     @if($images)
 
@@ -187,9 +192,6 @@
 
       @endif
 
-   
-
-
 
 @endsection
 
@@ -203,20 +205,16 @@
 
 @push('script')
 <script type="text/javascript">
+
+  const galleryList = $('#galleryList');
+  const loading = $('#loader');
+  setTimeout(() => {
+      galleryList.show()
+      loading.hide();
+  }, 500);
+  
+
   (function($) {
-
-  "use strict";
-
-  var fullHeight = function() {
-
-    $('.js-fullheight').css('height', $(window).height());
-    $(window).resize(function(){
-      $('.js-fullheight').css('height', $(window).height());
-    });
-
-  };
-  fullHeight();
-
   var carousel = function() {
     $('.featured-carousel').owlCarousel({
       lazyLoad:true,
@@ -228,8 +226,8 @@
       dots: true,
       autoplay: true,
       slideTransition: 'linear',
-      autoplayTimeout: 6000,
-      autoplaySpeed: 6000,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
       autoplayHoverPause: true,
       items: 1,
       navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],

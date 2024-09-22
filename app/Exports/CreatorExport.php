@@ -49,10 +49,9 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
                     'code' => $creator?->code ?? '-',
                     'fullname' => $creator?->fullname ?? '-',
                     'email' => $creator?->email ?? '-',
-                    'phone' => $creator?->phone ?? '-',
+                    'phone' => '+62'.$creator?->phone ?? '-',
                     'address' => $creator?->address ?? '-',
-                    'device' => Creator::TYPE[$creator?->device],
-                    'age' => $creator?->age ?? '-',
+                    'birthday' => $creator?->birthday ?? '-',
                     'referral_code' => $creator?->referral_code ?? '-',
                     'vivo_id' => $creator?->vivo_id ?? '-',
                     'category' => Images::TYPE[$creator?->category],
@@ -72,12 +71,13 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
             'Email',
             'Phone',
             'Address',
-            'Device',
-            'Age',
+            'Birthday',
             'Referral Code',
-            'Vivo ID',
-            'Desc',
-            'Category'
+            'vivo ID',
+            'Category',
+            'Description',
+            'Preview',
+            'GDrive Link',
         ];
     }
 
