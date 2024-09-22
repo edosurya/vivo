@@ -68,7 +68,7 @@
                     <i class="mdi mdi-buffer float-end"></i>
                 </div>
                 <div class="text-white">
-                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Nature Photography</h6>
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Series Photography</h6>
                     <h2 class="mb-4 text-white">{{ $images_category3_total }}</h2>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     <i class="mdi mdi-buffer float-end"></i>
                 </div>
                 <div class="text-white">
-                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Night Photography</h6>
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Still Life Photography</h6>
                     <h2 class="mb-4 text-white">{{ $images_category4_total }}</h2>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     <i class="mdi mdi-buffer float-end"></i>
                 </div>
                 <div class="text-white">
-                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Still Life Photography</h6>
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Night Photography</h6>
                     <h2 class="mb-4 text-white">{{ $images_category5_total }}</h2>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <i class="mdi mdi-buffer float-end"></i>
                 </div>
                 <div class="text-white">
-                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Series Photography</h6>
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Nature Photography</h6>
                     <h2 class="mb-4 text-white">{{ $images_category6_total }}</h2>
                 </div>
             </div>
