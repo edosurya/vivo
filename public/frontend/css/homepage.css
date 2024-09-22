@@ -416,18 +416,33 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 50px;
   width: 100%;
 }
 
 @media (max-width: 992px) {
     .fs-judge-title {
         font-size: 16px;
-        line-height: 18px;
+        line-height: 16px;
     }
 
     .fs-judge-desc {
         font-size: 14px;
+    } 
+}
+
+@media (max-width: 391px) {
+    .center {
+      height: 35px;
+    }
+
+    .fs-judge-title {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .fs-judge-desc {
+        font-size: 13px;
     } 
 }
 
@@ -477,7 +492,7 @@ h6 {
     }
 
     .fs-period-desc {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 15px;
     }
 
@@ -500,7 +515,7 @@ h6 {
 @media (max-width: 992px) {
 
     .fs-desc-mechanism {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 15px;
     }
 
