@@ -13,7 +13,7 @@
 @section('breadcrumb')
     <h4>Reservation</h4>
     <ol class="breadcrumb m-0">
-        <li class="breadcrumb-item"><a href="{{ route('admin.creators.index') }}">Creator</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('admin.creator.index') }}">Creator</a></li>
         <li class="breadcrumb-item active">index</li>
     </ol>
 @endsection
@@ -111,7 +111,7 @@
                 lengthChange: true,
                 responsive: false,
                 ajax: {
-                    url: "{{ route('admin.creators.index') }}",
+                    url: "{{ route('admin.creator.index') }}",
                     data: function(d) {
                         return $.extend({}, d, {
                             'filter_start_date': $('#filterStartDate').val(),

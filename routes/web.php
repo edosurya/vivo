@@ -21,7 +21,7 @@ use App\Http\Controllers\Admin\ImageController;
 Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(function () {
     Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
 
-    Route::get('/creators', [CreatorController::class, 'index'])->name('creators.index');
+    Route::get('/creators', [CreatorController::class, 'index'])->name('creator.index');
     Route::post('/creators/export', CreatorExportController::class)->name('creator.export');
 
     Route::get('/image', [ImageController::class, 'index'])->name('image.index');
