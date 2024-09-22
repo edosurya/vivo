@@ -49,7 +49,7 @@ Route::controller(RegisterController::class)->group(function () {
 
 Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('gallery');
 
-Route::get('/creator/{code}', [FrontendCreatorController::class, 'index'])->name('creator.index');
+Route::get('/creator/{code}', [FrontendCreatorController::class, 'index'])->name('creator');
 Route::get('/creator/{code}/download', [FrontendCreatorController::class, 'download'])->name('creator.download');
 
 
