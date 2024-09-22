@@ -101,17 +101,6 @@
     filter: none;
 }
 
-.btn-fullscreen-enlarge,
-.btn-fullscreen-exit {
-  position: absolute;
-  top: 1.25rem;
-  right: 3.5rem;
-  z-index: 10;
-  border: 0;
-  background: transparent;
-  opacity: .6;
-  font-size: 1.25rem;
-}
 
 .bi {
   display: inline-block;
@@ -119,6 +108,13 @@
   height: 1em;
   vertical-align: -0.035em;
   fill: currentcolor;
+}
+
+.btn-download {
+    font-size: 15px;
+    border-color: none;
+    background: rgb(42,144,190);
+    background: linear-gradient(90deg, rgba(42,144,190,1) 0%, rgba(114,216,221,1) 49%, rgba(42,144,190,1) 100%);
 }
 
     </style>
@@ -132,37 +128,31 @@
             <div class="col-10 col-lg-12">
               <h3 class="text-white vivo_heavy text-uppercase">{{ $creator->fullname }}</h3>
               <p class="text-white">{{ $creator::IMAGE_CATEGORY_2[$creator->category] }}</p>
-              <p class="text-white">{{ $creator->desc }}</p>
-              <a href="{{ route('creator.download', $creator->code ) }}" class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding" id="dzSubmitButton">Download Foto</a>
+              <p class="text-white">{!! nl2br($creator->desc) !!}</p>
+              <a href="{{ route('creator.download', $creator->code ) }}" class="btn rounded-3 text-black vivo_heavy btn-download text-btn-padding" id="dzSubmitButton">Download Foto</a>
             </div>
           </div>
 
 
-<section class="photo-gallery">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
-      @foreach($creator->relatedImages as $img)
-      <div class="col">
-        <a class="gallery-item" href="{{ asset('storage/'.$img->path) }}">
-          <img src="{{ asset('storage/'.$img->path) }}" class="img-fluid" alt="Lorem ipsum dolor sit amet">
-        </a>
+          <section class="photo-gallery">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                @foreach($creator->relatedImages as $img)
+                <div class="col">
+                  <a class="gallery-item" href="{{ asset('storage/'.$img->path) }}">
+                    <img src="{{ asset('storage/'.$img->path) }}" class="img-fluid">
+                  </a>
+                </div>
+                @endforeach
+              </div>
+            </div>
+          </section>
       </div>
-      @endforeach
-    </div>
-  </div>
-</section>
-
-
-
-</div>
 </section>
 
 <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal-fullscreen">
     <div class="modal-content">
-      <button type="button" class="btn-fullscreen-enlarge" aria-label="Enlarge fullscreen">
-        <svg class="bi"><use href="#enlarge"></use></svg>
-      </button>
       <button type="button" class="btn-fullscreen-exit d-none" aria-label="Exit fullscreen">
         <svg class="bi"><use href="#exit"></use></svg>
       </button>
@@ -228,8 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       markup += `
         <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
-          <img class="d-block img-fluid w-100" src=${imgSrc} alt="${imgAlt}">
-          ${imgAlt ? createCaption(imgAlt) : ""}
+          <img class="d-block img-fluid" src=${imgSrc} alt="${imgAlt}">
         </div>`;
     }
 
@@ -300,11 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fsExit.classList.toggle("d-none");
     fsEnlarge.classList.toggle("d-none");
   }
-
-  fsEnlarge.addEventListener("click", (e) => {
-    e.preventDefault();
-    enterFS();
-  });
 
   fsExit.addEventListener("click", (e) => {
     e.preventDefault();
