@@ -169,7 +169,7 @@
                         data: 'preview',
                         defaultContent: '-',
                         render: function(data, type, row, meta) {
-                            let detailUrl = `{{ route('creator', ':customerCode') }}`.replace(':customerCode', data);
+                            let detailUrl = `{{ URL('creator/:customerCode') }}`.replace(':customerCode', data);
                             let action = `<a href="${detailUrl}" class="btn btn-sm btn-primary" target="_blank"><i class="fa fa-eye"></i></a`;
 
                             return action;
