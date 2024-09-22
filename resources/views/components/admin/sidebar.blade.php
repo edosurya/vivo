@@ -23,7 +23,7 @@
                     </li>
                 @endif
                 <li>
-                    <a href="{{ route('admin.creator.index') }}" class="waves-effect">
+                    <a href="{{ route('admin.creators.index') }}" class="waves-effect">
                         <i class="mdi mdi-account"></i>
                         <span>Creator</span>
                     </a>
