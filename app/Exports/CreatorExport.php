@@ -57,7 +57,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
                     'vivo_id' => $creator?->vivo_id ?? '-',
                     'category' => Images::TYPE[$creator?->category],
                     'desc' => $creator?->desc ?? '-',
-                    'preview' => route('creator.index', Crypt::encrypt($creator->code)),
+                    'preview' => route('creator', Crypt::encrypt($creator->code)),
                 ];
             });
     }
