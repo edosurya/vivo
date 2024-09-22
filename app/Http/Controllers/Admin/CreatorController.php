@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Creator;
 use App\Models\Images;
+use Illuminate\Support\Facades\Crypt;
 
 class CreatorController extends Controller
 {
@@ -40,6 +41,9 @@ class CreatorController extends Controller
                     })
                     ->addColumn('category', function ($row) {
                         return Images::TYPE[$row->category];
+                    })
+                    ->addColumn('preview', function ($row) {
+                        return Crypt::encrypt($row->code);
                     })
                     ->escapeColumns([])
                     ->toJson();

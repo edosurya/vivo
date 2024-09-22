@@ -42,6 +42,15 @@ class Creator extends Model
         self::CATEGORY6   => 'nature-photography',
     ];
 
+    const IMAGE_CATEGORY_2 = [
+        self::CATEGORY1   => 'Portrait Photography',
+        self::CATEGORY2   => 'Street Photography',
+        self::CATEGORY3   => 'Series Photography',
+        self::CATEGORY4   => 'Still Life Photography',
+        self::CATEGORY5   => 'Night Photography',
+        self::CATEGORY6   => 'Nature Photography',
+    ];
+
     public function relatedImages(): HasMany
     {
         return $this->hasMany(Images::class, 'creator_id', 'id');
