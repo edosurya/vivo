@@ -204,7 +204,7 @@
         </ul>
 </ol>
 
-<p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan (Frequently Asked Question), anda dapat mengakses vivo Imagine Awards T&C Publik.</p>
+<p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan (Frequently Asked Question), anda dapat mengakses vivo Imagine Awards S&K Publik.</p>
 
 </div>
 
