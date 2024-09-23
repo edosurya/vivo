@@ -27,7 +27,6 @@
     <meta property="og:description" content="@yield('meta_description')">
     <meta property="og:keywords" content="vivo, vivo award">
 
-
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
@@ -48,6 +47,19 @@
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
 
     @stack('style') {{-- Css Code --}}
+
+    @if(env('APP_ENV') == 'production')
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPGN7RK5DS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HPGN7RK5DS');
+    </script>
+    @endif
+    
 </head>
 
 <body>
