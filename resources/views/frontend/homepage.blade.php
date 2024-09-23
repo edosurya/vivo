@@ -259,7 +259,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">06 Des 2024</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">05 Des 2024</p>
                     <p class="vivo_extraLight fs-period-desc">Pengumuman pemenang</p>
                 </div>
               </div>
@@ -268,7 +268,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">08<span class="line"></span>31 Des 2024 </p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">06<span class="line"></span>31 Des 2024 </p>
                     <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards</p>
                 </div>
               </div>
