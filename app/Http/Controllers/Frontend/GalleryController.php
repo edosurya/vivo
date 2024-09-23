@@ -206,12 +206,6 @@ class GalleryController extends Controller
     'desc' =>  'Commaditya',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/street-life/Alice-1.webp',
-    'title' => 'A Pretty Deer',
-    'desc' =>  '',
-    'location' =>  '',
-],
 // [ 
 //     'path' => 'frontend/images/gallery/nature/Folk_2.webp',
 //     'title' => 'Menyusuri Kabut Emas Cileunca',
@@ -248,6 +242,12 @@ class GalleryController extends Controller
 //     'desc' =>  '',
 //     'location' =>  '',
 // ],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Alice-1.webp',
+    'title' => 'A Pretty Deer',
+    'desc' =>  '',
+    'location' =>  '',
+],
 
                 ];
                 break;
