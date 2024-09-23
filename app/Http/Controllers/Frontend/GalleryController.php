@@ -392,24 +392,24 @@ class GalleryController extends Controller
                 $title = 'Series Photography';
                 $images = [
 
-[ 
-    'path' => 'frontend/images/gallery/series/IMG_20240219_114752.webp',
-    'title' => 'The Dragon Festival',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/series/IMG_20240219_120452.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/series/IMG_20240219_120547.webp',
-    'title' => '',
-    'desc' =>  '',
-    'location' =>  '',
-],
+// [ 
+//     'path' => 'frontend/images/gallery/series/IMG_20240219_114752.webp',
+//     'title' => 'The Dragon Festival',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/series/IMG_20240219_120452.webp',
+//     'title' => '',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/series/IMG_20240219_120547.webp',
+//     'title' => '',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_035708.webp',
     'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
