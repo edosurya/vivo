@@ -166,9 +166,9 @@
               <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
               </div>
-<!--               <div>
-                  <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer Winner 2020</p>
-              </div> -->
+              <div>
+                  <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">Professional Photographer</p>
+              </div>
             </div>
             <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
               <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
