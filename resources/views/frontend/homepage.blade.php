@@ -33,7 +33,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3"  >
               <!-- <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. <br/>Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera. </p> -->
-              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari dan menginspirasi melalui vivo Imagine Photography Awards</p>
+              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari, serta menginspirasi dengan mengikuti vivo Imagine Photography Awards</p>
               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya Anda!</p>
                 <p class="mt-n3">23 Sep<span class="line"></span>23 Nov 2024</p>
