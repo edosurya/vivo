@@ -166,9 +166,9 @@
               <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
               </div>
-              <div>
+<!--               <div>
                   <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">vivographer Winner 2020</p>
-              </div>
+              </div> -->
             </div>
             <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
               <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
@@ -269,7 +269,7 @@
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <p class="my-4 text-white vivo_bold fs-period-date lh-1">08<span class="line"></span>31 Des 2024 </p>
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo imagine Photography Awards</p>
+                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards</p>
                 </div>
               </div>
             </div>
