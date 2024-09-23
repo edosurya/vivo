@@ -20,24 +20,7 @@ class GalleryController extends Controller
             case 'potrait-photography':
                 $title = 'Portrait Photography';
                 $images = [
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240219_103409.webp',
-    'title' => 'Refleksi Kebahagiaan',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240219_175937.webp',
-    'title' => 'One Fine Day',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240411_124436.webp',
-    'title' => 'Celebrating the Cherry Blossoms',
-    'desc' =>  '',
-    'location' =>  '',
-],
+
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_2412.webp',
     'title' => 'The Moment of Joy Echoes to Us',
@@ -62,51 +45,81 @@ class GalleryController extends Controller
     'desc' =>  'Benny Lim',
     'location' =>  '',
 ],
-
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_110055-V.webp',
-    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_110055-V.webp',
-    'title' => 'The Joy of Crafting Flavors',
-    'desc' =>  'Rendha Rais',
+    'path' => 'frontend/images/gallery/portrait/IMG_20240219_103409.webp',
+    'title' => 'Refleksi Kebahagiaan',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-2.webp',
-    'title' => 'Crafting from the Soul',
-    'desc' =>  'Rendha Rais',
+    'path' => 'frontend/images/gallery/portrait/IMG_20240219_175937.webp',
+    'title' => 'One Fine Day',
+    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_163045.webp',
-    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_163045.webp',
-    'title' => 'The Sound of Joy',
-    'desc' =>  'Rendha Rais',
+    'path' => 'frontend/images/gallery/portrait/IMG_20240411_124436.webp',
+    'title' => 'Celebrating the Cherry Blossoms',
+    'desc' =>  '',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240911_223552.webp',
-    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_223552.webp',
-    'title' => 'Grooving with Love',
-    'desc' =>  'Rendha Rais',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/portrait/IMG_20240912_150526-2.webp',
-    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240912_150526-2.webp',
-    'title' => 'Melodies of Happiness',
-    'desc' =>  'Rendha Rais',
-    'location' =>  '',
-],
+// [ 
+//     'path' => 'frontend/images/gallery/portrait/IMG_20240911_110055-V.webp',
+//     'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_110055-V.webp',
+//     'title' => 'The Joy of Crafting Flavors',
+//     'desc' =>  'Rendha Rais',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/portrait/IMG_20240911_134735-2.webp',
+//     'title' => 'Crafting from the Soul',
+//     'desc' =>  'Rendha Rais',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/portrait/IMG_20240911_163045.webp',
+//     'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_163045.webp',
+//     'title' => 'The Sound of Joy',
+//     'desc' =>  'Rendha Rais',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/portrait/IMG_20240911_223552.webp',
+//     'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_223552.webp',
+//     'title' => 'Grooving with Love',
+//     'desc' =>  'Rendha Rais',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/portrait/IMG_20240912_150526-2.webp',
+//     'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240912_150526-2.webp',
+//     'title' => 'Melodies of Happiness',
+//     'desc' =>  'Rendha Rais',
+//     'location' =>  '',
+// ],
 
                 ];
                 break;
             case 'street-photography':
                 $title = 'Street Photography';
                 $images = [
+
 [ 
-    'path' => 'frontend/images/gallery/street-life/Alice-1.webp',
-    'title' => 'A Pretty Deer',
-    'desc' =>  '',
+    'path' => 'frontend/images/gallery/street-life/IMG_20240912_163304_1.webp',
+    'title' => 'Where Earth Meets Sky',
+    'desc' =>  'Benny Lim',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240913_140700_1.webp',
+    'title' => 'In the Ups and Downs, We Find a Rhythm',
+    'desc' =>  'Benny Lim',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/IMG_20240913_172217_1.webp',
+    'title' => 'A Reflection Distorted, yet Within the Ripples, A Story Unfolds.',
+    'desc' =>  'Benny Lim',
     'location' =>  '',
 ],
 [ 
@@ -139,12 +152,12 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/street-life/IMG_20240412_204539.webp',
-    'title' => 'Night at Dotonburi',
-    'desc' =>  '',
-    'location' =>  '',
-],
+// [ 
+//     'path' => 'frontend/images/gallery/street-life/IMG_20240412_204539.webp',
+//     'title' => 'Night at Dotonburi',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
 [ 
     'path' => 'frontend/images/gallery/street-life/X100_Pro_SUN_01.webp',
     'title' => '',
@@ -169,66 +182,12 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/street-life/IMG_20240912_163304_1.webp',
-    'title' => 'Where Earth Meets Sky',
-    'desc' =>  'Benny Lim',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/street-life/IMG_20240913_140700_1.webp',
-    'title' => 'In the Ups and Downs, We Find a Rhythm',
-    'desc' =>  'Benny Lim',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/street-life/IMG_20240913_172217_1.webp',
-    'title' => 'A Reflection Distorted, yet Within the Ripples, A Story Unfolds.',
-    'desc' =>  'Benny Lim',
-    'location' =>  '',
-],
 
                 ];
                 break;
             case 'nature-photography':
                 $title = 'Nature Photography';
                 $images = [
-[ 
-    'path' => 'frontend/images/gallery/nature/Folk_2.webp',
-    'title' => 'Menyusuri Kabut Emas Cileunca',
-    'desc' =>  'Roman Bintang',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/nature/Folk_3.webp',
-    'title' => 'Perjalanan Sunyi di Danau Pagi',
-    'desc' =>  'Roman Bintang',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/nature/Folk_4.webp',
-    'title' => 'Selamat Pagi Situ Cileunca',
-    'desc' =>  'Roman Bintang',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/nature/Folk.webp',
-    'title' => 'Mendayung Sebelum Terbit',
-    'desc' =>  'Roman Bintang',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/nature/IMG_20240525_132012.webp',
-    'title' => 'Penjaga Hutan',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/nature/IMG_20240525_163120.webp',
-    'title' => 'Kabut Pagi Itu',
-    'desc' =>  '',
-    'location' =>  '',
-],
 [ 
     'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-2.webp',
     'title' => 'Beauty from Above',
@@ -247,6 +206,49 @@ class GalleryController extends Controller
     'desc' =>  'Commaditya',
     'location' =>  '',
 ],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Alice-1.webp',
+    'title' => 'A Pretty Deer',
+    'desc' =>  '',
+    'location' =>  '',
+],
+// [ 
+//     'path' => 'frontend/images/gallery/nature/Folk_2.webp',
+//     'title' => 'Menyusuri Kabut Emas Cileunca',
+//     'desc' =>  'Roman Bintang',
+//     'location' =>  '',
+// ],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk_3.webp',
+    'title' => 'Perjalanan Sunyi di Danau Pagi',
+    'desc' =>  'Roman Bintang',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk_4.webp',
+    'title' => 'Selamat Pagi Situ Cileunca',
+    'desc' =>  'Roman Bintang',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Folk.webp',
+    'title' => 'Mendayung Sebelum Terbit',
+    'desc' =>  'Roman Bintang',
+    'location' =>  '',
+],
+// [ 
+//     'path' => 'frontend/images/gallery/nature/IMG_20240525_132012.webp',
+//     'title' => 'Penjaga Hutan',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/nature/IMG_20240525_163120.webp',
+//     'title' => 'Kabut Pagi Itu',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
+
                 ];
                 break;
             case 'night-photography':
@@ -265,17 +267,29 @@ class GalleryController extends Controller
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/night/IMG_20240218_202841.webp',
-    'title' => '',
-    'desc' =>  '',
+    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-1.webp',
+    'title' => 'Sinar di Candi',
+    'desc' =>  'Commaditya',
     'location' =>  '',
 ],
 [ 
-    'path' => 'frontend/images/gallery/night/IMG_20240218_203859.webp',
-    'title' => 'Sea Side Night',
-    'desc' =>  '',
+    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-5.webp',
+    'title' => 'Suasana Taman Kota',
+    'desc' =>  'Commaditya',
     'location' =>  '',
 ],
+// [ 
+//     'path' => 'frontend/images/gallery/night/IMG_20240218_202841.webp',
+//     'title' => '',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
+// [ 
+//     'path' => 'frontend/images/gallery/night/IMG_20240218_203859.webp',
+//     'title' => 'Sea Side Night',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
 // [ 
 //     'path' => 'frontend/images/gallery/night/IMG_20240219_185433.webp',
 //     'title' => 'City Lights',
@@ -318,18 +332,7 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-1.webp',
-    'title' => 'Sinar di Candi',
-    'desc' =>  'Commaditya',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/night/CMD-IMAGINE-5.webp',
-    'title' => 'Suasana Taman Kota',
-    'desc' =>  'Commaditya',
-    'location' =>  '',
-],
+
                 ];
                 break;
             case 'still-live-photography':
@@ -345,18 +348,6 @@ class GalleryController extends Controller
     'path' => 'frontend/images/gallery/still-life/Exploring_Vibrant_Candy_Colors_A_Feast_for_the_Eyes_and_Taste_Buds.webp',
     'title' => 'A Feast for the Eyes and Taste Buds',
     'desc' =>  'Bayu Danur Wenda',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/still-life/IMG_20240218_200352.webp',
-    'title' => 'Red Lanterns',
-    'desc' =>  '',
-    'location' =>  '',
-],
-[ 
-    'path' => 'frontend/images/gallery/still-life/IMG_20240219_114835.webp',
-    'title' => 'The Chinese Lion',
-    'desc' =>  '',
     'location' =>  '',
 ],
 [ 
@@ -381,6 +372,18 @@ class GalleryController extends Controller
     'path' => 'frontend/images/gallery/still-life/IMG_2418.webp',
     'title' => 'Whispers of Serenity',
     'desc' =>  'Benny Lim',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_20240218_200352.webp',
+    'title' => 'Red Lanterns',
+    'desc' =>  '',
+    'location' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/IMG_20240219_114835.webp',
+    'title' => 'The Chinese Lion',
+    'desc' =>  '',
     'location' =>  '',
 ],
                 ];
