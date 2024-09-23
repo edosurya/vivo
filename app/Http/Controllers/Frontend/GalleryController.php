@@ -276,12 +276,12 @@ class GalleryController extends Controller
     'desc' =>  '',
     'location' =>  '',
 ],
-[ 
-    'path' => 'frontend/images/gallery/night/IMG_20240219_185433.webp',
-    'title' => 'City Lights',
-    'desc' =>  '',
-    'location' =>  '',
-],
+// [ 
+//     'path' => 'frontend/images/gallery/night/IMG_20240219_185433.webp',
+//     'title' => 'City Lights',
+//     'desc' =>  '',
+//     'location' =>  '',
+// ],
 [ 
     'path' => 'frontend/images/gallery/night/IMG_20240221_191044.webp',
     'title' => 'Lights of the Day',
