@@ -124,7 +124,7 @@ class RegisterController extends Controller
                 'desc' => $request->desc,
                 'email' => strtolower($request->email),
                 'category' => $request->category,
-                'referral_code' => $request->referral_code,
+                // 'referral_code' => $request->referral_code,
                 'vivo_id' => $request->vivo_id,
             ]);
 
