@@ -149,17 +149,17 @@
                             <label class="invalid-feedback fw-bold mb-3" id="addrErrorMessage"></label>
                         </div>
 
-                        <div class="mb-3 col-md-6 mb-0 pb-0">
+<!--                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label class="vivo_bold fs-label" for="referral_code">
                                Referral Code
                             </label>
                             <input type="text" class="form-control" name="referral_code" id="referral_code"
                                         placeholder="Referral Code">
-                        </div>
+                        </div> -->
 
                         <div class="mb-3 col-md-6 mb-0 pb-0">
                             <label class="vivo_bold fs-label" for="vivo_id">
-                               vivo ID Number <small>*hanya untuk promotor</small>
+                               vivo ID Number <small>*internal vivo</small>
                             </label>
                             <input type="text" class="form-control indosat_body" name="vivo_id" id="vivo_id"
                                         placeholder="Masukkan vivo ID">

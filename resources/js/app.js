@@ -122,7 +122,7 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("birthday", $('#birthday').val());
     formData.append("category", $('#category').val());
     formData.append("desc", $('#img_desc').val());
-    formData.append("referral_code", $('#referral_code').val());
+    // formData.append("referral_code", $('#referral_code').val());
     formData.append("vivo_id", $('#vivo_id').val());
     // console.log(formData);
 
