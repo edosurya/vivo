@@ -11,7 +11,7 @@
 
 
 @section('breadcrumb')
-    <h4>Reservation</h4>
+    <h4>Creator List</h4>
     <ol class="breadcrumb m-0">
         <li class="breadcrumb-item"><a href="{{ route('admin.creator.index') }}">Creator</a></li>
         <li class="breadcrumb-item active">index</li>

@@ -39,7 +39,7 @@
               <div class="mb-4 d-flex justify-content-end">
               <a href="{{ route('creator.download', $creator->code ) }}" class="btn rounded px-5 py-3 text-black vivo_heavy btn-download text-btn-padding" id="dzSubmitButton">Download Foto</a>
             </div>
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 gallery-grid">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 gallery-grid">
                 @foreach($creator->relatedImages as $img)
                 <div class="col">
                   <a class="gallery-item" href="{{ asset('storage/'.$img->path) }}">
