@@ -110,6 +110,7 @@
                 serverSide: true,
                 lengthChange: true,
                 responsive: false,
+                ordering: false,
                 ajax: {
                     url: "{{ route('admin.creator.index') }}",
                     data: function(d) {

@@ -97,6 +97,7 @@
                 lengthChange: true,
                 responsive: false,
                 searching: false,
+                ordering: false,
                 ajax: {
                     url: "{{ route('admin.image.index') }}",
                     data: function(d) {
