@@ -149,8 +149,8 @@
           </div>
 
           <div class="row text-center text-white p-2" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-4 p-col-mobile">
-              <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" />
+            <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
+              <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" /> -->
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
               <div class="center">
                   <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
@@ -180,7 +180,9 @@
                   <!-- <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Product Manager</p> -->
               <!-- </div> -->
             <!-- </div> -->
+          </div>
 
+          <div class="row text-center justify-content-center text-white p-2" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-dodo.webp') }}" alt="" loading="lazy" />
               <div class="center">
@@ -191,9 +193,6 @@
                   <p class="fs-judge-desc  vivo_extraLight lh-1"> for Imaging Effects</p>
               </div>
             </div>
-          </div>
-
-          <div class="row text-center justify-content-center text-white p-2" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-4 p-col-mobile">
               <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-jack.webp') }}" alt="" loading="lazy" />
               <div class="center">
@@ -211,7 +210,6 @@
               </div>
               <div>
                   <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Senior Product Manager</p>
-                  <p class="fs-judge-desc  vivo_extraLight lh-1"> for Imaging Effects</p>
               </div>
             </div>
           </div>
