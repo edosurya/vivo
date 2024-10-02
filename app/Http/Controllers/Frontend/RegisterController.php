@@ -126,6 +126,7 @@ class RegisterController extends Controller
                 'category' => $request->category,
                 // 'referral_code' => $request->referral_code,
                 'vivo_id' => $request->vivo_id,
+                'source' => $this->sourceName($request->source),
             ]);
 
             
@@ -165,9 +166,31 @@ class RegisterController extends Controller
         return response()->json($images); 
     }
 
-
     public function cleanString($input) {
         $cleaned = preg_replace('/[^A-Za-z0-9 ]/', '', $input);
         return $cleaned;
+    }
+
+    public function sourceName($source) {
+        switch ($source) {
+            case 'small_banner':
+                return 'Small Banner';
+                break;
+            case 'community':
+                return 'Community';
+                break;
+            case 'fb':
+                return 'Facebook';
+                break;
+            case 'ig':
+                return 'Instagram';
+                break;
+            case 'X':
+                return 'X';
+                break;
+            default:
+                return 'Direct';
+                break;
+        }
     }
 }
