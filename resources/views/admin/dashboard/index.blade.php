@@ -23,11 +23,8 @@
         </div>
     </div>
      <div class="col-xl-12 col-sm-12">
-        <div class="card mini-stat bg-primary">
+        <div class="card mini-stat bg-secondary">
             <div class="card-body mini-stat-img">
-                <div class="mini-stat-icon">
-                    <i class="mdi mdi-cube-outline float-end"></i>
-                </div>
                 <div class="text-white">
                     <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Creator</h6>
                     <h2 class="mb-4 text-white">{{ $creator_total }}</h2>
@@ -35,6 +32,70 @@
             </div>
         </div>
     </div>
+
+    <h2> Data Source </h2>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Direct</h6>
+                    <h2 class="mb-4 text-white">{{ $direct_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Banner</h6>
+                    <h2 class="mb-4 text-white">{{ $small_banner_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Community</h6>
+                    <h2 class="mb-4 text-white">{{ $community_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Facebook</h6>
+                    <h2 class="mb-4 text-white">{{ $fb_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Instagram</h6>
+                    <h2 class="mb-4 text-white">{{ $ig_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-2 col-sm-12">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">X</h6>
+                    <h2 class="mb-4 text-white">{{ $x_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2> Images </h2>
     <div class="col-xl-4 col-sm-6">
         <div class="card mini-stat bg-primary">
             <div class="card-body mini-stat-img">

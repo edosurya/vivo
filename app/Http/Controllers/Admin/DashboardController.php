@@ -27,8 +27,15 @@ class DashboardController extends Controller
         $images_category5_total = Images::where('category',Images::CATEGORY5)->count();
         $images_category6_total = Images::where('category',Images::CATEGORY6)->count();
         
+        $small_banner_total = Creator::where('source','Small Banner')->count();
+        $ig_total = Creator::where('source','Instagram')->count();
+        $fb_total = Creator::where('source','Facebook')->count();
+        $x_total = Creator::where('source','X')->count();
+        $community_total = Creator::where('source','Community')->count();
+        $direct_total = Creator::where('source','Direct')->count();
+        
 
-        return view('admin.dashboard.index',compact('creator_total','images_category1_total', 'images_category2_total', 'images_category3_total', 'images_category4_total', 'images_category5_total', 'images_category6_total'));
+        return view('admin.dashboard.index',compact('creator_total','images_category1_total', 'images_category2_total', 'images_category3_total', 'images_category4_total', 'images_category5_total', 'images_category6_total', 'small_banner_total', 'ig_total', 'fb_total', 'x_total', 'community_total', 'direct_total'));
        
     }
 
