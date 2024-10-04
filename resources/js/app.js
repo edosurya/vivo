@@ -126,6 +126,12 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     formData.append("vivo_id", $('#vivo_id').val());
     // console.log(formData);
 
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    formData.append("source", urlParams.get('utm_medium'));
+
 });
 
 /**

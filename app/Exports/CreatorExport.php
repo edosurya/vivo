@@ -48,6 +48,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
                     'no' => $index + 1,
                     'date' => $creator->created_at->translatedFormat('d-m-Y H:i:s'),
                     'code' => $creator?->code ?? '-',
+                    'source' => $creator?->source ?? '-',
                     'fullname' => $creator?->fullname ?? '-',
                     'email' => $creator?->email ?? '-',
                     'phone' => '+62'.$creator?->phone ?? '-',
@@ -67,6 +68,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
         return [
             'No',
             'Registration Date',
+            'Data Source',
             'Code',
             'Fullname',
             'Email',
