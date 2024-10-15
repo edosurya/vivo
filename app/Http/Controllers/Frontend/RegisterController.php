@@ -9,6 +9,7 @@ use App\Models\Creator;
 use App\Models\Images;
 use Illuminate\Support\Facades\DB;
 use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\Log; 
 
 class RegisterController extends Controller
 {
@@ -132,7 +133,7 @@ class RegisterController extends Controller
             
             $name = preg_replace('/\s+/', '_', $name);
             $images = $request->file('file');
-            $category = Images::TYPE[$request->category];
+            $categori = Images::TYPE[$request->category];
 
             foreach ($images as $index => $image) { 
                 $index = $index+1;
@@ -151,6 +152,7 @@ class RegisterController extends Controller
             return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
         } catch (\Throwable $th) {
             DB::rollBack();
+            Log::info(json_encode($th->getMessage()));
             return response()->json($th->getMessage(), 404); 
         }     
 
