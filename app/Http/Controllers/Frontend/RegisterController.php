@@ -133,7 +133,7 @@ class RegisterController extends Controller
             
             $name = preg_replace('/\s+/', '_', $name);
             $images = $request->file('file');
-            $categori = Images::TYPE[$request->category];
+            $category = Images::TYPE[$request->category];
 
             foreach ($images as $index => $image) { 
                 $index = $index+1;
