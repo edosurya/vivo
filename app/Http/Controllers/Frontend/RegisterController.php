@@ -133,7 +133,7 @@ class RegisterController extends Controller
             
             $name = preg_replace('/\s+/', '_', $name);
             $images = $request->file('file');
-            $category = Images::TYPE[$request->category];
+            $categori = Images::TYPE[$request->category];
 
             foreach ($images as $index => $image) { 
                 $index = $index+1;
@@ -153,7 +153,7 @@ class RegisterController extends Controller
         } catch (\Throwable $th) {
             DB::rollBack();
             Log::info(json_encode($th->getMessage()));
-            return response()->json($th->getMessage(), 404); 
+            return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
         }     
 
     }
