@@ -68,8 +68,8 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
         return [
             'No',
             'Registration Date',
-            'Data Source',
             'Code',
+            'Data Source',
             'Fullname',
             'Email',
             'Phone',
