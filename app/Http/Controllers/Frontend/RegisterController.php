@@ -113,7 +113,8 @@ class RegisterController extends Controller
             $code = Uuid::uuid4()->toString();
             $name = $this->cleanString($request->fullname);
 
-            $date = $request->birthday;
+            $dateInput = $request->birthday;
+            $date = str_replace('/', '-', $dateInput);
             $newDate = date("Y-m-d", strtotime($date));
 
             $register = Creator::create([

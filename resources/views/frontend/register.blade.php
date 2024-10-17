@@ -122,7 +122,7 @@
                                 Tanggal Lahir
                                 <span class="text-danger">*</span>
                             </label>
-                            <input id="birthday" class="form-control" name="birthday" placeholder="DD/MM/YYYY" />
+                            <input id="birthday" class="form-control" name="birthday" placeholder="DD/MM/YYYY" autocomplete="off"/>
                             <label class="invalid-feedback fw-bold mb-3" id="birthdayErrorMessage"></label>
                         </div>
 
@@ -316,6 +316,7 @@
 
     $('#birthday').datepicker({
         uiLibrary: 'bootstrap5',
+        format: 'dd/mm/yyyy',
         maxDate: new Date(),
     });
 
