@@ -86,7 +86,12 @@ myDropzone.on('error', function(file, response) {
       behavior: 'smooth' 
     });
 
-    errorMessage.show().text(response);
+    if(response.message == 'CSRF token mismatch.') {
+        errorMessage.show().text('Sesi telah berakhir. Silakan refresh halaman dan coba lagi');
+    } else {
+        errorMessage.show().text(response);
+    }
+
     myDropzone.removeAllFiles(true);
     form = 3;
     // this.removeFile(file);

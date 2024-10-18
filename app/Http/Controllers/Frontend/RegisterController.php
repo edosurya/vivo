@@ -154,7 +154,8 @@ class RegisterController extends Controller
         } catch (\Throwable $th) {
             DB::rollBack();
             Log::info(json_encode($th->getMessage()));
-            return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
+            return response()->json($th->getMessage(), 404); 
+            // return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
         }     
 
     }
