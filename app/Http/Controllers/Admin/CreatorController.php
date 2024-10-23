@@ -30,6 +30,9 @@ class CreatorController extends Controller
                     ->when($request->filter_category, function ($query) use ($request) {
                         $query->where('category', $request->filter_category);
                     })
+                    ->when($request->filter_source, function ($query) use ($request) {
+                        $query->where('source', $request->filter_source);
+                    })
                     ->select('creators.*')
                     ->orderBy('id', 'DESC');
 

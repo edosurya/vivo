@@ -15,11 +15,12 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
 {
 
     protected $start_date, $end_date;
-    public function __construct($start_date = null, $end_date = null, $category=null)
+    public function __construct($start_date = null, $end_date = null, $category=null, $source=null)
     {
         $this->start_date = $start_date;
         $this->end_date = $end_date;
         $this->category = $category;
+        $this->source = $source;
     }
 
     /**
@@ -39,6 +40,9 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
             })
             ->when($this->category, function ($query) {
                 $query->where('category', $this->category);
+            })
+            ->when($this->source, function ($query) {
+                $query->where('source', $this->source);
             })
             ->orderBy('id', 'desc')
             ->get()

@@ -23,6 +23,7 @@ class CreatorExportController extends Controller
         if ($request->start_date) $filename .= '_' . $request->start_date;
         if ($request->end_date) $filename .= '_' . $request->end_date;
         if ($request->category) $filename .= '_' . Creator::IMAGE_CATEGORY[$request->category];
+        if ($request->source) $filename .= '_' . $request->source;
         $filename .= '.xlsx';
 
         return Excel::download(
@@ -30,6 +31,7 @@ class CreatorExportController extends Controller
                 $request?->start_date,
                 $request?->end_date,
                 $request?->category,
+                $request?->source,
             ),
             $filename,
             \Maatwebsite\Excel\Excel::XLSX

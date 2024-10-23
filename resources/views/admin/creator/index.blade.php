@@ -56,6 +56,19 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="">Source</label><br>
+                                            <select name="source" id="filterSource" class="form-control filter">
+                                                <option value="" selected>-- Choose Source -- </option>
+                                                <option value="Direct">Direct</option>
+                                                <option value="Community">Community</option>
+                                                <option value="X">X</option>
+                                                <option value="Instagram">Instagram</option>
+                                                <option value="Facebook">Facebook</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="col-md-2 d-flex align-items-end">
                                         <div>
                                             <button type="submit" id='export' class="btn btn-success">Export</button>
@@ -119,6 +132,7 @@
                             'filter_start_date': $('#filterStartDate').val(),
                             'filter_end_date': $('#filterEndDate').val(),
                             'filter_category': $('#filterCategory').val(),
+                            'filter_source': $('#filterSource').val(),
                         });
                     }
                 },
@@ -186,7 +200,7 @@
                 order: [[1, 'desc']],
             });
 
-            $('#filterEndDate, #filterStartDate, #filterCategory').on('change', function(event) {
+            $('#filterEndDate, #filterStartDate, #filterCategory, #filterSource').on('change', function(event) {
                 table.draw()
             });
 
