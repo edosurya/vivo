@@ -101,12 +101,12 @@ class RegisterController extends Controller
 
             ]);
 
-            $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
-            $count_email_exist = $email_exist->count();
+            // $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
+            // $count_email_exist = $email_exist->count();
 
-            if($count_email_exist > 0) {
-                return response()->json('Akun anda telah terdaftar untuk kategori ini, silahkan menggunakan akun lainnya.', 404); 
-            }
+            // if($count_email_exist > 0) {
+            //     return response()->json('Akun anda telah terdaftar untuk kategori ini, silahkan menggunakan akun lainnya.', 404); 
+            // }
 
 
             DB::beginTransaction();
