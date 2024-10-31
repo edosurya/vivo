@@ -85,6 +85,13 @@ class GalleryController extends Controller
     'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_133457.webp',
 ],
 [ 
+    'path' => 'frontend/images/gallery/portrait/IMG_20240911_134738.webp',
+    'title' => 'Crafting from the Soul',
+    'desc' =>  'Rendha Rais',
+    'location' =>  '',
+    'thumb' => 'frontend/images/gallery/portrait/thumb_IMG_20240911_134738.webp',
+],
+[ 
     'path' => 'frontend/images/gallery/portrait/IMG_20240911_164247.webp',
     'title' => 'The Sound of Joy',
     'desc' =>  'Rendha Rais',
@@ -276,6 +283,7 @@ class GalleryController extends Controller
     'location' =>  '',
     'thumb' => 'frontend/images/gallery/street-life/thumb_IMG_20241023_172156.webp',
 ],
+
 [ 
     'path' => 'frontend/images/gallery/street-life/IMG_20241023_172407.webp',
     'title' => '',
