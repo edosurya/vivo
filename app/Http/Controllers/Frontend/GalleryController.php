@@ -357,20 +357,20 @@ class GalleryController extends Controller
                 $images = [
 [ 
     'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-2.webp',
-    'title' => 'Beauty from Above',
-    'desc' =>  'Commaditya',
+    'title' => 'The Usual Suspect',
+    'desc' =>  'Putu Aditya',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-3.webp',
-    'title' => 'The Bee & Flower',
-    'desc' =>  'Commaditya',
+    'title' => 'The Helper',
+    'desc' =>  'Putu Aditya',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-4.webp',
-    'title' => 'The Magical Bromo',
-    'desc' =>  'Commaditya',
+    'title' => 'Lines in the Sand',
+    'desc' =>  'Putu Aditya',
     'location' =>  '',
 ],
 [ 
