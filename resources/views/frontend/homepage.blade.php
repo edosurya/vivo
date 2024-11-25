@@ -43,7 +43,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-4 text-center mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="#">REGISTER DITUTUP</a>
               </div>
             </div>
           </div>
@@ -366,7 +366,7 @@
             <div class="row justify-content-center text-center mb-4 mt-5">
               <div class="col-lg-10 col-xxl-7">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="{{ url('/photographyawards') }}#form">REGISTER SEKARANG</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="#">REGISTER DITUTUP</a>
               </div>
 
               </div>
