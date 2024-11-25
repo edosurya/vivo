@@ -18,7 +18,8 @@ class RegisterController extends Controller
      */
     public function index()
     {
-        return view('frontend.register');
+        return redirect()->route('home');
+        // return view('frontend.register');
     }
 
     /**
