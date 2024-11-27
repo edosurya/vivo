@@ -43,7 +43,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-4 text-center mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="#">REGISTER DITUTUP</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="#">REGISTRASI DITUTUP</a>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">5 Des 2024</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">9 Des 2024</p>
                     <p class="vivo_extraLight fs-period-desc">Pengumuman pemenang</p>
                 </div>
               </div>
@@ -300,8 +300,8 @@
               <div class="card h-100 bg-period">
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">6<span class="line"></span>31 Des 2024 </p>
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards</p>
+                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">23 Des<span class="line"></span> <span class="new-line"></span>29 Des 2024 </p>
+                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards di M Bloc Space, Jakarta</p>
                 </div>
               </div>
             </div>
@@ -366,7 +366,7 @@
             <div class="row justify-content-center text-center mb-4 mt-5">
               <div class="col-lg-10 col-xxl-7">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="#">REGISTER DITUTUP</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="#">REGISTRASI DITUTUP</a>
               </div>
 
               </div>
