@@ -301,7 +301,8 @@
                 <div class="inner">&nbsp;</div>
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <p class="my-4 text-white vivo_bold fs-period-date lh-1">23 Des<span class="line"></span> <span class="new-line"></span>29 Des 2024 </p>
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards di M Bloc Space, Jakarta</p>
+                    <!-- <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards di M Bloc Space, Jakarta</p> -->
+                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine @ M Bloc Space Jakarta</p>
                 </div>
               </div>
             </div>
