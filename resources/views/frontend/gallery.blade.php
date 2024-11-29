@@ -17,7 +17,114 @@
 
 @section('content')
 
-      <section class="pb-6 bg-black mt-4">
+      <section class="pb-1 pb-md-3 bg-black mt-4">
+        <div class="container-lg mb-2">
+          <div class="row" data-aos="fade-down" data-aos-duration="1500">
+            <div class="col-10 col-lg-12">
+              <h3 class="text-white vivo_heavy">Pemenang vivo Imagine Photography Awards</h3>
+            </div>
+          </div>
+
+          <div class="row flex-center p-2">
+
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-portrait.webp') }}" alt="" loading="lazy"/>
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG PORTRAIT PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+      
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-street.webp') }}" alt="" loading="lazy"/>
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG STREET PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+        
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-series.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG SERIES PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-still-life.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG STILL LIFE PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-night.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG NIGHT PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-nature.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG NATURE PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="pb-1 pb-md-3 bg-black ">
+        <div class="container-lg mb-2">
+          <div class="row" data-aos="fade-down" data-aos-duration="1500">
+            <div class="col-10 col-lg-12">
+              <h3 class="text-white vivo_heavy">Pemenang Special Jury Award vivo Imagine Photography Awards</h3>
+            </div>
+          </div>
+
+          <div class="row flex-center p-2">
+
+            <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/>
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">JUDUL FOTO - NAMA PEMENANG</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+      <section class="pb-1 pb-md-3 bg-black">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12">
