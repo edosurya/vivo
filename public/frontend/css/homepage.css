@@ -800,3 +800,20 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
 
 
 
+.btn-winner {
+    font-size: 20px;
+    border-color: none;
+    background: rgb(42,144,190);
+    background: linear-gradient(90deg, rgba(42,144,190,1) 0%, rgba(114,216,221,1) 49%, rgba(42,144,190,1) 100%);
+}
+
+@media (max-width: 992px) {
+    .btn-winner {
+        font-size: 15px;
+    }
+}
+
+.box-bg {
+    background-color: rgb(22 117 136 / 13%);
+}
+
