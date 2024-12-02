@@ -102,7 +102,7 @@
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12">
-              <h3 class="text-white vivo_heavy">Pemenang Special Jury Award vivo Imagine Photography Awards</h3>
+              <h3 class="text-white vivo_heavy">Pemenang Special Jury Award</h3>
             </div>
           </div>
 
