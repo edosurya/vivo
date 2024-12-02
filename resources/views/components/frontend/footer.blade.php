@@ -1,7 +1,8 @@
       <!-- ============================================-->
       <!-- <section> footer ============================-->
       <footer class="bg-white footer pt-3">
-              <div id="gallery"></div>
+        <div id="gallery"></div>
+        <div id="winner"></div>
         <div class="container-lg">
           <div class="row">
             <div class="d-flex justify-content-between">
