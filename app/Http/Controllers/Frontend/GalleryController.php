@@ -622,6 +622,7 @@ class GalleryController extends Controller
                         'title' => 'Dua Dimensi',
                         'desc' =>  'Jiehan Herry Saputro',
                         'location' =>  '',
+                        'desc2' => 'Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda. ',
                     ],
 
                 ];
@@ -635,6 +636,8 @@ class GalleryController extends Controller
                         'title' => 'Bermain Bola Pantai',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
+                        'desc2' => 'Beberapa anak-anak bermain bola dipantai pulau Kelagiam kecil< Pahawang, lampung.',
+
                     ],
 
                 ];
@@ -648,6 +651,8 @@ class GalleryController extends Controller
                         'title' => 'Satu Hati',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
+                        'desc2' => 'Mencoba dan belajar dengan foto stillife membuat saya untuk selalu kreatif, Dengan menggunakan Vivo X100, saya dengan mudah memotret buah apel didalam aquarium.',
+
                     ],
 
                 ];
@@ -661,6 +666,8 @@ class GalleryController extends Controller
                         'title' => 'Sudah Malam, Saatnya Pulang',
                         'desc' =>  'Sisca J Esperanza',
                         'location' =>  '',
+                        'desc2' => 'Suasana malam hari selepas jam kerja di sekitar JPO Phinisi, Jakarta',
+
                     ],
 
                 ];
@@ -671,9 +678,27 @@ class GalleryController extends Controller
                 $images = [
                     [ 
                         'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
-                        'title' => 'Sudah Malam, Saatnya Pulang',
-                        'desc' =>  'Sisca J Esperanza',
+                        'title' => 'STAR TRAIL PANTAI GIGI HIU',
+                        'desc' =>  'Dian Pratama Putra',
                         'location' =>  '',
+                        'desc2' => 'Di langit malam yang gelap, jejak bintang-bintang membentuk garis-garis cahaya yang memukau di atas Pantai Gigi Hiu. Foto ini menangkap keajaiban alam dalam bentuk star trail, di mana pergerakan bintang-bintang yang tampak bergerak memanjang, menciptakan pola cahaya yang indah.',
+
+                    ],
+
+                ];
+                break;
+
+            case 'special-winner':
+                $title = 'Pemenang Nature Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri 2.webp',
+                        'title' => 'Pembatik Imogiri',
+                        'desc' =>  'Andika Oky arisandi',
+                        'location' =>  '',
+                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
+                        'desc2' => 'Salah satu gadis jawa pembatik yang ada di desa imogiri bantul jogjakarta',
+
                     ],
 
                 ];
@@ -687,6 +712,8 @@ class GalleryController extends Controller
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
+                        'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
+
                     ],
 
                     [ 

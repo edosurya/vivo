@@ -109,9 +109,10 @@
           <div class="row flex-center p-2">
 
             <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#winner">
+            <a href="{{ route('gallery', ['category' => 'special-winner']) }}#winner">
               <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/>
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/>
+                <!-- <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/> -->
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">Pembatik Imogiri - Andika Oky arisandi</p>
                 </div>
@@ -272,7 +273,7 @@
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
+                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
                                 </div>
                             </div>
                             @else
@@ -281,7 +282,7 @@
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
+                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
                                 </div>
                             </div>
                             @endif
