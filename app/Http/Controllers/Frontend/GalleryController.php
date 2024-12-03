@@ -611,11 +611,116 @@ class GalleryController extends Controller
 ],
                 ];
                 break;
+
+// WINNER
+
+            case 'winner-portrait-photography':
+                $title = 'Pemenang Portrait Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp',
+                        'title' => 'Dua Dimensi',
+                        'desc' =>  'Jiehan Herry Saputro',
+                        'location' =>  '',
+                    ],
+
+                ];
+                break;
+
+            case 'winner-street-photography':
+                $title = 'Pemenang Street Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-Bermain Bola Pantai.webp',
+                        'title' => 'Bermain Bola Pantai',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                    ],
+
+                ];
+                break;
+
+            case 'winner-still-life-photography':
+                $title = 'Pemenang Still Live Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
+                        'title' => 'Satu Hati',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                    ],
+
+                ];
+                break;
+
+            case 'winner-night-photography':
+                $title = 'Pemenang Night Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
+                        'title' => 'Sudah Malam, Saatnya Pulang',
+                        'desc' =>  'Sisca J Esperanza',
+                        'location' =>  '',
+                    ],
+
+                ];
+                break;
+
+            case 'winner-nature-photography':
+                $title = 'Pemenang Nature Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
+                        'title' => 'Sudah Malam, Saatnya Pulang',
+                        'desc' =>  'Sisca J Esperanza',
+                        'location' =>  '',
+                    ],
+
+                ];
+                break;
+
+            case 'winner-series-photography':
+                $title = 'Pemenang Series Photography';
+                $images = [
+                    [ 
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-1.webp',
+                        'title' => 'Piala Dunia Di Depan Mata',
+                        'desc' =>  'M Aditya Sakti Prabowo',
+                        'location' =>  '',
+                    ],
+
+                    [ 
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-2.webp',
+                        'title' => '',
+                        'desc' =>  '',
+                        'location' =>  '',
+                    ],
+                    [ 
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-3.webp',
+                        'title' => '',
+                        'desc' =>  '',
+                        'location' =>  '',
+                    ],
+                    [ 
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-4.webp',
+                        'title' => '',
+                        'desc' =>  '',
+                        'location' =>  '',
+                    ],
+                    [ 
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-5.webp',
+                        'title' => '',
+                        'desc' =>  '',
+                        'location' =>  '',
+                    ],
+                ];
+                break;
             default:
                 $title = '';
                 $images = [];
                 break;
         }
+
 
         return view('frontend.gallery', compact('title', 'images'));
     }
