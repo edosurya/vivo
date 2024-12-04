@@ -689,7 +689,7 @@ class GalleryController extends Controller
                 break;
 
             case 'special-winner':
-                $title = 'Pemenang Nature Photography';
+                $title = 'Pemenang Spesial Jury Award';
                 $images = [
                     [ 
                         'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri 2.webp',
