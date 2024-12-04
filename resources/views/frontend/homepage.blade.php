@@ -28,7 +28,7 @@
       <!-- ============================================-->
       <!-- <section> Winner ============================-->
 
-      <section class="bg-100 py-7 py-md-10 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/winner-bg.webp') }});" id="how-to">
+      <section class="bg-100 py-7 py-md-11 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/winner-bg.webp') }});" id="how-to">
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3">
@@ -38,7 +38,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-8 text-center mt-n3 mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-winner fs-button-register" href="#">vivo Imagine Photography Awards</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-winner fs-button-register" href="{{ route('gallery')}}">vivo Imagine Photography Awards</a>
               </div>
             </div>
           </div>

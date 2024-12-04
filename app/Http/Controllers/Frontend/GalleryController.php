@@ -12,12 +12,13 @@ class GalleryController extends Controller
      */
     public function index($category = null)
     {
-
+        $display = '';
         $title = '';
         $images = [];
 
         switch ($category) {
             case 'potrait-photography':
+                $display = '';
                 $title = 'Portrait Photography';
                 $images = [
 
@@ -173,6 +174,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'street-photography':
+                $display = '';
                 $title = 'Street Photography';
                 $images = [
 
@@ -353,6 +355,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'nature-photography':
+                $display = '';
                 $title = 'Nature Photography';
                 $images = [
 [ 
@@ -401,6 +404,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'night-photography':
+                $display = '';
                 $title = 'Night Photography';
                 $images = [
 [ 
@@ -474,6 +478,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'still-live-photography':
+                $display = '';
                 $title = 'Still Life Photography';
                 $images = [
 [ 
@@ -528,6 +533,7 @@ class GalleryController extends Controller
                 ];
                 break;
             case 'series-photography':
+                $display = '';
                 $title = 'Series Photography';
                 $images = [
 
@@ -615,6 +621,7 @@ class GalleryController extends Controller
 // WINNER
 
             case 'winner-portrait-photography':
+                $display = 'none';
                 $title = 'Pemenang Portrait Photography';
                 $images = [
                     [ 
@@ -629,6 +636,7 @@ class GalleryController extends Controller
                 break;
 
             case 'winner-street-photography':
+                $display = 'none';
                 $title = 'Pemenang Street Photography';
                 $images = [
                     [ 
@@ -644,6 +652,7 @@ class GalleryController extends Controller
                 break;
 
             case 'winner-still-life-photography':
+                $display = 'none';
                 $title = 'Pemenang Still Live Photography';
                 $images = [
                     [ 
@@ -659,10 +668,11 @@ class GalleryController extends Controller
                 break;
 
             case 'winner-night-photography':
+                $display = 'none';
                 $title = 'Pemenang Night Photography';
                 $images = [
                     [ 
-                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
+                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-Sudah Malam, Saatnya Pulang.webp',
                         'title' => 'Sudah Malam, Saatnya Pulang',
                         'desc' =>  'Sisca J Esperanza',
                         'location' =>  '',
@@ -674,6 +684,7 @@ class GalleryController extends Controller
                 break;
 
             case 'winner-nature-photography':
+                $display = 'none';
                 $title = 'Pemenang Nature Photography';
                 $images = [
                     [ 
@@ -689,6 +700,7 @@ class GalleryController extends Controller
                 break;
 
             case 'special-winner':
+                $display = 'none';
                 $title = 'Pemenang Spesial Jury Award';
                 $images = [
                     [ 
@@ -705,6 +717,7 @@ class GalleryController extends Controller
                 break;
 
             case 'winner-series-photography':
+                $display = 'none';
                 $title = 'Pemenang Series Photography';
                 $images = [
                     [ 
@@ -748,8 +761,7 @@ class GalleryController extends Controller
                 break;
         }
 
-
-        return view('frontend.gallery', compact('title', 'images'));
+        return view('frontend.gallery', compact('display','title', 'images'));
     }
 
     /**
