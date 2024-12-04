@@ -689,7 +689,7 @@ class GalleryController extends Controller
                 $images = [
                     [ 
                         'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
-                        'title' => 'STAR TRAIL PANTAI GIGI HIU',
+                        'title' => 'Star Trail Pantai Gigi Hiu',
                         'desc' =>  'Dian Pratama Putra',
                         'location' =>  '',
                         'desc2' => 'Di langit malam yang gelap, jejak bintang-bintang membentuk garis-garis cahaya yang memukau di atas Pantai Gigi Hiu. Foto ini menangkap keajaiban alam dalam bentuk star trail, di mana pergerakan bintang-bintang yang tampak bergerak memanjang, menciptakan pola cahaya yang indah.',
