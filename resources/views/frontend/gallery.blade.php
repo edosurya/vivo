@@ -124,7 +124,6 @@
         </div>
     </section>
 
-    <h1>{{ $display }}</h1>
       <section class="pb-1 pb-md-3 bg-black" id="list-gallery" style="display: {{ $display }};">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
