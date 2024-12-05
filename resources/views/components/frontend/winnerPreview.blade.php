@@ -1,7 +1,7 @@
 <a class="icon d-flex align-items-center justify-content-center position-absolute" data-bs-toggle="modal" data-bs-target="#winnerModal" data-bs-slide-to="1" id="btnWinModal" style="display: none;"></a>
 
 <div class="modal fade lightbox-modal" id="winnerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
+  <span class="close" data-bs-dismiss="modal" aria-label="Close" role="button">&times;</span>
   <div class="modal-dialog modal-dialog-centered modal-fullscreen">
       <div class="modal-content">
           <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
