@@ -28,7 +28,7 @@
       <!-- ============================================-->
       <!-- <section> Winner ============================-->
 
-      <section class="bg-100 py-7 py-md-11 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/winner-bg.webp') }});" id="how-to">
+      <section class="bg-100 py-7 py-md-9 text-white section-has-bg bg-img-winner" id="winner">
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-12 text-center mb-3">
@@ -38,7 +38,7 @@
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="col-10 col-md-8 text-center mt-n3 mb-3">
               <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-winner fs-button-register" href="{{ route('gallery')}}">vivo Imagine Photography Awards</a>
+                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-winner fs-button-register" href="{{ route('gallery', ['category' => 'winner']) }}">vivo Imagine Photography Awards</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
             <div class="col-10 col-lg-10 text-center mb-3 box-bg py-3">
               <h2 class="text-white vivo_heavy mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Kunjungi vivo Imagine Photo Gallery</h2>
               <div class="fs-desc-schedule " data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-                <p class="mb-0">M Bloc Space | 23<span class="line"></span>29 Desember 2024</p>
+                <p class="mb-0">M Bloc Space Jakarta| 23<span class="line"></span>29 Desember 2024</p>
               </div>
             </div>
           </div>
@@ -82,10 +82,10 @@
             <div class="col-10 col-lg-12 text-center mb-3"  >
               <!-- <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. <br/>Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera. </p> -->
               <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari, serta menginspirasi dengan mengikuti vivo Imagine Photography Awards</p>
-              <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+<!--               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <p>Kirimkan hasil karya Anda!</p>
                 <p class="mt-n3">23 Sep<span class="line"></span>23 Nov 2024</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">

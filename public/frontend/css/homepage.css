@@ -236,6 +236,17 @@ li >.nav-item {
     }
 }
 
+
+.bg-img-winner {
+    background-image: url('/frontend/images/webp/winner-bg-desktop.webp');
+}
+
+@media (max-width: 992px) {
+    .bg-img-winner {
+        background-image: url('/frontend/images/webp/winner-bg.webp');
+    }
+}
+
 .inner {
     width: 20%;
     height: 0;

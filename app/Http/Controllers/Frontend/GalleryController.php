@@ -723,6 +723,9 @@ class GalleryController extends Controller
                     ],
                 ];
                 break;
+            case 'winner':
+                $display = 'none';
+                break;
             default:
                 $title = '';
                 $images = [];
