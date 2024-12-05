@@ -54,7 +54,7 @@
       <!-- ============================================-->
       <!-- <section> About Us ============================-->
 
-      <section class="bg-100 py-7 py-md-10 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/mblok-bg.webp') }});" id="how-to">
+      <section class="bg-100 py-5 py-md-10 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/mblok-bg.webp') }});" id="how-to">
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-10 text-center mb-3 box-bg py-3">
