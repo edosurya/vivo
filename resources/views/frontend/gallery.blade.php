@@ -17,6 +17,8 @@
 
 @section('content')
 
+
+
       <section class="pb-1 pb-md-3 bg-black mt-4">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
@@ -26,24 +28,24 @@
           </div>
 
           <div class="row flex-center p-2">
-
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'winner-portrait-photography']) }}#winner">
+            <!-- <a role='button' data-bs-toggle="modal" data-bs-target="#winnerPortrait"> -->
+            <a role='button' onClick="winnerPreview('{{ asset($winner['portrait']['path']) }}','{{ $winner['portrait']['title']}}', '{{ $winner['portrait']['desc']}}', '{{ $winner['portrait']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG PORTRAIT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PORTRAIT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
             </div>
       
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'winner-street-photography']) }}#winner">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['street']['path']) }}','{{ $winner['street']['title']}}', '{{ $winner['street']['desc']}}', '{{ $winner['street']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-street.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG STREET PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">STREET PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -54,7 +56,7 @@
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-series.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG SERIES PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">SERIES PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -62,33 +64,33 @@
 
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'winner-still-life-photography']) }}#winner">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['still-life']['path']) }}','{{ $winner['still-life']['title']}}', '{{ $winner['still-life']['desc']}}', '{{ $winner['still-life']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-still-life.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG STILL LIFE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">STILL LIFE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
             </div>
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'winner-night-photography']) }}#winner">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['night']['path']) }}','{{ $winner['night']['title']}}', '{{ $winner['night']['desc']}}', '{{ $winner['night']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-night.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG NIGHT PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">NIGHT PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
             </div>
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'winner-nature-photography']) }}#winner">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['nature']['path']) }}','{{ $winner['nature']['title']}}', '{{ $winner['nature']['desc']}}', '{{ $winner['nature']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-nature.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">PEMENANG NATURE PHOTOGRAPHY</p>
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">NATURE PHOTOGRAPHY</p>
                 </div>
               </div>
             </a>
@@ -97,6 +99,9 @@
           </div>
         </div>
     </section>
+
+
+
 
     <section class="pb-1 pb-md-3 bg-black ">
         <div class="container-lg mb-2">
@@ -109,7 +114,7 @@
           <div class="row flex-center p-2">
 
             <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'special-winner']) }}#winner">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['special']['path']) }}','{{ $winner['special']['title']}}', '{{ $winner['special']['desc']}}', '{{ $winner['special']['desc2']}}')">
               <div class="position-relative img-wrapper ">
                 <!-- <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/> -->
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/>
@@ -305,6 +310,9 @@
       @endif
 
 
+      @include('components.frontend.winnerPreview');
+
+
 @endsection
 
 @push('js-plugin')
@@ -317,6 +325,29 @@
 
 @push('script')
 <script type="text/javascript">
+
+  var winnerModal = document.getElementById('winnerModal');
+  var btn = document.getElementById('btnWinModal');
+  var winnerImgPath = document.getElementById('imgPath');
+  var winnerImgTitle = document.getElementById('imgTitle');
+  var winnerImgOwner = document.getElementById('imgOwn');
+  var winnerImgDesc = document.getElementById('imgDesc');
+
+
+  function winnerPreview(path, title, owner, desc) {
+    btn.click();
+    winnerImgPath.src = path;
+    winnerImgTitle.innerHTML = title;
+    winnerImgOwner.innerHTML = owner;
+    winnerImgDesc.innerHTML = desc;
+
+  }
+
+
+  // function closeModal() {
+  //   winnerModal.classList.remove("show");
+  //   winnerModal.style.display = 'none';
+  // }
 
   const galleryList = $('#galleryList');
   const loading = $('#loader');
@@ -360,16 +391,15 @@
 
 })(jQuery);
 
-</script>
-<script type="text/javascript">
+
   var myCarousel = document.querySelector('#carouselCategoryControls')
   var myModalEl = document.getElementById('categoryModal')
 
-myModalEl.addEventListener('show.bs.modal', function (event) {
-    const trigger = event.relatedTarget
-    var bsCarousel = bootstrap.Carousel.getInstance(myCarousel)
-    bsCarousel.to(trigger.dataset.bsSlideTo)
-})
+  myModalEl.addEventListener('show.bs.modal', function (event) {
+      const trigger = event.relatedTarget
+      var bsCarousel = bootstrap.Carousel.getInstance(myCarousel)
+      bsCarousel.to(trigger.dataset.bsSlideTo)
+  })
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];

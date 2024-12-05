@@ -16,6 +16,66 @@ class GalleryController extends Controller
         $title = '';
         $images = [];
 
+        $winner['portrait'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp',
+                        'title' => 'Dua Dimensi',
+                        'desc' =>  'Jiehan Herry Saputro',
+                        'location' =>  '',
+                        'desc2' => 'Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda. ',
+                    ];
+
+        $winner['street'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-Bermain Bola Pantai.webp',
+                        'title' => 'Bermain Bola Pantai',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                        'desc2' => 'Beberapa anak-anak bermain bola dipantai pulau Kelagiam kecil< Pahawang, lampung.',
+
+                    ];
+
+        $winner['still-life'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
+                        'title' => 'Satu Hati',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                        'desc2' => 'Mencoba dan belajar dengan foto stillife membuat saya untuk selalu kreatif, Dengan menggunakan Vivo X100, saya dengan mudah memotret buah apel didalam aquarium.',
+
+                    ];
+
+        $winner['night'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-Sudah Malam, Saatnya Pulang.webp',
+                        'title' => 'Sudah Malam, Saatnya Pulang',
+                        'desc' =>  'Sisca J Esperanza',
+                        'location' =>  '',
+                        'desc2' => 'Suasana malam hari selepas jam kerja di sekitar JPO Phinisi, Jakarta',
+
+                    ];
+
+        $winner['nature'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
+                        'title' => 'Star Trail Pantai Gigi Hiu',
+                        'desc' =>  'Dian Pratama Putra',
+                        'location' =>  '',
+                        'desc2' => 'Di langit malam yang gelap, jejak bintang-bintang membentuk garis-garis cahaya yang memukau di atas Pantai Gigi Hiu. Foto ini menangkap keajaiban alam dalam bentuk star trail, di mana pergerakan bintang-bintang yang tampak bergerak memanjang, menciptakan pola cahaya yang indah.',
+
+                    ];
+
+        $winner['special'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri 2.webp',
+                        'title' => 'Pembatik Imogiri',
+                        'desc' =>  'Andika Oky arisandi',
+                        'location' =>  '',
+                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
+                        'desc2' => 'Salah satu gadis jawa pembatik yang ada di desa imogiri bantul jogjakarta',
+
+                    ];
+
         switch ($category) {
             case 'potrait-photography':
                 $display = '';
@@ -545,32 +605,32 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_042629.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  'Gede H Septiawan',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043500.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  'Gede H Septiawan',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_043535.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  'Gede H Septiawan',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044458.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  'Gede H Septiawan',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_044610.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'desc' =>  'Gede H Septiawan',
     'location' =>  '',
 ],
 [ 
@@ -581,14 +641,14 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_2_firdausakbar19.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Biarkan Cahaya Berbicara tentang Kota',
+    'desc' =>  'Firdaus',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/Photo_Series_3_firdausakbar19.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Biarkan Cahaya Berbicara tentang Kota',
+    'desc' =>  'Firdaus',
     'location' =>  '',
 ],
 [ 
@@ -599,122 +659,26 @@ class GalleryController extends Controller
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_140112.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Dimas',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_145150.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Dimas',
     'location' =>  '',
 ],
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240901_164154.webp',
-    'title' => '',
-    'desc' =>  '',
+    'title' => 'Pesona Kapal Latih Cuauhtémoc Asal Meksiko',
+    'desc' =>  'Dimas',
     'location' =>  '',
 ],
                 ];
                 break;
 
-// WINNER
 
-            case 'winner-portrait-photography':
-                $display = 'none';
-                $title = 'Pemenang Portrait Photography';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp',
-                        'title' => 'Dua Dimensi',
-                        'desc' =>  'Jiehan Herry Saputro',
-                        'location' =>  '',
-                        'desc2' => 'Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda. ',
-                    ],
-
-                ];
-                break;
-
-            case 'winner-street-photography':
-                $display = 'none';
-                $title = 'Pemenang Street Photography';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-Bermain Bola Pantai.webp',
-                        'title' => 'Bermain Bola Pantai',
-                        'desc' =>  'Sofyan Efendi',
-                        'location' =>  '',
-                        'desc2' => 'Beberapa anak-anak bermain bola dipantai pulau Kelagiam kecil< Pahawang, lampung.',
-
-                    ],
-
-                ];
-                break;
-
-            case 'winner-still-life-photography':
-                $display = 'none';
-                $title = 'Pemenang Still Live Photography';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
-                        'title' => 'Satu Hati',
-                        'desc' =>  'Sofyan Efendi',
-                        'location' =>  '',
-                        'desc2' => 'Mencoba dan belajar dengan foto stillife membuat saya untuk selalu kreatif, Dengan menggunakan Vivo X100, saya dengan mudah memotret buah apel didalam aquarium.',
-
-                    ],
-
-                ];
-                break;
-
-            case 'winner-night-photography':
-                $display = 'none';
-                $title = 'Pemenang Night Photography';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-Sudah Malam, Saatnya Pulang.webp',
-                        'title' => 'Sudah Malam, Saatnya Pulang',
-                        'desc' =>  'Sisca J Esperanza',
-                        'location' =>  '',
-                        'desc2' => 'Suasana malam hari selepas jam kerja di sekitar JPO Phinisi, Jakarta',
-
-                    ],
-
-                ];
-                break;
-
-            case 'winner-nature-photography':
-                $display = 'none';
-                $title = 'Pemenang Nature Photography';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
-                        'title' => 'Star Trail Pantai Gigi Hiu',
-                        'desc' =>  'Dian Pratama Putra',
-                        'location' =>  '',
-                        'desc2' => 'Di langit malam yang gelap, jejak bintang-bintang membentuk garis-garis cahaya yang memukau di atas Pantai Gigi Hiu. Foto ini menangkap keajaiban alam dalam bentuk star trail, di mana pergerakan bintang-bintang yang tampak bergerak memanjang, menciptakan pola cahaya yang indah.',
-
-                    ],
-
-                ];
-                break;
-
-            case 'special-winner':
-                $display = 'none';
-                $title = 'Pemenang Spesial Jury Award';
-                $images = [
-                    [ 
-                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri 2.webp',
-                        'title' => 'Pembatik Imogiri',
-                        'desc' =>  'Andika Oky arisandi',
-                        'location' =>  '',
-                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
-                        'desc2' => 'Salah satu gadis jawa pembatik yang ada di desa imogiri bantul jogjakarta',
-
-                    ],
-
-                ];
-                break;
 
             case 'winner-series-photography':
                 $display = 'none';
@@ -731,27 +695,31 @@ class GalleryController extends Controller
 
                     [ 
                         'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-2.webp',
-                        'title' => '',
-                        'desc' =>  '',
+                        'title' => 'Piala Dunia Di Depan Mata',
+                        'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
+                        'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
                         'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-3.webp',
-                        'title' => '',
-                        'desc' =>  '',
+                        'title' => 'Piala Dunia Di Depan Mata',
+                        'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
+                        'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
                         'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-4.webp',
-                        'title' => '',
-                        'desc' =>  '',
+                        'title' => 'Piala Dunia Di Depan Mata',
+                        'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
+                        'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
                         'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-5.webp',
-                        'title' => '',
-                        'desc' =>  '',
+                        'title' => 'Piala Dunia Di Depan Mata',
+                        'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
+                        'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                 ];
                 break;
@@ -761,7 +729,8 @@ class GalleryController extends Controller
                 break;
         }
 
-        return view('frontend.gallery', compact('display','title', 'images'));
+
+        return view('frontend.gallery', compact('winner', 'display','title', 'images'));
     }
 
     /**
