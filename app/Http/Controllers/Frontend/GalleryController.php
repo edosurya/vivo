@@ -18,7 +18,7 @@ class GalleryController extends Controller
 
         $winner['portrait'] = 
                     [ 
-                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp',
+                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-0925228e-27d8-4312-9d33-ab9866ecd15a-2.webp',
                         'title' => 'Dua Dimensi',
                         'desc' =>  'Jiehan Herry Saputro',
                         'location' =>  '',
@@ -27,7 +27,7 @@ class GalleryController extends Controller
 
         $winner['street'] = 
                     [ 
-                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-Bermain Bola Pantai.webp',
+                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-ec2982e3-1e20-4318-825b-34233b49f5b8-5.webp',
                         'title' => 'Bermain Bola Pantai',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
@@ -37,7 +37,7 @@ class GalleryController extends Controller
 
         $winner['still-life'] = 
                     [ 
-                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-Satu Hati.webp',
+                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-d49d4853-157a-45be-ba4b-094eb4bafc99-3.webp',
                         'title' => 'Satu Hati',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
@@ -47,7 +47,7 @@ class GalleryController extends Controller
 
         $winner['night'] = 
                     [ 
-                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-Sudah Malam, Saatnya Pulang.webp',
+                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-c9592138-8f77-42cc-8367-f574c2664663-1.webp',
                         'title' => 'Sudah Malam, Saatnya Pulang',
                         'desc' =>  'Sisca J Esperanza',
                         'location' =>  '',
@@ -57,7 +57,7 @@ class GalleryController extends Controller
 
         $winner['nature'] = 
                     [ 
-                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-STAR TRAIL PANTAI GIGI HIU.webp',
+                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-3e043d8a-85c6-46e7-9c8f-86027b939190-4.webp',
                         'title' => 'Star Trail Pantai Gigi Hiu',
                         'desc' =>  'Dian Pratama Putra',
                         'location' =>  '',
@@ -67,7 +67,7 @@ class GalleryController extends Controller
 
         $winner['special'] = 
                     [ 
-                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri 2.webp',
+                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-6b09a54d-285c-42c1-a7c4-0609108381f0-1.webp',
                         'title' => 'Pembatik Imogiri',
                         'desc' =>  'Andika Oky arisandi',
                         'location' =>  '',
@@ -685,7 +685,7 @@ class GalleryController extends Controller
                 $title = 'Pemenang Series Photography';
                 $images = [
                     [ 
-                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-1.webp',
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-8bfcf091-22b5-40fc-a2d8-d66c552b3eb9-1.webp',
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
@@ -694,28 +694,28 @@ class GalleryController extends Controller
                     ],
 
                     [ 
-                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-2.webp',
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-8bfcf091-22b5-40fc-a2d8-d66c552b3eb9-2.webp',
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
                         'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
-                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-3.webp',
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-8bfcf091-22b5-40fc-a2d8-d66c552b3eb9-3.webp',
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
                         'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
-                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-4.webp',
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-8bfcf091-22b5-40fc-a2d8-d66c552b3eb9-4.webp',
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
                         'desc2' => 'Dengan mata yang penuh harapan, mereka bermain di lapangan untuk meraih kemenangan, dengan sorakan ribuan penonton yang memuji setiap gol yang tercipta. Setiap latihan yang dilakukan di bawah terik matahari, setiap tetes keringat yang mengalir, adalah bagian dari perjalanan panjang untuk mencapai cita-cita mereka. Di dalam kebersamaan mereka, tak hanya ada permainan, tetapi juga persahabatan yang kokoh. Mereka saling mendukung, memberi semangat saat salah satu dari mereka jatuh, dan merayakan kemenangan bersama. Mereka tahu bahwa keberhasilan tak hanya datang dari kemampuan individu, tetapi juga dari kekuatan tim. Mereka terus merajut impian, terus berlatih, dan terus berusaha. Dengan sepenuh hati, mereka mengejar mimpi untuk bermain di Piala Dunia, mewujudkan impian yang telah mereka jalin sejak pertama kali menendang bola. Karena mereka tahu, di balik setiap mimpi besar, ada kerja keras dan tekad yang kuat.',
                     ],
                     [ 
-                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-5.webp',
+                        'path' => 'frontend/images/winner/series-photography-M_Aditya_Sakti_Prabowo-8bfcf091-22b5-40fc-a2d8-d66c552b3eb9-5.webp',
                         'title' => 'Piala Dunia Di Depan Mata',
                         'desc' =>  'M Aditya Sakti Prabowo',
                         'location' =>  '',
