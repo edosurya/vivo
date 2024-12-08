@@ -12,7 +12,7 @@
                           <p class="text-white vivo_bold mb-1 fs-img-title" id="imgTitle">Dua Dimensi</p>
                           <p class="text-white vivo_regular fs-img-dec" id="imgOwn">Jiehan Herry Saputro</p>
                           <div class="row align-items-center justify-content-center">
-                            <div class="col-10 col-md-6">
+                            <div class="col-10 col-md-8">
                             <p class="text-white vivo_regular fs-img-dec" id="imgDesc">Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda.</p>
                             </div>
                           </div>

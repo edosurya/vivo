@@ -302,7 +302,7 @@
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
                                     <div class="row align-items-center justify-content-center">
-                                      <div class="col-10 col-md-6">
+                                      <div class="col-10 col-md-8">
                                       <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
                                       </div>
                                     </div>
@@ -315,7 +315,7 @@
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
                                     <div class="row align-items-center justify-content-center">
-                                      <div class="col-10 col-md-6">
+                                      <div class="col-10 col-md-8">
                                       <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
                                       </div>
                                     </div>
