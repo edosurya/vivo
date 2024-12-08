@@ -23,7 +23,7 @@
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12">
-              <h3 class="text-white vivo_heavy">Pemenang vivo Imagine Photography Awards</h3>
+              <h3 class="text-white vivo_heavy">Pemenang <span class="new-line"></span>vivo Imagine <span class="new-line"></span>Photography Awards</h3>
             </div>
           </div>
 
@@ -100,9 +100,6 @@
         </div>
     </section>
 
-
-
-
     <section class="pb-1 pb-md-3 bg-black ">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
@@ -120,6 +117,33 @@
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
                   <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">Pembatik Imogiri - Andika Oky arisandi</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+    <section class="pb-1 pb-md-3 bg-black ">
+        <div class="container-lg mb-2">
+          <div class="row" data-aos="fade-down" data-aos-duration="1500">
+            <div class="col-10 col-lg-12">
+              <h3 class="text-white vivo_heavy">Pemenang V40 Portrait of Indonesia</h3>
+            </div>
+          </div>
+
+          <div class="row flex-center p-2">
+
+            <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a role='button' onClick="winnerPreview('{{ asset($winner['special_2']['path']) }}','{{ $winner['special_2']['title']}}', '{{ $winner['special_2']['desc']}}', '{{ $winner['special_2']['desc2']}}')">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/>
+                <!-- <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/> -->
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-winner-category-name">Xxx - Xxx</p>
                 </div>
               </div>
             </a>
@@ -277,7 +301,11 @@
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
+                                    <div class="row align-items-center justify-content-center">
+                                      <div class="col-10 col-md-6">
+                                      <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             @else
@@ -286,7 +314,11 @@
                                 <div class="text pt-3 w-100 text-center">
                                     <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
                                     <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
+                                    <div class="row align-items-center justify-content-center">
+                                      <div class="col-10 col-md-6">
+                                      <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             @endif

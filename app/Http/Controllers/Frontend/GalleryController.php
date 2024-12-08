@@ -22,7 +22,7 @@ class GalleryController extends Controller
                         'title' => 'Dua Dimensi',
                         'desc' =>  'Jiehan Herry Saputro',
                         'location' =>  '',
-                        'desc2' => 'Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda. ',
+                        'desc2' => 'Portrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda.',
                     ];
 
         $winner['street'] = 
@@ -31,7 +31,7 @@ class GalleryController extends Controller
                         'title' => 'Bermain Bola Pantai',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
-                        'desc2' => 'Beberapa anak-anak bermain bola dipantai pulau Kelagiam kecil< Pahawang, lampung.',
+                        'desc2' => 'Beberapa anak-anak bermain bola di pantai Pulau Kelagian Kecil, Pahawang, Lampung.',
 
                     ];
 
@@ -41,7 +41,7 @@ class GalleryController extends Controller
                         'title' => 'Satu Hati',
                         'desc' =>  'Sofyan Efendi',
                         'location' =>  '',
-                        'desc2' => 'Mencoba dan belajar dengan foto stillife membuat saya untuk selalu kreatif, Dengan menggunakan Vivo X100, saya dengan mudah memotret buah apel didalam aquarium.',
+                        'desc2' => 'Mencoba dan belajar dengan foto still life membuat saya untuk selalu kreatif. Dengan menggunakan vivo X100, saya dengan mudah memotret buah apel di dalam aquarium.',
 
                     ];
 
@@ -69,10 +69,21 @@ class GalleryController extends Controller
                     [ 
                         'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-6b09a54d-285c-42c1-a7c4-0609108381f0-1.webp',
                         'title' => 'Pembatik Imogiri',
-                        'desc' =>  'Andika Oky arisandi',
+                        'desc' =>  'Andika Oky Arisandi',
                         'location' =>  '',
                         'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
-                        'desc2' => 'Salah satu gadis jawa pembatik yang ada di desa imogiri bantul jogjakarta',
+                        'desc2' => 'Salah satu gadis Jawa pembatik yang ada di Desa Imogiri, Bantul, Jogjakarta.',
+
+                    ];
+
+        $winner['special_2'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-6b09a54d-285c-42c1-a7c4-0609108381f0-1.webp',
+                        'title' => 'Pembatik Imogiri',
+                        'desc' =>  'Andika Oky Arisandi',
+                        'location' =>  '',
+                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
+                        'desc2' => 'Salah satu gadis Jawa pembatik yang ada di Desa Imogiri, Bantul, Jogjakarta.',
 
                     ];
 
