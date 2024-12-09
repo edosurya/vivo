@@ -14,7 +14,7 @@
           <div class="row vivo-ipa-logo">
             <div class="col-12 col-md-8">
               <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/webp/vivo-ipa-logo.webp') }}">
+                src="{{ asset('frontend/images/webp/vivo-ipa-logo_2.webp') }}">
             </div>
           </div>
           <a href="#" class="scroll-down" address="true"></a>
