@@ -60,7 +60,7 @@
             <div class="col-10 col-lg-10 text-center mb-3 box-bg py-3">
               <h2 class="text-white vivo_heavy mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Kunjungi <span class="new-line"></span>vivo Imagine <span class="new-line"></span>  Photo Gallery</h2>
               <div class="fs-desc-schedule " data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-                <p class="mb-0">M Bloc Space Jakarta | <span class="new-line"></span>23<span class="line"></span>29 Desember 2024</p>
+                <p class="mb-0">M Bloc Space Jakarta | <span class="new-line ms-1"></span>23<span class="line"></span>29 Desember 2024</p>
               </div>
             </div>
           </div>
