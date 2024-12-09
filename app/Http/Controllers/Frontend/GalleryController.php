@@ -83,7 +83,7 @@ class GalleryController extends Controller
                         'desc' =>  'Vendi Rizki Kesworo',
                         'location' =>  '',
                         'thumb' => 'frontend/images/webp/special-winner.webp',
-                        'desc2' => 'Salah satu gadis Jawa pembatik yang ada di Desa Imogiri, Bantul, Jogjakarta.',
+                        'desc2' => '',
 
                     ];
 
