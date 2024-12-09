@@ -78,11 +78,11 @@ class GalleryController extends Controller
 
         $winner['special_2'] = 
                     [ 
-                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-6b09a54d-285c-42c1-a7c4-0609108381f0-1.webp',
-                        'title' => 'Pembatik Imogiri',
-                        'desc' =>  'Andika Oky Arisandi',
+                        'path' => 'frontend/images/winner/sosmed_winner.webp',
+                        'title' => 'Sang Dalang',
+                        'desc' =>  'Vendi Rizki Kesworo',
                         'location' =>  '',
-                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
+                        'thumb' => 'frontend/images/webp/special-winner.webp',
                         'desc2' => 'Salah satu gadis Jawa pembatik yang ada di Desa Imogiri, Bantul, Jogjakarta.',
 
                     ];
