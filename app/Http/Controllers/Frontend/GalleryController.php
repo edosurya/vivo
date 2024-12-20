@@ -92,6 +92,242 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Portrait Photography';
                 $images = [
+// NEW
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi---Belajar-alat-Gamelan.webp',
+    'title' => 'Belajar alat Gamelan',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi---Ceria-di-Tengah-Lumpur.webp',
+    'title' => 'Ceria di Tengah Lumpur',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi---Nando-Anak-Jawa-Mata-Biru.webp',
+    'title' => 'Nando Anak Jawa Mata Biru',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi---Penggembala-Kambing-Suren.webp',
+    'title' => 'Penggembala Kambing Suren',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi---Persiapan-Penari.webp',
+    'title' => 'Persiapan Penari',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi01.webp',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi02.webp',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Andika-Oky-Arisandi03.webp',
+    'desc' =>  'Andika Oky Arisandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Ares_Jonekson_Saragi---Joyful.webp',
+    'title' => 'Joyful',
+    'desc' =>  'Ares Jonekson Saragi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Ares-Jonekson-Saragi---The-Carpenter.webp',
+    'title' => 'The Carpenter',
+    'desc' =>  'Ares Jonekson Saragi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Ganjar-Mustika---Senyum-Persembahan.webp',
+    'title' => 'Senyum Persembahan',
+    'desc' =>  'Ganjar Mustika',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Ganjar-Mustika---Tersenyum-Ramah-Menyapa.webp',
+    'title' => 'Tersenyum Ramah Menyapa',
+    'desc' =>  'Ganjar Mustika',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_7085.webp',
+    'desc' =>  '',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/IMG_7856.webp',
+    'title' => '',
+    'desc' =>  '',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Irwandi---Menganyam-Rotan.webp',
+    'title' => 'Menganyam Rotan',
+    'desc' =>  'Irwandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Irwandi---Meracik-Kopi.webp',
+    'title' => 'Meracik Kopi',
+    'desc' =>  'Irwandi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Jiehan_Herry_Saputro---Perahu-ini-Untukmu.webp',
+    'title' => 'Perahu ini Untukmu',
+    'desc' =>  'Jiehan Herry Saputro',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Jiehan-Herry-Saputro---Kaca-Pembesar-Teman-Hidupku.webp',
+    'title' => 'Kaca Pembesar Teman Hidupku',
+    'desc' =>  'Jiehan Herry Saputro',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Maya-Nurikawati---Mata-Ikan---Finalis.webp',
+    'title' => 'Mata Ikan',
+    'desc' =>  'Maya Nurikawati',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Maya-Nurikawati---Sahabat-Ceria.webp',
+    'title' => 'Sahabat Ceria',
+    'desc' =>  'Maya Nurikawati',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Maya-Nurikawati---Topeng-Si-Kecil.webp',
+    'title' => 'Topeng Si Kecil',
+    'desc' =>  'Maya Nurikawati',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Andika-Oky-Arisandi---Dua-Wajah-Satu-Cerita_.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' =>  'Dua Wajah Satu Cerita',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Andika-Oky-Arisandi---Harmoni-Kecantikan-dalam-Budaya.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' =>  'Harmoni Kecantikan dalam Budaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Andika-Oky-Arisandi---Pembatik-Imogiri---CHANGE-WATERMARK-TO-WHITE.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' =>  'Pembatik Imogiri',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Andika-Oky-Arisandi---Riang-di-Balik-Daun-Talas.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' =>  'Riang di Balik Daun Talas',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Andika-Oky-Arisandi---Suasana-Pagi-di-Desa-Candi.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' =>  'Suasana Pagi di Desa Candi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Ares_Jonekson_Saragi---Imaginary-Glasses,-Real-Smiles.webp',
+    'desc' => 'Ares Jonekson Saragi',
+    'title' =>  'Imaginary Glasses, Real Smiles',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Benny-Lim---Pesona-Sang-Penari.webp',
+    'title' => 'Pesona Sang Penari',
+    'desc' =>  'Benny Lim',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Ganjar_Mustika---Bersama-Nenek.webp',
+    'title' => 'Bersama Nenek',
+    'desc' =>  'Jiehan Herry Saputro',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---Jiehan_Herry_Saputro---Menjaga-Kambing-Bapak-Bersama.webp',
+    'title' => 'Menjaga Kambing Bapak Bersama',
+    'desc' =>  'Jiehan Herry Saputro',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Priority---M_Aditya_Sakti_Prabowo---Membantu-Ayah-Menjala-Ikan.webp',
+    'title' => 'Melodies of Happiness',
+    'desc' =>  'Rendha Rais',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Rendha-Rais---Melodies-of-Happiness.webp',
+    'title' => 'Melodies of Happiness',
+    'desc' =>  'Rendha Rais',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Rendha-Rais---The-Joy-of-Crafting-Flavors.webp',
+    'title' => 'The Joy of Crafting Flavors',
+    'desc' =>  'Rendha Rais',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/portrait/Rendha-Rais---The-Sound-of-Joy.webp',
+    'title' => 'The Sound of Joy',
+    'desc' =>  'Rendha Rais',
+    'location' =>  '',
+    'thumb' =>  '',
+ ],              
+// END
 
 [ 
     'path' => 'frontend/images/gallery/portrait/IMG_2412.webp',
@@ -244,6 +480,8 @@ class GalleryController extends Controller
 
                 ];
                 break;
+
+
             case 'street-photography':
                 $display = '';
                 $title = 'Street Photography';
@@ -311,7 +549,6 @@ class GalleryController extends Controller
     'location' =>  '',
     'thumb' => 'frontend/images/gallery/street-life/thumb_Putu-Aditya-@commaditya---run-with-the-sun.webp',
 ],
-
 
 [ 
     'path' => 'frontend/images/gallery/street-life/IMG_20241023_165640.webp',
@@ -420,11 +657,10 @@ class GalleryController extends Controller
     'location' =>  '',
 ],
 
-
-
-
                 ];
                 break;
+
+
             case 'nature-photography':
                 $display = '';
                 $title = 'Nature Photography';
@@ -478,6 +714,100 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Night Photography';
                 $images = [
+
+// NEW
+[ 
+    'path' => 'frontend/images/gallery/night/Andika-Oky-Arisandi---Panorama-malam-di-Masjid-Sheikh-Zayed---2.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' => 'Panorama malam di Masjid Sheikh Zayed-2',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Andika-Oky-Arisandi---Panorama-malam-di-Masjid-Sheikh-Zayed.webp',
+    'desc' => 'Andika Oky Arisandi',
+    'title' => 'Panorama malam di Masjid Sheikh Zayed',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Ganjar-Mustika---Bima-Sakti.webp',
+    'desc' => 'Ganjar Mustika',
+    'title' => 'Bima Sakti',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Muhammad-Rifki-Maulidan----Ramai-Setelah-Hujan.webp',
+    'desc' => 'Muhammad Rifki Maulidan',
+    'title' => ' Ramai Setelah Hujan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Priority---Ganjar-Mustika---Kebun-Teh.webp',
+    'desc' => 'Ganjar Mustika',
+    'title' => 'Kebun Teh',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Priority---Yunus-evanudin---Candle-light-at-Borobudur.webp',
+    'desc' => 'Yunus evanudin',
+    'title' => 'Candle light at Borobudur',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Putu-Aditya-@commaditya---Beyond-The-Portal.webp',
+    'desc' => 'Putu Aditya @commaditya',
+    'title' => 'Beyond The Portal',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Putu-Aditya-@commaditya---colors-of-the-market-(2).webp',
+    'desc' => 'Putu Aditya @commaditya',
+    'title' => 'colors of the market (2)',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Putu-Aditya-@commaditya---locked-in.webp',
+    'desc' => 'Putu Aditya @commaditya',
+    'title' => 'locked in',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Retouch - MUHAMMAD FACHRI - Mengabdi dalam kegelapan, mencari secercah harapan.webp',
+    'desc' => 'MUHAMMAD FACHRI',
+    'title' => 'Mengabdi dalam kegelapan, mencari secercah harapan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Retouch---Dian-Pratama-Putra---BERJUANG-UNTUK-PULANG---Finalis.webp',
+    'desc' => 'Dian Pratama Putra',
+    'title' => 'BERJUANG UNTUK PULANG',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Roman-Bintang---Menyapa-Malam-di-Pasupati.webp',
+    'desc' => 'Roman Bintang',
+    'title' => 'Menyapa Malam di Pasupati',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/night/Roman-Bintang---Pesona-Malam-di-Wall-of-Heritage-De-Vries.webp',
+    'desc' => 'Roman Bintang',
+    'title' => 'Pesona Malam di Wall of Heritage De Vries',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+// END
 [ 
     'path' => 'frontend/images/gallery/night/CMD-IMAGINE-1.webp',
     'title' => 'Beyond the Portal',
@@ -548,6 +878,8 @@ class GalleryController extends Controller
 
                 ];
                 break;
+
+
             case 'still-live-photography':
                 $display = '';
                 $title = 'Still Life Photography';
@@ -607,6 +939,213 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Series Photography';
                 $images = [
+
+// NEW
+
+[ 
+    'path' => 'frontend/images/gallery/series/Firdaus-Akbar---Biarkan-Kota-Bercerita-tentang-Senja---1.webp',
+    'desc' =>  'Firdaus Akbar',
+    'title' => 'Biarkan Kota Bercerita tentang Senja',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Firdaus-Akbar---Biarkan-Kota-Bercerita-tentang-Senja---2.webp',
+    'desc' =>  'Firdaus Akbar',
+    'title' => 'Biarkan Kota Bercerita tentang Senja',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Firdaus-Akbar---Biarkan-Kota-Bercerita-tentang-Senja---3.webp',
+    'desc' =>  'Firdaus Akbar',
+    'title' => 'Biarkan Kota Bercerita tentang Senja',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan---Ojek-Perahu-Pelabuhan-Sunda-Kelapa---1-.webp',
+    'desc' =>  'Gede Hindhu Septiawan',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan---Ojek-Perahu-Pelabuhan-Sunda-Kelapa---2.webp',
+    'desc' =>  'Gede Hindhu Septiawan',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan---Ojek-Perahu-Pelabuhan-Sunda-Kelapa---4.webp',
+    'desc' =>  'Gede Hindhu Septiawan',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan---Ojek-Perahu-Pelabuhan-Sunda-Kelapa---5.webp',
+    'desc' =>  'Gede Hindhu Septiawan',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan---Ojek-Perahu-Pelabuhan-Sunda-Kelapa---6.webp',
+    'desc' =>  'Gede Hindhu Septiawan',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Gede-Hindhu-Septiawan--Ojek-Perahu-Pelabuhan-Sunda-Kelapa---3.webp',
+    'desc' =>  'Gede Hindhu Septiawan  ',
+    'title' => 'Ojek Perahu Pelabuhan Sunda Kelapa',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Maya-Nurikawati---Generasi-Penerus-Wayang-Golek-Cepak---1.webp',
+    'desc' =>  'Maya Nurikawati',
+    'title' => 'Generasi Penerus Wayang Golek Cepak',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Maya-Nurikawati---Generasi-Penerus-Wayang-Golek-Cepak---2.webp',
+    'desc' =>  'Maya Nurikawati',
+    'title' => 'Generasi Penerus Wayang Golek Cepak',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Maya-Nurikawati---Generasi-Penerus-Wayang-Golek-Cepak---3.webp',
+    'desc' =>  'Maya Nurikawati',
+    'title' => 'Generasi Penerus Wayang Golek Cepak',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Maya-Nurikawati---Generasi-Penerus-Wayang-Golek-Cepak---4.webp',
+    'desc' =>  'Maya Nurikawati',
+    'title' => 'Generasi Penerus Wayang Golek Cepak',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Maya-Nurikawati---Generasi-Penerus-Wayang-Golek-Cepak---5.webp',
+    'desc' =>  'Maya Nurikawati',
+    'title' => 'Generasi Penerus Wayang Golek Cepak',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Nur-Rizky-Amalia----Proses-Pembuatan-&-Penangkapan-Ikan-Asin-Tipis-1.webp',
+    'desc' =>  'Nur Rizky Amalia',
+    'title' => ' Proses Pembuatan & Penangkapan Ikan Asin Tipis',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Nur-Rizky-Amalia----Proses-Pembuatan-&-Penangkapan-Ikan-Asin-Tipis-2.webp',
+    'desc' =>  'Nur Rizky Amalia',
+    'title' => ' Proses Pembuatan & Penangkapan Ikan Asin Tipis',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Nur-Rizky-Amalia----Proses-Pembuatan-&-Penangkapan-Ikan-Asin-Tipis-3.webp',
+    'desc' =>  'Nur Rizky Amalia',
+    'title' => ' Proses Pembuatan & Penangkapan Ikan Asin Tipis',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Nur-Rizky-Amalia----Proses-Pembuatan-&-Penangkapan-Ikan-Asin-Tipis-4.webp',
+    'desc' =>  'Nur Rizky Amalia',
+    'title' => ' Proses Pembuatan & Penangkapan Ikan Asin Tipis',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Nur-Rizky-Amalia----Proses-Pembuatan-&-Penangkapan-Ikan-Asin-Tipis-5.webp',
+    'desc' =>  'Nur Rizky Amalia',
+    'title' => ' Proses Pembuatan & Penangkapan Ikan Asin Tipis',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Yunus-evanudin---Beda-tapi-digdaya-1.webp',
+    'desc' =>  'Yunus evanudin',
+    'title' => 'Beda tapi digdaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Yunus-evanudin---Beda-tapi-digdaya-2.webp',
+    'desc' =>  'Yunus evanudin',
+    'title' => 'Beda tapi digdaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Yunus-evanudin---Beda-tapi-digdaya-3.webp',
+    'desc' =>  'Yunus evanudin',
+    'title' => 'Beda tapi digdaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Yunus-evanudin---Beda-tapi-digdaya-4.webp',
+    'desc' =>  'Yunus evanudin',
+    'title' => 'Beda tapi digdaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Priority---Yunus-evanudin---Beda-tapi-digdaya-5.webp',
+    'desc' =>  'Yunus evanudin',
+    'title' => 'Beda tapi digdaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Yudi-kristianto---Wayang-kertas-mbah-brambang---1.webp',
+    'desc' =>  'Yudi kristianto',
+    'title' => 'Wayang kertas mbah brambang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Yudi-kristianto---Wayang-kertas-mbah-brambang---2.webp',
+    'desc' =>  'Yudi kristianto',
+    'title' => 'Wayang kertas mbah brambang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Yudi-kristianto---Wayang-kertas-mbah-brambang---3.webp',
+    'desc' =>  'Yudi kristianto',
+    'title' => 'Wayang kertas mbah brambang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Yudi-kristianto---Wayang-kertas-mbah-brambang---4.webp',
+    'desc' =>  'Yudi kristianto',
+    'title' => 'Wayang kertas mbah brambang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/series/Yudi-kristianto---Wayang-kertas-mbah-brambang---5.webp',
+    'desc' =>  'Yudi kristianto',
+    'title' => 'Wayang kertas mbah brambang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+// END
 
 [ 
     'path' => 'frontend/images/gallery/series/IMG_20240909_035708.webp',

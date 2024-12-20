@@ -268,9 +268,9 @@
                   </a>
                 </div>
                 <div class="text pt-3 w-100 text-center mt-3">
-                  <p class="text-white vivo_bold mb-1 px-4 fs-img-title">{{ $img['title'] }}</p>
-                  <p class="text-white vivo_regular fs-img-dec mb-n1">{{ $img['desc'] }}</p>
-                  <p class="text-white vivo_regular fs-img-dec">{{ $img['location'] }}</p>
+                  <p class="text-white vivo_bold mb-1 px-4 fs-img-title">{{ @$img['title'] }}</p>
+                  <p class="text-white vivo_regular fs-img-dec mb-n1">{{ @$img['desc'] }}</p>
+                  <p class="text-white vivo_regular fs-img-dec">{{ @$img['location'] }}</p>
                 </div>
               </div>
             @endforeach
@@ -299,8 +299,8 @@
                             <div class="carousel-item active">
                                 <img src="{{ asset($img['path'])}}" loading="lazy">
                                 <div class="text pt-3 w-100 text-center">
-                                    <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
+                                    <p class="text-white vivo_bold mb-1 fs-img-title">{{ @$img['title'] }}</p>
+                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc'] }}</p>
                                     <div class="row align-items-center justify-content-center">
                                       <div class="col-10 col-md-8">
                                       <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
@@ -312,8 +312,8 @@
                             <div class="carousel-item">
                                 <img src="{{ asset($img['path'])}}" class="d-block"  loading="lazy">
                                 <div class="text pt-3 w-100 text-center">
-                                    <p class="text-white vivo_bold mb-1 fs-img-title">{{ $img['title'] }}</p>
-                                    <p class="text-white vivo_regular fs-img-dec">{{ $img['desc'] }}</p>
+                                    <p class="text-white vivo_bold mb-1 fs-img-title">{{ @$img['title'] }}</p>
+                                    <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc'] }}</p>
                                     <div class="row align-items-center justify-content-center">
                                       <div class="col-10 col-md-8">
                                       <p class="text-white vivo_regular fs-img-dec">{{ @$img['desc2'] }}</p>
