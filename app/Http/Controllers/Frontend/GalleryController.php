@@ -486,6 +486,143 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Street Photography';
                 $images = [
+// NEW
+
+[ 
+    'path' => 'frontend/images/gallery/street-life/Alice-Wong---Japan-Beauty.webp',
+    'desc' =>  'Alice Wong',
+    'title' => 'Japan Beauty',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Benny-Lim---A-Reflection-Distorted,-yet-Within-the-Ripples,-A-Story-Unfolds.webp',
+    'desc' =>  'Benny Lim',
+    'title' => 'A Reflection Distorted, yet Within the Ripples, A Story Unfolds',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Benny-Lim---In-the-Ups-and-Downs,-We-Find-a-Rhythm-.webp',
+    'desc' =>  'Benny Lim',
+    'title' => 'In the Ups and Downs, We Find a Rhythm ',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Ganjar-Mustika---Bergegas-Dalam-Alunan-Cahaya.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Bergegas Dalam Alunan Cahaya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Ganjar-Mustika---Dua-Gadis-Kecil.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Dua Gadis Kecil',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Ganjar-Mustika---Harmoni-Keceriaan.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Harmoni Keceriaan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Jefri-Deniawan---Beramai-ramai-menyasksikan-HUT-TNI.webp',
+    'desc' =>  'Jefri Deniawan',
+    'title' => 'Beramai ramai menyasksikan HUT TNI',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Priority---Andika-Oky-Arisandi---Bentangan-Kain-Batik.webp',
+    'desc' =>  'Andika Oky Arisandi',
+    'title' => 'Bentangan Kain Batik',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Priority---Rendy_Septian_Nugroho---Perspektif.webp',
+    'desc' =>  'Rendy_Septian_Nugroho',
+    'title' => 'Perspektif',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Priority---Sofyan-Efendi---Bermain-Di-Pantai---Finalis.webp',
+    'desc' =>  'Sofyan Efendi',
+    'title' => 'Bermain Di Pantai',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Putu-Aditya-@commaditya---agem.webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'agem',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Putu-Aditya-@commaditya---barong-of-serangan-island-(2).webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'barong of serangan island (2)',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Putu-Aditya-@commaditya---ingin-pulang.webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'ingin pulang',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Putu-Aditya-@commaditya---pengiring-(3).webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'pengiring (3)',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Putu-Aditya-@commaditya---walking-the-holy-path.webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'walking the holy path',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Rendha-Rais---Serenity-by-the-Manor.webp',
+    'desc' =>  'Rendha Rais',
+    'title' => 'Serenity by the Manor',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Rendha-Rais---Stepping-into-History.webp',
+    'desc' =>  'Rendha Rais',
+    'title' => 'Stepping into History',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Rendha-Rais---Timeless-Watch.webp',
+    'desc' =>  'Rendha Rais',
+    'title' => 'Timeless Watch',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/street-life/Sofyan-Efendi---Empat-Sekawan.webp',
+    'desc' =>  'Sofyan Efendi',
+    'title' => 'Empat Sekawan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+
+// END
 
 [ 
     'path' => 'frontend/images/gallery/street-life/IMG_20240912_163304_1.webp',
@@ -665,6 +802,115 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Nature Photography';
                 $images = [
+
+// NEW
+
+                    [ 
+    'path' => 'frontend/images/gallery/nature/Andru-Kosti---Toba-&-Fisherman.webp',
+    'desc' =>  'Andru Kosti',
+    'title' => 'Toba & Fisherman',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Ares-Jonekson-Saragi---Beautiful-Day.webp',
+    'desc' =>  'Ares Jonekson Saragi',
+    'title' => 'Beautiful Day',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Faris-Adinata---Golden-Dusk-at-Mejan-Stone-Beach.webp',
+    'desc' =>  'Faris Adinata',
+    'title' => 'Golden Dusk at Mejan Stone Beach',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Faris-Adinata---Serenity-of-Mount-Batur.webp',
+    'desc' =>  'Faris Adinata',
+    'title' => 'Serenity of Mount Batur',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Ganjar-Mustika---Terbang-Menuju-Kehidupan,-Mencapai-Nektar-Harapan.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Terbang Menuju Kehidupan, Mencapai Nektar Harapan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/I-kadek-yuliana-putra---Luasnya-Pantai.webp',
+    'desc' =>  'I kadek yuliana putra',
+    'title' => 'Luasnya Pantai',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Priority---Dian-Pratama-Putra----LANSKAP-KEINDAHAN-GIGI-HIU---Finalis.webp',
+    'desc' =>  'Dian Pratama Putra',
+    'title' => ' LANSKAP KEINDAHAN GIGI HIU',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Priority---Dian-Pratama-Putra----PESONA-GIGI-HIU.webp',
+    'desc' =>  'Dian Pratama Putra',
+    'title' => ' PESONA GIGI HIU',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Priority---Ganjar-Mustika---Harmoni-Cahaya-di-Ufuk-Fajar.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Harmoni Cahaya di Ufuk Fajar',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Priority---Ganjar-Mustika---Kepakan-Indah-Sang-Sepah-Raja.webp',
+    'desc' =>  'Ganjar Mustika',
+    'title' => 'Kepakan Indah Sang Sepah Raja',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Putu-Aditya-@commaditya---lines-in-the-sand-(1).webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'lines in the sand (1)',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Putu-Aditya-@commaditya---the-usual-suspect.webp',
+    'desc' =>  'Putu Aditya @commaditya',
+    'title' => 'the usual suspect',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Roman-Bintang---Perjanalan-Sunyi-di-Pagi-Hari---2.webp',
+    'desc' =>  'Roman Bintang',
+    'title' => 'Perjanalan Sunyi di Pagi Hari',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Roman-Bintang---Perjanalan-Sunyi-di-Pagi-Hari.webp',
+    'desc' =>  'Roman Bintang',
+    'title' => 'Perjanalan Sunyi di Pagi Hari',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/nature/Wasisto---Hutan-Jati.webp',
+    'desc' =>  'Wasisto',
+    'title' => 'Hutan Jati',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+// END
 [ 
     'path' => 'frontend/images/gallery/nature/CMD-IMAGINE-2.webp',
     'title' => 'The Usual Suspect',
@@ -884,6 +1130,114 @@ class GalleryController extends Controller
                 $display = '';
                 $title = 'Still Life Photography';
                 $images = [
+// NEW
+
+[ 
+    'path' => 'frontend/images/gallery/still-life/Ahmad-Azmi-Amiq---Harmoni-Dalam-Perbedaan.webp',
+    'desc' =>  'Ahmad Azmi Amiq',
+    'title' => 'Harmoni Dalam Perbedaan',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Ahmad-Mohhidin-–-Tulang-Daun.webp',
+    'desc' =>  'Ahmad Mohhidin',
+    'title' => 'Tulang Daun',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Benny-Lim---Reflections-of-Passion.webp',
+    'desc' =>  'Benny Lim',
+    'title' => 'Reflections of Passion',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Benny-Lim---Whispers-of-Serenity.webp',
+    'desc' =>  'Benny Lim',
+    'title' => 'Whispers of Serenity',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Harry-Hartanto---Burung-Bangau-Kertas.webp',
+    'desc' =>  'Harry Hartanto',
+    'title' => 'Burung Bangau Kertas',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Harry-Hartanto---Crane_s-Nest.webp',
+    'desc' =>  'Harry Hartanto',
+    'title' => 'Crane_s Nest',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Harry-Hartanto---No-Place-Like-Home.webp',
+    'desc' =>  'Harry Hartanto',
+    'title' => 'No Place Like Home',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Harry-Hartanto---Positive-Environment.webp',
+    'desc' =>  'Harry Hartanto',
+    'title' => 'Positive Environment',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Jefri-Deniawan-–-Sepasang-Sepatu.webp',
+    'desc' =>  'Jefri Deniawan',
+    'title' => 'Sepasang Sepatu',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Priority---Ahmad-Azmi-Amiq--Jangan-Lupa-Bahagia.webp',
+    'desc' =>  'Ahmad Azmi Amiq  Jangan Lupa Bahagia',
+    'title' => '',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Priority---Ari-Mustofa--Bayangan-Kerajaan.webp',
+    'desc' =>  'Ari Mustofa  Bayangan Kerajaan',
+    'title' => '',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Priority---Azka-Dzakiyuddin----Cahaya-Sumber-Inspirasi---Finalis.webp',
+    'desc' =>  'Azka Dzakiyuddin',
+    'title' => ' Cahaya Sumber Inspirasi',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Priority---Benny-Lim---Grace-in-Bloom.webp',
+    'desc' =>  'Benny Lim',
+    'title' => 'Grace in Bloom',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Priority---Sofyan-Efendi---Benda-Yang-Indah-Sesuai-Bentuknya.webp',
+    'desc' =>  'Sofyan Efendi',
+    'title' => 'Benda Yang Indah Sesuai Bentuknya',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+[ 
+    'path' => 'frontend/images/gallery/still-life/Syaefa-Umar---Miniature-People-at-Work-with-Chocolate-Cookies.webp',
+    'desc' =>  'Syaefa Umar',
+    'title' => 'Miniature People at Work with Chocolate Cookies',
+    'location' =>  '',
+    'thumb' =>  '',
+],
+// END
 [ 
     'path' => 'frontend/images/gallery/still-life/IMG_2416.webp',
     'title' => 'Reflections of Passion',
