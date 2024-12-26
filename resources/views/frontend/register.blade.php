@@ -247,7 +247,7 @@
                         </div>
 
                         <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
-                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding" id="dzSubmitButton">SUBMIT</button>
+                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding" id="dzSubmitButton" disabled>SUBMIT</button>
                         </div>
                     </div>
 
