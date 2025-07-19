@@ -76,89 +76,91 @@ class RegisterController extends Controller
      */
     public function upload(Request $request)
     {
-        return response()->json('Registrasi Telah Ditutup', 404); 
+        // return response()->json('Registrasi Telah Ditutup', 404); 
+        $period = 2025;
 
-        // try {
+        try {
 
-        //     $validatedData = $request->validate([
-        //         'fullname'      => 'required',
-        //         'email'         => 'required|email',
-        //         'phone'         => 'required',
-        //         'address'       => 'required',
-        //         'file'          => 'required',
-        //         'category'      => 'required',
-        //         'desc'          => 'required',
-        //         'birthday'      => 'required',
-        //     ],
-        //     [
-        //         'fullname.required'          => 'Nama wajib diisi',
-        //         'email.required'             => 'Email wajib diisi',
-        //         'email.email'                => 'Format email salah',
-        //         'address.required'           => 'Alamat wajib diisi',
-        //         'phone.required'             => 'No. WhatsApp wajib diisi',
-        //         'category.required'          => 'Kategori wajib dipilih',
-        //         'desc.required'              => 'Deskripsi wajib diisi',
-        //         'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
-        //         'birthday.required'          => 'Tanggal lahir wajib diisi',
+            $validatedData = $request->validate([
+                'fullname'      => 'required',
+                'email'         => 'required|email',
+                'phone'         => 'required',
+                'address'       => 'required',
+                'file'          => 'required',
+                'category'      => 'required',
+                'desc'          => 'required',
+                'birthday'      => 'required',
+            ],
+            [
+                'fullname.required'          => 'Nama wajib diisi',
+                'email.required'             => 'Email wajib diisi',
+                'email.email'                => 'Format email salah',
+                'address.required'           => 'Alamat wajib diisi',
+                'phone.required'             => 'No. WhatsApp wajib diisi',
+                'category.required'          => 'Kategori wajib dipilih',
+                'desc.required'              => 'Deskripsi wajib diisi',
+                'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
+                'birthday.required'          => 'Tanggal lahir wajib diisi',
 
-        //     ]);
+            ]);
 
-        //     // $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->get();
-        //     // $count_email_exist = $email_exist->count();
+            $email_exist = Creator::where('email', $request->email)->where('category', $request->category)->where('period', $period)->get();
+            $count_email_exist = $email_exist->count();
 
-        //     // if($count_email_exist > 0) {
-        //     //     return response()->json('Akun anda telah terdaftar untuk kategori ini, silahkan menggunakan akun lainnya.', 404); 
-        //     // }
+            if($count_email_exist > 0) {
+                return response()->json('Akun anda telah terdaftar untuk kategori ini, silahkan menggunakan akun lainnya.', 404); 
+            }
 
 
-        //     DB::beginTransaction();
-        //     $code = Uuid::uuid4()->toString();
-        //     $name = $this->cleanString($request->fullname);
+            DB::beginTransaction();
+            $code = Uuid::uuid4()->toString();
+            $name = $this->cleanString($request->fullname);
 
-        //     $dateInput = $request->birthday;
-        //     $date = str_replace('/', '-', $dateInput);
-        //     $newDate = date("Y-m-d", strtotime($date));
+            $dateInput = $request->birthday;
+            $date = str_replace('/', '-', $dateInput);
+            $newDate = date("Y-m-d", strtotime($date));
 
-        //     $register = Creator::create([
-        //         'code' => $code,
-        //         'fullname' => $name,
-        //         'phone' => $request->phone,
-        //         'address' => $request->address,
-        //         'birthday' => $newDate,
-        //         'desc' => $request->desc,
-        //         'email' => strtolower($request->email),
-        //         'category' => $request->category,
-        //         // 'referral_code' => $request->referral_code,
-        //         'vivo_id' => $request->vivo_id,
-        //         'source' => $this->sourceName($request->source),
-        //     ]);
+            $register = Creator::create([
+                'code' => $code,
+                'fullname' => $name,
+                'phone' => $request->phone,
+                'address' => $request->address,
+                'birthday' => $newDate,
+                'desc' => $request->desc,
+                'email' => strtolower($request->email),
+                'category' => $request->category,
+                'period' => $period,
+                // 'referral_code' => $request->referral_code,
+                'vivo_id' => $request->vivo_id,
+                'source' => $this->sourceName($request->source),
+            ]);
 
             
-        //     $name = preg_replace('/\s+/', '_', $name);
-        //     $images = $request->file('file');
-        //     $category = Images::TYPE[$request->category];
+            $name = preg_replace('/\s+/', '_', $name);
+            $images = $request->file('file');
+            $category = Images::TYPE[$request->category];
 
-        //     foreach ($images as $index => $image) { 
-        //         $index = $index+1;
-        //         // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
-        //         $getFileExt   = $image->getClientOriginalExtension();
-        //         $file_name = $category.'-'.$name.'-'.$code.'-'.$index.'.'.$getFileExt;
-        //         $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
-        //         Images::create([
-        //             'path' => $path,
-        //             'creator_id' => $register->id,
-        //             'category' => $request->category,
-        //         ]);
-        //     }
+            foreach ($images as $index => $image) { 
+                $index = $index+1;
+                // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
+                $getFileExt   = $image->getClientOriginalExtension();
+                $file_name = $category.'-'.$name.'-'.$code.'-'.$index.'.'.$getFileExt;
+                $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
+                Images::create([
+                    'path' => $path,
+                    'creator_id' => $register->id,
+                    'category' => $request->category,
+                ]);
+            }
 
-        //     DB::commit();
-        //     return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
-        // } catch (\Throwable $th) {
-        //     DB::rollBack();
-        //     Log::info(json_encode($th->getMessage()));
-        //     return response()->json($th->getMessage(), 404); 
-        //     // return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
-        // }     
+            DB::commit();
+            return response()->json(['success' => true, 'message' => 'Reservation created successfully', 'with_toastr' => false]);
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            Log::info(json_encode($th->getMessage()));
+            return response()->json($th->getMessage(), 404); 
+            // return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
+        }     
 
     }
 
