@@ -77,8 +77,9 @@ class RegisterController extends Controller
     public function upload(Request $request)
     {
         // return response()->json('Registrasi Telah Ditutup', 404); 
-        $period = 2025;
 
+        $period = 2025;
+  
         try {
 
             $validatedData = $request->validate([
@@ -88,7 +89,7 @@ class RegisterController extends Controller
                 'address'       => 'required',
                 'file'          => 'required',
                 'category'      => 'required',
-                'desc'          => 'required',
+                // 'desc'          => 'required',
                 'birthday'      => 'required',
             ],
             [
@@ -98,8 +99,8 @@ class RegisterController extends Controller
                 'address.required'           => 'Alamat wajib diisi',
                 'phone.required'             => 'No. WhatsApp wajib diisi',
                 'category.required'          => 'Kategori wajib dipilih',
-                'desc.required'              => 'Deskripsi wajib diisi',
-                'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
+                // 'desc.required'              => 'Deskripsi wajib diisi',
+                // 'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
                 'birthday.required'          => 'Tanggal lahir wajib diisi',
 
             ]);
@@ -141,15 +142,17 @@ class RegisterController extends Controller
             $category = Images::TYPE[$request->category];
 
             foreach ($images as $index => $image) { 
-                $index = $index+1;
+                $newindex = $index+1;
                 // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
                 $getFileExt   = $image->getClientOriginalExtension();
-                $file_name = $category.'-'.$name.'-'.$code.'-'.$index.'.'.$getFileExt;
+                $file_name = $category.'-'.$name.'-'.$code.'-'.$newindex.'.'.$getFileExt;
                 $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
                 Images::create([
                     'path' => $path,
                     'creator_id' => $register->id,
                     'category' => $request->category,
+                    'title' => $request->img_title[$index],
+                    'desc' => $request->img_caption[$index]
                 ]);
             }
 

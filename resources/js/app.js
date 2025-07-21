@@ -126,10 +126,17 @@ myDropzone.on('sendingmultiple', function(file, xhr, formData) {
     // formData.append("age", $('#age').val());
     formData.append("birthday", $('#birthday').val());
     formData.append("category", $('#category').val());
-    formData.append("desc", $('#img_desc').val());
+    // formData.append("desc", $('#img_desc').val());
     // formData.append("referral_code", $('#referral_code').val());
     formData.append("vivo_id", $('#vivo_id').val());
     // console.log(formData);
+
+    $('.dz-image-desc').each(function(index, element) {
+        const title = $(element).find('.dz-title').val() || '';
+        const caption = $(element).find('.dz-caption').val() || '';
+        formData.append(`img_title[${index}]`, title);
+        formData.append(`img_caption[${index}]`, caption);
+    });
 
 
     const queryString = window.location.search;
@@ -322,12 +329,6 @@ $('#dzSubmitButton').on('click', function(event) {
         birthdayErrorMessage.show().text('Wajib diisi');
     }
 
-    // show error messages if Image Description is empty
-    let desc = document.forms["dzImageUploadForm"]["img_desc"].value;
-    if(desc == null || desc == " ") {
-        error = error+1;
-        imgDescErrorMessage.show().text('Wajib diisi');
-    }
 
     // show error messages if CheckBox is empty
     let check = document.querySelector('#checkTermAndCondition').checked;
@@ -358,6 +359,16 @@ $('#dzSubmitButton').on('click', function(event) {
             imgErrorMessage.show().text('Minimal upload 3 gambar.');
         }
     }
+
+    $('.dz-image-desc').each(function(index, element) {
+        const title = $(element).find('.dz-title').val();
+        const caption = $(element).find('.dz-caption').val();
+        
+        if (!title || !caption) {
+            error++;
+            imgDescErrorMessage.show().text('Judul dan deskripsi harus diisi untuk semua foto.');
+        }
+    });
 
     if(error < 1) {
         // process the queue
