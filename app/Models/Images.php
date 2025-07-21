@@ -10,7 +10,7 @@ use App\Models\Creator;
 class Images extends Model
 {
     use HasFactory;
-    protected $fillable = ['category', 'path', 'image', 'creator_id'];
+    protected $fillable = ['category', 'path', 'image', 'creator_id', 'title', 'desc'];
 
     const CATEGORY1   = 1;
     const CATEGORY2   = 2;

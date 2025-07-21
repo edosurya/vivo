@@ -28,6 +28,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
      */
     public function collection()
     {
+        $period = 2025;
         return Creator::query()
             ->when($this->start_date && $this->end_date, function ($query) {
                 $query->whereBetween('created_at', [$this->start_date . " 00:00:00", $this->end_date . " 23:59:59"]);
@@ -44,6 +45,7 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
             ->when($this->source, function ($query) {
                 $query->where('source', $this->source);
             })
+            ->where('period', $period)
             ->orderBy('id', 'desc')
             ->get()
             ->map(function ($creator, $index) {

@@ -15,6 +15,8 @@ class CreatorController extends Controller
      */
     public function index(Request $request)
     {
+        $period = 2025;
+        
         if ($request->ajax()) {
             try {
                 $query = Creator::query()
@@ -33,6 +35,7 @@ class CreatorController extends Controller
                     ->when($request->filter_source, function ($query) use ($request) {
                         $query->where('source', $request->filter_source);
                     })
+                    ->where('period', $period)
                     ->select('creators.*')
                     ->orderBy('id', 'DESC');
 

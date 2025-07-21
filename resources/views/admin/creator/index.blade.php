@@ -49,8 +49,8 @@
                                                 <option value="" selected>-- Choose Category -- </option>
                                                 <option value="1">Portrait Photography</option>
                                                 <option value="2">Street Photography</option>
-                                                <option value="3">Series Photography</option>
-                                                <option value="4">Still Life Photography</option>
+                                                <!-- <option value="3">Series Photography</option> -->
+                                                <!-- <option value="4">Still Life Photography</option> -->
                                                 <option value="5">Night Photography</option>
                                                 <option value="6">Nature Photography</option>
                                             </select>

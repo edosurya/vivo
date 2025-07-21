@@ -13,6 +13,7 @@ class ImageController extends Controller
 {
     public function index(Request $request)
     {
+        $period = 2025;
         if ($request->ajax()) {
             try {
                 $query = Images::query()
@@ -20,6 +21,7 @@ class ImageController extends Controller
                     ->when($request->filter_category, function ($query) use ($request) {
                         $query->where('images.category', $request->filter_category);
                     })
+                    ->where('creators.period', $period)
                     ->select('images.*', 'creators.fullname')
                     ->orderBy('images.id', 'DESC');
                 return datatables()
@@ -57,7 +59,10 @@ class ImageController extends Controller
     {
 
         $zip = new ZipArchive;
-        $images = Images::select('*');
+        $images = Images::whereHas('relatedCreator', function ($query) { 
+            $query->where('period', 2025); 
+        });
+
         $zipFileName = 'all-attachment.zip';
         
         if($request->category != '') {
