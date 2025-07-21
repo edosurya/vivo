@@ -89,7 +89,7 @@ class RegisterController extends Controller
                 'address'       => 'required',
                 'file'          => 'required',
                 'category'      => 'required',
-                // 'desc'          => 'required',
+                'desc'          => 'required',
                 'birthday'      => 'required',
             ],
             [
@@ -99,8 +99,8 @@ class RegisterController extends Controller
                 'address.required'           => 'Alamat wajib diisi',
                 'phone.required'             => 'No. WhatsApp wajib diisi',
                 'category.required'          => 'Kategori wajib dipilih',
-                // 'desc.required'              => 'Deskripsi wajib diisi',
-                // 'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
+                'desc.required'              => 'Deskripsi wajib diisi5',
+                'desc.max'                   => 'Deskripsi maksimal 1600 karakter',
                 'birthday.required'          => 'Tanggal lahir wajib diisi',
 
             ]);
@@ -151,8 +151,6 @@ class RegisterController extends Controller
                     'path' => $path,
                     'creator_id' => $register->id,
                     'category' => $request->category,
-                    'title' => $request->img_title[$index],
-                    'desc' => $request->img_caption[$index]
                 ]);
             }
 
