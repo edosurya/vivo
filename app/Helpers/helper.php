@@ -17,15 +17,3 @@ if (!function_exists('autoVersioning')) {
     }
 }
 
-
-
-if (!function_exists('isLaunching')) {
-
-    function isLaunching($type)
-    {
-
-        $url = config('services.event.is_launch') ? route('reservation.index') : '#';
-        $text = config('services.event.is_launch') ? __('frontend.button.rsvp') : __('frontend.button.launch_rsvp');
-        return $type == 'text' ? $text : $url;
-    }
-}

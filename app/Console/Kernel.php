@@ -22,13 +22,4 @@ class Kernel extends ConsoleKernel
         // Add your scheduled tasks here.
     }
 
-    /**
-     * Register the commands for the application.
-     */
-    protected function commands(): void
-    {
-        $this->load(__DIR__ . '/Commands');
-
-        require base_path('routes/console.php');
-    }
 }

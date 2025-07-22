@@ -14,6 +14,13 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{ route('admin.creator.index') }}" class="waves-effect">
+                        <i class="mdi mdi-account"></i>
+                        <span>Creator</span>
+                    </a>
+                </li>
                 @if (auth()->user()->type == \App\Models\User::SUPERADMIN)
                     <li>
                         <a href="{{ route('admin.user.index') }}" class="waves-effect">
@@ -21,19 +28,14 @@
                             <span>User</span>
                         </a>
                     </li>
-                @endif
-                <li>
-                    <a href="{{ route('admin.creator.index') }}" class="waves-effect">
-                        <i class="mdi mdi-account"></i>
-                        <span>Creator</span>
-                    </a>
-                </li>
                 <li>
                     <a href="{{ route('admin.galleries.index') }}" class="waves-effect">
                         <i class="mdi mdi-account"></i>
                         <span>Gallery</span>
                     </a>
                 </li>
+                
+                @endif
 <!--                 <li>
                     <a href="{{ route('admin.image.index') }}" class="waves-effect">
                         <i class="mdi mdi-account"></i>

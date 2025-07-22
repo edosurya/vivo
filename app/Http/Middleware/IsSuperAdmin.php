@@ -16,10 +16,16 @@ class IsSuperAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
+
         if (\Auth::user()->type == User::SUPERADMIN) {
             return $next($request);
         }
 
+        if (! $request->expectsJson()) {
+            return route('admin.login'); 
+        }
+
         return abort(403);
     }
+
 }

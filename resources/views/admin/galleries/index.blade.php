@@ -43,10 +43,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-2 d-flex align-items-end">
+                                <div class="col-md-4 d-flex align-items-end">
                                     <div>
                                         <button type="button" id='reset' class="btn btn-secondary">Reset</button>
                                         <a href="{{ route('admin.galleries.create') }}" class="btn btn-success">Upload</a>
+                                        <a href="{{ route('admin.galleries.sort') }}" class="btn btn-warning">Set Up Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +63,9 @@
                                         <th>Category</th>
                                         <th>Title</th>
                                         <th>Desc</th>
-                                        <th>Thumb</th>
+                                        <th>Order</th>
+                                        <th>Image</th>
+                                        <th>Action</th> 
                                     </tr>
                                 </thead>
                                 <tbody></tbody>
@@ -134,10 +137,35 @@
                         defaultContent: '-',
                     },
                     {
+                        name: "order",
+                        data: 'order',
+                        defaultContent: '-',
+                    },
+                    {
                         name: "galleries",
                         data: 'galleries',
                         defaultContent: '-',
                     },
+                    {
+                        name: "action",
+                        data: 'id',
+                        render: function(data, type, row) {
+                            let editUrl = "{{ route('admin.galleries.edit', ':id') }}".replace(':id', data);
+                            let deleteUrl = "{{ route('admin.galleries.destroy', ':id') }}".replace(':id', data);
+
+                            return `
+                                <a href="${editUrl}" class="btn btn-sm btn-primary me-1">
+                                    <i class="bi bi-pencil-square"></i> Edit
+                                </a>
+                                <button onclick="deleteData('${deleteUrl}')" class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash"></i> Delete
+                                </button>
+                            `;
+                        },
+                        orderable: false,
+                        searchable: false,
+                        width: '120px'
+                    }
 
 
                 ],
@@ -164,5 +192,27 @@
             });
 
         });
+
+        function deleteData(url) {
+            if (confirm("Are you sure you want to delete this gallery?")) {
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: {
+                        '_method': 'DELETE',
+                        '_token': '{{ csrf_token() }}'
+                    },
+                    success: function(response) {
+                        toastr.success('Gallery deleted successfully.');
+                        $('#GalleryTable').DataTable().ajax.reload();
+                    },
+                    error: function(xhr) {
+                        toastr.error('Failed to delete gallery.');
+                    }
+                });
+            }
+        }
+
+
     </script>
 @endpush

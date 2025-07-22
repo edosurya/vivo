@@ -20,6 +20,7 @@ return new class extends Migration
             $table->longText('desc')->nullable();
             $table->string('creator')->nullable();
             $table->string('location')->nullable();
+            $table->integer('order')->nullable()->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

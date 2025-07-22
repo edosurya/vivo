@@ -31,17 +31,19 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
-    Route::resource('galleries', AdminGalleryController::class);
 
     Route::middleware(['isSuperAdmin'])->group(function () {
         Route::resource('/user', UserController::class)->names('user');
+        Route::resource('galleries', AdminGalleryController::class)->except(['show']);
+
+        Route::get('galleries/sort', [AdminGalleryController::class, 'sort'])->name('galleries.sort.index');
+        Route::post('galleries/sort', [AdminGalleryController::class, 'saveSort'])->name('galleries.sort');
+
     });
 });
 
 
-Route::get('/', function() {
-    return view('frontend.homepage');
-})->name('home');
+Route::get('/', function() { return view('frontend.homepage');})->name('home');
 
 Route::controller(RegisterController::class)->group(function () {
     Route::get('/photographyawards', 'index')->name('register.index');
@@ -52,6 +54,5 @@ Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('g
 
 Route::get('/creator/{code}', [FrontendCreatorController::class, 'index'])->name('creator');
 Route::get('/creator/{code}/download', [FrontendCreatorController::class, 'download'])->name('creator.download');
-
 
 require __DIR__ . '/auth.php';

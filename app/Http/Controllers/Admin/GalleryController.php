@@ -70,8 +70,8 @@ class GalleryController extends Controller
         $category = Gallery::TYPE[$request->category];
         
         // Save file to public storage
-        $path = $request->file('image')->store('uploads/galleries/'.$category, 'public');
-        $thumbnail = $request->file('thumbnail')->store('uploads/thumbnail/'.$category, 'public');
+        $path = $request->file('image')->store('uploads/galleries/', 'public');
+        $thumbnail = $request->file('thumbnail')->store('uploads/thumbnail/', 'public');
 
         // Dave to DB
         Gallery::create([
@@ -94,26 +94,90 @@ class GalleryController extends Controller
         return view('admin.galleries.edit', compact('gallery'));
     }
 
-    // Update galeri
-    public function update(Request $request, Gallery $gallery)
+
+    public function update(Request $request, $id)
     {
+        $gallery = Gallery::findOrFail($id);
+
         $request->validate([
-            'title' => 'nullable|string|max:255',
-            'desc' => 'nullable|string',
-            'category' => 'nullable|integer',
-            'path' => 'nullable|string|max:255',
+            'image'     => 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024',
+            'thumbnail' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024',
+            'title'     => 'nullable|string|max:50',
+            'desc'      => 'nullable|string|max:250',
+            'creator'   => 'nullable|string|max:50',
+            'location'  => 'nullable|string|max:50',
+            'category'  => 'nullable|integer',
         ]);
 
-        $gallery->update($request->all());
+        // Update image if uploaded
+        if ($request->hasFile('image')) {
+            if ($gallery->path && Storage::disk('public')->exists($gallery->path)) {
+                Storage::disk('public')->delete($gallery->path);
+            }
 
-        return redirect()->route('galleries.index')->with('success', 'Galeri berhasil diperbarui.');
+            $gallery->path = $request->file('image')->store('uploads/galleries', 'public');
+        }
+
+        // Update thumbnail if uploaded
+        if ($request->hasFile('thumbnail')) {
+            if ($gallery->thumbnail && Storage::disk('public')->exists($gallery->thumbnail)) {
+                Storage::disk('public')->delete($gallery->thumbnail);
+            }
+
+            $gallery->thumbnail = $request->file('thumbnail')->store('uploads/galleries/thumbnails', 'public');
+        }
+
+        // Update other fields
+        $gallery->title    = $request->input('title');
+        $gallery->desc     = $request->input('desc');
+        $gallery->creator  = $request->input('creator');
+        $gallery->location = $request->input('location');
+        $gallery->category = $request->input('category');
+
+        $gallery->save();
+
+        return redirect()->route('admin.galleries.index')->with('success', 'Gallery updated successfully.');
     }
 
-    // Hapus galeri (soft delete)
-    public function destroy(Gallery $gallery)
-    {
-        $gallery->delete();
 
-        return redirect()->route('galleries.index')->with('success', 'Galeri berhasil dihapus.');
+    public function destroy($id)
+    {
+        $gallery = Gallery::findOrFail($id);
+
+        // Hapus file image & thumb jika ada
+        if ($gallery->path && Storage::disk('public')->exists($gallery->path)) {
+            Storage::disk('public')->delete($gallery->path);
+        }
+
+        if ($gallery->thumbnail && Storage::disk('public')->exists($gallery->thumbnail)) {
+            Storage::disk('public')->delete($gallery->thumbnail);
+        }
+
+        $gallery->delete(); // Soft delete jika pakai softDeletes
+
+        return response()->json(['success' => true]);
+    }
+
+    public function sort(Request $request)
+    {
+        $category = $request->input('category');
+        $galleries = Gallery::when($category, function ($query, $category) {
+            return $query->where('category', $category);
+        })->orderBy('order')->get();
+
+        return view('admin.galleries.sort', compact('galleries', 'category'));
+    }
+
+    public function saveSort(Request $request)
+    {
+        $category = $request->input('category') ?? request()->query('category');
+
+        foreach ($request->order as $item) {
+            Gallery::where('id', $item['id'])
+                ->where('category', $category)
+                ->update(['order' => $item['order']]);
+        }
+
+        return response()->json(['status' => 'success']);
     }
 }

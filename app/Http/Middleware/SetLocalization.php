@@ -14,13 +14,8 @@ class SetLocalization
         if (session()->has('locale')) {
             App::setLocale(session()->get('locale'));
         }
-        // dd(\Auth::user());
-
-        // if (\Auth::user()->type == User::SUPERADMIN || \Auth::user()->type == User::ADMIN) {
-        //     dd(\Auth::user());
-        //     return $next($request);
-        // }
 
         return $next($request);
     }
+
 }

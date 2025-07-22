@@ -16,7 +16,8 @@ class Gallery extends Model
         'title',
         'desc',
         'creator',
-        'location'
+        'location',
+        'order'
     ];
 
     const CATEGORY1   = 1;
