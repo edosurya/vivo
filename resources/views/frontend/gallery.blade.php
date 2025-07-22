@@ -18,141 +18,6 @@
 @section('content')
 
 
-
-      <section class="pb-1 pb-md-3 bg-black mt-4">
-        <div class="container-lg mb-2">
-          <div class="row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-12">
-              <h3 class="text-white vivo_heavy">Pemenang vivo Imagine <span class="new-line"></span>Photography Awards</h3>
-            </div>
-          </div>
-
-          <div class="row flex-center p-2">
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <!-- <a role='button' data-bs-toggle="modal" data-bs-target="#winnerPortrait"> -->
-            <a role='button' onClick="winnerPreview('{{ asset($winner['portrait']['path']) }}','{{ $winner['portrait']['title']}}', '{{ $winner['portrait']['desc']}}', '{{ $winner['portrait']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-portrait.webp') }}" alt="" loading="lazy"/>
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">PORTRAIT PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-      
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['street']['path']) }}','{{ $winner['street']['title']}}', '{{ $winner['street']['desc']}}', '{{ $winner['street']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-street.webp') }}" alt="" loading="lazy"/>
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STREET PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-        
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'winner-series-photography']) }}#winner">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-series.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">SERIES PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['still-life']['path']) }}','{{ $winner['still-life']['title']}}', '{{ $winner['still-life']['desc']}}', '{{ $winner['still-life']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-still-life.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STILL LIFE PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['night']['path']) }}','{{ $winner['night']['title']}}', '{{ $winner['night']['desc']}}', '{{ $winner['night']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-night.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NIGHT PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['nature']['path']) }}','{{ $winner['nature']['title']}}', '{{ $winner['nature']['desc']}}', '{{ $winner['nature']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/winner-nature.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NATURE PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-          </div>
-        </div>
-    </section>
-
-    <section class="pb-1 pb-md-3 bg-black ">
-        <div class="container-lg mb-2">
-          <div class="row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-12">
-              <h3 class="text-white vivo_heavy">Pemenang Special Jury Award</h3>
-            </div>
-          </div>
-
-          <div class="row flex-center p-2">
-
-            <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['special']['path']) }}','{{ $winner['special']['title']}}', '{{ $winner['special']['desc']}}', '{{ $winner['special']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <!-- <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/> -->
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/>
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">Pembatik Imogiri - Andika Oky arisandi</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-          </div>
-        </div>
-    </section>
-
-
-    <section class="pb-1 pb-md-3 bg-black ">
-        <div class="container-lg mb-2">
-          <div class="row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-10 col-lg-12">
-              <h3 class="text-white vivo_heavy">Pemenang V40 Portrait of Indonesia</h3>
-            </div>
-          </div>
-
-          <div class="row flex-center p-2">
-
-            <div class="col-12 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a role='button' onClick="winnerPreview('{{ asset($winner['special_2']['path']) }}','{{ $winner['special_2']['title']}}', '{{ $winner['special_2']['desc']}}', '{{ $winner['special_2']['desc2']}}')">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/special-winner.webp') }}" alt="" loading="lazy"/>
-                <!-- <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp') }}" alt="" loading="lazy"/> -->
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">Sang Dalang - Vendi Rizki Kesworo</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-          </div>
-        </div>
-    </section>
-
       <section class="pb-1 pb-md-3 bg-black" id="list-gallery" style="display: {{ $display }};">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
@@ -164,7 +29,7 @@
           <div class="row flex-center p-2">
 
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
+            <a href="{{ route('gallery', ['category' => 'portrait-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -175,7 +40,7 @@
             </div>
       
             <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
+            <a href="{{ route('gallery', ['category' => 'street-life-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -198,7 +63,7 @@
 
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}#gallery">
+            <a href="{{ route('gallery', ['category' => 'still-life-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -220,7 +85,7 @@
             </div>
 
             <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
+            <a href="{{ route('gallery', ['category' => 'nature-architecture-photography']) }}#gallery">
               <div class="position-relative img-wrapper ">
                 <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
                 <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
@@ -358,28 +223,6 @@
 @push('script')
 <script type="text/javascript">
 
-  var winnerModal = document.getElementById('winnerModal');
-  var btn = document.getElementById('btnWinModal');
-  var winnerImgPath = document.getElementById('imgPath');
-  var winnerImgTitle = document.getElementById('imgTitle');
-  var winnerImgOwner = document.getElementById('imgOwn');
-  var winnerImgDesc = document.getElementById('imgDesc');
-
-
-  function winnerPreview(path, title, owner, desc) {
-    btn.click();
-    winnerImgPath.src = path;
-    winnerImgTitle.innerHTML = title;
-    winnerImgOwner.innerHTML = owner;
-    winnerImgDesc.innerHTML = desc;
-
-  }
-
-
-  // function closeModal() {
-  //   winnerModal.classList.remove("show");
-  //   winnerModal.style.display = 'none';
-  // }
 
   const galleryList = $('#galleryList');
   const loading = $('#loader');

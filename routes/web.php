@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CreatorController;
 use App\Http\Controllers\Admin\CreatorExportController;
 use App\Http\Controllers\Admin\ImageController;
+use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;;
 
 
 
@@ -30,7 +31,7 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
-
+    Route::resource('galleries', AdminGalleryController::class);
 
     Route::middleware(['isSuperAdmin'])->group(function () {
         Route::resource('/user', UserController::class)->names('user');

@@ -28,10 +28,16 @@
                         <span>Creator</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.galleries.index') }}" class="waves-effect">
+                        <i class="mdi mdi-account"></i>
+                        <span>Gallery</span>
+                    </a>
+                </li>
 <!--                 <li>
                     <a href="{{ route('admin.image.index') }}" class="waves-effect">
                         <i class="mdi mdi-account"></i>
-                        <span>Gallery</span>
+                        <span>Image</span>
                     </a>
                 </li> -->
             </ul>
