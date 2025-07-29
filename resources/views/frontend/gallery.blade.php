@@ -23,30 +23,28 @@ $categories = [
 
 @section('content')
 
-
-      <section class="pb-1 pb-md-3 bg-black" id="list-gallery" style="display: {{ $display }};">
+    <section class="d-flex bg-black {{ $center }}" id="list-gallery" style="display: {{ $display }};">
         <div class="container-lg mb-2">
           <div class="row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-10 col-lg-12">
-              <h3 class="text-white vivo_heavy text-uppercase">Galeri</h3>
+            <div class="col-12 text-center">
+              <span class="text-white vivo_heavy text-uppercase fs-6">Galeri</span>
             </div>
           </div>
 
           <div class="row flex-center p-2">
 
-
-          @foreach($categories as $cat)
-            <div class="col-3 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-              <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
-                <div class="position-relative img-wrapper ">
-                  <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
-                  <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                    <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">{{ $cat['label'] }}</p>
+            @foreach($categories as $cat)
+              <div class="col-md-3 col-6 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+                <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
+                  <div class="position-relative img-wrapper ">
+                    <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
+                    <div class="position-absolute bottom-0 panel-text img-tag w-100">
+                      <p class="px-3 pb-3 mb-n1 text-white vivo_regular lh-base fs-category-name">{{ $cat['label'] }}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-          @endforeach
+                </a>
+              </div>
+            @endforeach
 
           </div>
         </div>
@@ -62,9 +60,8 @@ $categories = [
     <section class="pb-6 bg-black">
       <div class="container-fluid mb-5">
         <div class="row" data-aos="fade-down">
-            <div class="col-10 col-lg-12 mb-3">
-              <h3 class="text-white vivo_heavy text-uppercase">{{ $title }}</h3>
-              <hr/>
+            <div class="col-12 text-center mb-5">
+              <h3 class="text-white vivo_heavy text-uppercase fs-6">{{ $title }}</h3>
             </div>
         </div>
         <div class="justify-content-center text-center h-50" id="loader">
