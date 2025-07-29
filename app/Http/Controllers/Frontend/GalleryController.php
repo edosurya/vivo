@@ -24,9 +24,7 @@ class GalleryController extends Controller
             }
 
             $title = Gallery::IMAGE_CATEGORY[$categoryId];
-            $galleries = Gallery::where('category', $categoryId)->get();
-
-
+            $galleries = Gallery::where('category', $categoryId)->orderBy('order', 'ASC')->get();
 
             $images = $galleries->map(function ($item) {
                 return [

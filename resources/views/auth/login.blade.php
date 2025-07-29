@@ -50,9 +50,10 @@
                 <div class="mt-5 text-center">
                     {{-- <p>Don't have an account ? <a href="{{ route('register') }}" class="text-primary"> Signup Now </a></p> --}}
                     ©
+                    Copyright
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> Copyright © 2024. All rights reserved.
+                    </script> All rights reserved.
                 </div>
             </div>
         </div>

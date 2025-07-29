@@ -63,7 +63,6 @@
                                         <th>Category</th>
                                         <th>Title</th>
                                         <th>Desc</th>
-                                        <th>Order</th>
                                         <th>Image</th>
                                         <th>Action</th> 
                                     </tr>
@@ -134,11 +133,6 @@
                     {
                         name: "desc",
                         data: 'desc',
-                        defaultContent: '-',
-                    },
-                    {
-                        name: "order",
-                        data: 'order',
                         defaultContent: '-',
                     },
                     {

@@ -4,16 +4,22 @@
 @section('meta_title', 'vivo IMAGINE')
 @section('meta_description','vivo IMAGINE')
 
-    @push('css-plugin')
-      <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
-      <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
-      <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-      <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
-    @endpush
+  @push('css-plugin')
+    <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/gallery.css') }}">
+  @endpush
 
-    @push('style')
-    @endpush
+@php
+$categories = [
+  ['slug' => 'portrait-photography', 'label' => 'PORTRAIT PHOTOGRAPHY', 'image' => 'bg-category-portrait.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'STREET PHOTOGRAPHY', 'image' => 'bg-category-street.webp'],
+  ['slug' => 'night-photography', 'label' => 'NIGHT PHOTOGRAPHY', 'image' => 'bg-category-night.webp'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'NATURE PHOTOGRAPHY', 'image' => 'bg-category-nature.webp'],
+];
+@endphp
 
 @section('content')
 
@@ -28,72 +34,19 @@
 
           <div class="row flex-center p-2">
 
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'portrait-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">PORTRAIT PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-      
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'street-life-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STREET PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-        
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">SERIES PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
 
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ route('gallery', ['category' => 'still-life-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STILL LIFE PHOTOGRAPHY</p>
+          @foreach($categories as $cat)
+            <div class="col-3 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+              <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
+                <div class="position-relative img-wrapper ">
+                  <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
+                  <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                    <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">{{ $cat['label'] }}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
             </div>
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NIGHT PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
-
-            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <a href="{{ route('gallery', ['category' => 'nature-architecture-photography']) }}#gallery">
-              <div class="position-relative img-wrapper ">
-                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
-                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NATURE PHOTOGRAPHY</p>
-                </div>
-              </div>
-            </a>
-            </div>
+          @endforeach
 
           </div>
         </div>
@@ -124,9 +77,9 @@
               <div class="item work">
                 <div class="img d-flex align-items-center justify-content-center">
                   @if(@$img['thumb'])
-                  <img class="rounded lazyOwl" src="{{ asset($img['thumb'])}}" alt="" loading="lazy">
+                  <img class="rounded-5 lazyOwl" src="{{ asset($img['thumb'])}}" alt="" loading="lazy">
                   @else
-                  <img class="rounded lazyOwl" src="{{ asset($img['path'])}}" alt="" loading="lazy">
+                  <img class="rounded-5 lazyOwl" src="{{ asset($img['path'])}}" alt="" loading="lazy">
                   @endif
                   <a class="icon d-flex align-items-center justify-content-center position-absolute" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-slide-to="{{$key}}">
                     <span class="ion-ios-search"></span>
@@ -237,7 +190,7 @@
     $('.featured-carousel').owlCarousel({
       lazyLoad:true,
       loop:false,
-      margin:5,
+      margin:30,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       nav:true,

@@ -41,7 +41,7 @@ class CreatorController extends Controller
 
         if ($zip->open(public_path($zipFileName), ZipArchive::CREATE) === TRUE) {
             foreach ($images as $key => $value) {
-                $zip->addFile('storage/'.$value, basename('storage/'.$value));
+                $zip->addFile('storage/'.$creator->period.'/'.$value, basename('storage/'.$creator->period.'/'.$value));
             }
 
             $zip->close();

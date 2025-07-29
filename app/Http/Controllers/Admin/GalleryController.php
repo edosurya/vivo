@@ -24,7 +24,7 @@ class GalleryController extends Controller
                 return datatables()
                     ->eloquent($query)
                     ->addColumn('category', function ($row) {
-                        return Gallery::TYPE[$row->category];
+                        return Gallery::IMAGE_CATEGORY[$row->category];
                     })
                     ->addColumn('galleries', function ($row) { 
                            $url= asset("storage/$row->path"); 

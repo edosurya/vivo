@@ -14,6 +14,7 @@ class ImageController extends Controller
     public function index(Request $request)
     {
         $period = 2025;
+
         if ($request->ajax()) {
             try {
                 $query = Images::query()
@@ -30,7 +31,8 @@ class ImageController extends Controller
                         return Images::TYPE[$row->category];
                     })
                     ->addColumn('image', function ($row) { 
-                           $url= asset("storage/$row->path"); 
+                           $path = $row->relatedCreator->period.'/'.$row->path;
+                           $url= asset("storage/$path"); 
                            return '<img src='.$url.' border="0" width="40" class="img-rounded" align="center" />'; 
                     })
                     ->addColumn('created_at', function ($row) {
@@ -57,9 +59,11 @@ class ImageController extends Controller
 
     public function downloadMultiple(Request $request)
     {
+        $period = 2025;
 
         $zip = new ZipArchive;
         $images = Images::whereHas('relatedCreator', function ($query) { 
+            $period = 2025;
             $query->where('period', 2025); 
         });
 
@@ -81,7 +85,7 @@ class ImageController extends Controller
 
         if ($zip->open(public_path($zipFileName), ZipArchive::CREATE) === TRUE) {
             foreach ($images as $key => $value) {
-                $zip->addFile('storage/'.$value, basename('storage/'.$value));
+                $zip->addFile('storage/'.$period.'/'.$value, basename('storage/'.$value));
             }
 
             $zip->close();

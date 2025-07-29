@@ -42,8 +42,8 @@
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 gallery-grid">
                 @foreach($creator->relatedImages as $img)
                 <div class="col">
-                  <a class="gallery-item" href="{{ asset('storage/'.$img->path) }}">
-                    <img src="{{ asset('storage/'.$img->path) }}" class="img-fluid rounded">
+                  <a class="gallery-item" href="{{ asset('storage/'.$creator->period.'/'.$img->path) }}">
+                    <img src="{{ asset('storage/'.$creator->period.'/'.$img->path) }}" class="img-fluid rounded">
                   </a>
                 </div>
                 @endforeach
