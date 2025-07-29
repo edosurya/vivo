@@ -4,23 +4,22 @@
 @section('meta_title', 'vivo IMAGINE')
 @section('meta_description','vivo IMAGINE')
 
-@push('css-plugin')
-    <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
-@endpush
-
-@php
-$categories = [
-  ['slug' => 'portrait-photography', 'label' => 'PORTRAIT PHOTOGRAPHY', 'image' => 'bg-category-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'STREET PHOTOGRAPHY', 'image' => 'bg-category-street.webp'],
-  ['slug' => 'series-photography', 'label' => 'SERIES PHOTOGRAPHY', 'image' => 'bg-category-series.webp'],
-  ['slug' => 'still-life-photography', 'label' => 'STILL LIFE PHOTOGRAPHY', 'image' => 'bg-category-still-life.webp'],
-  ['slug' => 'night-photography', 'label' => 'NIGHT PHOTOGRAPHY', 'image' => 'bg-category-night.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'NATURE PHOTOGRAPHY', 'image' => 'bg-category-nature.webp'],
-];
-@endphp
+    @push('css-plugin')
+        <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+    @endpush
 
 @section('hero')
-    <section class="main-banner" id="main-banner"></section>
+      <section class="pt-5 pb-5 bg-dark bg-img-main-banner" id="main-banner">
+        <div class="container-fluid">
+          <div class="row vivo-ipa-logo">
+            <div class="col-12 col-md-8">
+              <img alt="image" class="img-fluid"
+                src="{{ asset('frontend/images/webp/vivo-ipa-logo_2.webp') }}">
+            </div>
+          </div>
+          <a href="#" class="scroll-down" address="true"></a>
+        </div>
+      </section>
 @endsection
 
 @section('content')
@@ -109,8 +108,8 @@ $categories = [
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-    <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});">
-        <div class="container-lg mb-4">
+      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});">
+        <div class="container-lg mb-5">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
               <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
@@ -119,19 +118,75 @@ $categories = [
           </div>
 
           <div class="row flex-center p-2">
-            @foreach($categories as $cat)
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up">
-              <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
-                <div class="position-relative img-wrapper">
-                  <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="{{ $cat['label'] }}" loading="lazy">
-                  <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                    <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold fs-category-name">{{ $cat['label'] }}</p>
-                  </div>
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'potrait-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-portrait.webp') }}" alt="" loading="lazy"/>
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">PORTRAIT PHOTOGRAPHY</p>
                 </div>
-              </a>
+              </div>
+            </a>
             </div>
-            @endforeach
+      
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'street-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-street.webp') }}" alt="" loading="lazy"/>
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STREET PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+        
+            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'series-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-series.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">SERIES PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ route('gallery', ['category' => 'still-live-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-still-life.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">STILL LIFE PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="{{ route('gallery', ['category' => 'night-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-night.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NIGHT PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
+            <div class="col-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="{{ route('gallery', ['category' => 'nature-photography']) }}#gallery">
+              <div class="position-relative img-wrapper ">
+                <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/bg-category-nature.webp') }}" alt="" loading="lazy" />
+                <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
+                  <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold text-center fs-category-name">NATURE PHOTOGRAPHY</p>
+                </div>
+              </div>
+            </a>
+            </div>
+
           </div>
+
         </div>
 
         <div class="container-lg mt-5 py-7">

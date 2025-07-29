@@ -4,55 +4,88 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Gallery;
 
 class GalleryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-
     public function index($category = null)
     {
         $display = '';
-
-        if ($category) {
-            $categoryId = array_search($category, Gallery::TYPE);
-
-            if ($categoryId === false) {
-                abort(404, 'Category not found.');
-            }
-
-            $title = Gallery::IMAGE_CATEGORY[$categoryId];
-            $galleries = Gallery::where('category', $categoryId)->orderBy('order', 'ASC')->get();
-
-            $images = $galleries->map(function ($item) {
-                return [
-                    'path'     => asset('storage/' . $item->path),
-                    'title'    => $item->title ?? '',
-                    'desc'     => $item->desc ?? '',
-                    'location' => $item->location ?? '',
-                    'thumbnail'=> $item->thumbnail ?? '',
-                    'crator'    => $item->creator ?? '',
-                ];
-            })->toArray();
-
-        } else {
-            $display = '';
-            $title = '';
-            $images = [];
-        }
-
-        return view('frontend.gallery', compact('images', 'title', 'display'));
-    }
-
-
-    public function index2($category = null)
-    {
-
-        $display = '';
         $title = '';
         $images = [];
+
+        $winner['portrait'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-0925228e-27d8-4312-9d33-ab9866ecd15a-2.webp',
+                        'title' => 'Dua Dimensi',
+                        'desc' =>  'Jiehan Herry Saputro',
+                        'location' =>  '',
+                        'desc2' => 'Portrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda.',
+                    ];
+
+        $winner['street'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/street-photography-Sofyan_Efendi-ec2982e3-1e20-4318-825b-34233b49f5b8-5.webp',
+                        'title' => 'Bermain Bola Pantai',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                        'desc2' => 'Beberapa anak-anak bermain bola di pantai Pulau Kelagian Kecil, Pahawang, Lampung.',
+
+                    ];
+
+        $winner['still-life'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/still-life-photography-Sofyan_Efendi-d49d4853-157a-45be-ba4b-094eb4bafc99-3.webp',
+                        'title' => 'Satu Hati',
+                        'desc' =>  'Sofyan Efendi',
+                        'location' =>  '',
+                        'desc2' => 'Mencoba dan belajar dengan foto still life membuat saya untuk selalu kreatif. Dengan menggunakan vivo X100, saya dengan mudah memotret buah apel di dalam aquarium.',
+
+                    ];
+
+        $winner['night'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/night-photography-Sisca_J_Esperanza-c9592138-8f77-42cc-8367-f574c2664663-1.webp',
+                        'title' => 'Sudah Malam, Saatnya Pulang',
+                        'desc' =>  'Sisca J Esperanza',
+                        'location' =>  '',
+                        'desc2' => 'Suasana malam hari selepas jam kerja di sekitar JPO Phinisi, Jakarta',
+
+                    ];
+
+        $winner['nature'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/nature-photography-Dian_Pratama_Putra-3e043d8a-85c6-46e7-9c8f-86027b939190-4.webp',
+                        'title' => 'Star Trail Pantai Gigi Hiu',
+                        'desc' =>  'Dian Pratama Putra',
+                        'location' =>  '',
+                        'desc2' => 'Di langit malam yang gelap, jejak bintang-bintang membentuk garis-garis cahaya yang memukau di atas Pantai Gigi Hiu. Foto ini menangkap keajaiban alam dalam bentuk star trail, di mana pergerakan bintang-bintang yang tampak bergerak memanjang, menciptakan pola cahaya yang indah.',
+
+                    ];
+
+        $winner['special'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-6b09a54d-285c-42c1-a7c4-0609108381f0-1.webp',
+                        'title' => 'Pembatik Imogiri',
+                        'desc' =>  'Andika Oky Arisandi',
+                        'location' =>  '',
+                        'thumb' => 'frontend/images/winner/portrait-photography-Andika_Oky_arisandi-Pembatik imogiri.webp',
+                        'desc2' => 'Salah satu gadis Jawa pembatik yang ada di Desa Imogiri, Bantul, Jogjakarta.',
+
+                    ];
+
+        $winner['special_2'] = 
+                    [ 
+                        'path' => 'frontend/images/winner/sosmed_winner.webp',
+                        'title' => 'Sang Dalang',
+                        'desc' =>  'Vendi Rizki Kesworo',
+                        'location' =>  '',
+                        'thumb' => 'frontend/images/webp/special-winner.webp',
+                        'desc2' => '',
+
+                    ];
 
         switch ($category) {
             case 'potrait-photography':
