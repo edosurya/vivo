@@ -6,6 +6,7 @@
 
   @push('css-plugin')
     <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
@@ -14,54 +15,61 @@
 
 @php
 $categories = [
-  ['slug' => 'portrait-photography', 'label' => 'PORTRAIT PHOTOGRAPHY', 'image' => 'bg-category-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'STREET PHOTOGRAPHY', 'image' => 'bg-category-street.webp'],
-  ['slug' => 'night-photography', 'label' => 'NIGHT PHOTOGRAPHY', 'image' => 'bg-category-night.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'NATURE PHOTOGRAPHY', 'image' => 'bg-category-nature.webp'],
+  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-category-portrait.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-category-street.webp'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-category-night.webp'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-category-nature.webp'],
 ];
 @endphp
 
 @section('content')
 
-    <section class="d-flex bg-black {{ $center }}" id="list-gallery" style="display: {{ $display }};">
-        <div class="container-lg mb-2">
-          <div class="row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-12 text-center">
-              <span class="text-white vivo_heavy text-uppercase fs-6">Galeri</span>
-            </div>
-          </div>
 
-          <div class="row flex-center p-2">
+      <section class="py-5 py-md-5 text-white section-pm" id="list-gallery">
 
-            @foreach($categories as $cat)
-              <div class="col-md-3 col-6 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
-                <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
-                  <div class="position-relative img-wrapper ">
-                    <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
-                    <div class="position-absolute bottom-0 panel-text img-tag w-100">
-                      <p class="px-3 pb-3 mb-n1 text-white vivo_regular lh-base fs-category-name">{{ $cat['label'] }}</p>
-                    </div>
-                  </div>
-                </a>
+        <div class="d-flex {{ $custom_css }}" style="display: {{ $display }}";>
+          <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-gallery.webp') }});
+            "></div>
+
+          <div class="container-lg">
+            <div class="row" data-aos="fade-down" data-aos-duration="1500">
+              <div class="col-12 text-center">
+                <span class="text-white vivo_heavy mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Galeri</span>
               </div>
-            @endforeach
+            </div>
+
+            <div class="row flex-center mt-4 p-col-mobile">
+
+              @foreach($categories as $cat)
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
+                    <div class="position-relative img-wrapper ">
+                      <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
+                      <div class="position-absolute bottom-0 panel-text img-tag w-100">
+                        <p class="mb-n1 text-light vivo_light fs-category-name">{!! $cat['label'] !!}</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              @endforeach
+
+            </div>
 
           </div>
         </div>
-    </section>
+    
     
     
 
     @if($images)
-    <script type="text/javascript">
-      window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
-    </script>
+      <script type="text/javascript">
+        window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+      </script>
     
-    <section class="pb-6 bg-black">
-      <div class="container-fluid mb-5">
+      <div class="container-fluid mb-5 pb-6 mt-8">
         <div class="row" data-aos="fade-down">
             <div class="col-12 text-center mb-5">
-              <h3 class="text-white vivo_heavy text-uppercase fs-6">{{ $title }}</h3>
+              <span class="text-white vivo_heavy mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">{{ $title }}</span>
             </div>
         </div>
         <div class="justify-content-center text-center h-50" id="loader">
@@ -94,9 +102,9 @@ $categories = [
         </div>
 
       </div>
-    </section>
     @endif
     
+    </section>
 
     @if($images)
 

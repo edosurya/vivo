@@ -7,6 +7,7 @@
     @push('css-plugin')
         @vite(['resources/js/app.js'])
         <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
         <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     @endpush
 
@@ -22,9 +23,12 @@
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-      <section class="bg-100 py-7 section-has-bg pt-5" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});" id="form">
-        <div class="container-lg mb-5">
+      <section class="py-5 py-md-5 text-white section-pm" id="form">
 
+        <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm.webp') }});
+          "></div>
+
+        <div class="container-lg mb-5">
 
         <div class="row d-flex align-items-stretch">
             <!-- Kolom kiri -->
@@ -43,25 +47,20 @@
                   </ul>
                 </div>
 
-                <div class="fs-term-condition-other">
-                  <p class="fs-1">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</p>
+                <div>
+                  <span class="d-block mb-2 fs-term-condition-other">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
 
-                  <button type="button" class="btn bg-light text-black mb-3 text-btn-padding rounded-pill py-3 w-75 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#myModal">
-                    <!-- SVG hijau -->
-                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 2H14C15.1 2 16 2.9 16 4V8H20C21.1 8 22 8.9 22 10V20C22 21.1 21.1 22 20 22H10C8.9 22 8 21.1 8 20V16H4C2.9 16 2 15.1 2 14V4C2 2.9 2.9 2 4 2Z"/>
-                    </svg>
+                  <button type="button" class="btn bg-light text-black mb-3 text-btn-padding rounded-pill py-2 px-4 w-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
                     S&K vivo Imagine - Publik
                   </button>
 
-                  <button type="button" class="btn bg-light text-black border-blue-gradient text-btn-padding rounded-pill py-3 w-75 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#myModal1">
-                    <!-- SVG hijau -->
-                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 2H14C15.1 2 16 2.9 16 4V8H20C21.1 8 22 8.9 22 10V20C22 21.1 21.1 22 20 22H10C8.9 22 8 21.1 8 20V16H4C2.9 16 2 15.1 2 14V4C2 2.9 2.9 2 4 2Z"/>
-                    </svg>
+                  <button type="button" class="btn bg-light text-black border-blue-gradient text-btn-padding rounded-pill py-2 px-4 w-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
                     S&K vivo Imagine - Internal
                   </button>
                 </div>
+
 
 
             </div>
@@ -241,7 +240,7 @@
                               <label class="svg-checkbox-badge">
                                 <input type="checkbox" id="checkTermAndCondition" name="checkTermAndCondition" checked />
                                 <svg viewBox="0 0 24 24" class="badge-icon">
-                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="#2ABBA7"/>
+                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="rgb(128, 128, 128)"/>
                                   <polyline class="checkmark" points="7.5,12 11,15.5 17,9.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span class="label-text vivo_regular">
@@ -255,7 +254,7 @@
                               <label class="svg-checkbox-badge">
                                 <input type="checkbox" id="privacy" name="privacy" checked />
                                 <svg viewBox="0 0 24 24" class="badge-icon">
-                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="#2ABBA7"/>
+                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="rgb(128, 128, 128)"/>
                                   <polyline class="checkmark" points="7.5,12 11,15.5 17,9.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span class="label-text vivo_regular">

@@ -6,16 +6,22 @@
 
 @push('css-plugin')
     <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
 @endpush
 
 @php
 $categories = [
-  ['slug' => 'portrait-photography', 'label' => 'PORTRAIT PHOTOGRAPHY', 'image' => 'bg-category-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'STREET PHOTOGRAPHY', 'image' => 'bg-category-street.webp'],
-  ['slug' => 'series-photography', 'label' => 'SERIES PHOTOGRAPHY', 'image' => 'bg-category-series.webp'],
-  ['slug' => 'still-life-photography', 'label' => 'STILL LIFE PHOTOGRAPHY', 'image' => 'bg-category-still-life.webp'],
-  ['slug' => 'night-photography', 'label' => 'NIGHT PHOTOGRAPHY', 'image' => 'bg-category-night.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'NATURE PHOTOGRAPHY', 'image' => 'bg-category-nature.webp'],
+  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-category-portrait.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-category-street.webp'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-category-night.webp'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-category-nature.webp'],
+];
+
+
+$judges = [
+  ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'judge-benny.webp'],
+  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'judge-didi.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager - Camera R&D at vivo Global', 'image' => 'judge-keshav.webp'],
 ];
 @endphp
 
@@ -27,77 +33,43 @@ $categories = [
 
 
       <!-- ============================================-->
-      <!-- <section> Winner ============================-->
+      <!-- <section> About Us ============================-->
 
-      <section class="bg-100 py-7 py-md-9 text-white section-has-bg bg-img-winner" id="winner">
-        <div class="container-lg">
-          <div class="row justify-content-center">
+    <section class="py-5 py-md-5 text-white section-about-us" id="how-to">
+
+        <div class="section-bg-image-about-us" style="background-image: url({{ asset('frontend/images/webp/bg-section-about-us.webp') }});
+          "></div>
+
+        <div class="container-lg mb-4">
+          <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
-              <h2 class="text-white vivo_heavy text-uppercase " data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">PEMENANG</h2>
+              <span class="d-block text-white vivo_heavy mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
+              <span class="d-block text-desc-section">vivo merayakan keberagaman <span class="new-line"></span>budaya Indonesia dengan mengabadikan keindahan yang beragam, <span class="new-line"></span>serta menangkap momen <br/> kebersamaan yang menyatukan masyarakat dari berbagai daerah dan generasi</span>
             </div>
           </div>
+
+          <div class="d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1500">
+            <img src="{{ asset('frontend/images/webp/section-about-us.webp') }}" class="img-fluid my-4 rounded-3 img-responsive-custom" alt="Joy in Nusantara Image" loading="lazy" />
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+              <span class="d-block text-desc-section">Kirimkan hasil karya Anda</span>
+              <span class="d-block vivo_bold text-date-regist">
+                5 Agustus <span class="line"></span> 15 Oktober 2025
+              </span>
+            </div>
+          </div>
+
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-            <div class="col-10 col-md-8 text-center mt-n3 mb-3">
-              <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-winner fs-button-register" href="{{ route('gallery', ['category' => 'winner']) }}">vivo Imagine Photography Awards</a>
+              <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
+                <div class="d-grid gap-2">
+                  <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI SEKARANG</a>
+                </div>
               </div>
-            </div>
           </div>
+
         </div>
-        <!-- end of .container-->
-
-      </section>
-
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-      <!-- ============================================-->
-      <!-- <section> About Us ============================-->
-
-      <section class="bg-100 py-5 py-md-10 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/mblok-bg.webp') }});" id="how-to">
-        <div class="container-lg">
-          <div class="row justify-content-center">
-            <div class="col-10 col-lg-10 text-center mb-3 box-bg py-3">
-              <h2 class="text-white vivo_heavy mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Kunjungi <span class="new-line"></span>vivo Imagine <span class="new-line"></span>  Photo Gallery</h2>
-              <div class="fs-desc-schedule " data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-                <p class="mb-0">M Bloc Space Jakarta | <span class="new-line ms-1"></span>23<span class="line"></span>29 Desember 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-      <!-- ============================================-->
-      <!-- <section> About Us ============================-->
-
-      <section class="bg-100 py-7 text-white section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-about-us.webp') }});" id="how-to">
-        <div class="container-lg">
-          <div class="row justify-content-center">
-            <div class="col-10 col-lg-12 text-center mb-3"  >
-              <!-- <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">vivo menghubungkan semua orang untuk menangkap foto yang memperlihatkan keindahan dan emosi dalam momen sehari-hari. <br/>Melalui <span class="vivo_bold">Joy In Us</span>, vivo menginspirasi agar lebih eksploratif dan ekspresif berkarya melalui lensa kamera. </p> -->
-              <p class="fs-how-to-desc mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melalui <span class="vivo_bold">Joy In Us</span>, vivo mengajak semua orang untuk menangkap keindahan dan emosi dalam momen sehari-hari, serta menginspirasi dengan mengikuti vivo Imagine Photography Awards</p>
-<!--               <div class="fs-desc-schedule vivo_extraBold" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-                <p>Kirimkan hasil karya Anda!</p>
-                <p class="mt-n3">23 Sep<span class="line"></span>23 Nov 2024</p>
-              </div> -->
-            </div>
-          </div>
-          <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-            <div class="col-10 col-md-4 text-center mb-3">
-              <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register fs-button-register" href="#">REGISTRASI DITUTUP</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
 
       </section>
 
@@ -109,138 +81,89 @@ $categories = [
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-    <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});">
+
+    <section class="py-5 py-md-5 text-white section-category">
+
+        <div class="section-bg-image-category" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});
+          "></div>
+
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
-              <h2 class="text-white vivo_heavy text-uppercase mb-3">Kategori</h2>
-              <p class="desc mb-5 text-white fs-desc-category">Temukan inspirasi dari tiap kategori vivo Imagine Photography Awards</p>
+              <span class="d-block text-white vivo_heavy mb-4 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Kategori</span>
+              <span class="d-block text-desc-section">Temukan inspirasi dari tiap kategori <span class="new-line"></span> vivo Imagine Photography Awards</span>
             </div>
           </div>
 
-          <div class="row flex-center p-2">
+          <div class="row flex-center mt-4 p-col-mobile">
+
             @foreach($categories as $cat)
-            <div class="col-4 mb-4 p-col-mobile" data-aos="fade-up">
-              <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
-                <div class="position-relative img-wrapper">
-                  <img class="img-fluid rounded-4 inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="{{ $cat['label'] }}" loading="lazy">
-                  <div class="position-absolute bottom-0 panel-text img-tag text-center w-100">
-                    <p class="pt-3 pb-3 mb-n1 text-uppercase text-white vivo_bold fs-category-name">{{ $cat['label'] }}</p>
+              <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <a href="{{ route('gallery', ['category' => $cat['slug']]) }}#gallery">
+                  <div class="position-relative img-wrapper ">
+                    <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $cat['image']) }}" alt="" loading="lazy"/>
+                    <div class="position-absolute bottom-0 panel-text img-tag w-100">
+                      <p class="mb-n1 text-light vivo_light fs-category-name">{!! $cat['label'] !!}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             @endforeach
+
           </div>
         </div>
+      </section>
 
-        <div class="container-lg mt-5 py-7">
+
+      <section class="py-5 py-md-5 text-white section-judge">
+
+        <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-md-8 col-lg-5 text-center mb-3">
-              <h2 class="text-white vivo_heavy text-uppercase">Juri</h2>
+              <span class="d-block text-white vivo_heavy text-uppercase mb-3 text-title-section">Juri</span>
             </div>
           </div>
 
-          <div class="row text-center text-white p-2 justify-content-center" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important">
-              <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/national-geographic-logo.webp') }}" alt="" width="120" loading="lazy" /> -->
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-didi.webp') }}" alt="" loading="lazy" />
-              <div class="center">
-                  <p class="fs-judge-title vivo_bold mb-1"> Didi Kaspi</p>
-              </div>
-              <div>
-                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Social Eco Journalist &</p>
-                  <p class="fs-judge-desc  vivo_extraLight lh-1">Editor in Chief of @natgeoindonesia</p>
-              </div>
-            </div>
-            <div class="col-4 p-col-mobile">
-              <img class="mb-3" src="{{ asset('frontend/images/webp/vg-logo.webp') }}" alt="" width="120" loading="lazy" />
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-benny.webp') }}" alt="" loading="lazy" />
-              <div class="center">
-                  <p class="fs-judge-title vivo_bold mb-1"> Benny Lim</p>
-              </div>
-              <div>
-                  <p class="fs-judge-desc mb-1 vivo_extraLight lh-1">Professional Photographer</p>
-              </div>
-            </div>
-            <!-- <div class="col-4 p-col-mobile" style="margin-top: 4.3rem!important"> -->
-              <!-- <img class="mb-3" src="{{ asset('frontend/images/webp/vivozeiss-logo.webp') }}" alt="" width="120" loading="lazy"/> -->
-              <!-- <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-lorem.webp') }}" alt="" loading="lazy" /> -->
-              <!-- <div class="center"> -->
-                  <!-- <p class="fs-judge-title vivo_bold mb-1">vivo Representative </p> -->
-              <!-- </div> -->
-              <!-- <div> -->
-                  <!-- <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Product Manager</p> -->
-              <!-- </div> -->
-            <!-- </div> -->
-          </div>
+          <div class="row p-col-mobile d-flex justify-content-center">
 
-          <div class="row text-center justify-content-center text-white p-2" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-4 p-col-mobile" >
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-dodo.webp') }}" alt="" loading="lazy" />
-              <div class="center">
-                  <p class="fs-judge-title vivo_bold mb-1">Dodo Zhai</p>
+            @foreach($judges as $judge)
+              <div class="col-md-4 col-6 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+                <div class="judge img-wrapper">
+                  <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $judge['image']) }}" alt="" loading="lazy"/>
+                </div>
+                <!-- Panel moved outside image -->
+                <div class="panel-text-gradient w-100 py-4">
+                  <span class="d-block fs-judge-title text-light vivo_bold py-2">{{ $judge['name'] }}</span>
+                  <span class="d-block fs-judge-desc  text-light vivo_light">{{ $judge['job'] }}</span>
+                </div>
               </div>
-              <div>
-                  <p class="fs-judge-desc  mb-1 vivo_extraLight lh-1">Senior Product Manager</p>
-                  <p class="fs-judge-desc  vivo_extraLight lh-1"> for Imaging Effects</p>
-              </div>
-            </div>
-            <div class="col-4 p-col-mobile">
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-jack.webp') }}" alt="" loading="lazy" />
-              <div class="center">
-                  <p class="fs-judge-title vivo_bold mb-1">Jack Li</p>
-              </div>
-              <div>
-                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Senior Product Manager</p>
-                  <p class="fs-judge-desc  vivo_extraLight lh-1"> for Imaging Effects</p>
-              </div>
-            </div>
-            <div class="col-4 p-col-mobile">
-              <img class="img-fluid rounded-3 mb-3" src="{{ asset('frontend/images/webp/judge-xueying.webp') }}" alt="" loading="lazy" />
-              <div class="center">
-                  <p class="fs-judge-title vivo_bold mb-1">Xueying Duanmu </p>
-              </div>
-              <div>
-                  <p class=" fs-judge-desc mb-1 vivo_extraLight lh-1">Senior Product Manager</p>
-              </div>
-            </div>
+
+            @endforeach
           </div>
 
         </div>
         <!-- end of .container-->
 
+      </section>
+
+
+      <section class="py-5 py-md-5 text-white section-prize">
+
         <div class="container-fluid">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-md-8 col-lg-5 text-center mb-4">
-              <h2 class="text-white vivo_heavy text-uppercase">hadiah</h2>
+              <span class="d-block text-white vivo_heavy text-uppercase mb-3 text-title-section">Hadiah</span>
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 me-3 d-flex flex-column mb-3 text-center">
-              <div class="bd-highlight">
-                <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">Grand Prize</p>
-                <p class="text-white vivo_light lh-1 fs-prize-desc">Special Jury Awards</p>
-              </div>
+            <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize">
               <div class="p-2 m-w-50jt">
-                <img class="mb-3 d-sm-block d-none" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
-                <img class="mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-50jt-mobile.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
-              </div>
-              <div class="p-2 ">
-                <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-1.webp') }}" alt=""  loading="lazy" />
+                <img class="mb-3 d-block" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
-            <div class="col-5 col-md-4 p-3 border border-white rounded-4 d-flex flex-column mb-3 text-center">
-              <div class="bd-highlight">
-                <p class="fs-prize-title text-white vivo_bold text-uppercase mb-0">6 Pemenang</p>
-                <p class="text-white vivo_light lh-1 fs-prize-desc">dari 6 kategori</p>
-              </div>
+            <div class="col-5 col-md-4 p-3 mb-3 text-center box-prize">
               <div class="p-2">
-                <img class="mb-3 mb-3 d-sm-block d-none mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="50%" loading="lazy" />
-                <img class="mb-3 mb-3 d-block d-sm-none" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" width="100%" loading="lazy" />
-              </div>
-              <div class="p-2">
-                <img class="img-fluid" src="{{ asset('frontend/images/webp/prize-desc-2.webp') }}" alt="" loading="lazy" />
+                <img class="mb-3 mb-3 d-block mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
           </div>
@@ -253,120 +176,112 @@ $categories = [
 
       <!-- ============================================-->
       <!-- <section> Periode ============================-->
-      <section class="pb-6 bg-black period" >
 
-        <div class="container-lg">
+      <section class="py-5 py-md-5 text-white section-pm">
+
+        <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm.webp') }});
+          "></div>
+
+        <div class="container py-5 py-md-5">
+          <!-- Judul -->
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-md-12 col-lg-12 text-center mb-4">
-              <h2 class="text-white vivo_heavy text-uppercase">Periode Kompetisi</h2>
-            </div>
-          </div>
-          <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
-            <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
-              <div class="card h-100 bg-period">
-                <div class="inner">&nbsp;</div>
-                <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 tex">23 Sep<span class="line"></span> <span class="new-line"></span>23 Nov 2024</p>
-                    <p class="vivo_extraLight fs-period-desc">Periode registrasi dan pengunggahan hasil foto</p>
-                </div>
-              </div>
-            </div>
-<!--             <div class="col-md-2 col-4 p-col-mobile-desktop mt-4">
-              <div class="card h-100 bg-period">
-                <div class="inner">&nbsp;</div>
-                <div class="card-body d-flex flex-column justify-content-around mx-auto">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">30 Nov 2024</p>
-                    <p class="vivo_extraLight fs-period-desc">Pengumuman 7 pemenang untuk menghadiri hari penghargaan </p>
-                </div>
-              </div>
-            </div> -->
-            <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
-              <div class="card h-100 bg-period">
-                <div class="inner">&nbsp;</div>
-                <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">9 Des 2024</p>
-                    <p class="vivo_extraLight fs-period-desc">Pengumuman pemenang</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
-              <div class="card h-100 bg-period">
-                <div class="inner">&nbsp;</div>
-                <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1">23 Des<span class="line"></span> <span class="new-line"></span>29 Des 2024 </p>
-                    <!-- <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine Photography Awards di M Bloc Space, Jakarta</p> -->
-                    <p class="vivo_extraLight fs-period-desc">Pameran hasil foto vivo Imagine @ M Bloc Space Jakarta</p>
-                </div>
-              </div>
+            <div class="col-12 text-center mb-4">
+              <span class="d-block vivo_bold text-uppercase mb-3 text-title-section">Periode Kompetisi</span>
             </div>
           </div>
 
-         </div>
-
-      </section>
-
-
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-      <!-- ============================================-->
-      <!-- <section> Mechanism ============================-->
-
-        <section class="pb-6 bg-black">
-          <div class="container">
-            <div class="row justify-content-center text-center mb-4" data-aos="fade-down" data-aos-duration="1500">
-              <div class="col-lg-8 col-xxl-7">
-                 <h2 class="text-white vivo_heavy text-uppercase">Mekanisme</h2>
-              </div>
-            </div>
-            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
-              <div class="col-4 p-col-mobile">
-                <div class="text-center position-relative">
-                  <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/webp/mechanism-1.webp') }}" alt="" class="img-fluid img-mechanism" loading="lazy" />
-                  </div>
-                  <p class="lead text-white mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Ambil foto menggunakan smartphone vivo tipe apa pun dengan mengaktifkan fitur watermark vivo</p>
-                  <div class="arrow-icon position-absolute d-lg-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 p-col-mobile">
-                <div class="text-center position-relative">
-                  <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/webp/mechanism-2.webp') }}" alt="" class="img-fluid img-mechanism"  loading="lazy" />
-                  </div>
-                  <p class="lead text-white  mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Registrasi dan unggah <br/>karyamu di <br/><a href="{{ route('register.index') }}" class="text-white">vivoimagine.id/ photographyawards</a></p>
-                  <div class="arrow-icon position-absolute d-lg-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 p-col-mobile">
-                <div class="text-center position-relative">
-                  <div class="d-flex align-items-center justify-content-center">
-                   <img src="{{ asset('frontend/images/webp/mechanism-3.webp') }}" alt=""class="img-fluid img-mechanism" loading="lazy" />
-                  </div>
-                  <p class="lead text-white mt-4 fs-desc-mechanism px-lg-3 mb-5 mb-lg-0 vivo_extraLight">Nantikan pengumuman pemenang</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-center text-center mb-4 mt-5">
-              <div class="col-lg-10 col-xxl-7">
-              <div class="d-grid gap-2">
-                <a class="btn p-2 rounded-3 text-black vivo_heavy btn-register" href="#">REGISTRASI DITUTUP</a>
-              </div>
-
-              </div>
-            </div>
-
+          <!-- Gambar Tengah -->
+          <div class="text-center mb-5" data-aos="fade-in" data-aos-duration="1000">
+            <img src="{{ asset('frontend/images/webp/period-line.webp') }}" class="img-fluid period-line-img" alt="Joy in Nusantara Image" loading="lazy" />
           </div>
+
+          <!-- Wrapper Cards -->
+          <div class="position-relative d-flex justify-content-between flex-wrap gap-1 card-period-wrapper" data-aos="fade-up" data-aos-duration="2500">
+            <!-- Kiri -->
+            <div class="card text-center card-period">
+              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs">
+                <span class="d-block text-white vivo_bold fs-period-date mb-2">5 Agustus <span class="line"></span> <br/> 15 Oktober 2025</span>
+                <span class="d-block vivo_bold fs-period-desc">Periode registrasi dan pengunggahan hasil foto</span>
+              </div>
+            </div>
+
+            <!-- Tengah -->
+            <div class="card text-center card-period">
+              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs">
+                <p class="text-white vivo_bold fs-period-date mb-2">16 <span class="line"></span> 19 Oktober 2025</p>
+                <p class="vivo_bold fs-period-desc">Seleksi awal & skoring juri</p>
+              </div>
+            </div>
+
+            <!-- Kanan -->
+            <div class="card text-center card-period">
+              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs ">
+                <p class="text-white vivo_bold fs-period-date mb-2">30 Oktober 2025</p>
+                <p class="vivo_bold fs-period-desc">Pengumuman pemenang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container py-5 py-md-8">
+              <div class="row justify-content-center text-center mb-4" data-aos="fade-down" data-aos-duration="1500">
+                <div class="col-lg-8 col-xxl-7">
+                  <span class="d-block vivo_bold text-uppercase mb-3 text-title-section">Mekanisme</span>
+                </div>
+              </div>
+
+              <div class="row flex-center p-2 align-items-stretch p-col-mobile">
+
+                <div class="col-md-4 col-4 mb-4 d-flex p-1 p-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                  <div class="card card-step text-white text-center position-relative h-100 w-100">
+                    <div class="step-number">1</div>
+                    <div class="card-body d-flex flex-column justify-content-start align-items-center">
+                      <img src="{{ asset('frontend/images/webp/mechanism-1.webp') }}" alt="Step 1" class="step-icon mb-3" />
+                      <span class="step-desc text-white text-center">
+                        Ambil foto menggunakan smartphone vivo tipe apa pun dengan mengaktifkan fitur watermark vivo
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 col-4 mb-4 d-flex p-1 p-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                  <div class="card card-step text-white text-center position-relative h-100 w-100">
+                    <div class="step-number">2</div>
+                    <div class="card-body d-flex flex-column justify-content-start align-items-center">
+                      <img src="{{ asset('frontend/images/webp/mechanism-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
+                      <span class="step-desc text-white text-center">
+                        Registrasi dan unggah karyamu di sini
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-4 mb-4 d-flex p-1 p-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                  <div class="card card-step text-white text-center position-relative h-100 w-100">
+                    <div class="step-number">3</div>
+                    <div class="card-body d-flex flex-column justify-content-start align-items-center">
+                      <img src="{{ asset('frontend/images/webp/mechanism-3.webp') }}" alt="Step 3" class="step-icon mb-3" />
+                      <span class="step-desc text-white text-center">
+                        Nantikan pengumuman pemenang
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI SEKARANG</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
         </section>
 
       <!-- <section> close ============================-->

@@ -15,7 +15,7 @@ class GalleryController extends Controller
     public function index($category = null)
     {
         $display = '';
-        $center = 'justify-content-center align-items-center min-vh-100';
+        $custom_css = 'justify-content-center align-items-center min-vh-100';
 
         if ($category) {
             $categoryId = array_search($category, Gallery::TYPE);
@@ -38,7 +38,7 @@ class GalleryController extends Controller
                 ];
             })->toArray();
 
-            $center = '';
+            $custom_css = 'mt-6';
 
         } else {
             $display = '';
@@ -46,7 +46,7 @@ class GalleryController extends Controller
             $images = [];
         }
 
-        return view('frontend.gallery', compact('images', 'title', 'display', 'center'));
+        return view('frontend.gallery', compact('images', 'title', 'display', 'custom_css'));
     }
 
 
