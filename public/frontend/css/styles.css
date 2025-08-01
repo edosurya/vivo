@@ -151,6 +151,15 @@ li >.nav-item {
   }
 }
 
+@media (max-width: 992px) {
+    .main-banner {
+        background-image: url('/frontend/images/webp/hero-banner-mobile.webp');
+        min-height: 100vh; 
+        background-size: cover; 
+        background-position: center; 
+    }
+}
+
 
 .scroll-down {
   opacity: 1;
@@ -347,6 +356,12 @@ li >.nav-item {
 @media (max-width: 992px) {
     .box-prize img {
       max-width: 13rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .box-prize img {
+      max-width: 10rem;
     }
 }
 
