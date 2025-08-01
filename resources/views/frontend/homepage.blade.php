@@ -26,17 +26,7 @@ $judges = [
 @endphp
 
 @section('hero')
-      <section class="pt-5 pb-5 bg-dark bg-img-main-banner" id="main-banner">
-        <div class="container-fluid">
-          <div class="row vivo-ipa-logo">
-            <div class="col-12 col-md-8">
-              <img alt="image" class="img-fluid"
-                src="{{ asset('frontend/images/webp/vivo-ipa-logo_2.webp') }}">
-            </div>
-          </div>
-          <a href="#" class="scroll-down" address="true"></a>
-        </div>
-      </section>
+    <section class="main-banner" id="main-banner"></section>
 @endsection
 
 @section('content')
@@ -121,7 +111,6 @@ $judges = [
             @endforeach
 
           </div>
-
         </div>
       </section>
 
