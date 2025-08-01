@@ -62,7 +62,7 @@
                                         <th>No</th>
                                         <th>Category</th>
                                         <th>Title</th>
-                                        <th>Desc</th>
+                                        <th>Creator</th>
                                         <th>Image</th>
                                         <th>Action</th> 
                                     </tr>
@@ -131,8 +131,8 @@
                         defaultContent: '-',
                     },
                     {
-                        name: "desc",
-                        data: 'desc',
+                        name: "creator",
+                        data: 'creator',
                         defaultContent: '-',
                     },
                     {
