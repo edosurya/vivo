@@ -64,7 +64,7 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                 <div class="d-grid gap-2">
-                  <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI SEKARANG</a>
+                  <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}">REGISTRASI SEKARANG</a>
                 </div>
               </div>
           </div>
@@ -275,7 +275,7 @@ $judges = [
               <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                   <div class="d-grid gap-2">
-                    <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI SEKARANG</a>
+                    <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}">REGISTRASI SEKARANG</a>
                   </div>
                 </div>
               </div>

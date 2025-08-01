@@ -146,6 +146,7 @@ class RegisterController extends Controller
                 // $path = $image->store('images/'.$category.'/'.$name.'-'.$code.'/', 'public');
                 $getFileExt   = $image->getClientOriginalExtension();
                 $file_name = $category.'-'.$name.'-'.$code.'-'.$newindex.'.'.$getFileExt;
+                $image->storeAs($period.'/'.'images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
                 $path = $image->storeAs('images/'.$category.'/'.$name.'-'.$code, $file_name, 'public');
                 Images::create([
                     'path' => $path,
