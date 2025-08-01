@@ -20,11 +20,12 @@ class DashboardController extends Controller
     public function index(): View
     {
 
-        $period = 2025;
+        $period = date("Y");
 
-        $creator_total = Creator::all()->where('period', 2025)->count();
+        $creator_total = Creator::all()->where('period', $period)->count();
         $images = Images::whereHas('relatedCreator', function ($query) { 
-            $query->where('period', 2025); 
+            $period = date("Y");
+            $query->where('period', $period); 
         });
 
         $images_category1_total = $images->where('category',Images::CATEGORY1)->count();

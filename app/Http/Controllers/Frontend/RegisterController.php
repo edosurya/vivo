@@ -78,7 +78,7 @@ class RegisterController extends Controller
     {
         // return response()->json('Registrasi Telah Ditutup', 404); 
 
-        $period = 2025;
+        $period = date("Y");
   
         try {
 
