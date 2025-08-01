@@ -126,19 +126,20 @@ $judges = [
 
           <div class="row p-col-mobile d-flex justify-content-center">
 
-            @foreach($judges as $judge)
-              <div class="col-md-4 col-6 mb-4 p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+          @foreach($judges as $judge)
+            <div class="col-md-4 col-6 mb-4 d-flex p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+              <div class="card-judge w-100 d-flex flex-column h-100">
                 <div class="judge img-wrapper">
                   <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $judge['image']) }}" alt="" loading="lazy"/>
                 </div>
-                <!-- Panel moved outside image -->
-                <div class="panel-text-gradient w-100 py-4">
+                <div class="panel-text-gradient w-100 py-4 min-h-150">
                   <span class="d-block fs-judge-title text-light vivo_bold py-2">{{ $judge['name'] }}</span>
                   <span class="d-block fs-judge-desc  text-light vivo_light">{{ $judge['job'] }}</span>
                 </div>
               </div>
+            </div>
+          @endforeach
 
-            @endforeach
           </div>
 
         </div>
@@ -156,7 +157,7 @@ $judges = [
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
-            <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize">
+            <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize ">
               <div class="p-2 m-w-50jt">
                 <img class="mb-3 d-block" src="{{ asset('frontend/images/webp/prize-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
@@ -191,7 +192,7 @@ $judges = [
           </div>
 
           <!-- Gambar Tengah -->
-          <div class="text-center mb-5" data-aos="fade-in" data-aos-duration="1000">
+          <div class="text-center mb-2 mb-md-7" data-aos="fade-in" data-aos-duration="1000">
             <img src="{{ asset('frontend/images/webp/period-line.webp') }}" class="img-fluid period-line-img" alt="Joy in Nusantara Image" loading="lazy" />
           </div>
 

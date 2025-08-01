@@ -275,8 +275,8 @@ li >.nav-item {
 }
 
 .section-bg-image-category {
-    background-size: cover;
-    background-position: center;
+    background-size: initial;
+    background-position: bottom;
     background-repeat: no-repeat;
     opacity: 1;
     position: absolute;
@@ -291,14 +291,24 @@ li >.nav-item {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.6) 90%, rgba(27, 27, 27, 1) 100%);
+    /*background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.6) 90%, rgba(27, 27, 27, 1) 100%);*/
+    background: linear-gradient(to top,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
     z-index: 0;
 }
 
 /* Section Judge */
 .section-judge {
     height: 100%;
-    background: linear-gradient(to bottom, rgb(27 27 27), rgba(20, 20, 20, 0) 100%);
+    background-color: #141414;
+    background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(20, 20, 20, 1) 100%
+    );
 }
 
 .panel-text-gradient {
@@ -307,18 +317,21 @@ li >.nav-item {
   border-radius: 0 0 1rem 1rem; 
 }
 
+.min-h-150 {
+  min-height: 150px;
+}
 /* Section Prize */
 
 .section-prize {
     height: 100%;
-    background-color: rgba(20, 20, 20, 0) 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(20, 20, 20, 0) 100%);
 }
 
 .box-prize {
-  background: linear-gradient(to bottom, #242933 0%, #060606 100%);
+  background: linear-gradient(to bottom, #242933 20%, #242933 50%, #000000 90%);    
   border-radius: 1.5rem;
   padding: 1rem;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -397,6 +410,11 @@ li >.nav-item {
 }
 
 @media (max-width: 768px) {
+
+    .period-line-img {
+      width: 100%;
+    }
+
   .card-period-wrapper {
     align-items: center;
     margin-top: 0;

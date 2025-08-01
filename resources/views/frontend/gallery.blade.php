@@ -28,7 +28,7 @@ $categories = [
 
       <section class="py-5 py-md-5 text-white section-pm" id="list-gallery">
 
-        <div class="d-flex {{ $custom_css }}" style="display: {{ $display }}";>
+        <div class="d-flex {{ $custom_css }}" style="display: {{ $display }}">
           <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-gallery.webp') }});
             "></div>
 
@@ -165,7 +165,7 @@ $categories = [
       @endif
 
 
-      @include('components.frontend.winnerPreview');
+      @include('components.frontend.winnerPreview')
 
 
 @endsection
