@@ -59,24 +59,27 @@ class GalleryController extends Controller
     {
         $request->validate([
             'image'    => 'required|image|mimes:jpeg,png,jpg,webp|max:1024', // max 1MB
-            'thumbnail'=> 'required|image|mimes:jpeg,png,jpg,webp|max:1024', // max 1MB
+            'thumbnail'=> 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024', // max 1MB
             'title'    => 'nullable|string|max:50',
             'desc'     => 'nullable|string|max:250',
-            'category' => 'nullable|integer',
+            'category' => 'required|integer',
             'creator'  => 'nullable|string',
-            'location'  => 'nullable|string',
+            'location' => 'nullable|string',
         ]);
 
+        $thumbnail = '';
         $category = Gallery::TYPE[$request->category];
         
         // Save file to public storage
         $path = $request->file('image')->store('uploads/galleries/', 'public');
-        $thumbnail = $request->file('thumbnail')->store('uploads/thumbnail/', 'public');
+        if($request->file('thumbnail')) {
+            $thumbnail = $request->file('thumbnail')->store('uploads/thumbnail/', 'public');
+        }
 
         // Dave to DB
         Gallery::create([
             'path'     => $path,
-            'thumbnail'=> $thumbnail,
+            'thumbnail'=> $thumbnail ? $thumbnail: '',
             'title'    => $request->input('title'),
             'desc'     => $request->input('desc'),
             'category' => $request->input('category'),

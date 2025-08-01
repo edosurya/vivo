@@ -71,7 +71,9 @@
                                     </li>
                                 @endforeach
                             </ul>
+                            @if($category != null)
                             <button id="saveOrder" class="btn btn-primary mt-3">Save Order</button>
+                            @endif
                         </div>
                     </div>
                 </div>
