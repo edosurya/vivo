@@ -13,7 +13,7 @@ class ImageController extends Controller
 {
     public function index(Request $request)
     {
-        $period = 2025;
+        $period = date("Y");
 
         if ($request->ajax()) {
             try {
@@ -59,12 +59,12 @@ class ImageController extends Controller
 
     public function downloadMultiple(Request $request)
     {
-        $period = 2025;
+        $period = date("Y");
 
         $zip = new ZipArchive;
         $images = Images::whereHas('relatedCreator', function ($query) { 
-            $period = 2025;
-            $query->where('period', 2025); 
+            $period = date("Y");
+            $query->where('period', $period); 
         });
 
         $zipFileName = 'all-attachment.zip';

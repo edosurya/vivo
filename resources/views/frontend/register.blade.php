@@ -6,7 +6,8 @@
 
     @push('css-plugin')
         @vite(['resources/js/app.js'])
-        <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="{{ asset('frontend/css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
         <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     @endpush
 
@@ -22,37 +23,48 @@
       <!-- ============================================-->
       <!-- <section> Category  ============================-->
 
-      <section class="bg-100 py-7 section-has-bg pt-5" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});" id="form">
-        <div class="container-lg mb-5">
+      <section class="py-5 py-md-5 text-white section-pm" id="form">
 
+        <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm.webp') }});
+          "></div>
+
+        <div class="container-lg mb-5">
 
         <div class="row d-flex align-items-stretch">
             <!-- Kolom kiri -->
-            <div class="col-md-5 col-12 mb-5">
-              <p class="vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
-                <ul class="term-condition">
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Still Life Photography, Night Photography, dan Nature Photography).</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah</span></li>
-                    <li style="color: #126479" class="mb-2"><span class="text-white">Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter</span></li>
-
-                </ul>
-                <div class="fs-term-condition-other">
-                    <p class="text-white"> Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</p>
-                    <button type="button" class="btn bg-light text-black mb-3 w-100 text-btn-padding rounded-5" data-bs-toggle="modal" data-bs-target="#myModal">
-                      <img alt="image" class="img-fluid me-2"
-                    src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Publik
-                    </button>
-                    <button type="button" class="btn bg-black text-white border-blue-gradient w-100 text-btn-padding" data-bs-toggle="modal" data-bs-target="#myModal1">
-                      <img alt="image" class="img-fluid me-2"
-                    src="{{ asset('frontend/images/webp/document.webp') }}" width="30">S&K vivo Imagine - Internal
-                    </button>
+            <div class="col-md-5 col-12 mb-5 text-white">
+              <p class="vivo_heavy text-uppercase fs-term-condition">SYARAT & KETENTUAN</p>
+                <div class="mb-3">
+                  <ul class="term-condition">
+                    <li class="mb-2">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</li>
+                    <li class="mb-2">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Still Life Photography, Night Photography, dan Nature Photography).</li>
+                    <li class="mb-2">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</li>
+                    <li class="mb-2">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</li>
+                    <li class="mb-2">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</li>
+                    <li class="mb-2">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</li>
+                    <li class="mb-2">Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah.</li>
+                    <li class="mb-2">Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter.</li>
+                  </ul>
                 </div>
+
+                <div>
+                  <span class="d-block mb-2 fs-term-condition-other">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
+
+                  <button type="button" class="btn bg-light text-black mb-3 text-btn-padding rounded-pill py-2 px-4 w-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
+                    S&K vivo Imagine - Publik
+                  </button>
+
+                  <button type="button" class="btn bg-light text-black border-blue-gradient text-btn-padding rounded-pill py-2 px-4 w-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
+                    S&K vivo Imagine - Internal
+                  </button>
+                </div>
+
+
+
             </div>
+
 
           <!-- Kolom kanan -->
           <div class="col-md-7 col-12">
@@ -209,8 +221,14 @@
                               <div class="dz-previews-container mt-2 main-drag-area flex-row" id="dzPreviews"></div>
                             </div>
 
-                            <div class="mb-3 col-4 col-md-3 mb-0 pb-0">
-                                <div class="mb-3"><h6 class="text-white vivo_regular addmore rounded text-btn-padding">Tambah Lagi</h6></div>
+                            <div class="add-more-wrapper addmore">
+                              <a class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                  <line x1="12" y1="5" x2="12" y2="19" />
+                                  <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                              </a>
+                              <span class="add-more-text vivo_regular">Tambah Lagi</span>
                             </div>
 
                             <div class="invalid-feedback fw-bold mb-3" id="imgErrorMessage"></div>
@@ -218,21 +236,42 @@
                         </div>
 
                         <div class="mb-3 col-md-12 mb-0 pb-0">
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="checkTermAndCondition" name="checkTermAndCondition" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Saya setuju dengan Syarat & Ketentuan yang ditetapkan dalam perjanjian pengguna.</label>
+                            <div class="svg-checkbox-badge">
+                              <label class="svg-checkbox-badge">
+                                <input type="checkbox" id="checkTermAndCondition" name="checkTermAndCondition" checked />
+                                <svg viewBox="0 0 24 24" class="badge-icon">
+                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="rgb(128, 128, 128)"/>
+                                  <polyline class="checkmark" points="7.5,12 11,15.5 17,9.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="label-text vivo_regular">
+                                  Saya setuju dengan Syarat & Ketentuan yang ditetapkan dalam perjanjian pengguna.
+                                </span>
+                              </label>
+                            </div>
                             <label class="invalid-feedback fw-bold mb-3" id="checkErrorMessage"></label>
-                          </div>
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="privacy" name="privacy" checked>
-                            <label class="form-check-label vivo_regular" for="checkTermAndCondition">Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada <a href="https://privacy.vivo.com/id/privacy?_gl=1%2apd2loe%2a_ga%2aMTE5MzU3MjAxMC4xNzIzNzkwODEy%2a_ga_68BLCXM546%2aMTcyNjEzMDM0NS4zLjAuMTcyNjEzMDM0NS42MC4wLjA" target="_blank" class="text-blue">Kebijakan Privasi vivo </a></label>
+
+                            <div class="svg-checkbox-badge">
+                              <label class="svg-checkbox-badge">
+                                <input type="checkbox" id="privacy" name="privacy" checked />
+                                <svg viewBox="0 0 24 24" class="badge-icon">
+                                  <path d="M12 1.5c.7 0 1.3.4 1.6 1l.9 1.9c.2.4.6.6 1 .6h2c.9 0 1.6.7 1.6 1.6v2c0 .4.2.8.6 1l1.9.9c.6.3 1 .9 1 1.6s-.4 1.3-1 1.6l-1.9.9c-.4.2-.6.6-.6 1v2c0 .9-.7 1.6-1.6 1.6h-2c-.4 0-.8.2-1 .6l-.9 1.9c-.3.6-.9 1-1.6 1s-1.3-.4-1.6-1l-.9-1.9c-.2-.4-.6-.6-1-.6h-2c-.9 0-1.6-.7-1.6-1.6v-2c0-.4-.2-.8-.6-1l-1.9-.9c-.6-.3-1-.9-1-1.6s.4-1.3 1-1.6l1.9-.9c.4-.2.6-.6.6-1v-2c0-.9.7-1.6 1.6-1.6h2c.4 0 .8-.2 1-.6l.9-1.9c.3-.6.9-1 1.6-1z" fill="rgb(128, 128, 128)"/>
+                                  <polyline class="checkmark" points="7.5,12 11,15.5 17,9.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="label-text vivo_regular">
+                                  Dengan mengisi form ini, dengan ini saya menyetujui pemrosesan data pribadi yang diberikan kepada PT vivo Mobile Indonesia dan/atau afiliasinya dengan mengacu kepada
+                                  <a href="https://privacy.vivo.com/id/privacy?_gl=1%2apd2loe%2a_ga%2aMTE5MzU3MjAxMC4xNzIzNzkwODEy%2a_ga_68BLCXM546%2aMTcyNjEzMDM0NS4zLjAuMTcyNjEzMDM0NS42MC4wLjA" target="_blank" class="text-blue">Kebijakan Privasi vivo</a>
+                                </span>
+                              </label>
+                            </div>
                             <label class="invalid-feedback fw-bold mb-3" id="privacyErrorMessage"></label>
-                          </div>
+
                         </div>
 
-                        <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
-                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding" id="dzSubmitButton">SUBMIT</button>
+                        <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-start">
+                            <button class="btn btn-register text-light vivo_heavy" id="dzSubmitButton">SUBMIT</button>
                         </div>
+
+
                     </div>
 
                 </form>

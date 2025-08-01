@@ -15,7 +15,7 @@ class CreatorController extends Controller
      */
     public function index(Request $request)
     {
-        $period = 2025;
+        $period = date("Y");
         
         if ($request->ajax()) {
             try {

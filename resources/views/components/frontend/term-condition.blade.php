@@ -120,7 +120,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer justify-content-center text-center">
-        <button type="button" class="btn rounded-3 text-black vivo_heavy btn-register fs-button-register text-btn-padding" data-bs-dismiss="modal">TUTUP</button>
+        <button type="button" class="btn-register text-light vivo_medium" data-bs-dismiss="modal">TUTUP</button>
       </div>
 
     </div>
@@ -210,7 +210,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer justify-content-center text-center">
-        <button type="button" class="btn rounded-3 text-black vivo_heavy btn-register fs-button-register text-btn-padding" data-bs-dismiss="modal">TUTUP</button>
+        <button type="button" class="btn-register text-light vivo_medium" data-bs-dismiss="modal">TUTUP</button>
       </div>
 
     </div>

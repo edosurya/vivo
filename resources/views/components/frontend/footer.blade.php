@@ -1,13 +1,13 @@
       <!-- ============================================-->
       <!-- <section> footer ============================-->
-      <footer class="bg-white footer pt-3">
+      <footer class="footer pt-3 text-light">
         <div id="gallery"></div>
         <div id="winner"></div>
         <div class="container-lg">
           <div class="row">
             <div class="d-flex justify-content-between">
-              <a href="{{ route('register.index') }}" ><p class="vivo_regular text-black">Syarat & Ketentuan</p></a> 
-              <p class="vivo_regular text-black text-end">Copyright © PT vivo Mobile Indonesia. All right reserved.</p>
+              <a href="{{ route('register.index') }}" ><p class="vivo_regular text-light">Syarat & Ketentuan</p></a> 
+              <p class="vivo_regular text-end">Copyright © PT vivo Mobile Indonesia. All right reserved.</p>
             </div>
           </div>
         </div>

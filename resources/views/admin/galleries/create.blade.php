@@ -32,8 +32,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="thumbnail" class="form-label">Thumbnail <span class="text-danger">*</span></label>
-                        <input type="file" name="thumbnail" id="thumbnail" class="form-control" required>
+                        <label for="thumbnail" class="form-label">Thumbnail</label>
+                        <input type="file" name="thumbnail" id="thumbnail" class="form-control">
                     </div>
 
                     <div class="mb-3">
@@ -57,8 +57,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="category" class="form-label">Category</label>
-                        <select name="category" id="category" class="form-select">
+                        <label for="category" class="form-label">Category <span class="text-danger">*</span></label>
+                        <select name="category" id="category" class="form-select" required>
                             <option value="">-- Choose Category --</option>
                             <option value="1">Portrait Photography</option>
                             <option value="2">Street Life Photography</option>

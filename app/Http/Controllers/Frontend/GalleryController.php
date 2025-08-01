@@ -13,6 +13,45 @@ class GalleryController extends Controller
     public function index($category = null)
     {
         $display = '';
+        $custom_css = 'justify-content-center align-items-center min-vh-100';
+
+        if ($category) {
+            $categoryId = array_search($category, Gallery::TYPE);
+
+            if ($categoryId === false) {
+                abort(404, 'Category not found.');
+            }
+
+            $title = Gallery::IMAGE_CATEGORY[$categoryId];
+            $galleries = Gallery::where('category', $categoryId)->orderBy('order', 'ASC')->get();
+
+            $images = $galleries->map(function ($item) {
+                return [
+                    'path'     => asset('storage/' . $item->path),
+                    'title'    => $item->title ?? '',
+                    'desc'     => $item->desc ?? '',
+                    'location' => $item->location ?? '',
+                    'thumbnail'=> $item->thumbnail ?? '',
+                    'crator'    => $item->creator ?? '',
+                ];
+            })->toArray();
+
+            $custom_css = 'mt-6';
+
+        } else {
+            $display = '';
+            $title = '';
+            $images = [];
+        }
+
+        return view('frontend.gallery', compact('images', 'title', 'display', 'custom_css'));
+    }
+
+
+    public function index2($category = null)
+    {
+
+        $display = '';
         $title = '';
         $images = [];
 
