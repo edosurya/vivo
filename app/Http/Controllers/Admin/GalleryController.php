@@ -60,7 +60,7 @@ class GalleryController extends Controller
         $request->validate([
             'image'    => 'required|image|mimes:jpeg,png,jpg,webp|max:1024', // max 1MB
             'thumbnail'=> 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024', // max 1MB
-            'title'    => 'nullable|string|max:50',
+            'title'    => 'nullable|string|max:100',
             'desc'     => 'nullable|string|max:250',
             'category' => 'required|integer',
             'creator'  => 'nullable|string',
@@ -105,7 +105,7 @@ class GalleryController extends Controller
         $request->validate([
             'image'     => 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024',
             'thumbnail' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:1024',
-            'title'     => 'nullable|string|max:50',
+            'title'     => 'nullable|string|max:100',
             'desc'      => 'nullable|string|max:250',
             'creator'   => 'nullable|string|max:50',
             'location'  => 'nullable|string|max:50',
