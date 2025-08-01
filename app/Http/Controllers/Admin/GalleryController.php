@@ -83,7 +83,7 @@ class GalleryController extends Controller
             'title'    => $request->input('title'),
             'desc'     => $request->input('desc'),
             'category' => $request->input('category'),
-            'crator'   => $request->input('creator'),
+            'creator'   => $request->input('creator'),
             'location' => $request->input('location'),
         ]);
 
