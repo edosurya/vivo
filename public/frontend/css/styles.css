@@ -585,7 +585,7 @@ li >.nav-item {
 
 @media (max-width: 992px) {
     .p-col-mobile {
-        padding: 0 10px !important;
+        padding: 0 5px !important;
     }
 }
 
@@ -1271,12 +1271,13 @@ button:hover, button:focus {
 }
 
 .fs-img-title {
-    font-size: 23px;
-    line-height: 25px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .fs-img-desc {
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 @media (max-width: 992px) {
@@ -1413,6 +1414,10 @@ button:hover, button:focus {
 
 @keyframes s4{ 
   100%{transform: rotate(1turn)}
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
 }
 
 

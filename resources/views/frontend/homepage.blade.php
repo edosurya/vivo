@@ -127,12 +127,12 @@ $judges = [
           <div class="row p-col-mobile d-flex justify-content-center">
 
           @foreach($judges as $judge)
-            <div class="col-md-4 col-6 mb-4 d-flex p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-4 col-4 mb-4 d-flex p-col-mobile" data-aos="fade-up" data-aos-duration="1500">
               <div class="card-judge w-100 d-flex flex-column h-100">
                 <div class="judge img-wrapper">
                   <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $judge['image']) }}" alt="" loading="lazy"/>
                 </div>
-                <div class="panel-text-gradient w-100 py-4 min-h-150">
+                <div class="panel-text-gradient w-100 min-h-150">
                   <span class="d-block fs-judge-title text-light vivo_bold py-2">{{ $judge['name'] }}</span>
                   <span class="d-block fs-judge-desc  text-light vivo_light">{{ $judge['job'] }}</span>
                 </div>

@@ -33,7 +33,7 @@ class GalleryController extends Controller
                     'desc'     => $item->desc ?? '',
                     'location' => $item->location ?? '',
                     'thumbnail'=> $item->thumbnail ?? '',
-                    'crator'    => $item->creator ?? '',
+                    'creator'    => $item->creator ?? '',
                 ];
             })->toArray();
 
