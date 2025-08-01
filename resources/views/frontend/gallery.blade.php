@@ -15,10 +15,10 @@
 
 @php
 $categories = [
-  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-category-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-category-street.webp'],
-  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-category-night.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-category-nature.webp'],
+  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street.webp'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp'],
 ];
 @endphp
 

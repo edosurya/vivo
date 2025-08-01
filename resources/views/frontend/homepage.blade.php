@@ -11,17 +11,17 @@
 
 @php
 $categories = [
-  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-category-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-category-street.webp'],
-  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-category-night.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-category-nature.webp'],
+  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street.webp'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp'],
 ];
 
 
 $judges = [
-  ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'judge-benny.webp'],
-  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'judge-didi.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager - Camera R&D at vivo Global', 'image' => 'judge-keshav.webp'],
+  ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
+  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'juri-didi.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager - Camera R&D at vivo Global', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
@@ -37,7 +37,7 @@ $judges = [
 
     <section class="py-5 py-md-5 text-white section-about-us" id="how-to">
 
-        <div class="section-bg-image-about-us" style="background-image: url({{ asset('frontend/images/webp/bg-section-about-us.webp') }});
+        <div class="section-bg-image-about-us" style="background-image: url({{ asset('frontend/images/webp/bg-about-us.webp') }});
           "></div>
 
         <div class="container-lg mb-4">
@@ -84,7 +84,7 @@ $judges = [
 
     <section class="py-5 py-md-5 text-white section-category">
 
-        <div class="section-bg-image-category" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});
+        <div class="section-bg-image-category" style="background-image: url({{ asset('frontend/images/webp/bg-category.webp') }});
           "></div>
 
         <div class="container-lg mb-4">
@@ -158,12 +158,12 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize">
               <div class="p-2 m-w-50jt">
-                <img class="mb-3 d-block" src="{{ asset('frontend/images/webp/hadiah-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 d-block" src="{{ asset('frontend/images/webp/prize-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
             <div class="col-5 col-md-4 p-3 mb-3 text-center box-prize">
               <div class="p-2">
-                <img class="mb-3 mb-3 d-block mx-auto" src="{{ asset('frontend/images/webp/hadiah-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 mb-3 d-block mx-auto" src="{{ asset('frontend/images/webp/prize-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@ $judges = [
                   <div class="card card-step text-white text-center position-relative h-100 w-100">
                     <div class="step-number">1</div>
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
-                      <img src="{{ asset('frontend/images/webp/mechanism-1.webp') }}" alt="Step 1" class="step-icon mb-3" />
+                      <img src="{{ asset('frontend/images/webp/step-1.webp') }}" alt="Step 1" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
                         Ambil foto menggunakan smartphone vivo tipe apa pun dengan mengaktifkan fitur watermark vivo
                       </span>
@@ -250,7 +250,7 @@ $judges = [
                   <div class="card card-step text-white text-center position-relative h-100 w-100">
                     <div class="step-number">2</div>
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
-                      <img src="{{ asset('frontend/images/webp/mechanism-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
+                      <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
                         Registrasi dan unggah karyamu di sini
                       </span>
@@ -262,7 +262,7 @@ $judges = [
                   <div class="card card-step text-white text-center position-relative h-100 w-100">
                     <div class="step-number">3</div>
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
-                      <img src="{{ asset('frontend/images/webp/mechanism-3.webp') }}" alt="Step 3" class="step-icon mb-3" />
+                      <img src="{{ asset('frontend/images/webp/step-3.webp') }}" alt="Step 3" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
                         Nantikan pengumuman pemenang
                       </span>
