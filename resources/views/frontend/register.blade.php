@@ -6,7 +6,7 @@
 
     @push('css-plugin')
         @vite(['resources/js/app.js'])
-        <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="{{ asset('frontend/css/styles.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
         <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     @endpush

@@ -5,7 +5,7 @@
 @section('meta_description','vivo IMAGINE')
 
 @push('css-plugin')
-    <link href="{{ asset('frontend/css/homepage_2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="{{ asset('frontend/css/styles.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
 @endpush
 
