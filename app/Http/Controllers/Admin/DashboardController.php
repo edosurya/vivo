@@ -23,17 +23,28 @@ class DashboardController extends Controller
         $period = date("Y");
 
         $creator_total = Creator::all()->where('period', $period)->count();
-        $images = Images::whereHas('relatedCreator', function ($query) { 
-            $period = date("Y");
-            $query->where('period', $period); 
-        });
 
-        $images_category1_total = $images->where('category',Images::CATEGORY1)->count();
-        $images_category2_total = $images->where('category',Images::CATEGORY2)->count();
-        // $images_category3_total = $images->where('category',Images::CATEGORY3)->count();
-        // $images_category4_total = $images->where('category',Images::CATEGORY4)->count();
-        $images_category5_total = $images->where('category',Images::CATEGORY5)->count();
-        $images_category6_total = $images->where('category',Images::CATEGORY6)->count();
+
+        $images_category1_total = Images::where('category', Images::CATEGORY1)
+            ->whereHas('relatedCreator', function ($query) { 
+                $query->where('period', date('Y')); 
+            })->count();
+
+       $images_category2_total = Images::where('category', Images::CATEGORY2)
+            ->whereHas('relatedCreator', function ($query) { 
+                $query->where('period', date('Y')); 
+            })->count();
+
+       $images_category5_total = Images::where('category', Images::CATEGORY5)
+            ->whereHas('relatedCreator', function ($query) { 
+                $query->where('period', date('Y')); 
+            })->count();
+
+       $images_category6_total = Images::where('category', Images::CATEGORY6)
+            ->whereHas('relatedCreator', function ($query) { 
+                $query->where('period', date('Y')); 
+            })->count();
+
         
         $small_banner_total = Creator::where('source','Small Banner')->where('period', $period)->count();
         $ig_total = Creator::where('source','Instagram')->where('period', $period)->count();
