@@ -782,14 +782,13 @@ input::placeholder {
   transition: background 0.3s ease;
 }
 
-.upload-box:hover {
-color: #000000;
-  background: linear-gradient(90deg, #d6e7fd 0%, #dbeefe 100%);
-}
-
 .upload-box span {
   font-size: 14px;
   font-weight: 600;
+}
+
+.upload-box:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #0d0d0d 100%);
 }
 
 .dz-photo-icon {
@@ -815,6 +814,7 @@ color: #000000;
     gap: 8px;
   }
 }
+
 ::placeholder {
   color: red;
   opacity: 1; /* Firefox */
@@ -1032,7 +1032,7 @@ footer p {
 }
 
 .circle-btn:hover {
-  background: linear-gradient(135deg, #05A3C2, #054d3b);
+  background: linear-gradient(90deg, #828282 0%, #525151 100%);
 }
 
 .icon-plus {

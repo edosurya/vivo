@@ -46,11 +46,11 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
 Route::get('/', function() { return view('frontend.homepage');})->name('home');
 
 Route::controller(RegisterController::class)->group(function () {
-    Route::get('/photographyawards', 'index')->name('register.index');
+    Route::get('/kompetisi-fotografi', 'index')->name('register.index');
     Route::post('/upload', 'upload')->name('register.upload');
 });
 
-Route::get('/gallery/{category?}', [GalleryController::class, 'index'])->name('gallery');
+Route::get('/galeri/{category?}', [GalleryController::class, 'index'])->name('gallery');
 
 Route::get('/creator/{code}', [FrontendCreatorController::class, 'index'])->name('creator');
 Route::get('/creator/{code}/download', [FrontendCreatorController::class, 'download'])->name('creator.download');

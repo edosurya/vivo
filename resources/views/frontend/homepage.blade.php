@@ -16,7 +16,7 @@ $categories = [
 $judges = [
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
   ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'juri-didi.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager - Camera R&D at vivo Global', 'image' => 'juri-keshav.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager for Image Effects', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
@@ -38,8 +38,9 @@ $judges = [
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
-              <span class="d-block text-white vivo_heavy mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
-              <span class="d-block text-desc-section">vivo merayakan keberagaman <span class="new-line"></span>budaya Indonesia dengan mengabadikan keindahan yang beragam, <span class="new-line"></span>serta menangkap momen <br/> kebersamaan yang menyatukan masyarakat dari berbagai daerah dan generasi</span>
+              <span class="d-block text-white vivo_bold mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
+              <span class="d-block text-desc-section">vivo merayakan keberagaman <span class="new-line"> budaya Indonesia dengan <span class="new-line">mengabadikan keindahan,<br/>serta menangkap momen <span class="new-line"> kebersamaan dari berbagai daerah</span>
+
             </div>
           </div>
 
@@ -85,7 +86,7 @@ $judges = [
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-10 col-lg-12 text-center mb-3">
-              <span class="d-block text-white vivo_heavy mb-4 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Kategori</span>
+              <span class="d-block text-white vivo_bold mb-4 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Kategori</span>
               <span class="d-block text-desc-section">Temukan inspirasi dari tiap kategori <span class="new-line"></span> vivo Imagine Photography Awards</span>
             </div>
           </div>
@@ -110,12 +111,12 @@ $judges = [
       </section>
 
 
-      <section class="py-5 py-md-5 text-white section-judge">
+<!--       <section class="py-5 py-md-5 text-white section-judge">
 
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-md-8 col-lg-5 text-center mb-3">
-              <span class="d-block text-white vivo_heavy text-uppercase mb-3 text-title-section">Juri</span>
+              <span class="d-block text-white vivo_bold text-uppercase mb-3 text-title-section">Juri</span>
             </div>
           </div>
 
@@ -138,17 +139,17 @@ $judges = [
           </div>
 
         </div>
-        <!-- end of .container-->
 
-      </section>
+      </section> -->
 
 
-      <section class="py-5 py-md-5 text-white section-prize">
+      <!-- <section class="py-5 py-md-5 text-white section-prize"> -->
+      <section class="py-5 py-md-5 text-white section-judge">
 
         <div class="container-fluid">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-md-8 col-lg-5 text-center mb-4">
-              <span class="d-block text-white vivo_heavy text-uppercase mb-3 text-title-section">Hadiah</span>
+              <span class="d-block text-white vivo_bold text-uppercase mb-3 text-title-section">Hadiah</span>
             </div>
           </div>
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
@@ -173,7 +174,7 @@ $judges = [
       <!-- ============================================-->
       <!-- <section> Periode ============================-->
 
-      <section class="py-5 py-md-5 text-white section-pm">
+      <section class="py-3 py-md-5 text-white section-pm">
 
         <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm.webp') }});
           "></div>
@@ -248,7 +249,7 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Registrasi dan unggah karyamu di sini
+                        Registrasi dan unggah karyamu <a href="{{ route('register.index') }}">di sini</a>
                       </span>
                     </div>
                   </div>
