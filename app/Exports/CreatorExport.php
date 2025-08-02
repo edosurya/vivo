@@ -86,7 +86,6 @@ class CreatorExport implements FromCollection, WithHeadings, ShouldAutoSize, Wit
             'Category',
             'Description',
             'Preview',
-            'GDrive Link',
         ];
     }
 
