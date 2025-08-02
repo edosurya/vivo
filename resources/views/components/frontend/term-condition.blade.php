@@ -35,7 +35,7 @@
             <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau sms baik pada saat periode kompetisi maupun setelahnya.</li>
         </ol>
 
-        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine – Photography Awards</div>
+        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine – Mobile Photography Competition</div>
         <ol>
         <li>Pendaftaran terbuka untuk peserta individu.</li>
         <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
@@ -46,18 +46,18 @@
                 <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 500 karakter.</p>
                 <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
                 <div style="margin-left:30px;">
-                   <p> a. Portrait: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                   <p> b. Nature: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                    <p>c. Street Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>a. Portrait Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>b. Nature & Architecture Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>c. Street Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                     <p>d. Night Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                   <p> e. Still Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                   <p> f. Photo series: Kirim minimal 3 foto dan maksimal 5 foto.</p>
+                   <!-- <p> e. Still Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p> -->
+                   <!-- <p> f. Photo series: Kirim minimal 3 foto dan maksimal 5 foto.</p> -->
                 </div>
                 <p>4.5 Peserta dapat mengikuti lebih dari 1 kategori.</p>
                 <p>4.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto high resolution (HD or 1280 x 720 pixels minimum). </p>
                 <p>4.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti Photoshop dan Lightroom. Edit ringan seperti menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
         <li>Hasil karya foto yang diterima akan dinilai oleh juri professional dan tim internal vivo.</li>
-        <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 5 Desember 2024.</li>
+        <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 30 Oktober 2025.</li>
         </ol>
 
 
@@ -65,8 +65,8 @@
         <div  class="text-white vivo_regular mt-3 fs-term-condition-modal" >Frequently Asked Question</div>
         <br/>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apakah vivo Imagine – Photography Awards?</b>
-            <p>vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 23 September hingga 23 November 2024.</p>
+            <b>Apakah vivo Imagine – Mobile Photography Competition?</b>
+            <p>vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apa yang dimaksud Joy in Us itu?</b>
@@ -74,7 +74,7 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
-            <p>Ada 6 kategori foto yaitu portrait, nature, night photography, street life, still life, photo series, dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori. Kecuali untuk photo series, peserta harus mengirimkan minimal 3 foto dan maksimal 5 foto.</p>
+            <p>Ada 4 kategori foto yaitu portrait, nature, night photography, street life, dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apalagi persyaratan foto yang harus diikuti?</b>
@@ -84,7 +84,7 @@
             <b>Lalu, bagaimana cara mengirimkan foto yang sudah sesuai persyaratan untuk mengikuti kompetisi?</b>
             <p>Peserta wajib mengirimkan semua foto melalui website vivoimagine.id dan mengikuti langkah-langkah berikut:</p>
             <ol>
-                <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Photography Awards.</li>
+                <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Mobile Photography Competition.</li>
                 <li>Baca syarat dan ketentuan</li>
                 <li>Di bagian register, mohon isi sesuai kolom:</li>
                   <p>3.a Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
@@ -108,8 +108,8 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
-            <p>Akan terpilih 6 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo X100 Pro.
-            1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p>
+            <!-- <p>Akan terpilih 6 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo X100 Pro. -->
+            <!-- 1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p> -->
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
@@ -170,7 +170,7 @@
 </ol>
 
 
-<div  class="text-white vivo_regular mt-3 fs-term-condition-modal mb-2">Syarat & Ketentuan vivo Imagine – Photography Awards</div>
+<div  class="text-white vivo_regular mt-3 fs-term-condition-modal mb-2">Syarat & Ketentuan vivo Imagine – Mobile Photography Competition</div>
 <ol>
     <li>Pendaftaran terbuka untuk peserta individu.</li>
     <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
@@ -181,12 +181,10 @@
         <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 500 karakter.</p>
         <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
             <div style="margin-left:30px;">
-                <p>a. Portrait: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                <p>b. Nature: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                <p>c. Street Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                <p>a. Portrait Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                <p>b. Nature & Architecture Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                <p>c. Street Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                 <p>d. Night Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                <p>e. Still Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                <p>f. Photo series: Kirim minimal 3 foto dan maksimal 5 foto.</p>
             </div>
         <p>1.5 Peserta dapat mengikuti lebih dari 1 kategori.</p>
         <p>1.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto high resolution (HD or 1280 x 720 pixels minimum). </p>
@@ -195,13 +193,13 @@
     <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo.</li>
     <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 5 Desember 2024.</li>
     <li>Hadiah khusus promotor akan mendapatkan:</li>
-    <p>a. 1 Pemenang Special Jury Award mendapatkan hadiah 1 unit vivo V40 Series</p>
+<!--     <p>a. 1 Pemenang Special Jury Award mendapatkan hadiah 1 unit vivo V40 Series</p>
     <p>b. Setiap 6 kategori akan dipilih 3 pemenang yang mendapatkan:</p>
         <ul>
             <li>Juara 1 mendapatkan e-voucher IDR 500,000</li>
             <li>Juara 2 mendapatkan e-voucher IDR 300,000</li>
             <li>Juara 3 mendapatkan e-voucher IDR 200,000</li>
-        </ul>
+        </ul> -->
 </ol>
 
 <p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan (Frequently Asked Question), anda dapat mengakses vivo Imagine Awards S&K Publik.</p>

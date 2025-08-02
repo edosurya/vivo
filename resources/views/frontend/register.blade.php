@@ -30,10 +30,10 @@
 
         <div class="row d-flex align-items-stretch">
             <!-- Kolom kiri -->
-            <div class="col-md-5 col-12 mb-5 text-white">
+          <div class="col-md-5 col-12 mb-5 text-white">
               <span class="d-block text-white vivo_bold mb-4 fs-term-condition" data-aos="fade-down" data-aos-duration="1500">SYARAT & KETENTUAN</span>
               <div class="mb-3">
-                <ul class="term-condition">
+                <ul class="term-condition pe-5">
                   <li class="mb-2">
                     Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.
                   </li>
@@ -59,7 +59,7 @@
               </div>
 
                 <div>
-                  <span class="d-block mb-2 fs-term-condition-other">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
+                  <span class="d-block mb-2 fs-term-condition-other pe-5">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
 
                   <button type="button" class="btn bg-light text-black mb-3 text-btn-padding rounded-pill py-2 px-4 w-100 w-lg-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
                     <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
@@ -71,11 +71,7 @@
                     S&K vivo Imagine - Internal
                   </button>
                 </div>
-
-
-
-            </div>
-
+          </div>
 
           <!-- Kolom kanan -->
           <div class="col-md-7 col-12">
