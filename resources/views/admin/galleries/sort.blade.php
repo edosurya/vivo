@@ -75,11 +75,11 @@
                             
                             <button id="saveOrder" class="btn btn-primary mt-3">Save Order</button>
                             @else
-                                <li class="sortable-item" data-id="{{ $gallery->id }}">
-                                    <div>
+                                <li class="sortable-item">
+                                    <div class="d-flex justify-content-center">
                                         Please choose one of category
                                     </div>
-                                    <i class="bi bi-list"></i>
+                                   
                                 </li>
                             @endif
                         </div>
