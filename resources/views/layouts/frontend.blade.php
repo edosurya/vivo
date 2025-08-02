@@ -44,6 +44,9 @@
         }
     </style>
     
+    <link href="{{ asset('frontend/css/styles.css') }}?v={{ filemtime(public_path('frontend/css/styles.css')) }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('frontend/css/text-styles.css') }}" rel="stylesheet" type="text/css">
+
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
 
     @stack('style') {{-- Css Code --}}
