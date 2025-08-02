@@ -61,18 +61,26 @@
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
                             <ul id="sortable-list" class="list-unstyled">
+                            @if($category != null)
                                 @foreach ($galleries as $gallery)
                                     <li class="sortable-item" data-id="{{ $gallery->id }}">
                                         <div>
                                             <img src="{{ asset('storage/' . $gallery->path) }}" alt="thumb">
-                                            {{ $gallery->title ?? 'Untitled' }}
+                                            {{ $gallery->title ?? 'Untitled' }} - {{ $gallery->creator ?? 'Untitled'}}
                                         </div>
                                         <i class="bi bi-list"></i>
                                     </li>
                                 @endforeach
                             </ul>
-                            @if($category != null)
+                            
                             <button id="saveOrder" class="btn btn-primary mt-3">Save Order</button>
+                            @else
+                                <li class="sortable-item" data-id="{{ $gallery->id }}">
+                                    <div>
+                                        Please choose one of category
+                                    </div>
+                                    <i class="bi bi-list"></i>
+                                </li>
                             @endif
                         </div>
                     </div>
