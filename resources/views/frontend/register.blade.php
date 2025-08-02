@@ -31,19 +31,32 @@
         <div class="row d-flex align-items-stretch">
             <!-- Kolom kiri -->
             <div class="col-md-5 col-12 mb-5 text-white">
-              <p class="vivo_heavy text-uppercase fs-term-condition">SYARAT & KETENTUAN</p>
-                <div class="mb-3">
-                  <ul class="term-condition">
-                    <li class="mb-2">Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.</li>
-                    <li class="mb-2">Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Street Photography, Still Life Photography, Night Photography, dan Nature Photography).</li>
-                    <li class="mb-2">Unggah minimal 3 foto atau maksimal 5 foto khusus untuk kategori Series Photography.</li>
-                    <li class="mb-2">Gunakan smartphone vivo dan aktifkan fitur watermark vivo.</li>
-                    <li class="mb-2">Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.</li>
-                    <li class="mb-2">Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).</li>
-                    <li class="mb-2">Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah.</li>
-                    <li class="mb-2">Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter.</li>
-                  </ul>
-                </div>
+              <span class="d-block text-white vivo_bold mb-4 fs-term-condition" data-aos="fade-down" data-aos-duration="1500">SYARAT & KETENTUAN</span>
+              <div class="mb-3">
+                <ul class="term-condition">
+                  <li class="mb-2">
+                    Peserta dapat mengikuti lebih dari 1 kategori dalam kompetisi ini.
+                  </li>
+                  <li class="mb-2">
+                    Unggah minimal 1 foto atau maksimal 5 foto untuk setiap kategori (Portrait Photography, Nature & Architecture Photography, Night Photography, dan Street Photography).
+                  </li>
+                  <li class="mb-2">
+                    Gunakan smartphone vivo dan aktifkan fitur watermark vivo.
+                  </li>
+                  <li class="mb-2">
+                    Tidak diizinkan melakukan Digital Imaging berlebih; retouching gambar dasar diperbolehkan.
+                  </li>
+                  <li class="mb-2">
+                    Unggah file dengan resolusi tinggi (High Definition/HD minimal 1280x720 pixels).
+                  </li>
+                  <li class="mb-2">
+                    Berikan judul dan deskripsi untuk menjelaskan setiap foto yang diunggah.
+                  </li>
+                  <li class="mb-2">
+                    Penulisan judul maksimal 50 karakter dan deskripsi maksimal 250 karakter.
+                  </li>
+                </ul>
+              </div>
 
                 <div>
                   <span class="d-block mb-2 fs-term-condition-other">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
@@ -66,7 +79,7 @@
 
           <!-- Kolom kanan -->
           <div class="col-md-7 col-12">
-              <p class="text-white vivo_heavy text-uppercase mb-3 fs-title-registrasi_form" >REGISTRASI SEKARANG</p>
+              <span class="d-block text-white vivo_bold mb-4 fs-title-registrasi_form" data-aos="fade-down" data-aos-duration="1500">REGISTRASI SEKARANG</span>
               
                 <div class="alert alert-danger invalid-feedback fw-bold mb-4" id="dzErrorMessage" role="alert">
                 </div>
