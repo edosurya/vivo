@@ -249,7 +249,7 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Registrasi dan unggah karyamu <a href="{{ route('register.index') }}">di sini</a>
+                        Registrasi dan unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}"> di sini</a>
                       </span>
                     </div>
                   </div>
