@@ -352,21 +352,37 @@ li >.nav-item {
 }
 
 .box-prize img {
-  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
+.box-prize img.prize-1 {
+  max-width: 30rem;
+}
+
+.box-prize img.prize-2 {
+  max-width: 25rem;
+}
+
 @media (max-width: 992px) {
-    .box-prize img {
-      max-width: 13rem;
+    .box-prize img.prize-1 {
+      max-width: 18rem;
     }
+
+    .box-prize img.prize-2 {
+      max-width: 15rem;
+    }
+
 }
 
 @media (max-width: 468px) {
-    .box-prize img {
-      max-width: 10rem;
+    .box-prize img.prize-1 {
+      max-width: 15rem;
+    }
+
+    .box-prize img.prize-2 {
+      max-width: 12rem;
     }
 }
 
@@ -429,9 +445,17 @@ li >.nav-item {
   transform: scale(1.05);
 }
 
+.card-period .card-body {
+    padding: inherit;
+}
+
+.period {
+    min-height: 5rem;
+}
+
 @media (max-width: 768px) {
 
-    .period-line-img {
+   .period-line-img {
       width: 100%;
     }
 
@@ -446,6 +470,17 @@ li >.nav-item {
 
 }
 
+@media (max-width: 764px) {
+    .period {
+        min-height: 3.5rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .period {
+        min-height: 4.5rem;
+    }
+}
 
 /* Mekanisme */
 

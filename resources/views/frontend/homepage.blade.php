@@ -155,12 +155,12 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize ">
               <div class="p-2 m-w-50jt">
-                <img class="mb-3 d-block" src="{{ asset('frontend/images/webp/prize-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 d-block prize-1" src="{{ asset('frontend/images/webp/prize-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
             <div class="col-5 col-md-4 p-3 mb-3 text-center box-prize">
               <div class="p-2">
-                <img class="mb-3 mb-3 d-block mx-auto" src="{{ asset('frontend/images/webp/prize-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 mb-3 d-block mx-auto prize-2" src="{{ asset('frontend/images/webp/prize-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
           </div>
@@ -193,28 +193,28 @@ $judges = [
           </div>
 
           <!-- Wrapper Cards -->
-          <div class="position-relative d-flex justify-content-between flex-wrap gap-1 card-period-wrapper" data-aos="fade-up" data-aos-duration="2500">
+          <div class="position-relative d-flex justify-content-between flex-wrap card-period-wrapper align-items-stretch" data-aos="fade-up" data-aos-duration="2500">
             <!-- Kiri -->
             <div class="card text-center card-period">
-              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs">
-                <span class="d-block text-white vivo_bold fs-period-date mb-2">5 Agustus <span class="line"></span> <br/> 15 Oktober 2025</span>
-                <span class="d-block vivo_bold fs-period-desc">Periode registrasi dan pengunggahan hasil foto</span>
+              <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
+                <span class="d-block text-white vivo_bold fs-period-date period">5 Agustus <span class="line"></span> <br/> 15 Oktober 2025</span>
+                <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi dan pengunggahan hasil foto</span>
               </div>
             </div>
 
             <!-- Tengah -->
             <div class="card text-center card-period">
-              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs">
-                <p class="text-white vivo_bold fs-period-date mb-2">16 <span class="line"></span> 19 Oktober 2025</p>
-                <p class="vivo_bold fs-period-desc">Seleksi awal & skoring juri</p>
+              <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
+                <span class="d-block text-white vivo_bold fs-period-date period">16 <span class="line"></span> 19 Oktober 2025</span>
+                <span class="d-block vivo_regular fw-semibold fs-period-desc">Seleksi awal & skoring juri</span>
               </div>
             </div>
 
             <!-- Kanan -->
             <div class="card text-center card-period">
-              <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs ">
-                <p class="text-white vivo_bold fs-period-date mb-2">30 Oktober 2025</p>
-                <p class="vivo_bold fs-period-desc">Pengumuman pemenang</p>
+              <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
+                <span class="d-block text-white vivo_bold fs-period-date period">30 Oktober 2025</span>
+                <span class="d-block vivo_regular fw-semibold fs-period-desc">Pengumuman pemenang</span>
               </div>
             </div>
           </div>
