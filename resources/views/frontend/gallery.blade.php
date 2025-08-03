@@ -170,6 +170,42 @@ $categories = [
 @push('script')
 <script type="text/javascript">
 
+  function scrollToHashWithOffset() {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+
+  // Scroll saat halaman dimuat
+  window.addEventListener('load', function () {
+    scrollToHashWithOffset();
+  });
+
+  // Scroll juga saat user klik link hash tanpa reload (SPA behavior)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        history.pushState(null, null, this.getAttribute('href'));
+        scrollToHashWithOffset();
+      }
+    });
+  });
+
+
+
   var winnerModal = document.getElementById('winnerModal');
   var btn = document.getElementById('btnWinModal');
   var winnerImgPath = document.getElementById('imgPath');
@@ -186,12 +222,6 @@ $categories = [
     winnerImgDesc.innerHTML = desc;
 
   }
-
-
-  // function closeModal() {
-  //   winnerModal.classList.remove("show");
-  //   winnerModal.style.display = 'none';
-  // }
 
   const galleryList = $('#galleryList');
   const loading = $('#loader');
