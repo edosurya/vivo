@@ -363,22 +363,19 @@
     });
 
     (() => {
-  const counter = (() => {
-    const input = document.getElementById('img_desc'),
-      display = document.getElementById('counter-display'),
-      changeEvent = (evt) => display.innerHTML = evt.target.value.length,
-      getInput = () => input.value,
-      countEvent = () => input.addEventListener('keyup', changeEvent),
-      init = () => countEvent();
+      const counter = (() => {
+        const input = document.getElementById('img_desc'),
+          display = document.getElementById('counter-display'),
+          updateCount = () => display.innerHTML = input.value.length,
+          init = () => input.addEventListener('input', updateCount); // Ganti keyup dengan input
 
-    return {
-      init: init
-    }
+        return {
+          init: init
+        }
+      })();
 
-  })();
+      counter.init();
+    })();
 
-  counter.init();
-
-})();
 </script>
 @endpush
