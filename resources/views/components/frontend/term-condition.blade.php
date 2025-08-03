@@ -78,7 +78,7 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apalagi persyaratan foto yang harus diikuti?</b>
-            <p>Peserta wajib menggunakan fitur watermark vivo dengan membuka fitur kamera di smartphone vivo anda, kemudian klik icon setting pada kanan atas. Pilih fitur watermark sesuai yang anda inginkan.</p>
+            <p>Peserta wajib menggunakan fitur watermark vivo dengan membuka fitur kamera di smartphone vivo anda, kemudian klik icon setting pada kanan atas. Pilih fitur watermark sesuai yang anda inginkan. </p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Lalu, bagaimana cara mengirimkan foto yang sudah sesuai persyaratan untuk mengikuti kompetisi?</b>
