@@ -84,7 +84,7 @@
             <b>Lalu, bagaimana cara mengirimkan foto yang sudah sesuai persyaratan untuk mengikuti kompetisi?</b>
             <p>Peserta wajib mengirimkan semua foto melalui website vivoimagine.id dan mengikuti langkah-langkah berikut:</p>
             <ol>
-                <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Mobile Photography Competition.</li>
+                <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Kompetisi Fotografi.</li>
                 <li>Baca syarat dan ketentuan</li>
                 <li>Di bagian register, mohon isi sesuai kolom:</li>
                   <p>3.a Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
