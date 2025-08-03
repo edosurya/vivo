@@ -1018,7 +1018,7 @@ footer p {
     }
 }
  .new-line {
-   margin: -3px;
+   margin: 0;
 }
 @media (max-width: 822px) {
     .new-line {
