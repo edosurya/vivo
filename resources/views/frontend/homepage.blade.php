@@ -52,7 +52,7 @@ $judges = [
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <span class="d-block text-desc-section">Kirimkan hasil karya Anda</span>
               <span class="d-block vivo_bold text-date-regist">
-                5 Agustus <span class="line"></span> 15 Oktober 2025
+                5 Agustus<span class="line"></span>15 Oktober 2025
               </span>
             </div>
           </div>
@@ -197,7 +197,7 @@ $judges = [
             <!-- Kiri -->
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
-                <span class="d-block text-white vivo_bold fs-period-date period">5 Agustus <span class="line"></span> <br/> 15 Oktober 2025</span>
+                <span class="d-block text-white vivo_bold fs-period-date period">5 Agustus <span class="line"></span> <br/>15 Oktober 2025</span>
                 <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi dan pengunggahan hasil foto</span>
               </div>
             </div>
@@ -205,7 +205,7 @@ $judges = [
             <!-- Tengah -->
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
-                <span class="d-block text-white vivo_bold fs-period-date period">16 <span class="line"></span> 19 Oktober 2025</span>
+                <span class="d-block text-white vivo_bold fs-period-date period">16<span class="line"></span>19 Oktober 2025</span>
                 <span class="d-block vivo_regular fw-semibold fs-period-desc">Seleksi awal & skoring juri</span>
               </div>
             </div>
