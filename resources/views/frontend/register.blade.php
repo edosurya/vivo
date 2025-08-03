@@ -356,10 +356,13 @@
 <script type="text/javascript">
 
 
+    const today = new Date();
+    const seventeenYearsAgo = new Date(today.getFullYear() - 17, today.getMonth(), today.getDate());
+
     $('#birthday').datepicker({
         uiLibrary: 'bootstrap5',
         format: 'dd/mm/yyyy',
-        maxDate: new Date(),
+        maxDate: seventeenYearsAgo,
     });
 
     (() => {

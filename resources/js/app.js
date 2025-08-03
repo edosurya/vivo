@@ -315,12 +315,25 @@ $('#dzSubmitButton').on('click', function(event) {
     //     ageErrorMessage.show().text('Wajib diisi');
     // }
 
-    // show error messages if birthday is empty
+    // show error messages if birthday is empty and under 17
     let birthday = document.forms["dzImageUploadForm"]["birthday"].value;
-    if(birthday == null || birthday == "") {
-        error = error+1;
+    if (birthday == null || birthday.trim() === "") {
+        error += 1;
         birthdayErrorMessage.show().text('Wajib diisi');
+    } else {
+        // Konversi dari format dd/mm/yyyy ke Date object
+        const parts = birthday.split('/');
+        const birthDate = new Date(parts[2], parts[1] - 1, parts[0]);
+
+        const today = new Date();
+        const seventeenYearsAgo = new Date(today.getFullYear() - 17, today.getMonth(), today.getDate());
+
+        if (birthDate > seventeenYearsAgo) {
+            error += 1;
+            birthdayErrorMessage.show().text('Minimal berumur 17 tahun');
+        }
     }
+
 
     // show error messages if Image Description is empty
     let desc = document.forms["dzImageUploadForm"]["img_desc"].value;
