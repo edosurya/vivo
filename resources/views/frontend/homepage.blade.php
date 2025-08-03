@@ -87,7 +87,7 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-12 text-center mb-3">
               <span class="d-block text-white vivo_bold mb-4 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Kategori</span>
-              <span class="d-block text-desc-section">Temukan inspirasi dari tiap kategori <span class="new-line pe-1"></span>vivo Imagine Mobile Photography Competitionn</span>
+              <span class="d-block text-desc-section">Temukan inspirasi dari tiap kategori <span class="new-line pe-1"></span>vivo Imagine Mobile Photography Competition</span>
             </div>
           </div>
 
