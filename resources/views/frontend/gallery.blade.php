@@ -73,6 +73,7 @@ $categories = [
         <div class="justify-content-center text-center h-50" id="loader">
           <span class="loader"></span>
         </div>
+        <div id="gallery"></div>
         <div class="col-md-12" style="display:none" id="galleryList">
           <div class="featured-carousel owl-carousel">
 
