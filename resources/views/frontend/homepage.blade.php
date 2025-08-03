@@ -37,9 +37,9 @@ $judges = [
 
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-10 col-lg-12 text-center mb-3">
+            <div class="col-12 text-center mb-3">
               <span class="d-block text-white vivo_bold mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
-              <span class="d-block text-desc-section">vivo merayakan <span class="new-line pe-1">keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> dari berbagai daerah</span>
+              <span class="d-block text-desc-section">vivo merayakan keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> dari berbagai daerah</span>
 
             </div>
           </div>
@@ -85,7 +85,7 @@ $judges = [
 
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
-            <div class="col-10 col-lg-12 text-center mb-3">
+            <div class="col-12 text-center mb-3">
               <span class="d-block text-white vivo_bold mb-4 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Kategori</span>
               <span class="d-block text-desc-section">Temukan inspirasi dari tiap kategori <span class="new-line pe-1"></span>vivo Imagine Mobile Photography Competitionn</span>
             </div>
