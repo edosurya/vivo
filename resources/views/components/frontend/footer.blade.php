@@ -4,7 +4,7 @@
         <div class="container-lg">
           <div class="row">
             <div class="d-flex justify-content-between">
-              <a href="{{ route('register.index') }}" ><p class="vivo_regular text-light">Syarat & Ketentuan</p></a> 
+              <a href="{{ route('register.index') }}#tnc" ><p class="vivo_regular text-light">Syarat & Ketentuan</p></a> 
               <p class="vivo_regular text-end">Copyright © PT vivo Mobile Indonesia. All right reserved.</p>
             </div>
           </div>

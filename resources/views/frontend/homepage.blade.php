@@ -60,7 +60,7 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                 <div class="d-grid gap-2">
-                  <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}">REGISTRASI SEKARANG</a>
+                  <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a>
                 </div>
               </div>
           </div>
@@ -249,7 +249,7 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Registrasi dan unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}"> di sini</a>
+                        Registrasi dan unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}#register"> di sini</a>
                       </span>
                     </div>
                   </div>
@@ -272,7 +272,7 @@ $judges = [
               <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                   <div class="d-grid gap-2">
-                    <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}">REGISTRASI SEKARANG</a>
+                    <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a>
                   </div>
                 </div>
               </div>

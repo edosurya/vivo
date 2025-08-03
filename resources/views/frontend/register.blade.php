@@ -30,7 +30,7 @@
 
         <div class="d-flex flex-wrap">
             <!-- Kolom kiri -->
-          <div class="col-md-5 col-12 mb-5 text-white col-kiri border-right-gradient-dashed">
+          <div class="col-md-5 col-12 mb-5 text-white col-kiri border-right-gradient-dashed" id="tnc">
               <span class="d-block text-white vivo_bold mb-4 fs-term-condition" data-aos="fade-down" data-aos-duration="1500">SYARAT & KETENTUAN</span>
               <div class="mb-3">
                 <ul class="term-condition pe-5">
@@ -74,7 +74,7 @@
           </div>
 
           <!-- Kolom kanan -->
-          <div class="col-md-7 col-12">
+          <div class="col-md-7 col-12" id="register">
               <span class="d-block text-white vivo_bold mb-4 fs-title-registrasi_form" data-aos="fade-down" data-aos-duration="1500">REGISTRASI SEKARANG</span>
               
                 <div class="alert alert-danger invalid-feedback fw-bold mb-4" id="dzErrorMessage" role="alert">
