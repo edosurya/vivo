@@ -35,10 +35,10 @@
             <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau sms baik pada saat periode kompetisi maupun setelahnya.</li>
         </ol>
 
-        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine – Mobile Photography Competition</div>
+        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine Mobile Photography Competition </div>
         <ol>
         <li>Pendaftaran terbuka untuk peserta individu.</li>
-        <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
+        <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur <i>watermark</i> vivo.</li>
         <li>Karya harus menggunakan tema "Joy in Nusantara"</li>
         <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
                 <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
@@ -46,49 +46,51 @@
                 <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 500 karakter.</p>
                 <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
                 <div style="margin-left:30px;">
-                    <p>a. Portrait Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                    <p>b. Nature & Architecture Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                    <p>c. Street Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>a. Portrait: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>b. Nature & Architecture: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>c. Street Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                     <p>d. Night Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                    <!-- <p> e. Still Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p> -->
                    <!-- <p> f. Photo series: Kirim minimal 3 foto dan maksimal 5 foto.</p> -->
                 </div>
                 <p>4.5 Peserta dapat mengikuti lebih dari 1 kategori.</p>
                 <p>4.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto high resolution (HD or 1280 x 720 pixels minimum). </p>
-                <p>4.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti Photoshop dan Lightroom. Edit ringan seperti menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
+                <p>4.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i> dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
         <li>Hasil karya foto yang diterima akan dinilai oleh juri professional dan tim internal vivo.</li>
         <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 30 Oktober 2025.</li>
         </ol>
 
 
+        <br/>
+        <br/>
 
         <div  class="text-white vivo_regular mt-3 fs-term-condition-modal" >Frequently Asked Question</div>
         <br/>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apakah vivo Imagine – Mobile Photography Competition?</b>
-            <p>vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
+            <b class="quest">Apakah <i>vivo Imagine</i> – <i>Mobile Photography Competition?</i></b>
+            <p class="answ">vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apa yang dimaksud Joy in Nusantara itu?</b>
-            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan dari berbagai daerah.</p>
+            <b class="quest">Apa yang dimaksud <i>Joy</i> in Nusantara itu?</b>
+            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyakarat dari berbagai daerah dan generasi.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
-            <p>Ada 4 kategori foto yaitu portrait photography, nature & architecture photography, night photography, street photography, dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
+            <b class="quest">Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
+            <p>Ada 4 kategori foto yaitu <b><i>portrait, nature & architecture, night photography, street life,</i></b> dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apalagi persyaratan foto yang harus diikuti?</b>
-            <p>Peserta wajib menggunakan fitur watermark vivo dengan membuka fitur kamera di smartphone vivo anda, kemudian klik icon setting pada kanan atas. Pilih fitur watermark sesuai yang anda inginkan. </p>
+            <b class="quest">Apalagi persyaratan foto yang harus diikuti?</b>
+            <p>Peserta wajib menggunakan fitur watermark vivo dengan membuka fitur kamera di <i>smartphone</i> vivo anda, kemudian klik <i>icon setting</i> pada kanan atas. Pilih fitur <i>watermark</i> sesuai yang anda inginkan. </p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Lalu, bagaimana cara mengirimkan foto yang sudah sesuai persyaratan untuk mengikuti kompetisi?</b>
+            <b class="quest">Lalu, bagaimana cara mengirimkan foto yang sudah sesuai persyaratan untuk mengikuti kompetisi?</b>
             <p>Peserta wajib mengirimkan semua foto melalui website vivoimagine.id dan mengikuti langkah-langkah berikut:</p>
             <ol>
                 <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Kompetisi Fotografi.</li>
                 <li>Baca syarat dan ketentuan</li>
                 <li>Di bagian register, mohon isi sesuai kolom:</li>
                   <p>3.a Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
-                  <p>3.b  Peserta tidak perlu mengisi kolom referral code dan vivo ID Number (hanya untuk Diisi internal vivo Indonesia).</p>
+                  <p>3.b Peserta tidak perlu mengisi kolom referral code dan vivo ID Number (hanya untuk Diisi internal vivo Indonesia).</p>
                 <li>Di bagian Upload, mohon isi sesuai kolom:</li>
                     <p>4.a Memilih kategori yang diinginkan.</p>
                     <p>4.b Masukkan judul dan deskripsi foto dengan maksimal 500 karakter.</p>
@@ -99,22 +101,19 @@
 
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Siapa saja yang dapat mengikuti kompetisi ini?</b>
+            <b class="quest">Siapa saja yang dapat mengikuti kompetisi ini?</b>
             <p>Kompetisi terbuka untuk semua Warga Negara Indonesia (WNI) yang telah berusia minimal 17 tahun, baik dari kalangan profesional maupun pemula, kecuali karyawan PT vivo Mobile Indonesia dan mitra resmi PT vivo Mobile Indonesia beserta keluarganya.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Berapa biaya yang harus saya keluarkan untuk mengikuti kompetisi ini?</b>
+            <b class="quest">Berapa biaya yang harus saya keluarkan untuk mengikuti kompetisi ini?</b>
             <p>Seluruh peserta tidak akan dikenakan biaya apapun untuk mengikuti kompetisi ini.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
-            <p>a. 1 Pemenang Special Jury Award mendapatkan hadiah 50 juta rupiah</p>
-            <p>b. Setiap 4 kategori akan dipilih 1 pemenang yang mendapatkan 1 unit vivo X300 series</p>
-            <!-- <p>Akan terpilih 6 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo X100 Pro. -->
-            <!-- 1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p> -->
+            <b class="quest">Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
+            <p>Akan terpilih 4 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo smartphone terbaru. 1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
+            <b class="quest">Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
             <p>Info lebih lanjut dapat mengakses website vivoimagine.id atau anda juga dapat mengirimkan Direct Message ke Instagram vivo_Indonesia. </p>
         </div>
 
