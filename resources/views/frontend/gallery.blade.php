@@ -63,7 +63,8 @@ $categories = [
       <script type="text/javascript">
         window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
       </script>
-    
+      
+      <div id="gallery"></div>
       <div class="container-fluid mb-5 pb-6 mt-8">
         <div class="row" data-aos="fade-down">
             <div class="col-12 text-center mb-5">
@@ -73,7 +74,7 @@ $categories = [
         <div class="justify-content-center text-center h-50" id="loader">
           <span class="loader"></span>
         </div>
-        <div id="gallery"></div>
+        
         <div class="col-md-12" style="display:none" id="galleryList">
           <div class="featured-carousel owl-carousel">
 
