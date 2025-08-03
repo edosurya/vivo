@@ -1377,7 +1377,7 @@ button:hover, button:focus {
 .owl-carousel .item img{
     display: block;
     width: 100%;
-    height: 450px;
+    /*height: 450px;*/
     position: relative;
     object-fit: cover;
     border-radius: 10px;
