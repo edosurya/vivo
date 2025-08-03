@@ -39,7 +39,7 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-12 text-center mb-3">
               <span class="d-block text-white vivo_bold mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
-              <span class="d-block text-desc-section">vivo merayakan keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> dari berbagai daerah</span>
+              <span class="d-block text-desc-section">vivo merayakan<span class="new-line pe-1">keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> dari berbagai daerah</span>
 
             </div>
           </div>
