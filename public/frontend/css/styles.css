@@ -1424,7 +1424,40 @@ button:hover, button:focus {
     text-transform: capitalize !important;
 }
 
+.border-right-gradient-dashed {
+  position: relative;
+}
 
+.border-right-gradient-dashed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  width: 3px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    white,
+    white 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  /* Gradient dasar */
+  mask-image: linear-gradient(to bottom, white 0%, white 100%);
+  mask-composite: intersect;
+  pointer-events: none;
+}
+
+.col-kiri {
+  align-self: flex-start; /* tidak ikut tinggi kolom lainnya */
+}
+
+@media (max-width: 768px) {
+  .border-right-gradient-dashed::after {
+    width: 0 !important;
+    background: none !important; /* kalau pakai background untuk border */
+  }
+}
 
 
 

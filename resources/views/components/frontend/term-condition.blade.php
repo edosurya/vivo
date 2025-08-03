@@ -39,7 +39,7 @@
         <ol>
         <li>Pendaftaran terbuka untuk peserta individu.</li>
         <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
-        <li>Karya harus menggunakan tema "Joy in Us"</li>
+        <li>Karya harus menggunakan tema "Joy in Nusantara"</li>
         <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
                 <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
                 <p>4.2 Mengisi biodata yang dibutuhkan</p>
@@ -69,12 +69,12 @@
             <p>vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b>Apa yang dimaksud Joy in Us itu?</b>
-            <p>vivo ingin mengajak pengguna menangkap momen secara bebas, mengekspresikan kreatifitas dan emosi yang ingin disampaikan, sehingga ketika publik melihat hasil karya foto tersebut akan merasa terhubung dan dapat merasakan kebahagiaan bersama.</p>
+            <b>Apa yang dimaksud Joy in Nusantara itu?</b>
+            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan dari berbagai daerah.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
-            <p>Ada 4 kategori foto yaitu portrait, nature, night photography, street life, dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
+            <p>Ada 4 kategori foto yaitu portrait photography, nature & architecture photography, night photography, street photography, dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apalagi persyaratan foto yang harus diikuti?</b>
@@ -108,6 +108,8 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b>Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
+            <p>a. 1 Pemenang Special Jury Award mendapatkan hadiah 50 juta rupiah</p>
+            <p>b. Setiap 4 kategori akan dipilih 1 pemenang yang mendapatkan 1 unit vivo X300 series</p>
             <!-- <p>Akan terpilih 6 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo X100 Pro. -->
             <!-- 1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p> -->
         </div>
@@ -174,7 +176,7 @@
 <ol>
     <li>Pendaftaran terbuka untuk peserta individu.</li>
     <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
-    <li>Karya harus menggunakan tema "Joy in Us" </li>
+    <li>Karya harus menggunakan tema "Joy in Nusantara" </li>
     <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
         <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
         <p>4.2 Mengisi biodata yang dibutuhkan</p>
@@ -191,15 +193,9 @@
         <p>1.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti Photoshop dan Lightroom. Edit ringan seperti </p>menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
 
     <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo.</li>
-    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 5 Desember 2024.</li>
+    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 30 Oktober 2025.</li>
     <li>Hadiah khusus promotor akan mendapatkan:</li>
-<!--     <p>a. 1 Pemenang Special Jury Award mendapatkan hadiah 1 unit vivo V40 Series</p>
-    <p>b. Setiap 6 kategori akan dipilih 3 pemenang yang mendapatkan:</p>
-        <ul>
-            <li>Juara 1 mendapatkan e-voucher IDR 500,000</li>
-            <li>Juara 2 mendapatkan e-voucher IDR 300,000</li>
-            <li>Juara 3 mendapatkan e-voucher IDR 200,000</li>
-        </ul> -->
+    <p>1 Pemenang mendapatkan 1 unit vivo V60</p>
 </ol>
 
 <p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan (Frequently Asked Question), anda dapat mengakses vivo Imagine Awards S&K Publik.</p>
