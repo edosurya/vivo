@@ -66,10 +66,10 @@ $categories = [
       
       <div class="container-fluid mb-5 pb-6 mt-8">
         <div class="row" data-aos="fade-down">
+            <div id="gallery"></div>
             <div class="col-12 text-center mb-5">
               <span class="text-white vivo_bold mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">{{ $title }}</span>
             </div>
-            <div id="gallery"></div>
         </div>
         <div class="justify-content-center text-center h-50" id="loader">
           <span class="loader"></span>
