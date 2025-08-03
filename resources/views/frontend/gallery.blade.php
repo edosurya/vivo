@@ -91,7 +91,7 @@ $categories = [
                   </a>
                 </div>
                 <div class="text pt-3 w-100 text-center mt-3">
-                  <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title text-capitalize">{{ ucwords(strtolower(@$img['title'])) }}</span>
+                  <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title ">{{ @$img['title'] }}</span>
                   <span class="d-block text-white vivo_regular fs-img-desc text-capitalize">{{ ucwords(strtolower(@$img['creator'])) }}</span>
                 </div>
               </div>
@@ -121,7 +121,7 @@ $categories = [
                             <div class="carousel-item active">
                                  <img src="{{ asset($img['path'])}}" class="d-block"  loading="lazy">
                                  <div class="text pt-3 w-100 text-center">
-                                    <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title text-capitalize">{{ ucwords(strtolower(@$img['title'])) }}</span>
+                                    <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title">{{ @$img['title'] }}</span>
                                     <span class="d-block text-white vivo_regular fs-img-desc text-capitalize">{{ ucwords(strtolower(@$img['creator'])) }}</span>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ $categories = [
                             <div class="carousel-item">
                                 <img src="{{ asset($img['path'])}}" class="d-block"  loading="lazy">
                                 <div class="text pt-3 w-100 text-center">
-                                    <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title text-capitalize">{{ ucwords(strtolower(@$img['title'])) }}</span>
+                                    <span class="d-block text-white vivo_bold mb-1 px-4 fs-img-title">{{ @$img['title'] }}</span>
                                     <span class="d-block text-white vivo_regular fs-img-desc text-capitalize">{{ ucwords(strtolower(@$img['creator'])) }}</span>
                                 </div>
                             </div>
