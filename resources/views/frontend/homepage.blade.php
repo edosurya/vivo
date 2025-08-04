@@ -155,12 +155,12 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2500">
             <div class="col-5 col-md-4 p-3 me-3 mb-3 text-center box-prize ">
               <div class="p-2 m-w-50jt">
-                <img class="mb-3 d-block prize-1" src="{{ asset('frontend/images/webp/prize-50jt-desktop.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 d-block prize-1" src="{{ asset('frontend/images/webp/prize-50jta.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
             <div class="col-5 col-md-4 p-3 mb-3 text-center box-prize">
               <div class="p-2">
-                <img class="mb-3 mb-3 d-block mx-auto prize-2" src="{{ asset('frontend/images/webp/prize-vivo-device.webp') }}" alt="" class="img-fluid" loading="lazy" />
+                <img class="mb-3 mb-3 d-block mx-auto prize-2" src="{{ asset('frontend/images/webp/prize-smartphone.webp') }}" alt="" class="img-fluid" loading="lazy" />
               </div>
             </div>
           </div>
