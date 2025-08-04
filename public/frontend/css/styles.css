@@ -61,6 +61,7 @@ html {
 
 body {
   font-family: 'vivoSansGlobal-Regular' !important;
+  background-color: black;
 }
 
 /* ---------------------------------------------
@@ -136,28 +137,18 @@ li >.nav-item {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); /* opsional, untuk kesan floating */
 }
 
-
 .main-banner {
   margin-top: 4.4rem !important;
   width: 100%;
-  min-height: 320px; /* agar tidak terlalu pendek di mobile */
+  height: 100vh;
   background-image: url('/frontend/images/webp/hero-img-desktop.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem 0;
+  padding: 0;
   display: flex;
   align-items: center; /* opsional: konten vertikal tengah */
   justify-content: center; /* opsional: konten horizontal tengah */
-}
-
-/* Untuk layar besar (desktop) */
-@media (min-width: 768px) {
-  .main-banner {
-    margin-top: 0px;
-    height: 110vh;
-    padding: 0;
-  }
 }
 
 @media (max-width: 992px) {

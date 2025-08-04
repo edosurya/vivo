@@ -7,9 +7,9 @@
 @php
 $categories = [
   ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp'],
-  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street.webp'],
-  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp'],
   ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp'],
+  ['slug' => 'street-life-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street.webp'],
 ];
 
 
@@ -21,7 +21,7 @@ $judges = [
 @endphp
 
 @section('hero')
-    <section class="main-banner" id="main-banner"></section>
+    <section class="main-banner"></section>
 @endsection
 
 @section('content')
