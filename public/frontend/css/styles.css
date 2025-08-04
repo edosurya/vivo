@@ -138,7 +138,7 @@ li >.nav-item {
 
 
 .main-banner {
-  margin-top: 70px;
+  margin-top: 4.4rem !important;
   width: 100%;
   min-height: 320px; /* agar tidak terlalu pendek di mobile */
   background-image: url('/frontend/images/webp/hero-img-desktop.webp');
