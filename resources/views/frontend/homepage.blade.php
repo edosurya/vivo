@@ -198,7 +198,7 @@ $judges = [
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
                 <span class="d-block text-white vivo_bold fs-period-date period">5 Agustus<span class="line"></span><br/>15 Oktober 2025</span>
-                <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi & pengunggahan <br/>hasil foto</span>
+                <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi & <br/>pengunggahan hasil foto</span>
               </div>
             </div>
 
