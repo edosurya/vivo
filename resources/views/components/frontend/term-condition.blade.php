@@ -62,14 +62,14 @@
         <p>b. 4 (empat) pemenang setiap kategori masing-masing akan mendapatkan 1 (satu) buah smartphone terbaru merek vivo.</p>
 
         <p>Hadiah tidak dapat ditukar dan/atau diuangkan.</p>
-        <li> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan <i>(Frequently Asked Question)</i>, Anda dapat mengakses vivo Imagine Mobile Photography Competition T&C Publik.</li>
+        <li> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan <i>(Frequently Asked Questions)</i>, Anda dapat mengakses vivo Imagine Mobile Photography Competition T&C Publik.</li>
         </ol>
 
 
         <br/>
         <br/>
 
-        <div  class="text-white vivo_regular mt-3 fs-term-condition-modal" >Frequently Asked Question</div>
+        <div  class="text-white vivo_regular mt-3 fs-term-condition-modal" >Frequently Asked Questions</div>
         <br/>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Apakah <i>vivo Imagine</i> – <i>Mobile Photography Competition?</i></b>
@@ -92,7 +92,7 @@
             <p>Peserta wajib mengirimkan semua foto melalui website vivoimagine.id dan mengikuti langkah-langkah berikut:</p>
             <ol>
                 <li>Kunjungi website vivoimagine.id, lalu klik Register Sekarang di beranda atau Anda pun dapat mengunjungi halaman Kompetisi Fotografi.</li>
-                <li>Baca Syarat dan Ketentuan</li>
+                <li>Baca Syarat dan Ketentuan.</li>
                 <li>Di bagian Register, mohon isi sesuai kolom:</li>
                   <p>3.a. Lengkapi data diri sesuai dengan data pribadi Anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
                   <p>3.b. Peserta tidak perlu mengisi kolom <i>referral code</i> dan vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
@@ -116,7 +116,7 @@
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
             <p>Akan terpilih 4 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo smartphone terbaru. </p>
-            <p>1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp50.000.000.</p>
+            <p>1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp50.000.000,-</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
@@ -205,7 +205,7 @@
 
     <p>Hadiah tidak dapat ditukar dan/atau diuangkan.</p>
 
-    <li> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan <i>(Frequently Asked Question)</i>, Anda dapat mengakses vivo Imagine Mobile Photography Competition T&C Publik.</li>
+    <li> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan <i>(Frequently Asked Questions)</i>, Anda dapat mengakses vivo Imagine Mobile Photography Competition T&C Publik.</li>
 </ol>
 
 </div>
