@@ -14,7 +14,7 @@ class GalleryController extends Controller
     public function index($category = null)
     {
         $display = '';
-        $custom_css = 'justify-content-center align-items-center min-vh-100';
+        $custom_css = 'justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 min-vh-100';
 
         if ($category) {
             $categoryId = array_search($category, Gallery::TYPE);
