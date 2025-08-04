@@ -61,7 +61,7 @@
                         <select name="category" id="category" class="form-select" required>
                             <option value="">-- Choose Category --</option>
                             <option value="1">Portrait Photography</option>
-                            <option value="2">Street Life Photography</option>
+                            <option value="2">Street Photography</option>
                             <option value="5">Night Photography</option>
                             <option value="6">Nature & Architecture Photography</option>
                         </select>

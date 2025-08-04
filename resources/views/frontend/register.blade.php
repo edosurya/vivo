@@ -152,7 +152,7 @@
                           <div class="custom-select-container">
                             <select class="form-control" name="category" id="category">
                               <option value="1" selected>Portrait Photography</option>
-                              <option value="2">Street Life Photography</option>
+                              <option value="2">Street Photography</option>
                               <!-- <option value="3">Series Photography</option> -->
                               <!-- <option value="4">Still Life Photography</option> -->
                               <option value="5">Night Photography</option>

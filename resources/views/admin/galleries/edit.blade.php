@@ -68,7 +68,7 @@
                         <select name="category" id="category" class="form-select">
                             <option value="">-- Choose Category --</option>
                             <option value="1" {{ $gallery->category == 1 ? 'selected' : '' }}>Portrait Photography</option>
-                            <option value="2" {{ $gallery->category == 2 ? 'selected' : '' }}>Street Life Photography</option>
+                            <option value="2" {{ $gallery->category == 2 ? 'selected' : '' }}>Street Photography</option>
                             <option value="5" {{ $gallery->category == 5 ? 'selected' : '' }}>Night Photography</option>
                             <option value="6" {{ $gallery->category == 6 ? 'selected' : '' }}>Nature & Architecture Photography</option>
                         </select>

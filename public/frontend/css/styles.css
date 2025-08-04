@@ -55,6 +55,10 @@
 .vivo_light      { font-family: 'vivoSansGlobal-Light' !important; }
 .vivo_thin       { font-family: 'vivoSansGlobal-Thin' !important; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'vivoSansGlobal-Regular' !important;
 }
@@ -1296,8 +1300,15 @@ button:hover, button:focus {
 
 }
 .modal.lightbox-modal {
-    padding-top: 100px;
+    padding-top: 5rem;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 992px) {
+    .modal.lightbox-modal {
+        padding-top: 7rem;
+    }
+
 }
 
 .lightbox-modal .carousel-item img {

@@ -48,7 +48,7 @@
                                         <select name="category" id="category" class="form-select w-50 d-inline-block" onchange="this.form.submit()">
                                             <option value="">-- All Categories --</option>
                                             <option value="1" {{ $category == 1 ? 'selected' : '' }}>Portrait Photography</option>
-                                            <option value="2" {{ $category == 2 ? 'selected' : '' }}>Street Life Photography</option>
+                                            <option value="2" {{ $category == 2 ? 'selected' : '' }}>Street Photography</option>
                                             <option value="5" {{ $category == 5 ? 'selected' : '' }}>Night Photography</option>
                                             <option value="6" {{ $category == 6 ? 'selected' : '' }}>Nature & Architecture Photography</option>
                                         </select>
