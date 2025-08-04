@@ -21,7 +21,7 @@ class Images extends Model
 
     const TYPE = [
         self::CATEGORY1   => 'portrait-photography',
-        self::CATEGORY2   => 'street-life-photography',
+        self::CATEGORY2   => 'street-photography',
         self::CATEGORY3   => 'series-photography',
         self::CATEGORY4   => 'still-life-photography',
         self::CATEGORY5   => 'night-photography',
