@@ -142,7 +142,7 @@ li >.nav-item {
   width: 100%;
   height: 100vh;
   min-height: 320px; /* agar tidak terlalu pendek di mobile */
-  background-image: url('/frontend/images/webp/hero.webp');
+  background-image: url('/frontend/images/webp/hero-desktop.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ li >.nav-item {
 
 @media (max-width: 992px) {
     .main-banner {
-        background-image: url('/frontend/images/webp/hero-img-mobile.webp');
+        background-image: url('/frontend/images/webp/hero-mobile.webp');
         min-height: 100vh; 
         background-size: cover; 
         background-position: center; 
