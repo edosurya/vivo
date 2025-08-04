@@ -39,7 +39,7 @@ class Gallery extends Model
 
     const IMAGE_CATEGORY = [
         self::CATEGORY1   => 'Portrait Photography',
-        self::CATEGORY2   => 'Street Life Photography',
+        self::CATEGORY2   => 'Street Photography',
         self::CATEGORY3   => 'Series Photography',
         self::CATEGORY4   => 'Still Life Photography',
         self::CATEGORY5   => 'Night Photography',

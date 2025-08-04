@@ -41,8 +41,8 @@
         <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur <i>watermark</i> vivo.</li>
         <li>Karya harus menggunakan tema "Joy in Nusantara"</li>
         <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
-                <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
-                <p>4.2 Mengisi biodata yang dibutuhkan</p>
+                <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan.</p>
+                <p>4.2 Mengisi biodata yang dibutuhkan.</p>
                 <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 1800 karakter.</p>
                 <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
                 <div style="margin-left:30px;">
@@ -71,8 +71,8 @@
             <p class="answ">vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b class="quest">Apa yang dimaksud <i>Joy</i> in Nusantara itu?</b>
-            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyarakat dari berbagai daerah dan generasi.</p>
+            <b class="quest">Apa yang dimaksud <i>Joy in Nusantara</i> itu?</b>
+            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyarakat dari berbagai daerah.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
@@ -89,14 +89,14 @@
                 <li>Kunjungi website vivoimagine.id, lalu klik register sekarang di beranda atau anda pun dapat mengunjungi halaman Kompetisi Fotografi.</li>
                 <li>Baca syarat dan ketentuan</li>
                 <li>Di bagian register, mohon isi sesuai kolom:</li>
-                  <p>3.a Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
-                  <p>3.b Peserta tidak perlu mengisi kolom referral code dan vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
+                  <p>3.a. Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
+                  <p>3.b. Peserta tidak perlu mengisi kolom referral code dan vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
                 <li>Di bagian Unggah, mohon isi sesuai kolom:</li>
-                    <p>4.a Memilih kategori yang diinginkan.</p>
-                    <p>4.b Masukkan judul dan deskripsi foto dengan maksimal 1800 karakter.</p>
-                    <p>4.c Pilih foto yang ingin anda kirimkan sesuai dengan ketentuan jumlah foto tiap kategori.</p>
-                    <p>4.d Klik kolom bahwa anda menyetujui syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</p>
-                    <p>4.e Klik submit untuk menyelesaikan registrasi.</p>
+                    <p>4.a. Memilih kategori yang diinginkan.</p>
+                    <p>4.b. Masukkan judul dan deskripsi foto dengan maksimal 1800 karakter.</p>
+                    <p>4.c. Pilih foto yang ingin anda kirimkan sesuai dengan ketentuan jumlah foto tiap kategori.</p>
+                    <p>4.d. Klik kolom bahwa anda menyetujui syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</p>
+                    <p>4.e. Klik submit untuk menyelesaikan registrasi.</p>
         </ol>
 
         </div>
@@ -150,7 +150,7 @@
 
 
 <div class="text-white px-lg-5 px-sm-2 modal-body">
-<div  class="text-white vivo_regular mt-3 fs-term-condition-modal mb-2">Syarat & Ketentuan</div>
+<div  class="text-white vivo_regular mt-3 fs-term-condition-modal mb-2">Syarat & Ketentuan Internal</div>
 
 <ol class="mb-4">
     <li>Kompetisi ini juga terbuka untuk promotor vivo.</li>
