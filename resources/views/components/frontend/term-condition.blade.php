@@ -22,20 +22,20 @@
             <li>Peserta adalah Warga Negara Indonesia (WNI), usia minimal 17 tahun dan telah memiliki KTP.</li>
             <li>Pendaftaran tidak dipungut biaya/gratis.</li>
             <li>Karya yang dikirimkan tidak mengandung unsur pornografi, SARA, sadisme, ujaran kebencian, pencemaran nama baik, hal-hal yang bersifat merendahkan atau melecehkan pihak lain ataupun hal-hal yang melanggar hukum dan peraturan yang berlaku.</li>
-            <li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan. </li>
+            <li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan.</li>
             <li>Peserta menjamin bahwa karya dan/atau materi yang dikirimkan telah mendapatkan seluruh persetujuan dan izin dari seluruh pihak yang terdapat dalam karya dan/atau materi tersebut (termasuk tetapi tidak terbatas pada talent, gambar, logo dan lain sebagainya) dan Peserta menjamin bahwa karya dan/atau materi yang dikirimkan tidak melanggar hak cipta dan/atau hak kekayaan intelektual pihak manapun.</li>
             <li>Karya yang dikirimkan tidak memuat produk ponsel dan/ atau aksesoris dan kelengkapan telepon selular selain merek vivo.</li>
-            <li>Apabila dikemudian hari ditemukan pelanggaran dalam syarat dan ketentuan ini, peserta akan menanggung seluruh kerugian yang timbul. Pihak penyelenggara berhak untuk melakukan diskualifikasi terhadap peserta atau membatalkan gelar juara peserta pemenang. Apabila peserta telah menerima hadiah dari pihak penyelenggara, maka peserta wajib untuk mengembalikan hadiah tersebut secara penuh kepada vivo.</li>
-            <li>Karya yang dikirimkan menjadi hak milik dari  vivo, dan vivo beserta afiliasinya berhak sepenuhnya untuk menggunakan karya tersebut dengan cara apapun tanpa memerlukan persetujuan dari peserta.</li>
+            <li>Apabila di kemudian hari ditemukan pelanggaran dalam syarat dan ketentuan ini, peserta akan menanggung seluruh kerugian yang timbul. Pihak penyelenggara berhak untuk melakukan diskualifikasi terhadap peserta atau membatalkan gelar juara peserta pemenang. Apabila peserta telah menerima hadiah dari pihak penyelenggara, maka peserta wajib untuk mengembalikan hadiah tersebut secara penuh kepada vivo.</li>
+            <li>Karya yang dikirimkan menjadi hak milik dari vivo, dan vivo beserta afiliasinya berhak sepenuhnya untuk menggunakan karya tersebut dengan cara apapun tanpa memerlukan persetujuan dari peserta.</li>
             <li>Keputusan juri bersifat mutlak dan tidak dapat diganggu gugat.</li>
             <li>Syarat dan ketentuan kompetisi dapat berubah sewaktu-waktu sesuai dengan kebijakan vivo.</li>
             <li>Peserta akan bertanggung jawab, membebaskan, melepaskan dan mengganti seluruh kerugian terhadap vivo dan/atau penyelenggara pihak ketiga yang ditunjuk oleh vivo yang timbul sebagai akibat dari pelanggaran atas Syarat dan Ketentuan ini.</li>
             <li>Peserta juga dianggap telah memberikan persetujuan dan kewenangan kepada vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo untuk mengumpulkan, mengolah, dan/atau mengungkapkan informasi/data pribadi Peserta yang disampaikan dalam kompetisi ini untuk kepentingan vivo.</li>
             <li>Selain itu, vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo juga berhak untuk menggunakan, mempublikasikan atau menampilkan informasi/data pribadi Peserta dan untuk kepentingan vivo, jika dianggap perlu sehubungan dengan kompetisi ini.</li>
-            <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau sms baik pada saat periode kompetisi maupun setelahnya.</li>
+            <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau SMS baik pada saat periode kompetisi maupun setelahnya.</li>
         </ol>
 
-        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine Mobile Photography Competition </div>
+        <div class="text-white vivo_regular mt-3 fs-term-condition-modal mb-4">Syarat & Ketentuan vivo Imagine Mobile Photography Competition</div>
         <ol>
         <li>Pendaftaran terbuka untuk peserta individu.</li>
         <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur <i>watermark</i> vivo.</li>
@@ -43,18 +43,18 @@
         <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
                 <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
                 <p>4.2 Mengisi biodata yang dibutuhkan</p>
-                <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 500 karakter.</p>
+                <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 1800 karakter.</p>
                 <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
                 <div style="margin-left:30px;">
                     <p>a. Portrait: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                     <p>b. Nature & Architecture: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                    <p>c. Street Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                    <p>c. Street Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                     <p>d. Night Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                    <!-- <p> e. Still Life: Kirim foto minimal 1 foto dan maksimal 5 foto.</p> -->
                    <!-- <p> f. Photo series: Kirim minimal 3 foto dan maksimal 5 foto.</p> -->
                 </div>
                 <p>4.5 Peserta dapat mengikuti lebih dari 1 kategori.</p>
-                <p>4.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto high resolution (HD or 1280 x 720 pixels minimum). </p>
+                <p>4.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto <i>high resolution</i> (HD or 1280 x 720 pixels minimum). </p>
                 <p>4.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i> dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
         <li>Hasil karya foto yang diterima akan dinilai oleh juri professional dan tim internal vivo.</li>
         <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 30 Oktober 2025.</li>
@@ -72,11 +72,11 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Apa yang dimaksud <i>Joy</i> in Nusantara itu?</b>
-            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyakarat dari berbagai daerah dan generasi.</p>
+            <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyarakat dari berbagai daerah dan generasi.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Berapa kategori foto yang dapat diikuti dan berapa foto yang harus dikirimkan tiap kategori?</b>
-            <p>Ada 4 kategori foto yaitu <b><i>portrait, nature & architecture, night photography, street life,</i></b> dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
+            <p>Ada 4 kategori foto yaitu <b><i>Portrait, Nature & Architecture, Night Photography, Street Photography,</i></b> dimana peserta diperbolehkan mengikuti lebih dari 1 kategori. Kirimkan minimal 1 foto dan maksimal 5 foto dalam tiap kategori.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Apalagi persyaratan foto yang harus diikuti?</b>
@@ -90,10 +90,10 @@
                 <li>Baca syarat dan ketentuan</li>
                 <li>Di bagian register, mohon isi sesuai kolom:</li>
                   <p>3.a Lengkapi data diri sesuai dengan data pribadi anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
-                  <p>3.b Peserta tidak perlu mengisi kolom referral code dan vivo ID Number (hanya untuk Diisi internal vivo Indonesia).</p>
-                <li>Di bagian Upload, mohon isi sesuai kolom:</li>
+                  <p>3.b Peserta tidak perlu mengisi kolom referral code dan vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
+                <li>Di bagian Unggah, mohon isi sesuai kolom:</li>
                     <p>4.a Memilih kategori yang diinginkan.</p>
-                    <p>4.b Masukkan judul dan deskripsi foto dengan maksimal 500 karakter.</p>
+                    <p>4.b Masukkan judul dan deskripsi foto dengan maksimal 1800 karakter.</p>
                     <p>4.c Pilih foto yang ingin anda kirimkan sesuai dengan ketentuan jumlah foto tiap kategori.</p>
                     <p>4.d Klik kolom bahwa anda menyetujui syarat dan ketentuan yang ditetapkan dalam perjanjian pengguna.</p>
                     <p>4.e Klik submit untuk menyelesaikan registrasi.</p>
@@ -110,11 +110,12 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Apakah hadiah yang saya dapatkan jika menang kompetisi?</b>
-            <p>Akan terpilih 4 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo smartphone terbaru. 1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp 50.000.000</p>
+            <p>Akan terpilih 4 pemenang dalam setiap kategori  yang mendapatkan masing-masing 1 unit vivo smartphone terbaru. </p>
+            <p>1 pemenang utama pilihan juri yang akan mendapatkan uang tunai Rp50.000.000.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
-            <p>Info lebih lanjut dapat mengakses website vivoimagine.id atau anda juga dapat mengirimkan Direct Message ke Instagram vivo_Indonesia. </p>
+            <p>Info lebih lanjut dapat mengakses website vivoimagine.id atau Anda juga dapat mengirimkan <i>Direct Message</i> ke Instagram @vivo_Indonesia.</p>
         </div>
 
     </div>
@@ -157,17 +158,17 @@
     <li>Peserta memiliki nomor ID vivo dan referral code untuk mengikuti kompetisi ini.</li>
     <li>Pendaftaran tidak dipungut biaya/gratis.</li>
     <li>Karya yang dikirimkan tidak mengandung unsur pornografi, SARA, sadisme, ujaran kebencian, pencemaran nama baik, hal-hal yang bersifat merendahkan atau melecehkan pihak lain ataupun hal-hal yang melanggar hukum dan peraturan yang berlaku.</li>
-    <li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan. 
+    <li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan.</li>
     <li>Peserta menjamin bahwa karya dan/atau materi yang dikirimkan telah mendapatkan seluruh persetujuan dan izin dari seluruh pihak yang terdapat dalam karya dan/atau materi tersebut (termasuk tetapi tidak terbatas pada talent, gambar, logo dan lain sebagainya) dan Peserta menjamin bahwa karya dan/atau materi yang dikirimkan tidak melanggar hak cipta dan/atau hak kekayaan intelektual pihak manapun.</li>
     <li>Karya yang dikirimkan tidak memuat produk ponsel dan/ atau aksesoris dan kelengkapan telepon selular selain merek vivo.</li>
-    <li>Apabila dikemudian hari ditemukan pelanggaran dalam syarat dan ketentuan ini, peserta akan menanggung seluruh kerugian yang timbul. Pihak penyelenggara berhak untuk melakukan diskualifikasi terhadap peserta atau membatalkan gelar juara peserta pemenang. Apabila peserta telah menerima hadiah dari pihak penyelenggara, maka peserta wajib untuk mengembalikan hadiah tersebut secara penuh kepada vivo.</li>
-    <li>Karya yang dikirimkan menjadi hak milik dari  vivo, dan vivo beserta afiliasinya berhak sepenuhnya untuk menggunakan karya tersebut dengan cara apapun tanpa memerlukan persetujuan dari peserta.</li>
+    <li>Apabila di kemudian hari ditemukan pelanggaran dalam syarat dan ketentuan ini, peserta akan menanggung seluruh kerugian yang timbul. Pihak penyelenggara berhak untuk melakukan diskualifikasi terhadap peserta atau membatalkan gelar juara peserta pemenang. Apabila peserta telah menerima hadiah dari pihak penyelenggara, maka peserta wajib untuk mengembalikan hadiah tersebut secara penuh kepada vivo.</li>
+    <li>Karya yang dikirimkan menjadi hak milik vivo, dan vivo beserta afiliasinya berhak sepenuhnya untuk menggunakan karya tersebut dengan cara apapun tanpa memerlukan persetujuan dari peserta.</li>
     <li>Keputusan juri bersifat mutlak dan tidak dapat diganggu gugat.</li>
     <li>Syarat dan ketentuan kompetisi dapat berubah sewaktu-waktu sesuai dengan kebijakan vivo.</li>
     <li>Peserta akan bertanggung jawab, membebaskan, melepaskan dan mengganti seluruh kerugian terhadap vivo dan/atau penyelenggara pihak ketiga yang ditunjuk oleh vivo yang timbul sebagai akibat dari pelanggaran atas Syarat dan Ketentuan ini.</li>
     <li>Peserta juga dianggap telah memberikan persetujuan dan kewenangan kepada vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo untuk mengumpulkan, mengolah, dan/atau mengungkapkan informasi/data pribadi Peserta yang disampaikan dalam kompetisi ini untuk kepentingan vivo.</li>
     <li>Selain itu, vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo juga berhak untuk menggunakan, mempublikasikan atau menampilkan informasi/data pribadi Peserta dan untuk kepentingan vivo, jika dianggap perlu sehubungan dengan kompetisi ini.</li>
-    <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau sms baik pada saat periode kompetisi maupun setelahnya.</li>
+    <li>Dengan keikutsertaan, peserta dianggap telah menerima dan menyetujui seluruh syarat dan ketentuan kompetisi ini dan perubahannya (jika ada). Peserta juga dianggap bersedia memberikan izin untuk dihubungi oleh vivo, afiliasinya dan pihak ketiga yang ditunjuk oleh vivo melalui inbox, email, telepon atau SMS baik pada saat periode kompetisi maupun setelahnya.</li>
 </ol>
 
 
@@ -177,27 +178,27 @@
     <li>Masing-masing peserta diwajibkan menggunakan smartphone vivo tipe apapun dan mengaktifkan fitur watermark vivo.</li>
     <li>Karya harus menggunakan tema "Joy in Nusantara" </li>
     <li>Unggah karya foto dalam website vivoimagine.id dengan cara:</li>
-        <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan</p>
-        <p>4.2 Mengisi biodata yang dibutuhkan</p>
-        <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 500 karakter.</p>
+        <p>4.1 Mengakses halaman Imaging Awards dan membaca syarat dan ketentuan.</p>
+        <p>4.2 Mengisi biodata yang dibutuhkan.</p>
+        <p>4.3 Wajib memberikan judul foto dan deskripsi foto maksimal 1800 karakter.</p>
         <p>4.4 Wajib mengirimkan jumlah foto berikut sesuai kategori yang diikuti:</p>
             <div style="margin-left:30px;">
-                <p>a. Portrait Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
-                <p>b. Nature & Architecture Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                <p>a. Portrait: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
+                <p>b. Nature & Architecture: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                 <p>c. Street Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
                 <p>d. Night Photography: Kirim foto minimal 1 foto dan maksimal 5 foto.</p>
             </div>
         <p>1.5 Peserta dapat mengikuti lebih dari 1 kategori.</p>
-        <p>1.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto high resolution (HD or 1280 x 720 pixels minimum). </p>
-        <p>1.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti Photoshop dan Lightroom. Edit ringan seperti </p>menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
+        <p>1.6 Karya foto dapat berupa format vertikal / horizontal dengan kualitas foto <i>high resolution</i> (HD or 1280 x 720 pixels minimum). </p>
+        <p>1.7 Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i>dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, <i>white balance</i>, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
 
     <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo.</li>
-    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi sosial media vivo Indonesia pada tanggal 30 Oktober 2025.</li>
+    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 30 Oktober 2025.</li>
     <li>Hadiah khusus promotor akan mendapatkan:</li>
-    <p>1 Pemenang mendapatkan 1 unit vivo V60</p>
+    <p>1 Pemenang akan mendapatkan hadiah 1 unit smartphone vivo terbaru.</p>
 </ol>
 
-<p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan (Frequently Asked Question), anda dapat mengakses vivo Imagine Awards S&K Publik.</p>
+<p> Untuk informasi lebih lanjut dan mengetahui pertanyaan yang sering diajukan <i>(Frequently Asked Question)</i>, Anda dapat mengakses vivo Imagine Mobile Photography Competition T&C Publik.</p>
 
 </div>
 

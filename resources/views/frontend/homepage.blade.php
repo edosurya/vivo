@@ -39,7 +39,7 @@ $judges = [
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
             <div class="col-12 text-center mb-3">
               <span class="d-block text-white vivo_bold mb-4 text-title-section" data-aos="fade-down" data-aos-duration="1500">JOY IN NUSANTARA</span>
-              <span class="d-block text-desc-section">vivo merayakan<span class="new-line pe-2"> keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> dari berbagai daerah</span>
+              <span class="d-block text-desc-section">vivo merayakan<span class="new-line pe-2"> keberagaman budaya Indonesia <span class="new-line pe-1">dengan mengabadikan keindahan,<br/>serta menangkap momen kebersamaan <span class="new-line pe-1"> yang menyatukan masyarakat <span class="new-line pe-1"> dari berbagai daerah</span>
 
             </div>
           </div>
@@ -198,7 +198,7 @@ $judges = [
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
                 <span class="d-block text-white vivo_bold fs-period-date period">5 Agustus<span class="line"></span><br/>15 Oktober 2025</span>
-                <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi dan pengunggahan hasil foto</span>
+                <span class="d-block vivo_regular fs-period-desc fw-semibold">Periode registrasi & pengunggahan hasil foto</span>
               </div>
             </div>
 
@@ -236,7 +236,7 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-1.webp') }}" alt="Step 1" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Ambil foto menggunakan smartphone vivo tipe apa pun dengan mengaktifkan fitur watermark vivo
+                        Ambil foto menggunakan smartphone vivo dengan mengaktifkan fitur <br/>watermark vivo
                       </span>
                     </div>
                   </div>
@@ -249,7 +249,7 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Registrasi dan unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}#register"> di sini</a>
+                        Registrasi & unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}#register"> di sini</a>
                       </span>
                     </div>
                   </div>

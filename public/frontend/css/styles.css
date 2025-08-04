@@ -929,9 +929,16 @@ input::placeholder {
 .line {
     width: 19px;
     height: 0;
-    border: 1.6px solid #ffffff;
+    border: 1.2px solid #ffffff;
     margin: 5px 0.5px;
     display: inline-block;
+}
+
+
+@media (max-width: 992px) {
+    .line {
+        margin: 4px 0.5px;
+    }
 }
 
 
