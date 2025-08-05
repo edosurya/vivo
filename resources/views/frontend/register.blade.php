@@ -62,12 +62,12 @@
                   <span class="d-block mb-2 fs-term-condition-other pe-5">Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</span>
 
                   <button type="button" class="btn bg-light text-black mb-3 text-btn-padding rounded-pill py-2 px-4 w-100 w-lg-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
-                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/doc.webp') }}" width="30">
                     S&K vivo Imagine - Publik
                   </button>
 
                   <button type="button" class="btn bg-light text-black border-blue-gradient text-btn-padding rounded-pill py-2 px-4 w-100 w-lg-75 text-start d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal1">
-                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/document.webp') }}" width="30">
+                    <img alt="image" class="img-fluid me-2" src="{{ asset('frontend/images/webp/doc.webp') }}" width="30">
                     S&K vivo Imagine - Internal
                   </button>
                 </div>
