@@ -72,11 +72,11 @@
         <div  class="text-white vivo_regular mt-3 fs-term-condition-modal" >Frequently Asked Questions</div>
         <br/>
         <div class="p-2 border rounded-1 mb-2">
-            <b class="quest">Apakah <i>vivo Imagine</i> – <i>Mobile Photography Competition?</i></b>
+            <b class="quest">Apakah <i>vivo Imagine</i> - <span class="new-line pe-2"><i>Mobile Photography Competition?</i></b>
             <p class="answ">vivo Imagine adalah kompetisi foto untuk semua pengguna vivo tipe apa saja, dimana semua pengguna dapat berkarya dan merasakan keunggulan kamera, serta kualitas foto terbaik dari vivo. Periode kompetisi berlangsung dari tanggal 5 Agustus hingga 15 Oktober 2025.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
-            <b class="quest">Apa yang dimaksud <i>Joy in Nusantara</i> itu?</b>
+            <b class="quest">Apa yang dimaksud <span class="new-line pe-2"><i>Joy in Nusantara</i> itu?</b>
             <p>vivo merayakan keberagaman budaya Indonesia dengan mengabadikan keindahan, serta menangkap momen kebersamaan yang menyatukan masyarakat dari berbagai daerah.</p>
         </div>
         <div class="p-2 border rounded-1 mb-2">
@@ -195,7 +195,7 @@
             </div>
         <p>e. Peserta dapat mengikuti lebih dari 1 kategori.</p>
         <p>f. Karya foto dapat berupa format vertikal/horizontal dengan kualitas foto resolusi tinggi (HD atau minimal 1280x720 pixels).</p>
-        <p>g. Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i>dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, <i>white balance</i>, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
+        <p>g. Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i> dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, <i>white balance</i>, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
 
     <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo untuk menentukan 5 (lima) orang pemenang.</li>
     <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 30 Oktober 2025.</li>
