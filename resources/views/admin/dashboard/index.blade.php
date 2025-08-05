@@ -143,7 +143,7 @@
                     <i class="mdi mdi-buffer float-end"></i>
                 </div>
                 <div class="text-white">
-                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Nature Photography</h6>
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Images Nature & Architecture Photography</h6>
                     <h2 class="mb-4 text-white">{{ $images_category6_total }}</h2>
                 </div>
             </div>
