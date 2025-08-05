@@ -120,7 +120,7 @@
         </div>
         <div class="p-2 border rounded-1 mb-2">
             <b class="quest">Jika ada pertanyaan lain, apakah saya bisa menghubungi pihak penyelenggara?</b>
-            <p>Info lebih lanjut dapat mengakses website vivoimagine.id atau Anda juga dapat mengirimkan Direct Message ke Instagram @vivo_Indonesia. </p>
+            <p>Info lebih lanjut dapat mengakses website vivoimagine.id atau Anda juga dapat mengirimkan <i>Direct Message</i> ke Instagram @vivo_Indonesia. </p>
         </div>
 
     </div>
