@@ -95,7 +95,7 @@
                 <li>Baca Syarat dan Ketentuan.</li>
                 <li>Di bagian Register, mohon isi sesuai kolom:</li>
                   <p>3.a. Lengkapi data diri sesuai dengan data pribadi Anda, harap untuk mengisi setiap kolom yang ada di halaman.</p>
-                  <p>3.b. Peserta tidak perlu mengisi kolom <i>referral code</i> dan vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
+                  <p>3.b. Peserta tidak perlu mengisi kolom vivo <i>ID Number</i> (hanya untuk diisi internal vivo Indonesia).</p>
                 <li>Di bagian Unggah Foto, mohon isi sesuai kolom:</li>
                     <p>4.a. Memilih kategori yang diinginkan.</p>
                     <p>4.b. Masukkan judul foto maksimal 50 karakter dan deskripsi foto maksimal 250 karakter untuk setiap foto.</p>
@@ -160,7 +160,7 @@
 <ol class="mb-4">
     <li>Kompetisi ini terbuka untuk seluruh promotor vivo serta karyawan vivo, baik yang bekerja di vivo <i>Official Store</i> maupun distributor di seluruh Indonesia.</li>
     <li>Peserta adalah Warga Negara Indonesia (WNI), usia minimal 17 tahun dan telah memiliki KTP.</li>
-    <li>Peserta memiliki nomor <i>ID</i> vivo dan <i>referral code</i> untuk mengikuti kompetisi ini.</li>
+    <li>Peserta memiliki nomor <i>ID</i> vivo untuk mengikuti kompetisi ini.</li>
     <li>Pendaftaran tidak dipungut biaya/gratis.</li>
     <li>Karya yang dikirimkan tidak mengandung unsur pornografi, SARA, sadisme, ujaran kebencian, pencemaran nama baik, hal-hal yang bersifat merendahkan atau melecehkan pihak lain ataupun hal-hal yang melanggar hukum dan peraturan yang berlaku.</li>
     <li>Peserta menjamin bahwa karya yang dikirimkan wajib asli buatan sendiri dan belum pernah dipublikasikan/dipamerkan, serta tidak pernah dilombakan. </li>
