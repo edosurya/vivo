@@ -216,7 +216,7 @@ $judges = [
             <!-- Kanan -->
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-around mx-auto  gap-xs ">
-                <p class="text-white vivo_bold fs-period-date mb-2">30 Oktober 2025</p>
+                <p class="text-white vivo_bold fs-period-date mb-2">6 November 2025</p>
                 <p class="vivo_bold fs-period-desc">Pengumuman pemenang</p>
               </div>
             </div>
