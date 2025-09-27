@@ -16,7 +16,7 @@ $categories = [
 $judges = [
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
   ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'juri-didi.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager for Image Effects', 'image' => 'juri-keshav.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Image Effects', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
@@ -25,6 +25,41 @@ $judges = [
 @endsection
 
 @section('content')
+
+
+      <!-- ============================================-->
+      <!-- <section> Annoucement ============================-->
+
+    <section class="py-5 py-md-7 text-white section-annoucement">
+
+        <div class="section-bg-image-annoucement" style="background-image: url({{ asset('frontend/images/webp/bg-announcement.webp') }});
+          "></div>
+
+        <div class="row justify-content-center mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+            <div class="mb-3 col-md-12 mb-0 pb-0 text-center">
+              <div class="vivo_bold fs-3 fs-md-4 mb-2">PEMENANG KOMPETISI</div>
+              <div class="d-flex justify-content-center">
+                <a class="btn btn-register text-light vivo_medium" href="#">vivo IMAGINE MOBILE PHOTOGRAPHY AWARDS</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-lg mb-4">
+          <div class="row d-flex justify-content-center">
+            <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+              <span class="d-block vivo_bold fs-3 fs-md-4">Kunjungi vivo Imagine Photo Gallery</span>
+              <span class="d-block text-desc-section">
+                Sarinah Jakarta | 6<span class="line"></span>12 November 2025
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
 
 
       <!-- ============================================-->
@@ -48,19 +83,20 @@ $judges = [
             <img src="{{ asset('frontend/images/webp/section-about-us.webp') }}" class="img-fluid my-4 rounded-3 img-responsive-custom" alt="Joy in Nusantara Image" loading="lazy" />
           </div>
 
-          <div class="row d-flex justify-content-center">
+<!--           <div class="row d-flex justify-content-center">
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <span class="d-block text-desc-section">Kirimkan hasil karya Anda</span>
               <span class="d-block vivo_bold text-date-regist">
                 5 Agustus<span class="line"></span>15 Oktober 2025
               </span>
             </div>
-          </div>
+          </div> -->
 
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                 <div class="d-grid gap-2">
-                  <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a>
+                  <!-- <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a> -->
+                  <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI DITUTUP</a>
                 </div>
               </div>
           </div>
@@ -111,7 +147,7 @@ $judges = [
       </section>
 
 
-<!--       <section class="py-5 py-md-5 text-white section-judge">
+      <section class="py-5 py-md-5 text-white section-judge">
 
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
@@ -130,7 +166,7 @@ $judges = [
                 </div>
                 <div class="panel-text-gradient w-100 min-h-150">
                   <span class="d-block fs-judge-title text-light vivo_bold py-2">{{ $judge['name'] }}</span>
-                  <span class="d-block fs-judge-desc  text-light vivo_light">{{ $judge['job'] }}</span>
+                  <span class="d-block fs-judge-desc  text-light vivo_light">{!! $judge['job'] !!}</span>
                 </div>
               </div>
             </div>
@@ -140,7 +176,7 @@ $judges = [
 
         </div>
 
-      </section> -->
+      </section> 
 
 
       <!-- <section class="py-5 py-md-5 text-white section-prize"> -->
@@ -272,7 +308,8 @@ $judges = [
               <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                   <div class="d-grid gap-2">
-                    <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a>
+                    <!-- <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a> -->
+                    <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI DITUTUP</a>
                   </div>
                 </div>
               </div>
