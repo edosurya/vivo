@@ -1504,5 +1504,17 @@ button:hover, button:focus {
     font-size: 1rem;
 }
 
+.img-wrapper-sp {
+  height: 550px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.img-wrapper-sp img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 

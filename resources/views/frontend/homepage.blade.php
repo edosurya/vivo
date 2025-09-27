@@ -39,10 +39,11 @@ $judges = [
             <div class="mb-3 col-md-12 mb-0 pb-0 text-center">
               <div class="vivo_bold fs-3 fs-md-4 mb-2">PEMENANG KOMPETISI</div>
               <div class="d-flex justify-content-center">
-                <a class="btn btn-register text-light vivo_medium" href="#">vivo IMAGINE MOBILE PHOTOGRAPHY AWARDS</a>
+                <a class="btn btn-register text-light vivo_medium" href="{{ route('gallery', ['category' => 'winner']) }}">vivo IMAGINE MOBILE PHOTOGRAPHY AWARDS</a>
               </div>
             </div>
         </div>
+
 
         <div class="container-lg mb-4">
           <div class="row d-flex justify-content-center">

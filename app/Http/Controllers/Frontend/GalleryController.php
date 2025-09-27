@@ -16,7 +16,15 @@ class GalleryController extends Controller
         $display = '';
         $custom_css = 'justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 min-vh-100';
 
+
         if ($category) {
+
+            if($category == 'winner') {
+                $display = 'none';
+                $title = '';
+                $images = [];
+            } else {
+
             $categoryId = array_search($category, Gallery::TYPE);
 
             if ($categoryId === false) {
@@ -39,7 +47,7 @@ class GalleryController extends Controller
 
             $custom_css = 'mt-6';
 
-        } else {
+        }} else {
             $display = '';
             $title = '';
             $images = [];
