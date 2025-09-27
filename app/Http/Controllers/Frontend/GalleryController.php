@@ -23,6 +23,7 @@ class GalleryController extends Controller
                 $display = 'none';
                 $title = '';
                 $images = [];
+                $custom_css = 'mt-6';
             } else {
 
             $categoryId = array_search($category, Gallery::TYPE);

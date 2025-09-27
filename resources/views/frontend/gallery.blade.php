@@ -20,14 +20,14 @@ $categories = [
 ];
 
 $winners = [
-  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp'],
-  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp'],
-  ['slug' => 'street-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street2.webp'],
+  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp', 'title' => 'aaa', 'desc' =>'dasdasda', 'desc2' => 'dasdasd'],
+  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
+  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
+  ['slug' => 'street-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street2.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
 ];
 
 $special_winner = [
-  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'bg-cat-portrait.webp']
+  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'bg-cat-portrait.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd']
 ];
 @endphp
 
@@ -36,7 +36,7 @@ $special_winner = [
 
       <section class="py-5 py-md-5 text-white section-pm" id="winner">
 
-        <div class="d-flex d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 mb-8">
+        <div class="d-flex d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 mb-8 mt-6">
           <div class="container-lg">
             <div class="row" data-aos="fade-down" data-aos-duration="1500">
               <div class="col-12 text-center">
@@ -47,7 +47,7 @@ $special_winner = [
             <div class="row flex-center mt-4 p-col-mobile">
               @foreach($winners as $w)
                 <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
-                  <a href="{{ route('gallery', ['category' => $w['slug']]) }}#gallery">
+                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $w['image']) }}','{{ $w['title'] }}', '{{ $w['desc']}}', '{{ $w['desc2'] }}')">
                     <div class="position-relative img-wrapper ">
                       <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $w['image']) }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
@@ -57,7 +57,6 @@ $special_winner = [
                   </a>
                 </div>
               @endforeach
-
 
             </div>
 
@@ -75,7 +74,7 @@ $special_winner = [
             <div class="row flex-center mt-4 p-col-mobile">
               @foreach($special_winner as $sp)
                 <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
-                  <a href="{{ route('gallery', ['category' => $sp['slug']]) }}#gallery">
+                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $sp['image']) }}','{{ $sp['title'] }}', '{{ $sp['desc']}}', '{{ $sp['desc2'] }}')">
                     <div class="position-relative img-wrapper-sp ">
                       <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $sp['image']) }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
