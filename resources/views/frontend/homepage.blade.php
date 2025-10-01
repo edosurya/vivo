@@ -52,7 +52,7 @@ $judges = [
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <span class="d-block text-desc-section">Kirimkan hasil karya Anda</span>
               <span class="d-block vivo_bold text-date-regist">
-                5 Agustus<span class="line"></span>15 Oktober 2025
+                5 Agustus<span class="line"></span>30 Oktober 2025
               </span>
             </div>
           </div>
