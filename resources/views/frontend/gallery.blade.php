@@ -27,7 +27,7 @@ $winners = [
 ];
 
 $special_winner = [
-  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'bg-cat-portrait.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd']
+  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'storage/uploads/galleries/RscWMorHkNiidGvRwUhEut2fyWzEDG7Yqj7Ox00t.jpg', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd']
 ];
 @endphp
 
@@ -48,9 +48,9 @@ $special_winner = [
             <div class="row flex-center mt-4 p-col-mobile">
               @foreach($special_winner as $sp)
                 <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
-                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $sp['image']) }}','{{ $sp['title'] }}', '{{ $sp['desc']}}', '{{ $sp['desc2'] }}')">
+                  <a role='button' onClick="winnerPreview('{{ asset($sp['image']) }}','{{ $sp['title'] }}', '{{ $sp['desc']}}', '{{ $sp['desc2'] }}')">
                     <div class="position-relative img-wrapper-sp ">
-                      <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $sp['image']) }}" alt="" loading="lazy"/>
+                      <img class="img-fluid inner-img" src="{{ asset($sp['image']) }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
                         <p class="mb-n1 text-light vivo_light fs-category-name">{!! $sp['label'] !!}</p>
                       </div>
@@ -90,7 +90,7 @@ $special_winner = [
             </div>
 
           </div>
-          
+
         </div>
     
     </section>
