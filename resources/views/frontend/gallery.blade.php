@@ -37,33 +37,7 @@ $special_winner = [
       <section class="py-5 py-md-5 text-white section-pm" id="winner">
 
         <div class="d-flex d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 mb-8 mt-6">
-          <div class="container-lg">
-            <div class="row" data-aos="fade-down" data-aos-duration="1500">
-              <div class="col-12 text-center">
-                <span class="text-white vivo_bold mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Pemenang vivo Imagine <br> Mobile Photography Awards</span>
-              </div>
-            </div>
 
-            <div class="row flex-center mt-4 p-col-mobile">
-              @foreach($winners as $w)
-                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
-                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $w['image']) }}','{{ $w['title'] }}', '{{ $w['desc']}}', '{{ $w['desc2'] }}')">
-                    <div class="position-relative img-wrapper ">
-                      <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $w['image']) }}" alt="" loading="lazy"/>
-                      <div class="position-absolute bottom-0 panel-text img-tag w-100">
-                        <p class="mb-n1 text-light vivo_light fs-category-name">{!! $w['label'] !!}</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              @endforeach
-
-            </div>
-
-          </div>
-        </div>
-
-        <div class="d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start">
           <div class="container-lg">
             <div class="row" data-aos="fade-down" data-aos-duration="1500">
               <div class="col-12 text-center">
@@ -87,6 +61,36 @@ $special_winner = [
             </div>
 
           </div>
+
+        </div>
+
+        <div class="d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start">
+
+          <div class="container-lg">
+            <div class="row" data-aos="fade-down" data-aos-duration="1500">
+              <div class="col-12 text-center">
+                <span class="text-white vivo_bold mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Pemenang <span class="new-line pe-1"></span>vivo Imagine <br> Mobile Photography Awards</span>
+              </div>
+            </div>
+
+            <div class="row flex-center mt-4 p-col-mobile">
+              @foreach($winners as $w)
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $w['image']) }}','{{ $w['title'] }}', '{{ $w['desc']}}', '{{ $w['desc2'] }}')">
+                    <div class="position-relative img-wrapper ">
+                      <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $w['image']) }}" alt="" loading="lazy"/>
+                      <div class="position-absolute bottom-0 panel-text img-tag w-100">
+                        <p class="mb-n1 text-light vivo_light fs-category-name">{!! $w['label'] !!}</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              @endforeach
+
+            </div>
+
+          </div>
+          
         </div>
     
     </section>

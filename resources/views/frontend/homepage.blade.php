@@ -50,7 +50,7 @@ $judges = [
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <span class="d-block vivo_bold fs-3 fs-md-4">Kunjungi vivo Imagine Photo Gallery</span>
               <span class="d-block text-desc-section">
-                Sarinah Jakarta | 6<span class="line"></span>12 November 2025
+                Sarinah Jakarta | 28 November<span class="line"></span>4 Desember 2025
               </span>
             </div>
           </div>
