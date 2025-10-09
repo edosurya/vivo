@@ -14,9 +14,9 @@ $categories = [
 
 
 $judges = [
+  ['name' => 'Didi Kaspi', 'job' => 'Editor in Chief of <br>National Geographic Indonesia', 'image' => 'juri-didi.webp'],
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
-  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & Editor in Chief of @natgeoindonesia', 'image' => 'juri-didi.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager for Image Effects', 'image' => 'juri-keshav.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Image Effects', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
@@ -111,7 +111,7 @@ $judges = [
       </section>
 
 
-<!--       <section class="py-5 py-md-5 text-white section-judge">
+      <section class="py-5 py-md-5 text-white section-judge">
 
         <div class="container-lg mb-4">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
@@ -130,7 +130,7 @@ $judges = [
                 </div>
                 <div class="panel-text-gradient w-100 min-h-150">
                   <span class="d-block fs-judge-title text-light vivo_bold py-2">{{ $judge['name'] }}</span>
-                  <span class="d-block fs-judge-desc  text-light vivo_light">{{ $judge['job'] }}</span>
+                  <span class="d-block fs-judge-desc  text-light vivo_light">{!! $judge['job'] !!}</span>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ $judges = [
 
         </div>
 
-      </section> -->
+      </section>
 
 
       <!-- <section class="py-5 py-md-5 text-white section-prize"> -->
