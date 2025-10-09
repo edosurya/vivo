@@ -143,8 +143,8 @@ $judges = [
       </section>
 
 
-      <!-- <section class="py-5 py-md-5 text-white section-prize"> -->
-      <section class="py-5 py-md-5 text-white section-judge">
+      <section class="py-5 py-md-5 text-white section-prize">
+      <!-- <section class="py-5 py-md-5 text-white section-judge"> -->
 
         <div class="container-fluid">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
