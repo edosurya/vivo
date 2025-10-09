@@ -14,7 +14,7 @@ $categories = [
 
 
 $judges = [
-  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & <br>Editor in Chief of @natgeoindonesia', 'image' => 'juri-didi.webp'],
+  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & <br>Editor in Chief of National Geographic Indonesia', 'image' => 'juri-didi.webp'],
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
   ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Image Effects', 'image' => 'juri-keshav.webp'],
 ];
