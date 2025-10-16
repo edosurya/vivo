@@ -16,7 +16,7 @@ $categories = [
 $judges = [
   ['name' => 'Didi Kaspi', 'job' => 'Editor in Chief of <br>National Geographic Indonesia', 'image' => 'juri-didi.webp'],
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Image Effects', 'image' => 'juri-keshav.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Imaging Effects at <br>vivo Global', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
