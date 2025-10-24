@@ -46,7 +46,8 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
 Route::get('/', function() { return view('frontend.homepage');})->name('home');
 
 Route::controller(RegisterController::class)->group(function () {
-    Route::get('/kompetisi-fotografi', 'index')->name('register.index');
+    // Route::get('/kompetisi-fotografi', 'index')->name('register.index');
+    Route::get('/kompetisi-fotografi', 'close')->name('register.index');
     Route::post('/upload', 'upload')->name('register.upload');
 });
 

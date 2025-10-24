@@ -14,9 +14,9 @@ $categories = [
 
 
 $judges = [
-  ['name' => 'Didi Kaspi', 'job' => 'Social Eco Journalist & <br>Editor in Chief of National Geographic Indonesia', 'image' => 'juri-didi.webp'],
+  ['name' => 'Didi Kaspi', 'job' => 'Editor in Chief of <br>National Geographic Indonesia', 'image' => 'juri-didi.webp'],
   ['name' => 'Benny Lim', 'job' => 'Professional Photographer', 'image' => 'juri-benny.webp'],
-  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Image Effects', 'image' => 'juri-keshav.webp'],
+  ['name' => 'Keshav Chugh', 'job' => 'Senior Product Manager <br>for Imaging Effects at <br>vivo Global', 'image' => 'juri-keshav.webp'],
 ];
 @endphp
 
@@ -88,7 +88,7 @@ $judges = [
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
               <span class="d-block text-desc-section">Kirimkan hasil karya Anda</span>
               <span class="d-block vivo_bold text-date-regist">
-                5 Agustus<span class="line"></span>15 Oktober 2025
+                5 Agustus<span class="line"></span>30 Oktober 2025
               </span>
             </div>
           </div> -->
@@ -177,11 +177,11 @@ $judges = [
 
         </div>
 
-      </section> 
+      </section>
 
 
-      <!-- <section class="py-5 py-md-5 text-white section-prize"> -->
-      <section class="py-5 py-md-5 text-white section-judge">
+      <section class="py-5 py-md-5 text-white section-prize">
+      <!-- <section class="py-5 py-md-5 text-white section-judge"> -->
 
         <div class="container-fluid">
           <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
@@ -286,7 +286,8 @@ $judges = [
                     <div class="card-body d-flex flex-column justify-content-start align-items-center">
                       <img src="{{ asset('frontend/images/webp/step-2.webp') }}" alt="Step 2" class="step-icon mb-3" />
                       <span class="step-desc text-white text-center">
-                        Registrasi & unggah karyamu <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}#register"> di sini</a>
+                        Registrasi & unggah karyamu 
+                        <!-- <span class="new-line pe-1"></span> <a href="{{ route('register.index') }}#register"> di sini</a> -->
                       </span>
                     </div>
                   </div>
@@ -306,14 +307,14 @@ $judges = [
 
               </div>
 
-              <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+<!--               <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                   <div class="d-grid gap-2">
                     <!-- <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a> -->
                     <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI DITUTUP</a>
                   </div>
                 </div>
-              </div>
+              </div> -->
         </div>
 
 

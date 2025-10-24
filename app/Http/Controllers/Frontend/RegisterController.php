@@ -201,4 +201,8 @@ class RegisterController extends Controller
                 break;
         }
     }
+
+    public function close() {
+        return view('frontend.close');
+    }
 }
