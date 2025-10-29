@@ -61,7 +61,7 @@ $judges = [
               <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                 <div class="d-grid gap-2">
                   <!-- <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a> -->
-                  <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI DITUTUP</a>
+                  <a class="btn btn-register text-light vivo_medium disabled"  href="#">REGISTRASI DITUTUP</a>
                 </div>
               </div>
           </div>
