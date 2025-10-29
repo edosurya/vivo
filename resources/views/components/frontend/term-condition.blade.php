@@ -56,7 +56,7 @@
                 <p>f. Karya foto dapat berupa format vertikal/horizontal dengan kualitas foto resolusi tinggi (HD atau minimal 1280x720 pixels).</p>
                 <p>g. Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i> dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, white balance, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
         <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo untuk menentukan 5 (lima) orang pemenang.</li>
-        <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 27 November 2025.</li>
+        <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 20 November 2025.</li>
         <li>Hadiah bagi pemenang yakni sebagai berikut:</li>
         <p>a. 1 (satu) pemenang utama akan mendapatkan hadiah sebesar Rp50.000.000,- dengan pajak yang akan sepenuhnya ditanggung oleh pemenang.</p>
         <p>b. 4 (empat) pemenang setiap kategori masing-masing akan mendapatkan 1 (satu) buah smartphone terbaru merek vivo.</p>
@@ -198,7 +198,7 @@
         <p>g. Karya yang diunggah adalah foto standar tanpa menggunakan filter dan aplikasi pengedit tertentu seperti <i>Photoshop</i> dan <i>Lightroom</i>. Edit ringan seperti menyesuaikan kecerahan, kontras, <i>white balance</i>, dan saturasi diperbolehkan namun tidak mengubah konten foto asli.</p>
 
     <li>Hasil karya foto yang diterima akan dinilai oleh juri profesional dan tim internal vivo untuk menentukan 5 (lima) orang pemenang.</li>
-    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 27 November 2025.</li>
+    <li>Pengumuman pemenang akan diumumkan melalui vivoimagine.id dan akun resmi media sosial vivo Indonesia pada tanggal 20 November 2025.</li>
     <li>Hadiah bagi pemenang yakni sebagai berikut:</li>
     <p>a. 1 (satu) Pemenang utama akan mendapatkan hadiah sebesar Rp50.000.000,- dengan pajak yang akan sepenuhnya ditanggung oleh pemenang.</p>
     <p>b. 4 (empat) pemenang lainnya masing-masing akan mendapatkan 1 (satu) buah smartphone merek vivo.</p>
