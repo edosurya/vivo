@@ -48,10 +48,9 @@ $judges = [
         <div class="container-lg mb-4">
           <div class="row d-flex justify-content-center">
             <div class="mb-3 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-              <span class="d-block vivo_bold fs-3 fs-md-4">Kunjungi vivo Imagine Photo Gallery</span>
-              <span class="d-block text-desc-section">
-                Sarinah Jakarta | 28 November<span class="line"></span>4 Desember 2025
-              </span>
+              <span class="d-block vivo_bold fs-3 fs-md-4 mb-md-3">Kunjungi vivo Imagine Photo Gallery</span>
+              <span class="d-block vivo_bold text-desc-section mb-md-3">22<span class="line"></span>30 November 2025</span>
+              <span class="d-block vivo_bold text-desc-section">Sarinah Jakarta, Area Kolam Pantul dan Pusaka</span>
             </div>
           </div>
 
