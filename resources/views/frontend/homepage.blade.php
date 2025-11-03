@@ -97,7 +97,7 @@ $judges = [
               <div class="mb-3 col-md-12 mb-0 pb-0 d-flex justify-content-center">
                 <div class="d-grid gap-2">
                   <!-- <a class="btn btn-register text-light vivo_medium" href="{{ route('register.index') }}#register">REGISTRASI SEKARANG</a> -->
-                  <a class="btn btn-register text-light vivo_medium" href="#">REGISTRASI DITUTUP</a>
+                  <a class="btn btn-register text-light vivo_medium disabled"  href="#">REGISTRASI DITUTUP</a>
                 </div>
               </div>
           </div>
@@ -250,7 +250,7 @@ $judges = [
             <!-- Kanan -->
             <div class="card text-center card-period">
               <div class="card-body d-flex flex-column justify-content-start mx-auto h-100">
-                <span class="d-block text-white vivo_bold fs-period-date period">27 November 2025</span>
+                <span class="d-block text-white vivo_bold fs-period-date period">20 November 2025</span>
                 <span class="d-block vivo_regular fw-semibold fs-period-desc">Pengumuman pemenang</span>
               </div>
             </div>
