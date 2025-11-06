@@ -7,7 +7,7 @@
           <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
               <div class="carousel-inner justify-content-center mx-auto">
                   <div class="carousel-item active">
-                      <img class="d-block"  src="{{ asset('frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp') }}" loading="lazy" id="imgPath">
+                      <img class="d-block"  style="max-height: 630px" src="{{ asset('frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp') }}" loading="lazy" id="imgPath">
                       <div class="text pt-3 w-100 text-center">
                           <p class="text-white vivo_bold mb-1 fs-img-title" id="imgTitle">Dua Dimensi</p>
                           <p class="text-white vivo_regular fs-img-dec" id="imgOwn">Jiehan Herry Saputro</p>

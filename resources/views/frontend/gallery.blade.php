@@ -27,7 +27,7 @@ $winners = [
 ];
 
 $special_winner = [
-  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'https://vivoimagine.id/storage/uploads/galleries/psZk2QvdcOxLBhWfE642MB0SxNC0E8jiZZceKo9M.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd']
+  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'https://vivoimagine.id/storage/uploads/galleries/psZk2QvdcOxLBhWfE642MB0SxNC0E8jiZZceKo9M.webp', 'title' => 'Judul Foto', 'desc' => 'Pemilik Foto', 'desc2' => 'Lokasi']
 ];
 @endphp
 
