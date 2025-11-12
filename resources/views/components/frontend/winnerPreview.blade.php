@@ -9,11 +9,11 @@
                   <div class="carousel-item active">
                       <img class="d-block"  style="max-height: 630px" src="{{ asset('frontend/images/winner/portrait-photography-Jiehan_Herry_Saputro-dua dimensi.webp') }}" loading="lazy" id="imgPath">
                       <div class="text pt-3 w-100 text-center">
-                          <p class="text-white vivo_bold mb-1 fs-img-title" id="imgTitle">Dua Dimensi</p>
-                          <p class="text-white vivo_regular fs-img-dec" id="imgOwn">Jiehan Herry Saputro</p>
+                          <p class="text-white vivo_bold mb-1 fs-img-title" id="imgTitle"></p>
+                          <p class="text-white vivo_regular fs-img-dec" id="imgOwn"></p>
                           <div class="row align-items-center justify-content-center">
                             <div class="col-10 col-md-8">
-                            <p class="text-white vivo_regular fs-img-dec" id="imgDesc">Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda.</p>
+                            <!-- <p class="text-white vivo_regular fs-img-dec" id="imgDesc">Potrait hitam putih anakku dengan sebuah foto saudaranya memberikan kesan dua dimensi dengan ekspresi yang berbeda.</p> -->
                             </div>
                           </div>
                       </div>

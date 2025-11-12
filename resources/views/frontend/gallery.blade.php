@@ -20,14 +20,54 @@ $categories = [
 ];
 
 $winners = [
-  ['slug' => 'portrait-photography', 'label' => 'Portrait <br>Photography', 'image' => 'bg-cat-portrait.webp', 'title' => 'aaa', 'desc' =>'dasdasda', 'desc2' => 'dasdasd'],
-  ['slug' => 'nature-architecture-photography', 'label' => 'Nature & Architecture <br>Photography', 'image' => 'bg-cat-nature.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
-  ['slug' => 'night-photography', 'label' => 'Night <br>Photography', 'image' => 'bg-cat-night.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
-  ['slug' => 'street-photography', 'label' => 'Street <br>Photography', 'image' => 'bg-cat-street2.webp', 'title' => 'aaa', 'desc' => 'dasdasda', 'desc2' => 'dasdasd'],
+  [
+    'slug'  => 'portrait-photography', 
+    'label' => 'Portrait <br>Photography', 
+    'thumb' => 'frontend/images/winner2025/thumb-portrait-photography.webp', 
+    'image' => 'frontend/images/winner2025/portrait-photography.webp', 
+    'title' => 'Pengrajin Payung', 
+    'desc'  => 'Maya Nurikawati', 
+    'desc2' => 'dasdasd'
+  ],
+  [
+    'slug'  => 'nature-architecture-photography', 
+    'label' => 'Nature & Architecture <br>Photography', 
+    'thumb' => 'frontend/images/winner2025/thumb-nature-architecture.webp', 
+    'image' => 'frontend/images/winner2025/nature-architecture-photography.webp', 
+    'title' => 'Membingkai Tugu Layar Putih', 
+    'desc'  => 'Shandi Hadi Saputra', 
+    'desc2' => 'dasdasd'
+  ],
+  [
+    'slug'  => 'night-photography', 
+    'label' => 'Night <br>Photography', 
+    'thumb' => 'frontend/images/winner2025/thumb-night-photography.webp', 
+    'image' => 'frontend/images/winner2025/night-photography.webp', 
+    'title' => 'Perang Obor Jepara', 
+    'desc'  => 'Vendi Rizki Kesworo', 
+    'desc2' => 'dasdasd'
+  ],
+  [
+    'slug'  => 'street-photography', 
+    'label' => 'Street <br>Photography', 
+    'thumb' => 'frontend/images/winner2025/thumb-street-photography.webp', 
+    'image' => 'frontend/images/winner2025/street-photography.webp', 
+    'title' => 'Balap Karung', 
+    'desc'  => 'Jefri Deniawan', 
+    'desc2' => 'dasdasd'
+  ],
 ];
 
 $special_winner = [
-  ['slug' => 'portrait-photography', 'label' => 'Judul Foto - Pemilik Foto', 'image' => 'https://vivoimagine.id/storage/uploads/galleries/psZk2QvdcOxLBhWfE642MB0SxNC0E8jiZZceKo9M.webp', 'title' => 'Judul Foto', 'desc' => 'Pemilik Foto', 'desc2' => 'Lokasi']
+  [
+    'slug'  => 'portrait-photography', 
+    'label' => 'Erwin Kurniawan - Senyum di Balik Bundel Hio', 
+    'thumb' => 'frontend/images/winner2025/thumb-jury-award.webp',
+    'image' => 'frontend/images/winner2025/jury-award.webp', 
+    'title' => 'Senyum di Balik Bundel Hio', 
+    'desc'  => 'Erwin Kurniawan', 
+    'desc2' => ''
+  ]
 ];
 @endphp
 
@@ -41,7 +81,7 @@ $special_winner = [
           <div class="container-lg">
             <div class="row" data-aos="fade-down" data-aos-duration="1500">
               <div class="col-12 text-center">
-                <span class="text-white vivo_bold mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Pemenang Special<br> Jury Award</span>
+                <span class="text-white vivo_bold mb-3 text-title-section" data-aos="fade-down" data-aos-duration="1500">Pemenang Special<br> Jury Award</span>
               </div>
             </div>
 
@@ -51,9 +91,9 @@ $special_winner = [
                   <a role='button' onClick="winnerPreview('{{ asset($sp['image']) }}','{{ $sp['title'] }}', '{{ $sp['desc']}}', '{{ $sp['desc2'] }}')">
                     <div class="position-relative img-wrapper-sp ">
                       <!-- <img class="img-fluid inner-img" src="{{ asset($sp['image']) }}" alt="" loading="lazy"/> -->
-                      <img class="img-fluid inner-img" src="{{ $sp['image'] }}" alt="" loading="lazy"/>
+                      <img class="img-fluid inner-img" src="{{ asset($sp['thumb']) ?? asset($sp['image'])  }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
-                        <p class="mb-n1 text-light vivo_light fs-category-name">{!! $sp['label'] !!}</p>
+                        <p class="mb-n1 text-light vivo_light fs-category-name text-center">{!! $sp['label'] !!}</p>
                       </div>
                     </div>
                   </a>
@@ -70,16 +110,16 @@ $special_winner = [
           <div class="container-lg">
             <div class="row" data-aos="fade-down" data-aos-duration="1500">
               <div class="col-12 text-center">
-                <span class="text-white vivo_bold mb-3 text-title-section text-uppercase" data-aos="fade-down" data-aos-duration="1500">Pemenang <span class="new-line pe-1"></span>vivo Imagine <br> Mobile Photography Awards</span>
+                <span class="text-white vivo_bold mb-3 text-title-section" data-aos="fade-down" data-aos-duration="1500">Pemenang <span class="new-line pe-1"></span>vivo Imagine <br> Mobile Photography Awards</span>
               </div>
             </div>
 
             <div class="row flex-center mt-4 p-col-mobile">
               @foreach($winners as $w)
                 <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-duration="1500">
-                  <a role='button' onClick="winnerPreview('{{ asset('frontend/images/webp/' . $w['image']) }}','{{ $w['title'] }}', '{{ $w['desc']}}', '{{ $w['desc2'] }}')">
+                  <a role='button' onClick="winnerPreview('{{ asset($w['image']) }}','{{ $w['title'] }}', '{{ $w['desc']}}', '{{ $w['desc2'] }}')">
                     <div class="position-relative img-wrapper ">
-                      <img class="img-fluid inner-img" src="{{ asset('frontend/images/webp/' . $w['image']) }}" alt="" loading="lazy"/>
+                      <img class="img-fluid inner-img" src="{{ asset($w['thumb'])  ?? asset($w['image'])  }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
                         <p class="mb-n1 text-light vivo_light fs-category-name">{!! $w['label'] !!}</p>
                       </div>
@@ -256,7 +296,7 @@ $special_winner = [
     winnerImgPath.src = path;
     winnerImgTitle.innerHTML = title;
     winnerImgOwner.innerHTML = owner;
-    winnerImgDesc.innerHTML = desc;
+    // winnerImgDesc.innerHTML = desc;
 
   }
 
