@@ -22,7 +22,7 @@ $categories = [
 $winners = [
   [
     'slug'  => 'portrait-photography', 
-    'label' => 'Portrait <br>Photography', 
+    'label' => '<span class="vivo_bold">Pengrajin Payung</span> <br>Maya Nurikawati', 
     'thumb' => 'frontend/images/winner2025/thumb-portrait-photography.webp', 
     'image' => 'frontend/images/winner2025/portrait-photography.webp', 
     'title' => 'Pengrajin Payung', 
@@ -31,7 +31,7 @@ $winners = [
   ],
   [
     'slug'  => 'nature-architecture-photography', 
-    'label' => 'Nature & Architecture <br>Photography', 
+    'label' => '<span class="vivo_bold">Membingkai Tugu Layar Putih </span><br>Shandi Hadi Saputra', 
     'thumb' => 'frontend/images/winner2025/thumb-nature-architecture.webp', 
     'image' => 'frontend/images/winner2025/nature-architecture-photography.webp', 
     'title' => 'Membingkai Tugu Layar Putih', 
@@ -40,7 +40,7 @@ $winners = [
   ],
   [
     'slug'  => 'night-photography', 
-    'label' => 'Night <br>Photography', 
+    'label' => '<span class="vivo_bold">Perang Obor Jepara</span> <br>Vendi Rizki Kesworo', 
     'thumb' => 'frontend/images/winner2025/thumb-night-photography.webp', 
     'image' => 'frontend/images/winner2025/night-photography.webp', 
     'title' => 'Perang Obor Jepara', 
@@ -49,7 +49,7 @@ $winners = [
   ],
   [
     'slug'  => 'street-photography', 
-    'label' => 'Street <br>Photography', 
+    'label' => '<span class="vivo_bold">Balap Karung</span> <br>Jefri Deniawan', 
     'thumb' => 'frontend/images/winner2025/thumb-street-photography.webp', 
     'image' => 'frontend/images/winner2025/street-photography.webp', 
     'title' => 'Balap Karung', 
@@ -61,7 +61,7 @@ $winners = [
 $special_winner = [
   [
     'slug'  => 'portrait-photography', 
-    'label' => 'Erwin Kurniawan - Senyum di Balik <span class="new-line"></span>Bundel Hio', 
+    'label' => '<span class="vivo_bold">Senyum di Balik <span class="new-line"></span>Bundel Hio</span> <span class="d-none d-md-inline">-</span> <span class="new-line"></span>Erwin Kurniawan', 
     'thumb' => 'frontend/images/winner2025/thumb-jury-award.webp',
     'image' => 'frontend/images/winner2025/jury-award.webp', 
     'title' => 'Senyum di Balik Bundel Hio', 
@@ -93,7 +93,7 @@ $special_winner = [
                       <!-- <img class="img-fluid inner-img" src="{{ asset($sp['image']) }}" alt="" loading="lazy"/> -->
                       <img class="img-fluid inner-img" src="{{ asset($sp['thumb']) ?? asset($sp['image'])  }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
-                        <p class="mb-n1 text-light vivo_light fs-category-name text-center">{!! $sp['label'] !!}</p>
+                        <p class="text-light vivo_light fs-label-winner text-center">{!! $sp['label'] !!}</p>
                       </div>
                     </div>
                   </a>
@@ -121,7 +121,7 @@ $special_winner = [
                     <div class="position-relative img-wrapper ">
                       <img class="img-fluid inner-img" src="{{ asset($w['thumb'])  ?? asset($w['image'])  }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
-                        <p class="mb-n1 text-light vivo_light fs-category-name">{!! $w['label'] !!}</p>
+                        <p class="text-light vivo_light fs-label-winner text-center">{!! $w['label'] !!}</p>
                       </div>
                     </div>
                   </a>
