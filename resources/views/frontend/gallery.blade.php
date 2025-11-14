@@ -31,7 +31,7 @@ $winners = [
   ],
   [
     'slug'  => 'nature-architecture-photography', 
-    'label' => '<span class="vivo_bold">Membingkai Tugu Layar Putih </span><br>Shandi Hadi Saputra', 
+    'label' => '<span class="vivo_bold">Membingkai Tugu <span class="new-line"></span>Layar Putih </span><br>Shandi Hadi Saputra', 
     'thumb' => 'frontend/images/winner2025/thumb-nature-architecture.webp', 
     'image' => 'frontend/images/winner2025/nature-architecture-photography.webp', 
     'title' => 'Membingkai Tugu Layar Putih', 
@@ -76,7 +76,7 @@ $special_winner = [
 
       <section class="py-5 py-md-5 text-white section-pm" id="winner">
 
-        <div class="d-flex d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-8 mb-8 mt-6">
+        <div class="d-flex d-flex justify-content--center justify-content-lg-start  align-items-center align-items-lg-start mt-lg-7 mb-8 mt-6">
 
           <div class="container-lg">
             <div class="row" data-aos="fade-down" data-aos-duration="1500">
