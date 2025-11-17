@@ -37,9 +37,9 @@ $judges = [
 
         <div class="row justify-content-center mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
             <div class="mb-3 col-md-12 mb-0 pb-0 text-center">
-              <div class="vivo_bold fs-3 fs-md-4 mb-2">PEMENANG KOMPETISI</div>
+              <div class="vivo_bold fs-3 fs-md-4 mb-2">PEMENANG vivo KOMPETISI</div>
               <div class="d-flex justify-content-center">
-                <a class="btn btn-register text-light vivo_medium" href="{{ route('gallery', ['category' => 'winner']) }}">vivo IMAGINE MOBILE PHOTOGRAPHY AWARDS</a>
+                <a class="btn btn-register text-light vivo_medium" href="{{ route('gallery', ['category' => 'winner']) }}">MOBILE PHOTOGRAPHY COMPETITION</a>
               </div>
             </div>
         </div>
