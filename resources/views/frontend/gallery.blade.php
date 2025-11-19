@@ -62,6 +62,7 @@ $special_winner = [
     'slug'  => 'portrait-photography', 
     'label' => '<span class="vivo_bold">Warisan Sang Dalang</span> <span class="d-none d-md-inline">-</span> <span class="new-line"></span>Erwin Kurniawan', 
     'thumb' => 'frontend/images/winner2025/thumb-jury-award-4.webp',
+    'thumb_phone' => 'frontend/images/winner2025/thumb-jury-award-smartphone.webp',
     'image' => 'frontend/images/winner2025/jury-award-3.webp', 
     'title' => 'Warisan Sang Dalang', 
     'desc'  => 'Erwin Kurniawan', 
@@ -89,8 +90,9 @@ $special_winner = [
                 <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="1500">
                   <a role='button' onClick="winnerPreview('{{ asset($sp['image']) }}','{{ $sp['title'] }}', '{{ $sp['desc']}}', '{{ $sp['desc2'] }}')">
                     <div class="position-relative img-wrapper-sp ">
-                      <!-- <img class="img-fluid inner-img" src="{{ asset($sp['image']) }}" alt="" loading="lazy"/> -->
-                      <img class="img-fluid inner-img" src="{{ asset($sp['thumb']) ?? asset($sp['image'])  }}" alt="" loading="lazy"/>
+  
+                      <img class="img-fluid inner-img d-block d-md-none" src="{{ asset($sp['thumb_phone']) ?? asset($sp['image'])  }}" alt="" loading="lazy"/>
+                      <img class="img-fluid inner-img d-none d-md-block" src="{{ asset($sp['thumb']) ?? asset($sp['image'])  }}" alt="" loading="lazy"/>
                       <div class="position-absolute bottom-0 panel-text img-tag w-100">
                         <p class="text-light vivo_light fs-label-winner text-center">{!! $sp['label'] !!}</p>
                       </div>
