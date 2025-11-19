@@ -61,9 +61,9 @@ $special_winner = [
   [
     'slug'  => 'portrait-photography', 
     'label' => '<span class="vivo_bold">Warisan Sang Dalang</span> <span class="d-none d-md-inline">-</span> <span class="new-line"></span>Erwin Kurniawan', 
-    'thumb' => 'frontend/images/winner2025/thumb-jury-award-3.webp',
+    'thumb' => 'frontend/images/winner2025/thumb-jury-award-4.webp',
     'image' => 'frontend/images/winner2025/jury-award-3.webp', 
-    'title' => 'Senyum di Balik Bundel Hio', 
+    'title' => 'Warisan Sang Dalang', 
     'desc'  => 'Erwin Kurniawan', 
     'desc2' => ''
   ]
