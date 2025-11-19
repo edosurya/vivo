@@ -24,7 +24,7 @@ $winners = [
     'slug'  => 'portrait-photography', 
     'label' => '<span class="vivo_bold">Pengrajin Payung</span> <br>Maya Nurikawati', 
     'thumb' => 'frontend/images/winner2025/thumb-portrait-photography-2.webp', 
-    'image' => 'frontend/images/winner2025/portrait-photography.jpg', 
+    'image' => 'frontend/images/winner2025/portrait-photography.webp', 
     'title' => 'Pengrajin Payung', 
     'desc'  => 'Maya Nurikawati', 
     'desc2' => 'dasdasd'
@@ -33,7 +33,7 @@ $winners = [
     'slug'  => 'nature-architecture-photography', 
     'label' => '<span class="vivo_bold">Membingkai Tugu <span class="new-line"></span>Layar Putih </span><br>Shandi Hadi Saputra', 
     'thumb' => 'frontend/images/winner2025/thumb-nature-architecture-2.webp', 
-    'image' => 'frontend/images/winner2025/nature-architecture-photography.jpg', 
+    'image' => 'frontend/images/winner2025/nature-architecture-photography.webp', 
     'title' => 'Membingkai Tugu Layar Putih', 
     'desc'  => 'Shandi Hadi Saputra', 
     'desc2' => 'dasdasd'
@@ -42,7 +42,7 @@ $winners = [
     'slug'  => 'night-photography', 
     'label' => '<span class="vivo_bold">Perang Obor Jepara</span> <br>Vendi Rizki Kesworo', 
     'thumb' => 'frontend/images/winner2025/thumb-night-photography-2.webp', 
-    'image' => 'frontend/images/winner2025/night-photography.jpg', 
+    'image' => 'frontend/images/winner2025/night-photography.webp', 
     'title' => 'Perang Obor Jepara', 
     'desc'  => 'Vendi Rizki Kesworo', 
     'desc2' => 'dasdasd'
@@ -51,7 +51,7 @@ $winners = [
     'slug'  => 'street-photography', 
     'label' => '<span class="vivo_bold">Balap Karung</span> <br>Jefri Deniawan', 
     'thumb' => 'frontend/images/winner2025/thumb-street-photography-2.webp', 
-    'image' => 'frontend/images/winner2025/street-photography.jpg', 
+    'image' => 'frontend/images/winner2025/street-photography.webp', 
     'title' => 'Balap Karung', 
     'desc'  => 'Jefri Deniawan', 
     'desc2' => 'dasdasd'
@@ -63,7 +63,7 @@ $special_winner = [
     'slug'  => 'portrait-photography', 
     'label' => '<span class="vivo_bold">Senyum di Balik <span class="new-line"></span>Bundel Hio</span> <span class="d-none d-md-inline">-</span> <span class="new-line"></span>Erwin Kurniawan', 
     'thumb' => 'frontend/images/winner2025/thumb-jury-award-2.webp',
-    'image' => 'frontend/images/winner2025/jury-award.jpg', 
+    'image' => 'frontend/images/winner2025/jury-award.webp', 
     'title' => 'Senyum di Balik Bundel Hio', 
     'desc'  => 'Erwin Kurniawan', 
     'desc2' => ''
