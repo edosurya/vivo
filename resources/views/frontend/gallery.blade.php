@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
   <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-  
 @endpush
 
 @php
@@ -172,11 +171,7 @@ $special_winner = [
     
     
 
-    @if($images)
-      <script type="text/javascript">
-        window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
-      </script>
-      
+    @if($images)      
       <div class="container-fluid mb-5 pb-6 mt-8">
         <div class="row" data-aos="fade-down">
             <div class="col-12 text-center mb-5">
@@ -302,45 +297,49 @@ $special_winner = [
 
   const galleryList = $('#galleryList');
   const loading = $('#loader');
-  setTimeout(() => {
-      galleryList.show()
-      loading.hide();
-  }, 500);
-  
+
 
   (function($) {
-  var carousel = function() {
-    $('.featured-carousel').owlCarousel({
-      lazyLoad:true,
-      loop:true,
-      margin:5,
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      nav:true,
-      dots: true,
-      autoplay: true,
-      slideTransition: 'linear',
-      autoplayTimeout: 4000,
-      autoplaySpeed: 4000,
-      autoplayHoverPause: true,
-      navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
-      responsive:{
-        0:{
-          items:2
+    var carousel = function() {
+      $('.featured-carousel').owlCarousel({
+        lazyLoad: true,
+        loop: true,
+        margin: 5,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav: true,
+        dots: true,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 4000,
+        autoplaySpeed: 4000,
+        autoplayHoverPause: true,
+        navText: [
+          "<span class='ion-ios-arrow-back'></span>",
+          "<span class='ion-ios-arrow-forward'></span>"
+        ],
+        responsive: {
+          0: { items: 2 },
+          600: { items: 3 },
+          1000: { items: 4 }
         },
-        600:{
-          items:3
-        },
-        1000:{
-          items:4
+
+        // ➜ Tambahkan event ini
+        onInitialized: function() {
+          galleryList.show();
+          loading.hide();
+
+          const target = document.getElementById('gallery');
+          const offset = 90; 
+          const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+          window.scrollTo({ top: y, behavior: 'smooth' });
         }
-      }
-    });
+      });
+    };
+    carousel();
+  })(jQuery);
 
-  };
-  carousel();
-
-})(jQuery);
 
 
   var myCarousel = document.querySelector('#carouselCategoryControls')
