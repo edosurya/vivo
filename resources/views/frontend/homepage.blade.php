@@ -212,7 +212,7 @@ $judges = [
 
       <section class="py-3 py-md-5 text-white section-pm">
 
-        <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm.webp') }});
+        <div class="section-bg-image-pm" style="background-image: url({{ asset('frontend/images/webp/bg-section-pm-2.webp') }});
           "></div>
 
         <div class="container py-5 py-md-5">
