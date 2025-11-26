@@ -16,7 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('frontend/images/flaticon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('frontend/images/flaticon.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('frontend/images/flaticon.png') }}">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-5/assets/css/hero-5.css">
     
     <meta name="theme-color" content="#ffffff">
 
@@ -32,20 +31,14 @@
     <!-- ===============================================-->
 
     @vite(['resources/sass/theme.scss'])
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="{{ asset('frontend/css/aos.css') }}?v={{ filemtime(public_path('frontend/css/aos.css')) }}" rel="stylesheet">
 
     <style type="text/css">
-        html, body {
-          height: 100%;
-          margin: 0;
-        }
-        .main{
-          min-height: 100%;
-        }
+
     </style>
     
-    <link href="{{ asset('frontend/css/styles.css') }}?v={{ filemtime(public_path('frontend/css/styles.css')) }}" rel="stylesheet" type="text/css" >
-    <link href="{{ asset('frontend/css/text-styles.css') }}?v={{ filemtime(public_path('frontend/css/text-styles.css')) }}" rel="stylesheet" type="text/css">
+    <link rel="preload" href="{{ asset('frontend/css/styles.css') }}?v={{ filemtime(public_path('frontend/css/styles.css')) }}" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}?v={{ filemtime(public_path('frontend/css/styles.css')) }}"></noscript>
 
     @stack('css-plugin') {{-- Asset URL Plugin Javascript --}}
 

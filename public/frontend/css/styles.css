@@ -55,8 +55,13 @@
 .vivo_light      { font-family: 'vivoSansGlobal-Light' !important; }
 .vivo_thin       { font-family: 'vivoSansGlobal-Thin' !important; }
 
-html {
+html, body {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
+}
+.main{
+  min-height: 100%;
 }
 
 body {
@@ -1516,5 +1521,174 @@ button:hover, button:focus {
   object-fit: cover;
 }
 
+/*TEKS*/
 
+.text-title-section {
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+}
+
+.text-desc-section {
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .text-title-section {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    .text-desc-section {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.text-date-regist {
+    font-size: 1.5rem;
+}
+
+.fs-category-name {
+    padding: 20px 20px;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .fs-category-name {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 10px 10px;
+    }
+}
+
+.fs-label-winner {
+    padding: 20px 10px;
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .fs-label-winner {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        padding: 10px 1px;
+    }
+}
+
+
+.fs-judge-title {
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+}
+
+.fs-judge-desc {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+} 
+
+
+@media (max-width: 992px) {
+    .fs-judge-title {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .fs-judge-desc {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    } 
+}
+
+@media (max-width: 391px) {
+    .center {
+      height: 35px;
+    }
+
+    .fs-judge-title {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .fs-judge-desc {
+        font-size: 13px;
+    } 
+}
+
+
+.fs-period-date {
+  font-size: 1.5rem;
+}
+
+.fs-period-desc {
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .fs-period-date {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .fs-period-desc {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+.step-desc {
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .step-desc {
+        line-height: 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+.fs-term-condition-other {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .fs-term-condition-other {
+        font-size: 1rem;
+    }
+}
+
+.term-condition li {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .term-condition li {
+        font-size: 1rem;
+    }
+}
+
+.fs-term-condition {
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+
+.fs-title-registrasi_form {
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+
+@media (max-width: 992px) {
+    .fs-term-condition {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .fs-title-registrasi_form {
+        font-size: 35px;
+        line-height: 35px;
+
+    }
+}
 
